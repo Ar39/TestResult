@@ -1,0 +1,112 @@
+{
+  "traffic_id": "traffic_0003",
+  "source": "burp_xml",
+  "request": {
+    "method": "GET",
+    "scheme": "https",
+    "host": "10.10.177.111",
+    "port": 443,
+    "path": "/portal-web/otc/date/currentDate",
+    "raw_target": "/portal-web/otc/date/currentDate?_=1794797359778",
+    "query": {
+      "_": [
+        "1794797359778"
+      ]
+    },
+    "headers": [
+      {
+        "name": "Host",
+        "value": "10.10.177.111"
+      },
+      {
+        "name": "Cookie",
+        "value": "<credential:cred_c8a93705deac>"
+      },
+      {
+        "name": "X-Csrf-Token",
+        "value": "<credential:cred_c8a93705deac>"
+      },
+      {
+        "name": "Menu-Id",
+        "value": "120008"
+      },
+      {
+        "name": "X-Requested-With",
+        "value": "XMLHttpRequest"
+      }
+    ],
+    "cookies": {
+      "isLocked": "false",
+      "staffJobId": "25162",
+      "ZSMART_LOCALE": "en",
+      "SP_ID": "0",
+      "areaId": "100",
+      "orgId": "100",
+      "userId": "1",
+      "HTML_VERSION": "1794653129366",
+      "SESSION": "<credential:cred_c8a93705deac>"
+    },
+    "content_type": null,
+    "body": null
+  },
+  "response": {
+    "available": true,
+    "status": 200,
+    "reason": "",
+    "headers": [
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "name": "X-Frame-Options",
+        "value": "SAMEORIGIN"
+      },
+      {
+        "name": "Content-Length",
+        "value": "21"
+      }
+    ],
+    "content_type": "application/json",
+    "body": {
+      "raw": "\"2026-11-16 11:29:43\"",
+      "content_type": "application/json",
+      "charset": null,
+      "binary": false,
+      "size_bytes": 21,
+      "truncated": false,
+      "form": null,
+      "json_value": "2026-11-16 11:29:43",
+      "xml_paths": null,
+      "parse_warnings": []
+    }
+  },
+  "auth_context": {
+    "authenticated": true,
+    "principal_ref": "principal_c8a93705deac",
+    "credential_ref": "cred_c8a93705deac",
+    "auth_types": [
+      "api_key",
+      "cookie"
+    ]
+  },
+  "artifacts": [
+    {
+      "artifact_id": "artifact_0005",
+      "type": "http_request",
+      "path": "traffic/traffic_0003/request.txt",
+      "sha256": "e05f5e883bff8029c9dbe2ae1524a4638b05251400e4bfe1f729f390bbebff33",
+      "size_bytes": 358,
+      "created_at": "2026-11-17T17:35:51+08:00"
+    },
+    {
+      "artifact_id": "artifact_0006",
+      "type": "http_response",
+      "path": "traffic/traffic_0003/response.txt",
+      "sha256": "8094e25a3173886a881f79b9c1d0ee79d2b3da09b4bec75c2b6e027a3e0ad6e5",
+      "size_bytes": 114,
+      "created_at": "2026-11-17T17:35:51+08:00"
+    }
+  ],
+  "parse_warnings": []
+}

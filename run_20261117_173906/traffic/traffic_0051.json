@@ -1,0 +1,466 @@
+{
+  "traffic_id": "traffic_0051",
+  "source": "burp_xml",
+  "request": {
+    "method": "POST",
+    "scheme": "https",
+    "host": "10.10.177.111",
+    "port": 443,
+    "path": "/portal-web/otc/priceDeposit/queryPagedOffer.do",
+    "raw_target": "/portal-web/otc/priceDeposit/queryPagedOffer.do",
+    "query": {},
+    "headers": [
+      {
+        "name": "Host",
+        "value": "10.10.177.111"
+      },
+      {
+        "name": "Cookie",
+        "value": "<credential:cred_c8a93705deac>"
+      },
+      {
+        "name": "Content-Length",
+        "value": "230"
+      },
+      {
+        "name": "Sec-Ch-Ua-Platform",
+        "value": "\"macOS\""
+      },
+      {
+        "name": "X-Csrf-Token",
+        "value": "<credential:cred_c8a93705deac>"
+      },
+      {
+        "name": "Accept-Language",
+        "value": "zh-CN,zh;q=0.9"
+      },
+      {
+        "name": "Sec-Ch-Ua",
+        "value": "\"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"150\""
+      },
+      {
+        "name": "Sec-Ch-Ua-Mobile",
+        "value": "?0"
+      },
+      {
+        "name": "Menu-Id",
+        "value": "120008"
+      },
+      {
+        "name": "X-Requested-With",
+        "value": "XMLHttpRequest"
+      },
+      {
+        "name": "User-Agent",
+        "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+      },
+      {
+        "name": "Accept",
+        "value": "application/json, text/javascript, */*; q=0.01"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "name": "Origin",
+        "value": "https://10.10.177.111"
+      },
+      {
+        "name": "Sec-Fetch-Site",
+        "value": "same-origin"
+      },
+      {
+        "name": "Sec-Fetch-Mode",
+        "value": "cors"
+      },
+      {
+        "name": "Sec-Fetch-Dest",
+        "value": "empty"
+      },
+      {
+        "name": "Referer",
+        "value": "https://10.10.177.111/portal-web/"
+      },
+      {
+        "name": "Accept-Encoding",
+        "value": "gzip, deflate, br"
+      },
+      {
+        "name": "Priority",
+        "value": "u=1, i"
+      },
+      {
+        "name": "Connection",
+        "value": "keep-alive"
+      }
+    ],
+    "cookies": {
+      "isLocked": "false",
+      "staffJobId": "25162",
+      "ZSMART_LOCALE": "en",
+      "SP_ID": "0",
+      "areaId": "100",
+      "orgId": "100",
+      "userId": "1",
+      "HTML_VERSION": "1794653129366",
+      "SESSION": "<credential:cred_c8a93705deac>"
+    },
+    "content_type": "application/json",
+    "body": {
+      "raw": "{\"objId\":-1,\"pricePlanVerId\":75800,\"readOnly\":false,\"activeStaffId\":null,\"pricePlanName\":\"\\\">&lt;img/src=1>\",\"pricePlanId\":22004800,\"pricePlanGenre\":\"O\",\"page\":1,\"rowNum\":5,\"sortName\":\"\",\"sortOrder\":\"asc\",\"pageNum\":1,\"pageSize\":5}",
+      "content_type": "application/json",
+      "charset": null,
+      "binary": false,
+      "size_bytes": 230,
+      "truncated": false,
+      "form": null,
+      "json_value": {
+        "objId": -1,
+        "pricePlanVerId": 75800,
+        "readOnly": false,
+        "activeStaffId": null,
+        "pricePlanName": "\">&lt;img/src=1>",
+        "pricePlanId": 22004800,
+        "pricePlanGenre": "O",
+        "page": 1,
+        "rowNum": 5,
+        "sortName": "",
+        "sortOrder": "asc",
+        "pageNum": 1,
+        "pageSize": 5
+      },
+      "xml_paths": null,
+      "parse_warnings": []
+    }
+  },
+  "response": {
+    "available": true,
+    "status": 200,
+    "reason": "",
+    "headers": [
+      {
+        "name": "Date",
+        "value": "Mon, 16 Nov 2026 03:32:30 GMT"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "name": "Connection",
+        "value": "keep-alive"
+      },
+      {
+        "name": "ITRACING_TRACE_ID",
+        "value": "172028108021_368334_1^1794653576196^10673"
+      },
+      {
+        "name": "Vary",
+        "value": "Origin"
+      },
+      {
+        "name": "Vary",
+        "value": "Access-Control-Request-Method"
+      },
+      {
+        "name": "Vary",
+        "value": "Access-Control-Request-Headers"
+      },
+      {
+        "name": "Access-Control-Allow-Origin",
+        "value": "https://10.10.177.111"
+      },
+      {
+        "name": "Access-Control-Expose-Headers",
+        "value": "Set-Cookie"
+      },
+      {
+        "name": "Access-Control-Allow-Credentials",
+        "value": "true"
+      },
+      {
+        "name": "X-Content-Type-Options",
+        "value": "nosniff"
+      },
+      {
+        "name": "X-XSS-Protection",
+        "value": "0"
+      },
+      {
+        "name": "Cache-Control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "name": "Pragma",
+        "value": "no-cache"
+      },
+      {
+        "name": "Expires",
+        "value": "0"
+      },
+      {
+        "name": "Referrer-Policy",
+        "value": "no-referrer-when-downgrade"
+      },
+      {
+        "name": "X-Frame-Options",
+        "value": "SAMEORIGIN"
+      },
+      {
+        "name": "X-Permitted-Cross-Domain-Policies",
+        "value": "master-only"
+      },
+      {
+        "name": "Content-Length",
+        "value": "3639"
+      }
+    ],
+    "content_type": "application/json",
+    "body": {
+      "raw": "{\"total\":5963,\"list\":[{\"offerId\":100043,\"offerType\":\"4\",\"offerSysType\":null,\"offerName\":\"Kids L\",\"offerSysName\":null,\"offerSysPyName\":null,\"offerNbr\":\"100043\",\"offerSysNbr\":null,\"offerDesc\":null,\"effDate\":null,\"manageGrade\":null,\"expDate\":null,\"offerProviderId\":null,\"brandId\":null,\"valueAddedFlag\":null,\"initialCredValue\":null,\"pricingPlanId\":null,\"isIndependent\":null,\"remark\":null,\"manageRegionId\":null,\"statusCd\":null,\"createStaff\":null,\"updateStaff\":null,\"createDate\":null,\"statusDate\":null,\"updateDate\":null,\"extOfferId\":null,\"mainFlag\":null,\"billItemClass\":null,\"rtDisctFlag\":null,\"rentFeeAmount\":null,\"offerDispClass\":null,\"priorityValue\":null,\"subsidyType\":null,\"offerGrade\":null},{\"offerId\":100042,\"offerType\":\"4\",\"offerSysType\":null,\"offerName\":\"Kids M\",\"offerSysName\":null,\"offerSysPyName\":null,\"offerNbr\":\"100042\",\"offerSysNbr\":null,\"offerDesc\":null,\"effDate\":null,\"manageGrade\":null,\"expDate\":null,\"offerProviderId\":null,\"brandId\":null,\"valueAddedFlag\":null,\"initialCredValue\":null,\"pricingPlanId\":null,\"isIndependent\":null,\"remark\":null,\"manageRegionId\":null,\"statusCd\":null,\"createStaff\":null,\"updateStaff\":null,\"createDate\":null,\"statusDate\":null,\"updateDate\":null,\"extOfferId\":null,\"mainFlag\":null,\"billItemClass\":null,\"rtDisctFlag\":null,\"rentFeeAmount\":null,\"offerDispClass\":null,\"priorityValue\":null,\"subsidyType\":null,\"offerGrade\":null},{\"offerId\":100040,\"offerType\":\"4\",\"offerSysType\":null,\"offerName\":\"Welcome Kids\",\"offerSysName\":null,\"offerSysPyName\":null,\"offerNbr\":\"100040\",\"offerSysNbr\":null,\"offerDesc\":null,\"effDate\":null,\"manageGrade\":null,\"expDate\":null,\"offerProviderId\":null,\"brandId\":null,\"valueAddedFlag\":null,\"initialCredValue\":null,\"pricingPlanId\":null,\"isIndependent\":null,\"remark\":null,\"manageRegionId\":null,\"statusCd\":null,\"createStaff\":null,\"updateStaff\":null,\"createDate\":null,\"statusDate\":null,\"updateDate\":null,\"extOfferId\":null,\"mainFlag\":null,\"billItemClass\":null,\"rtDisctFlag\":null,\"rentFeeAmount\":null,\"offerDispClass\":null,\"priorityValue\":null,\"subsidyType\":null,\"offerGrade\":null},{\"offerId\":100041,\"offerType\":\"4\",\"offerSysType\":null,\"offerName\":\"Kids S\",\"offerSysName\":null,\"offerSysPyName\":null,\"offerNbr\":\"100041\",\"offerSysNbr\":null,\"offerDesc\":null,\"effDate\":null,\"manageGrade\":null,\"expDate\":null,\"offerProviderId\":null,\"brandId\":null,\"valueAddedFlag\":null,\"initialCredValue\":null,\"pricingPlanId\":null,\"isIndependent\":null,\"remark\":null,\"manageRegionId\":null,\"statusCd\":null,\"createStaff\":null,\"updateStaff\":null,\"createDate\":null,\"statusDate\":null,\"updateDate\":null,\"extOfferId\":null,\"mainFlag\":null,\"billItemClass\":null,\"rtDisctFlag\":null,\"rentFeeAmount\":null,\"offerDispClass\":null,\"priorityValue\":null,\"subsidyType\":null,\"offerGrade\":null},{\"offerId\":100064,\"offerType\":\"4\",\"offerSysType\":null,\"offerName\":\"Child Whitelist\",\"offerSysName\":null,\"offerSysPyName\":null,\"offerNbr\":\"100064\",\"offerSysNbr\":null,\"offerDesc\":null,\"effDate\":null,\"manageGrade\":null,\"expDate\":null,\"offerProviderId\":null,\"brandId\":null,\"valueAddedFlag\":null,\"initialCredValue\":null,\"pricingPlanId\":null,\"isIndependent\":null,\"remark\":null,\"manageRegionId\":null,\"statusCd\":null,\"createStaff\":null,\"updateStaff\":null,\"createDate\":null,\"statusDate\":null,\"updateDate\":null,\"extOfferId\":null,\"mainFlag\":null,\"billItemClass\":null,\"rtDisctFlag\":null,\"rentFeeAmount\":null,\"offerDispClass\":null,\"priorityValue\":null,\"subsidyType\":null,\"offerGrade\":null}],\"pageNum\":1,\"pageSize\":5,\"size\":0,\"startRow\":0,\"endRow\":0,\"pages\":0,\"prePage\":0,\"nextPage\":0,\"isFirstPage\":false,\"isLastPage\":false,\"hasPreviousPage\":false,\"hasNextPage\":false,\"navigatePages\":0,\"navigatepageNums\":null,\"navigateFirstPage\":0,\"navigateLastPage\":0}",
+      "content_type": "application/json",
+      "charset": null,
+      "binary": false,
+      "size_bytes": 3639,
+      "truncated": false,
+      "form": null,
+      "json_value": {
+        "total": 5963,
+        "list": [
+          {
+            "offerId": 100043,
+            "offerType": "4",
+            "offerSysType": null,
+            "offerName": "Kids L",
+            "offerSysName": null,
+            "offerSysPyName": null,
+            "offerNbr": "100043",
+            "offerSysNbr": null,
+            "offerDesc": null,
+            "effDate": null,
+            "manageGrade": null,
+            "expDate": null,
+            "offerProviderId": null,
+            "brandId": null,
+            "valueAddedFlag": null,
+            "initialCredValue": null,
+            "pricingPlanId": null,
+            "isIndependent": null,
+            "remark": null,
+            "manageRegionId": null,
+            "statusCd": null,
+            "createStaff": null,
+            "updateStaff": null,
+            "createDate": null,
+            "statusDate": null,
+            "updateDate": null,
+            "extOfferId": null,
+            "mainFlag": null,
+            "billItemClass": null,
+            "rtDisctFlag": null,
+            "rentFeeAmount": null,
+            "offerDispClass": null,
+            "priorityValue": null,
+            "subsidyType": null,
+            "offerGrade": null
+          },
+          {
+            "offerId": 100042,
+            "offerType": "4",
+            "offerSysType": null,
+            "offerName": "Kids M",
+            "offerSysName": null,
+            "offerSysPyName": null,
+            "offerNbr": "100042",
+            "offerSysNbr": null,
+            "offerDesc": null,
+            "effDate": null,
+            "manageGrade": null,
+            "expDate": null,
+            "offerProviderId": null,
+            "brandId": null,
+            "valueAddedFlag": null,
+            "initialCredValue": null,
+            "pricingPlanId": null,
+            "isIndependent": null,
+            "remark": null,
+            "manageRegionId": null,
+            "statusCd": null,
+            "createStaff": null,
+            "updateStaff": null,
+            "createDate": null,
+            "statusDate": null,
+            "updateDate": null,
+            "extOfferId": null,
+            "mainFlag": null,
+            "billItemClass": null,
+            "rtDisctFlag": null,
+            "rentFeeAmount": null,
+            "offerDispClass": null,
+            "priorityValue": null,
+            "subsidyType": null,
+            "offerGrade": null
+          },
+          {
+            "offerId": 100040,
+            "offerType": "4",
+            "offerSysType": null,
+            "offerName": "Welcome Kids",
+            "offerSysName": null,
+            "offerSysPyName": null,
+            "offerNbr": "100040",
+            "offerSysNbr": null,
+            "offerDesc": null,
+            "effDate": null,
+            "manageGrade": null,
+            "expDate": null,
+            "offerProviderId": null,
+            "brandId": null,
+            "valueAddedFlag": null,
+            "initialCredValue": null,
+            "pricingPlanId": null,
+            "isIndependent": null,
+            "remark": null,
+            "manageRegionId": null,
+            "statusCd": null,
+            "createStaff": null,
+            "updateStaff": null,
+            "createDate": null,
+            "statusDate": null,
+            "updateDate": null,
+            "extOfferId": null,
+            "mainFlag": null,
+            "billItemClass": null,
+            "rtDisctFlag": null,
+            "rentFeeAmount": null,
+            "offerDispClass": null,
+            "priorityValue": null,
+            "subsidyType": null,
+            "offerGrade": null
+          },
+          {
+            "offerId": 100041,
+            "offerType": "4",
+            "offerSysType": null,
+            "offerName": "Kids S",
+            "offerSysName": null,
+            "offerSysPyName": null,
+            "offerNbr": "100041",
+            "offerSysNbr": null,
+            "offerDesc": null,
+            "effDate": null,
+            "manageGrade": null,
+            "expDate": null,
+            "offerProviderId": null,
+            "brandId": null,
+            "valueAddedFlag": null,
+            "initialCredValue": null,
+            "pricingPlanId": null,
+            "isIndependent": null,
+            "remark": null,
+            "manageRegionId": null,
+            "statusCd": null,
+            "createStaff": null,
+            "updateStaff": null,
+            "createDate": null,
+            "statusDate": null,
+            "updateDate": null,
+            "extOfferId": null,
+            "mainFlag": null,
+            "billItemClass": null,
+            "rtDisctFlag": null,
+            "rentFeeAmount": null,
+            "offerDispClass": null,
+            "priorityValue": null,
+            "subsidyType": null,
+            "offerGrade": null
+          },
+          {
+            "offerId": 100064,
+            "offerType": "4",
+            "offerSysType": null,
+            "offerName": "Child Whitelist",
+            "offerSysName": null,
+            "offerSysPyName": null,
+            "offerNbr": "100064",
+            "offerSysNbr": null,
+            "offerDesc": null,
+            "effDate": null,
+            "manageGrade": null,
+            "expDate": null,
+            "offerProviderId": null,
+            "brandId": null,
+            "valueAddedFlag": null,
+            "initialCredValue": null,
+            "pricingPlanId": null,
+            "isIndependent": null,
+            "remark": null,
+            "manageRegionId": null,
+            "statusCd": null,
+            "createStaff": null,
+            "updateStaff": null,
+            "createDate": null,
+            "statusDate": null,
+            "updateDate": null,
+            "extOfferId": null,
+            "mainFlag": null,
+            "billItemClass": null,
+            "rtDisctFlag": null,
+            "rentFeeAmount": null,
+            "offerDispClass": null,
+            "priorityValue": null,
+            "subsidyType": null,
+            "offerGrade": null
+          }
+        ],
+        "pageNum": 1,
+        "pageSize": 5,
+        "size": 0,
+        "startRow": 0,
+        "endRow": 0,
+        "pages": 0,
+        "prePage": 0,
+        "nextPage": 0,
+        "isFirstPage": false,
+        "isLastPage": false,
+        "hasPreviousPage": false,
+        "hasNextPage": false,
+        "navigatePages": 0,
+        "navigatepageNums": null,
+        "navigateFirstPage": 0,
+        "navigateLastPage": 0
+      },
+      "xml_paths": null,
+      "parse_warnings": []
+    }
+  },
+  "auth_context": {
+    "authenticated": true,
+    "principal_ref": "principal_c8a93705deac",
+    "credential_ref": "cred_c8a93705deac",
+    "auth_types": [
+      "api_key",
+      "cookie"
+    ]
+  },
+  "artifacts": [
+    {
+      "artifact_id": "artifact_0101",
+      "type": "http_request",
+      "path": "traffic/traffic_0051/request.txt",
+      "sha256": "558f73eda9818abaed2e01d5b2fe3f3427adb2f551487ae4030767b34e40cd93",
+      "size_bytes": 1175,
+      "created_at": "2026-11-17T17:42:01+08:00"
+    },
+    {
+      "artifact_id": "artifact_0102",
+      "type": "http_response",
+      "path": "traffic/traffic_0051/response.txt",
+      "sha256": "72f1594d9c822eec2c089cee66156def3ebc0d143a0c14534f5f09493dd41993",
+      "size_bytes": 4305,
+      "created_at": "2026-11-17T17:42:01+08:00"
+    }
+  ],
+  "parse_warnings": []
+}

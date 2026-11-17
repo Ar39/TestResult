@@ -1,0 +1,144 @@
+{
+  "traffic_id": "traffic_0003",
+  "source": "burp_xml",
+  "request": {
+    "method": "POST",
+    "scheme": "https",
+    "host": "10.10.177.111",
+    "port": 443,
+    "path": "/portal-web/otc/cacheRefresh",
+    "raw_target": "/portal-web/otc/cacheRefresh",
+    "query": {},
+    "headers": [
+      {
+        "name": "Host",
+        "value": "10.10.177.111"
+      },
+      {
+        "name": "Cookie",
+        "value": "<credential:cred_c8a93705deac>"
+      },
+      {
+        "name": "Content-Length",
+        "value": "56"
+      },
+      {
+        "name": "X-Csrf-Token",
+        "value": "<credential:cred_c8a93705deac>"
+      },
+      {
+        "name": "Menu-Id",
+        "value": "120006"
+      },
+      {
+        "name": "X-Requested-With",
+        "value": "XMLHttpRequest"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "cookies": {
+      "isLocked": "false",
+      "staffJobId": "25162",
+      "ZSMART_LOCALE": "en",
+      "SP_ID": "0",
+      "areaId": "100",
+      "orgId": "100",
+      "userId": "1",
+      "HTML_VERSION": "1794653129366",
+      "SESSION": "<credential:cred_c8a93705deac>"
+    },
+    "content_type": "application/json",
+    "body": {
+      "raw": "{\"bean\":\"cache.orderPriceRuleRefresh\",\"method\":\"status\"}",
+      "content_type": "application/json",
+      "charset": null,
+      "binary": false,
+      "size_bytes": 56,
+      "truncated": false,
+      "form": null,
+      "json_value": {
+        "bean": "cache.orderPriceRuleRefresh",
+        "method": "status"
+      },
+      "xml_paths": null,
+      "parse_warnings": []
+    }
+  },
+  "response": {
+    "available": true,
+    "status": 200,
+    "reason": "",
+    "headers": [
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "name": "Access-Control-Allow-Origin",
+        "value": "https://10.10.177.111"
+      },
+      {
+        "name": "X-Frame-Options",
+        "value": "SAMEORIGIN"
+      },
+      {
+        "name": "Content-Length",
+        "value": "124"
+      }
+    ],
+    "content_type": "application/json",
+    "body": {
+      "raw": "{\"result\":{\"beginTime\":1794653665448,\"endTime\":1794653665471,\"totalCnt\":0,\"status\":0,\"failCnt\":0,\"succCnt\":0},\"future\":null}",
+      "content_type": "application/json",
+      "charset": null,
+      "binary": false,
+      "size_bytes": 124,
+      "truncated": false,
+      "form": null,
+      "json_value": {
+        "result": {
+          "beginTime": 1794653665448,
+          "endTime": 1794653665471,
+          "totalCnt": 0,
+          "status": 0,
+          "failCnt": 0,
+          "succCnt": 0
+        },
+        "future": null
+      },
+      "xml_paths": null,
+      "parse_warnings": []
+    }
+  },
+  "auth_context": {
+    "authenticated": true,
+    "principal_ref": "principal_c8a93705deac",
+    "credential_ref": "cred_c8a93705deac",
+    "auth_types": [
+      "api_key",
+      "cookie"
+    ]
+  },
+  "artifacts": [
+    {
+      "artifact_id": "artifact_0005",
+      "type": "http_request",
+      "path": "traffic/traffic_0003/request.txt",
+      "sha256": "27f9abdf1d558534ac92d9a91d6626c7901dad1ff145fdae7e4b778828503b8f",
+      "size_bytes": 445,
+      "created_at": "2026-11-17T17:34:14+08:00"
+    },
+    {
+      "artifact_id": "artifact_0006",
+      "type": "http_response",
+      "path": "traffic/traffic_0003/response.txt",
+      "sha256": "877327fbe33ed3db8fdfd8807a76452ef1583fc7cd9f04b873b3396acfe716a5",
+      "size_bytes": 269,
+      "created_at": "2026-11-17T17:34:14+08:00"
+    }
+  ],
+  "parse_warnings": []
+}

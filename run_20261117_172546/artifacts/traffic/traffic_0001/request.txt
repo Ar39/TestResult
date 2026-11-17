@@ -1,0 +1,9 @@
+POST /portal-web/otc/cacheRefresh/offers/page.do HTTP/1.1
+Host: 10.10.177.111
+Cookie: ***
+Content-Length: 78
+X-Csrf-Token: 15205785-d11c-4ece-8307-36dab2722d49
+X-Requested-With: XMLHttpRequest
+Content-Type: application/json
+
+{"page":1,"rowNum":5,"sortName":"","sortOrder":"asc","pageNum":1,"pageSize":5}

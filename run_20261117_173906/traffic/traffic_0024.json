@@ -1,0 +1,250 @@
+{
+  "traffic_id": "traffic_0024",
+  "source": "burp_xml",
+  "request": {
+    "method": "POST",
+    "scheme": "https",
+    "host": "10.10.177.111",
+    "port": 443,
+    "path": "/portal-web/otc/domain/qryOtcConAttrTypeDataByApplyTypeList",
+    "raw_target": "/portal-web/otc/domain/qryOtcConAttrTypeDataByApplyTypeList",
+    "query": {},
+    "headers": [
+      {
+        "name": "Host",
+        "value": "10.10.177.111"
+      },
+      {
+        "name": "Cookie",
+        "value": "<credential:cred_cc0f14c7dfc3>"
+      },
+      {
+        "name": "Content-Length",
+        "value": "10"
+      },
+      {
+        "name": "Sec-Ch-Ua-Platform",
+        "value": "\"macOS\""
+      },
+      {
+        "name": "X-Csrf-Token",
+        "value": "<credential:cred_cc0f14c7dfc3>"
+      },
+      {
+        "name": "Accept-Language",
+        "value": "zh-CN,zh;q=0.9"
+      },
+      {
+        "name": "Sec-Ch-Ua",
+        "value": "\"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"150\""
+      },
+      {
+        "name": "Sec-Ch-Ua-Mobile",
+        "value": "?0"
+      },
+      {
+        "name": "Menu-Id",
+        "value": "120018"
+      },
+      {
+        "name": "X-Requested-With",
+        "value": "XMLHttpRequest"
+      },
+      {
+        "name": "User-Agent",
+        "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+      },
+      {
+        "name": "Accept",
+        "value": "application/json, text/javascript, */*; q=0.01"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "name": "Origin",
+        "value": "https://10.10.177.111"
+      },
+      {
+        "name": "Sec-Fetch-Site",
+        "value": "same-origin"
+      },
+      {
+        "name": "Sec-Fetch-Mode",
+        "value": "cors"
+      },
+      {
+        "name": "Sec-Fetch-Dest",
+        "value": "empty"
+      },
+      {
+        "name": "Referer",
+        "value": "https://10.10.177.111/portal-web/"
+      },
+      {
+        "name": "Accept-Encoding",
+        "value": "gzip, deflate, br"
+      },
+      {
+        "name": "Priority",
+        "value": "u=1, i"
+      },
+      {
+        "name": "Connection",
+        "value": "keep-alive"
+      }
+    ],
+    "cookies": {
+      "isLocked": "false",
+      "staffJobId": "25162",
+      "ZSMART_LOCALE": "en",
+      "SP_ID": "0",
+      "HTML_VERSION": "1794535466642",
+      "areaId": "100",
+      "orgId": "100",
+      "userId": "1",
+      "SESSION": "<credential:cred_cc0f14c7dfc3>"
+    },
+    "content_type": "application/json",
+    "body": {
+      "raw": "[\"1\",\"12\"]",
+      "content_type": "application/json",
+      "charset": null,
+      "binary": false,
+      "size_bytes": 10,
+      "truncated": false,
+      "form": null,
+      "json_value": [
+        "1",
+        "12"
+      ],
+      "xml_paths": null,
+      "parse_warnings": []
+    }
+  },
+  "response": {
+    "available": true,
+    "status": 200,
+    "reason": "",
+    "headers": [
+      {
+        "name": "Date",
+        "value": "Mon, 16 Nov 2026 07:19:12 GMT"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "name": "Connection",
+        "value": "keep-alive"
+      },
+      {
+        "name": "ITRACING_TRACE_ID",
+        "value": "172028108021_368334_1^1794653576196^13166"
+      },
+      {
+        "name": "Vary",
+        "value": "Origin"
+      },
+      {
+        "name": "Vary",
+        "value": "Access-Control-Request-Method"
+      },
+      {
+        "name": "Vary",
+        "value": "Access-Control-Request-Headers"
+      },
+      {
+        "name": "Access-Control-Allow-Origin",
+        "value": "https://10.10.177.111"
+      },
+      {
+        "name": "Access-Control-Expose-Headers",
+        "value": "Set-Cookie"
+      },
+      {
+        "name": "Access-Control-Allow-Credentials",
+        "value": "true"
+      },
+      {
+        "name": "X-Content-Type-Options",
+        "value": "nosniff"
+      },
+      {
+        "name": "X-XSS-Protection",
+        "value": "0"
+      },
+      {
+        "name": "Cache-Control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "name": "Pragma",
+        "value": "no-cache"
+      },
+      {
+        "name": "Expires",
+        "value": "0"
+      },
+      {
+        "name": "Referrer-Policy",
+        "value": "no-referrer-when-downgrade"
+      },
+      {
+        "name": "X-Frame-Options",
+        "value": "SAMEORIGIN"
+      },
+      {
+        "name": "X-Permitted-Cross-Domain-Policies",
+        "value": "master-only"
+      },
+      {
+        "name": "Content-Length",
+        "value": "18806"
+      }
+    ],
+    "content_type": "application/json",
+    "body": {
+      "raw": "[{\"conAttrTypeId\":1,\"conAttrTypeName\":\"Customer Information\",\"dataService\":\"qryCustomerDetail\",\"comments\":null,\"otcFactorList\":[{\"factorId\":1,\"conAttrTypeId\":1,\"factorName\":\"Customer Type\",\"attrNbr\":\"CUS-0001\",\"dataType\":\"S\",\"dataSourceBeanName\":null,\"useInPrice\":null},{\"factorId\":2,\"conAttrTypeId\":1,\"factorName\":\"Customer Service Grade\",\"attrNbr\":\"CUS-0006\",\"dataType\":\"S\",\"dataSourceBeanName\":null,\"useInPrice\":null},{\"factorId\":14,\"conAttrTypeId\":1,\"factorName\":\"Customer Information\",\"attrNbr\":null,\"dataType\":\"O\",\"dataSourceBeanName\":null,\"useInPrice\":null},{\"factorId\":17,\"conAttrTypeId\":1,\"factorName\":\"Customer Flag\",\"attrNbr\":\"CC_CUST_TYPE_FLAG\",\"dataType\":\"S\",\"dataSourceBeanName\":\"GetCustTypeFlagSource\",\"useInPrice\":null},{\"factorId\":60,\"conAttrTypeId\":1,\"factorName\":\"Customer Feature\",\"attrNbr\":null,\"dataType\":\"O\",\"dataSourceBeanName\":null,\"useInPrice\":null},{\"factorId\":73,\"conAttrTypeId\":1,\"factorName\":\"Customer Doc Type\",\"attrNbr\":null,\"dataType\":\"S\",\"dataSourceBeanName\":\"GetCustCertTypeSource\",\"useInPrice\":null},{\"factorId\":106,\"conAttrTypeId\":1,\"factorName\":\"Customer Verification\",\"attrNbr\":null,\"dataType\":\"S\",\"dataSourceBeanName\":null,\"useInPrice\":\"N\"},{\"factorId\":107,\"conAttrTypeId\":1,\"factorName\":\"Customer Sub Type\",\"attrNbr\":null,\"dataType\":\"S\",\"dataSourceBeanName\":null,\"useInPrice\":\"N\"},{\"factorId\":131,\"conAttrTypeId\":1,\"factorName\":\"Customer Credit Grade\",\"attrNbr\":null,\"dataType\":\"I\",\"dataSourceBeanName\":\"GetCreditGradeSource\",\"useInPrice\":\"N\"},{\"factorId\":132,\"conAttrTypeId\":1,\"factorName\":\"Customer Important Grade\",\"attrNbr\":null,\"dataType\":\"I\",\"dataSourceBeanName\":\"GetImpGradeSource\",\"useInPrice\":\"N\"}],\"factorName\":\"Customer Information\"},{\"conAttrTypeId\":2,\"conAttrTypeName\":\"Offer Information\",\"dataService\":null,\"comments\":null,\"otcFactorList\":[{\"factorId\":12,\"conAttrTypeId\":2,\"factorName\":\"Brand\",\"attrNbr\":null,\"dataType\":\"S\",\"dataSourceBeanName\":\"GetBrandSource\",\"useInPrice\":null},{\"factorId\":18,\"conAttrTypeId\":2,\"factorName\":\"Payment Mode\",\"attrNbr\":null,\"dataType\":\"S\",\"dataSourceBeanName\":\"GetPaymentModeSource\",\"useInPrice\":null},{\"factorId\":120,\"conAttrTypeId\":2,\"factorName\":\"Offer Code\",\"attrNbr\":null,\"dataType\":\"S\",\"dataSourceBeanName\":null,\"useInPrice\":\"N\"}],\"factorName\":\"Offer Information\"},{\"conAttrTypeId\":3,\"conAttrTypeName\":\"Offer Instance Information\",\"dataService\":null,\"comments\":null,\"otcFactorList\":[{\"factorId\":3,\"conAttrTypeId\":3,\"factorName\":\"Offer Instance Information\",\"attrNbr\":null,\"dataType\":\"O\",\"dataSourceBeanName\":null,\"useInPrice\":\"Y\"},{\"factorId\":21,\"conAttrTypeId\":3,\"factorName\":\"Pre Deposit\",\"attrNbr\":null,\"dataType\":\"S\",\"dataSourceBeanName\":null,\"useInPrice\":\"Y\"},{\"factorId\":39,\"conAttrTypeId\":3,\"factorName\":\"Time Limit\",\"attrNbr\":\"FLEX_TIME_BUNDLE_TIME_LIMIT\",\"dataType\":\"S\",\"dataSourceBeanName\":null,\"useInPrice\":\"Y\"},{\"factorId\":62,\"conAttrTypeId\":3,\"factorName\":\"Offer Instance Feature\",\"attrNbr\":null,\"dataType\":\"O\",\"dataSourceBeanName\":null,\"useInPrice\":\"Y\"},{\"factorId\":69,\"conAttrTypeId\":3,\"factorName\":\"Agreement Effective Date\",\"attrNbr\":null,\"dataType\":\"T\",\"dataSourceBeanName\":null,\"useInPrice\":null},{\"factorId\":79,\"conAttrTypeId\":3,\"factorName\":\"Fellow Number Added Times\",\"attrNbr\":null,\"dataType\":\"I\",\"dataSourceBeanName\":null,\"useInPrice\":null},{\"factorId\":80,\"conAttrTypeId\":3,\"factorName\":\"Fellow Number Modified Times\",\"attrNbr\":null,\"dataType\":\"I\",\"dataSourceBeanName\":null,\"useInPrice\":null},{\"factorId\":81,\"conAttrTypeId\":3,\"factorName\":\"Fellow Number Min Used Days\",\"attrNbr\":null,\"dataType\":\"I\",\"dataSourceBeanName\":null,\"useInPrice\":null},{\"factorId\":86,\"conAttrTypeId\":3,\"factorName\":\"Offer Instance Effective Date\",\"attrNbr\":null,\"dataType\":\"S\",\"dataSourceBeanName\":null,\"useInPrice\":\"N\"},{\"factorId\":87,\"conAttrTypeId\":3,\"factorName\":\"Offer Instance Expiry Date\",\"attrNbr\":null,\"dataType\":\"S\",\"dataSourceBeanName\":null,\"useInPrice\":\"N\"},{\"factorId\":88,\"conAttrTypeId\":3,\"factorName\":\"Offer Instance State\",\"attrNbr\":null,\"dataType\":\"S\",\"dataSourceBeanName\":null,\"useInPrice\"",
+      "content_type": "application/json",
+      "charset": null,
+      "binary": false,
+      "size_bytes": 4000,
+      "truncated": false,
+      "form": null,
+      "json_value": null,
+      "xml_paths": null,
+      "parse_warnings": []
+    }
+  },
+  "auth_context": {
+    "authenticated": true,
+    "principal_ref": "principal_cc0f14c7dfc3",
+    "credential_ref": "cred_cc0f14c7dfc3",
+    "auth_types": [
+      "api_key",
+      "cookie"
+    ]
+  },
+  "artifacts": [
+    {
+      "artifact_id": "artifact_0047",
+      "type": "http_request",
+      "path": "traffic/traffic_0024/request.txt",
+      "sha256": "2a0af34c7342be7a171730b091d8c965d67643330dc25697cb3ddd35cb7f92d0",
+      "size_bytes": 966,
+      "created_at": "2026-11-17T17:42:00+08:00"
+    },
+    {
+      "artifact_id": "artifact_0048",
+      "type": "http_response",
+      "path": "traffic/traffic_0024/response.txt",
+      "sha256": "795fb2748c6c22ca4055936a51b6925e6432c7fe58f1fe16590c10b8650f9e02",
+      "size_bytes": 4667,
+      "created_at": "2026-11-17T17:42:00+08:00"
+    }
+  ],
+  "parse_warnings": []
+}

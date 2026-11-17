@@ -1,0 +1,1438 @@
+{
+  "plan_id": "plan_8ba2998c",
+  "run_id": "run_20261117_173906",
+  "endpoint_id": "endpoint_0003",
+  "analysis_id": "analysis_8adb5875",
+  "model": "g-jev-1.13",
+  "profile": "dynamic_v1",
+  "decisions": [
+    {
+      "decision_id": "decision_0002",
+      "parameter_id": null,
+      "parameter_identity": null,
+      "parameter_name": null,
+      "attack_surface": "business_logic",
+      "source_question_ids": [
+        "ep_business_logic_risk",
+        "ep_role",
+        "ep_auth_required"
+      ],
+      "score": 0.26,
+      "confidence": 0.8,
+      "probabilities": {
+        "0": 0.79,
+        "1": 0.18,
+        "2": 0.03,
+        "3": 0.0,
+        "4": 0.0
+      },
+      "evidence_refs": [
+        "traffic_0014"
+      ],
+      "has_supporting_evidence": true,
+      "uncertainty": [],
+      "agent": "business_logic",
+      "status": "blocked",
+      "selection_decision": "SELECTED",
+      "selection_reason": "11 request parameter(s) observed",
+      "feature_references": [
+        "parameters"
+      ]
+    },
+    {
+      "decision_id": "decision_0005",
+      "parameter_id": null,
+      "parameter_identity": null,
+      "parameter_name": null,
+      "attack_surface": "idor",
+      "source_question_ids": [
+        "ep_idor_risk",
+        "ep_role",
+        "ep_auth_required"
+      ],
+      "score": 1.4,
+      "confidence": 0.66,
+      "probabilities": {
+        "0": 0.01,
+        "1": 0.62,
+        "2": 0.34,
+        "3": 0.03,
+        "4": 0.0
+      },
+      "evidence_refs": [
+        "traffic_0014"
+      ],
+      "has_supporting_evidence": true,
+      "uncertainty": [],
+      "agent": "idor",
+      "status": "blocked",
+      "selection_decision": "SELECTED",
+      "selection_reason": "11 request parameter(s) observed. authenticated traffic observed (1 principal(s))",
+      "feature_references": [
+        "parameters",
+        "auth.auth_observed"
+      ]
+    },
+    {
+      "decision_id": "decision_0010",
+      "parameter_id": null,
+      "parameter_identity": null,
+      "parameter_name": null,
+      "attack_surface": "sqli",
+      "source_question_ids": [
+        "ep_sqli_risk",
+        "ep_role"
+      ],
+      "score": 0.7,
+      "confidence": 0.57,
+      "probabilities": {
+        "0": 0.41,
+        "1": 0.49,
+        "2": 0.09,
+        "3": 0.01,
+        "4": 0.0
+      },
+      "evidence_refs": [
+        "traffic_0014"
+      ],
+      "has_supporting_evidence": true,
+      "uncertainty": [],
+      "agent": "sqli",
+      "status": "blocked",
+      "selection_decision": "SELECTED",
+      "selection_reason": "11 request parameter(s) observed. captured responses available as reachability evidence",
+      "feature_references": [
+        "parameters",
+        "response.available"
+      ]
+    },
+    {
+      "decision_id": "decision_0011",
+      "parameter_id": null,
+      "parameter_identity": null,
+      "parameter_name": null,
+      "attack_surface": "ssrf",
+      "source_question_ids": [
+        "ep_ssrf_risk",
+        "ep_role"
+      ],
+      "score": 0.56,
+      "confidence": 0.55,
+      "probabilities": {
+        "0": 0.57,
+        "1": 0.37,
+        "2": 0.02,
+        "3": 0.03,
+        "4": 0.01
+      },
+      "evidence_refs": [
+        "traffic_0014"
+      ],
+      "has_supporting_evidence": false,
+      "uncertainty": [],
+      "agent": "ssrf",
+      "status": "blocked",
+      "selection_decision": "UNKNOWN",
+      "selection_reason": "free-form string parameter values observed — URL-shaped input not observed but not excluded",
+      "feature_references": [
+        "parameters"
+      ]
+    },
+    {
+      "decision_id": "decision_0015",
+      "parameter_id": null,
+      "parameter_identity": null,
+      "parameter_name": null,
+      "attack_surface": "xxe",
+      "source_question_ids": [
+        "ep_xxe_risk",
+        "ep_role"
+      ],
+      "score": 0.02,
+      "confidence": 0.98,
+      "probabilities": {
+        "0": 0.98,
+        "1": 0.02,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0
+      },
+      "evidence_refs": [
+        "traffic_0014"
+      ],
+      "has_supporting_evidence": false,
+      "uncertainty": [],
+      "agent": "xxe",
+      "status": "blocked",
+      "selection_decision": "UNKNOWN",
+      "selection_reason": "request bodies analyzed: no XML observed in the captured samples — absence in captured traffic does not prove the endpoint rejects or never processes XML (no protocol constraint is recorded); retained as unknown",
+      "feature_references": [
+        "request.body.kinds",
+        "availability.request_structure_analyzed"
+      ]
+    },
+    {
+      "decision_id": "decision_0016",
+      "parameter_id": "param_0004",
+      "parameter_identity": "sha256:4c452de1dbac168e272bf6522c34a2584772ebb0d3cfa777a8de72eb30341779",
+      "parameter_name": "areaId",
+      "attack_surface": "idor",
+      "source_question_ids": [
+        "p_areaid_idor_risk",
+        "p_areaid_role",
+        "ep_auth_required"
+      ],
+      "score": 2.63,
+      "confidence": 0.67,
+      "probabilities": {
+        "0": 0.07,
+        "1": 0.06,
+        "2": 0.06,
+        "3": 0.8,
+        "4": 0.01
+      },
+      "evidence_refs": [
+        "traffic_0014"
+      ],
+      "has_supporting_evidence": true,
+      "uncertainty": [],
+      "agent": "idor",
+      "status": "blocked",
+      "selection_decision": "SELECTED",
+      "selection_reason": "any parameter can identify an object, user or tenant — identifier role is JEV's judgment. unconditional question — always applicable. 1 observed value(s) available as evidence. parameter value not echoed in the searched responses. authenticated traffic observed (1 principal(s))",
+      "feature_references": [
+        "parameters[param_0004].location",
+        "parameters[param_0004].value_type",
+        "parameters[param_0004].values",
+        "parameter_links[param_0004].value_echoed_in_response",
+        "auth.auth_observed"
+      ]
+    },
+    {
+      "decision_id": "decision_0018",
+      "parameter_id": "param_0004",
+      "parameter_identity": "sha256:4c452de1dbac168e272bf6522c34a2584772ebb0d3cfa777a8de72eb30341779",
+      "parameter_name": "areaId",
+      "attack_surface": "sqli",
+      "source_question_ids": [
+        "p_areaid_sqli_risk",
+        "p_areaid_role"
+      ],
+      "score": 0.95,
+      "confidence": 0.79,
+      "probabilities": {
+        "0": 0.16,
+        "1": 0.78,
+        "2": 0.03,
+        "3": 0.03,
+        "4": 0.0
+      },
+      "evidence_refs": [
+        "traffic_0014"
+      ],
+      "has_supporting_evidence": true,
+      "uncertainty": [],
+      "agent": "sqli",
+      "status": "blocked",
+      "selection_decision": "SELECTED",
+      "selection_reason": "free-form or structured input may reach a database query — reachability is JEV's judgment. unconditional question — always applicable. 1 observed value(s) available as evidence. parameter value not echoed in the searched responses. captured responses available as reachability evidence",
+      "feature_references": [
+        "parameters[param_0004].location",
+        "parameters[param_0004].value_type",
+        "parameters[param_0004].values",
+        "parameter_links[param_0004].value_echoed_in_response",
+        "response.available"
+      ]
+    },
+    {
+      "decision_id": "decision_0019",
+      "parameter_id": "param_0004",
+      "parameter_identity": "sha256:4c452de1dbac168e272bf6522c34a2584772ebb0d3cfa777a8de72eb30341779",
+      "parameter_name": "areaId",
+      "attack_surface": "ssrf",
+      "source_question_ids": [
+        "p_areaid_ssrf_risk",
+        "p_areaid_role"
+      ],
+      "score": 1.14,
+      "confidence": 0.06,
+      "probabilities": {
+        "0": 0.69,
+        "1": 0.02,
+        "2": 0.0,
+        "3": 0.05,
+        "4": 0.24
+      },
+      "evidence_refs": [
+        "traffic_0014"
+      ],
+      "has_supporting_evidence": false,
+      "uncertainty": [
+        "low_confidence"
+      ],
+      "agent": "ssrf",
+      "status": "blocked",
+      "selection_decision": "UNKNOWN",
+      "selection_reason": "all captured values are numeric/boolean — observed value types describe the captured samples only, not the parameter's accepted input range (no parameter schema or explicit input constraint is recorded); URL input not excluded. 1 observed value(s) available as evidence. parameter value not echoed in the searched responses",
+      "feature_references": [
+        "parameters[param_0004].location",
+        "parameters[param_0004].value_type",
+        "parameters[param_0004].values",
+        "parameter_links[param_0004].value_echoed_in_response"
+      ]
+    },
+    {
+      "decision_id": "decision_0020",
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:b0d4ee789a395cb1c1a534aacbc337af25e2ffb92fe3aa5399653f0792c61cbc",
+      "parameter_name": "HTML_VERSION",
+      "attack_surface": "idor",
+      "source_question_ids": [
+        "p_html_version_idor_risk",
+        "p_html_version_role",
+        "ep_auth_required"
+      ],
+      "score": 2.63,
+      "confidence": 0.68,
+      "probabilities": {
+        "0": 0.06,
+        "1": 0.06,
+        "2": 0.07,
+        "3": 0.79,
+        "4": 0.02
+      },
+      "evidence_refs": [
+        "traffic_0014"
+      ],
+      "has_supporting_evidence": true,
+      "uncertainty": [],
+      "agent": "idor",
+      "status": "blocked",
+      "selection_decision": "SELECTED",
+      "selection_reason": "any parameter can identify an object, user or tenant — identifier role is JEV's judgment. unconditional question — always applicable. 1 observed value(s) available as evidence. parameter value not echoed in the searched responses. authenticated traffic observed (1 principal(s))",
+      "feature_references": [
+        "parameters[param_0001].location",
+        "parameters[param_0001].value_type",
+        "parameters[param_0001].values",
+        "parameter_links[param_0001].value_echoed_in_response",
+        "auth.auth_observed"
+      ]
+    },
+    {
+      "decision_id": "decision_0022",
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:b0d4ee789a395cb1c1a534aacbc337af25e2ffb92fe3aa5399653f0792c61cbc",
+      "parameter_name": "HTML_VERSION",
+      "attack_surface": "sqli",
+      "source_question_ids": [
+        "p_html_version_sqli_risk",
+        "p_html_version_role"
+      ],
+      "score": 1.01,
+      "confidence": 0.76,
+      "probabilities": {
+        "0": 0.14,
+        "1": 0.76,
+        "2": 0.05,
+        "3": 0.05,
+        "4": 0.0
+      },
+      "evidence_refs": [
+        "traffic_0014"
+      ],
+      "has_supporting_evidence": true,
+      "uncertainty": [],
+      "agent": "sqli",
+      "status": "blocked",
+      "selection_decision": "SELECTED",
+      "selection_reason": "free-form or structured input may reach a database query — reachability is JEV's judgment. unconditional question — always applicable. 1 observed value(s) available as evidence. parameter value not echoed in the searched responses. captured responses available as reachability evidence",
+      "feature_references": [
+        "parameters[param_0001].location",
+        "parameters[param_0001].value_type",
+        "parameters[param_0001].values",
+        "parameter_links[param_0001].value_echoed_in_response",
+        "response.available"
+      ]
+    },
+    {
+      "decision_id": "decision_0023",
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:b0d4ee789a395cb1c1a534aacbc337af25e2ffb92fe3aa5399653f0792c61cbc",
+      "parameter_name": "HTML_VERSION",
+      "attack_surface": "ssrf",
+      "source_question_ids": [
+        "p_html_version_ssrf_risk",
+        "p_html_version_role"
+      ],
+      "score": 0.99,
+      "confidence": 0.18,
+      "probabilities": {
+        "0": 0.72,
+        "1": 0.03,
+        "2": 0.0,
+        "3": 0.05,
+        "4": 0.2
+      },
+      "evidence_refs": [
+        "traffic_0014"
+      ],
+      "has_supporting_evidence": false,
+      "uncertainty": [
+        "low_confidence"
+      ],
+      "agent": "ssrf",
+      "status": "blocked",
+      "selection_decision": "UNKNOWN",
+      "selection_reason": "all captured values are numeric/boolean — observed value types describe the captured samples only, not the parameter's accepted input range (no parameter schema or explicit input constraint is recorded); URL input not excluded. 1 observed value(s) available as evidence. parameter value not echoed in the searched responses",
+      "feature_references": [
+        "parameters[param_0001].location",
+        "parameters[param_0001].value_type",
+        "parameters[param_0001].values",
+        "parameter_links[param_0001].value_echoed_in_response"
+      ]
+    },
+    {
+      "decision_id": "decision_0024",
+      "parameter_id": "param_0005",
+      "parameter_identity": "sha256:cd308dac7951d8bc6300570393155ba452bf4e7af343086a44dfbcc157b269f0",
+      "parameter_name": "isLocked",
+      "attack_surface": "idor",
+      "source_question_ids": [
+        "p_islocked_idor_risk",
+        "p_islocked_role",
+        "ep_auth_required"
+      ],
+      "score": 2.58,
+      "confidence": 0.63,
+      "probabilities": {
+        "0": 0.08,
+        "1": 0.06,
+        "2": 0.07,
+        "3": 0.78,
+        "4": 0.01
+      },
+      "evidence_refs": [
+        "traffic_0014"
+      ],
+      "has_supporting_evidence": true,
+      "uncertainty": [],
+      "agent": "idor",
+      "status": "blocked",
+      "selection_decision": "SELECTED",
+      "selection_reason": "any parameter can identify an object, user or tenant — identifier role is JEV's judgment. unconditional question — always applicable. 1 observed value(s) available as evidence. parameter value not echoed in the searched responses. authenticated traffic observed (1 principal(s))",
+      "feature_references": [
+        "parameters[param_0005].location",
+        "parameters[param_0005].value_type",
+        "parameters[param_0005].values",
+        "parameter_links[param_0005].value_echoed_in_response",
+        "auth.auth_observed"
+      ]
+    },
+    {
+      "decision_id": "decision_0026",
+      "parameter_id": "param_0005",
+      "parameter_identity": "sha256:cd308dac7951d8bc6300570393155ba452bf4e7af343086a44dfbcc157b269f0",
+      "parameter_name": "isLocked",
+      "attack_surface": "sqli",
+      "source_question_ids": [
+        "p_islocked_sqli_risk",
+        "p_islocked_role"
+      ],
+      "score": 1.03,
+      "confidence": 0.77,
+      "probabilities": {
+        "0": 0.13,
+        "1": 0.77,
+        "2": 0.05,
+        "3": 0.05,
+        "4": 0.0
+      },
+      "evidence_refs": [
+        "traffic_0014"
+      ],
+      "has_supporting_evidence": true,
+      "uncertainty": [],
+      "agent": "sqli",
+      "status": "blocked",
+      "selection_decision": "SELECTED",
+      "selection_reason": "free-form or structured input may reach a database query — reachability is JEV's judgment. unconditional question — always applicable. 1 observed value(s) available as evidence. parameter value not echoed in the searched responses. captured responses available as reachability evidence",
+      "feature_references": [
+        "parameters[param_0005].location",
+        "parameters[param_0005].value_type",
+        "parameters[param_0005].values",
+        "parameter_links[param_0005].value_echoed_in_response",
+        "response.available"
+      ]
+    },
+    {
+      "decision_id": "decision_0027",
+      "parameter_id": "param_0005",
+      "parameter_identity": "sha256:cd308dac7951d8bc6300570393155ba452bf4e7af343086a44dfbcc157b269f0",
+      "parameter_name": "isLocked",
+      "attack_surface": "ssrf",
+      "source_question_ids": [
+        "p_islocked_ssrf_risk",
+        "p_islocked_role"
+      ],
+      "score": 1.28,
+      "confidence": 0.0,
+      "probabilities": {
+        "0": 0.65,
+        "1": 0.02,
+        "2": 0.0,
+        "3": 0.06,
+        "4": 0.27
+      },
+      "evidence_refs": [
+        "traffic_0014"
+      ],
+      "has_supporting_evidence": false,
+      "uncertainty": [
+        "low_confidence"
+      ],
+      "agent": "ssrf",
+      "status": "blocked",
+      "selection_decision": "UNKNOWN",
+      "selection_reason": "all captured values are numeric/boolean — observed value types describe the captured samples only, not the parameter's accepted input range (no parameter schema or explicit input constraint is recorded); URL input not excluded. 1 observed value(s) available as evidence. parameter value not echoed in the searched responses",
+      "feature_references": [
+        "parameters[param_0005].location",
+        "parameters[param_0005].value_type",
+        "parameters[param_0005].values",
+        "parameter_links[param_0005].value_echoed_in_response"
+      ]
+    },
+    {
+      "decision_id": "decision_0028",
+      "parameter_id": "param_0009",
+      "parameter_identity": "sha256:0c14f9b887ec40e95b150db278adcaf6f000e490c089af783fdf2321b1030f1f",
+      "parameter_name": "Menu-Id",
+      "attack_surface": "idor",
+      "source_question_ids": [
+        "p_menu_id_idor_risk",
+        "p_menu_id_role",
+        "ep_auth_required"
+      ],
+      "score": 2.67,
+      "confidence": 0.69,
+      "probabilities": {
+        "0": 0.05,
+        "1": 0.07,
+        "2": 0.06,
+        "3": 0.8,
+        "4": 0.02
+      },
+      "evidence_refs": [
+        "traffic_0014"
+      ],
+      "has_supporting_evidence": true,
+      "uncertainty": [],
+      "agent": "idor",
+      "status": "blocked",
+      "selection_decision": "SELECTED",
+      "selection_reason": "any parameter can identify an object, user or tenant — identifier role is JEV's judgment. unconditional question — always applicable. 1 observed value(s) available as evidence. parameter value not echoed in the searched responses. authenticated traffic observed (1 principal(s))",
+      "feature_references": [
+        "parameters[param_0009].location",
+        "parameters[param_0009].value_type",
+        "parameters[param_0009].values",
+        "parameter_links[param_0009].value_echoed_in_response",
+        "auth.auth_observed"
+      ]
+    },
+    {
+      "decision_id": "decision_0030",
+      "parameter_id": "param_0009",
+      "parameter_identity": "sha256:0c14f9b887ec40e95b150db278adcaf6f000e490c089af783fdf2321b1030f1f",
+      "parameter_name": "Menu-Id",
+      "attack_surface": "sqli",
+      "source_question_ids": [
+        "p_menu_id_sqli_risk",
+        "p_menu_id_role"
+      ],
+      "score": 1.03,
+      "confidence": 0.77,
+      "probabilities": {
+        "0": 0.13,
+        "1": 0.77,
+        "2": 0.05,
+        "3": 0.05,
+        "4": 0.0
+      },
+      "evidence_refs": [
+        "traffic_0014"
+      ],
+      "has_supporting_evidence": true,
+      "uncertainty": [],
+      "agent": "sqli",
+      "status": "blocked",
+      "selection_decision": "SELECTED",
+      "selection_reason": "free-form or structured input may reach a database query — reachability is JEV's judgment. unconditional question — always applicable. 1 observed value(s) available as evidence. parameter value not echoed in the searched responses. captured responses available as reachability evidence",
+      "feature_references": [
+        "parameters[param_0009].location",
+        "parameters[param_0009].value_type",
+        "parameters[param_0009].values",
+        "parameter_links[param_0009].value_echoed_in_response",
+        "response.available"
+      ]
+    },
+    {
+      "decision_id": "decision_0031",
+      "parameter_id": "param_0009",
+      "parameter_identity": "sha256:0c14f9b887ec40e95b150db278adcaf6f000e490c089af783fdf2321b1030f1f",
+      "parameter_name": "Menu-Id",
+      "attack_surface": "ssrf",
+      "source_question_ids": [
+        "p_menu_id_ssrf_risk",
+        "p_menu_id_role"
+      ],
+      "score": 1.28,
+      "confidence": 0.0,
+      "probabilities": {
+        "0": 0.66,
+        "1": 0.02,
+        "2": 0.0,
+        "3": 0.06,
+        "4": 0.26
+      },
+      "evidence_refs": [
+        "traffic_0014"
+      ],
+      "has_supporting_evidence": false,
+      "uncertainty": [
+        "low_confidence"
+      ],
+      "agent": "ssrf",
+      "status": "blocked",
+      "selection_decision": "UNKNOWN",
+      "selection_reason": "all captured values are numeric/boolean — observed value types describe the captured samples only, not the parameter's accepted input range (no parameter schema or explicit input constraint is recorded); URL input not excluded. 1 observed value(s) available as evidence. parameter value not echoed in the searched responses",
+      "feature_references": [
+        "parameters[param_0009].location",
+        "parameters[param_0009].value_type",
+        "parameters[param_0009].values",
+        "parameter_links[param_0009].value_echoed_in_response"
+      ]
+    },
+    {
+      "decision_id": "decision_0032",
+      "parameter_id": "param_0006",
+      "parameter_identity": "sha256:ea8f44882085125b036c8b8e6cb47bccd5e9b1facd34ae6a62402ab049ae4e46",
+      "parameter_name": "orgId",
+      "attack_surface": "idor",
+      "source_question_ids": [
+        "p_orgid_idor_risk",
+        "p_orgid_role",
+        "ep_auth_required"
+      ],
+      "score": 2.56,
+      "confidence": 0.63,
+      "probabilities": {
+        "0": 0.07,
+        "1": 0.08,
+        "2": 0.06,
+        "3": 0.78,
+        "4": 0.01
+      },
+      "evidence_refs": [
+        "traffic_0014"
+      ],
+      "has_supporting_evidence": true,
+      "uncertainty": [],
+      "agent": "idor",
+      "status": "blocked",
+      "selection_decision": "SELECTED",
+      "selection_reason": "any parameter can identify an object, user or tenant — identifier role is JEV's judgment. unconditional question — always applicable. 1 observed value(s) available as evidence. parameter value not echoed in the searched responses. authenticated traffic observed (1 principal(s))",
+      "feature_references": [
+        "parameters[param_0006].location",
+        "parameters[param_0006].value_type",
+        "parameters[param_0006].values",
+        "parameter_links[param_0006].value_echoed_in_response",
+        "auth.auth_observed"
+      ]
+    },
+    {
+      "decision_id": "decision_0034",
+      "parameter_id": "param_0006",
+      "parameter_identity": "sha256:ea8f44882085125b036c8b8e6cb47bccd5e9b1facd34ae6a62402ab049ae4e46",
+      "parameter_name": "orgId",
+      "attack_surface": "sqli",
+      "source_question_ids": [
+        "p_orgid_sqli_risk",
+        "p_orgid_role"
+      ],
+      "score": 0.98,
+      "confidence": 0.77,
+      "probabilities": {
+        "0": 0.16,
+        "1": 0.76,
+        "2": 0.04,
+        "3": 0.04,
+        "4": 0.0
+      },
+      "evidence_refs": [
+        "traffic_0014"
+      ],
+      "has_supporting_evidence": true,
+      "uncertainty": [],
+      "agent": "sqli",
+      "status": "blocked",
+      "selection_decision": "SELECTED",
+      "selection_reason": "free-form or structured input may reach a database query — reachability is JEV's judgment. unconditional question — always applicable. 1 observed value(s) available as evidence. parameter value not echoed in the searched responses. captured responses available as reachability evidence",
+      "feature_references": [
+        "parameters[param_0006].location",
+        "parameters[param_0006].value_type",
+        "parameters[param_0006].values",
+        "parameter_links[param_0006].value_echoed_in_response",
+        "response.available"
+      ]
+    },
+    {
+      "decision_id": "decision_0035",
+      "parameter_id": "param_0006",
+      "parameter_identity": "sha256:ea8f44882085125b036c8b8e6cb47bccd5e9b1facd34ae6a62402ab049ae4e46",
+      "parameter_name": "orgId",
+      "attack_surface": "ssrf",
+      "source_question_ids": [
+        "p_orgid_ssrf_risk",
+        "p_orgid_role"
+      ],
+      "score": 1.03,
+      "confidence": 0.14,
+      "probabilities": {
+        "0": 0.7,
+        "1": 0.03,
+        "2": 0.01,
+        "3": 0.06,
+        "4": 0.2
+      },
+      "evidence_refs": [
+        "traffic_0014"
+      ],
+      "has_supporting_evidence": false,
+      "uncertainty": [
+        "low_confidence"
+      ],
+      "agent": "ssrf",
+      "status": "blocked",
+      "selection_decision": "UNKNOWN",
+      "selection_reason": "all captured values are numeric/boolean — observed value types describe the captured samples only, not the parameter's accepted input range (no parameter schema or explicit input constraint is recorded); URL input not excluded. 1 observed value(s) available as evidence. parameter value not echoed in the searched responses",
+      "feature_references": [
+        "parameters[param_0006].location",
+        "parameters[param_0006].value_type",
+        "parameters[param_0006].values",
+        "parameter_links[param_0006].value_echoed_in_response"
+      ]
+    },
+    {
+      "decision_id": "decision_0036",
+      "parameter_id": "param_0011",
+      "parameter_identity": "sha256:b1b63875599a3b40fb7d611434ed1adcf14154b5673cd6a4a8395739b840f090",
+      "parameter_name": "_",
+      "attack_surface": "idor",
+      "source_question_ids": [
+        "p_param_idor_risk",
+        "p_param_role",
+        "ep_auth_required"
+      ],
+      "score": 2.62,
+      "confidence": 0.66,
+      "probabilities": {
+        "0": 0.07,
+        "1": 0.06,
+        "2": 0.06,
+        "3": 0.79,
+        "4": 0.02
+      },
+      "evidence_refs": [
+        "traffic_0014"
+      ],
+      "has_supporting_evidence": true,
+      "uncertainty": [],
+      "agent": "idor",
+      "status": "blocked",
+      "selection_decision": "SELECTED",
+      "selection_reason": "any parameter can identify an object, user or tenant — identifier role is JEV's judgment. unconditional question — always applicable. 1 observed value(s) available as evidence. parameter value not echoed in the searched responses. authenticated traffic observed (1 principal(s))",
+      "feature_references": [
+        "parameters[param_0011].location",
+        "parameters[param_0011].value_type",
+        "parameters[param_0011].values",
+        "parameter_links[param_0011].value_echoed_in_response",
+        "auth.auth_observed"
+      ]
+    },
+    {
+      "decision_id": "decision_0038",
+      "parameter_id": "param_0011",
+      "parameter_identity": "sha256:b1b63875599a3b40fb7d611434ed1adcf14154b5673cd6a4a8395739b840f090",
+      "parameter_name": "_",
+      "attack_surface": "sqli",
+      "source_question_ids": [
+        "p_param_sqli_risk",
+        "p_param_role"
+      ],
+      "score": 0.97,
+      "confidence": 0.77,
+      "probabilities": {
+        "0": 0.16,
+        "1": 0.76,
+        "2": 0.04,
+        "3": 0.04,
+        "4": 0.0
+      },
+      "evidence_refs": [
+        "traffic_0014"
+      ],
+      "has_supporting_evidence": true,
+      "uncertainty": [],
+      "agent": "sqli",
+      "status": "blocked",
+      "selection_decision": "SELECTED",
+      "selection_reason": "free-form or structured input may reach a database query — reachability is JEV's judgment. unconditional question — always applicable. 1 observed value(s) available as evidence. parameter value not echoed in the searched responses. captured responses available as reachability evidence",
+      "feature_references": [
+        "parameters[param_0011].location",
+        "parameters[param_0011].value_type",
+        "parameters[param_0011].values",
+        "parameter_links[param_0011].value_echoed_in_response",
+        "response.available"
+      ]
+    },
+    {
+      "decision_id": "decision_0039",
+      "parameter_id": "param_0011",
+      "parameter_identity": "sha256:b1b63875599a3b40fb7d611434ed1adcf14154b5673cd6a4a8395739b840f090",
+      "parameter_name": "_",
+      "attack_surface": "ssrf",
+      "source_question_ids": [
+        "p_param_ssrf_risk",
+        "p_param_role"
+      ],
+      "score": 1.06,
+      "confidence": 0.11,
+      "probabilities": {
+        "0": 0.69,
+        "1": 0.03,
+        "2": 0.01,
+        "3": 0.06,
+        "4": 0.21
+      },
+      "evidence_refs": [
+        "traffic_0014"
+      ],
+      "has_supporting_evidence": false,
+      "uncertainty": [
+        "low_confidence"
+      ],
+      "agent": "ssrf",
+      "status": "blocked",
+      "selection_decision": "UNKNOWN",
+      "selection_reason": "all captured values are numeric/boolean — observed value types describe the captured samples only, not the parameter's accepted input range (no parameter schema or explicit input constraint is recorded); URL input not excluded. 1 observed value(s) available as evidence. parameter value not echoed in the searched responses",
+      "feature_references": [
+        "parameters[param_0011].location",
+        "parameters[param_0011].value_type",
+        "parameters[param_0011].values",
+        "parameter_links[param_0011].value_echoed_in_response"
+      ]
+    },
+    {
+      "decision_id": "decision_0040",
+      "parameter_id": "param_0010",
+      "parameter_identity": "sha256:1749f95b3c30f20f3c0d2add8ab8f0be4d8b9b083391cacbd52358079b11e8b8",
+      "parameter_name": "Priority",
+      "attack_surface": "idor",
+      "source_question_ids": [
+        "p_priority_idor_risk",
+        "p_priority_role",
+        "ep_auth_required"
+      ],
+      "score": 2.67,
+      "confidence": 0.69,
+      "probabilities": {
+        "0": 0.06,
+        "1": 0.06,
+        "2": 0.05,
+        "3": 0.81,
+        "4": 0.02
+      },
+      "evidence_refs": [
+        "traffic_0014"
+      ],
+      "has_supporting_evidence": true,
+      "uncertainty": [],
+      "agent": "idor",
+      "status": "blocked",
+      "selection_decision": "SELECTED",
+      "selection_reason": "any parameter can identify an object, user or tenant — identifier role is JEV's judgment. unconditional question — always applicable. 1 observed value(s) available as evidence. parameter value not echoed in the searched responses. authenticated traffic observed (1 principal(s))",
+      "feature_references": [
+        "parameters[param_0010].location",
+        "parameters[param_0010].value_type",
+        "parameters[param_0010].values",
+        "parameter_links[param_0010].value_echoed_in_response",
+        "auth.auth_observed"
+      ]
+    },
+    {
+      "decision_id": "decision_0042",
+      "parameter_id": "param_0010",
+      "parameter_identity": "sha256:1749f95b3c30f20f3c0d2add8ab8f0be4d8b9b083391cacbd52358079b11e8b8",
+      "parameter_name": "Priority",
+      "attack_surface": "sqli",
+      "source_question_ids": [
+        "p_priority_sqli_risk",
+        "p_priority_role"
+      ],
+      "score": 1.0,
+      "confidence": 0.78,
+      "probabilities": {
+        "0": 0.13,
+        "1": 0.78,
+        "2": 0.05,
+        "3": 0.04,
+        "4": 0.0
+      },
+      "evidence_refs": [
+        "traffic_0014"
+      ],
+      "has_supporting_evidence": true,
+      "uncertainty": [],
+      "agent": "sqli",
+      "status": "blocked",
+      "selection_decision": "SELECTED",
+      "selection_reason": "free-form or structured input may reach a database query — reachability is JEV's judgment. unconditional question — always applicable. 1 observed value(s) available as evidence. parameter value not echoed in the searched responses. captured responses available as reachability evidence",
+      "feature_references": [
+        "parameters[param_0010].location",
+        "parameters[param_0010].value_type",
+        "parameters[param_0010].values",
+        "parameter_links[param_0010].value_echoed_in_response",
+        "response.available"
+      ]
+    },
+    {
+      "decision_id": "decision_0043",
+      "parameter_id": "param_0010",
+      "parameter_identity": "sha256:1749f95b3c30f20f3c0d2add8ab8f0be4d8b9b083391cacbd52358079b11e8b8",
+      "parameter_name": "Priority",
+      "attack_surface": "ssrf",
+      "source_question_ids": [
+        "p_priority_ssrf_risk",
+        "p_priority_role"
+      ],
+      "score": 1.32,
+      "confidence": 0.0,
+      "probabilities": {
+        "0": 0.63,
+        "1": 0.03,
+        "2": 0.01,
+        "3": 0.06,
+        "4": 0.27
+      },
+      "evidence_refs": [
+        "traffic_0014"
+      ],
+      "has_supporting_evidence": false,
+      "uncertainty": [
+        "low_confidence"
+      ],
+      "agent": "ssrf",
+      "status": "blocked",
+      "selection_decision": "UNKNOWN",
+      "selection_reason": "free-form string values observed — URL-shaped values not observed but not excluded. 1 observed value(s) available as evidence. parameter value not echoed in the searched responses",
+      "feature_references": [
+        "parameters[param_0010].location",
+        "parameters[param_0010].value_type",
+        "parameters[param_0010].values",
+        "parameter_links[param_0010].value_echoed_in_response"
+      ]
+    },
+    {
+      "decision_id": "decision_0044",
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:53bd2f1d1af201d29d63ce0ad8c0bb806d5534a58737b8dbce04d7b2ebf95eed",
+      "parameter_name": "SP_ID",
+      "attack_surface": "idor",
+      "source_question_ids": [
+        "p_sp_id_idor_risk",
+        "p_sp_id_role",
+        "ep_auth_required"
+      ],
+      "score": 2.62,
+      "confidence": 0.66,
+      "probabilities": {
+        "0": 0.07,
+        "1": 0.06,
+        "2": 0.06,
+        "3": 0.79,
+        "4": 0.02
+      },
+      "evidence_refs": [
+        "traffic_0014"
+      ],
+      "has_supporting_evidence": true,
+      "uncertainty": [],
+      "agent": "idor",
+      "status": "blocked",
+      "selection_decision": "SELECTED",
+      "selection_reason": "any parameter can identify an object, user or tenant — identifier role is JEV's judgment. unconditional question — always applicable. 1 observed value(s) available as evidence. parameter value not echoed in the searched responses. authenticated traffic observed (1 principal(s))",
+      "feature_references": [
+        "parameters[param_0002].location",
+        "parameters[param_0002].value_type",
+        "parameters[param_0002].values",
+        "parameter_links[param_0002].value_echoed_in_response",
+        "auth.auth_observed"
+      ]
+    },
+    {
+      "decision_id": "decision_0046",
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:53bd2f1d1af201d29d63ce0ad8c0bb806d5534a58737b8dbce04d7b2ebf95eed",
+      "parameter_name": "SP_ID",
+      "attack_surface": "sqli",
+      "source_question_ids": [
+        "p_sp_id_sqli_risk",
+        "p_sp_id_role"
+      ],
+      "score": 1.01,
+      "confidence": 0.74,
+      "probabilities": {
+        "0": 0.15,
+        "1": 0.75,
+        "2": 0.04,
+        "3": 0.06,
+        "4": 0.0
+      },
+      "evidence_refs": [
+        "traffic_0014"
+      ],
+      "has_supporting_evidence": true,
+      "uncertainty": [],
+      "agent": "sqli",
+      "status": "blocked",
+      "selection_decision": "SELECTED",
+      "selection_reason": "free-form or structured input may reach a database query — reachability is JEV's judgment. unconditional question — always applicable. 1 observed value(s) available as evidence. parameter value not echoed in the searched responses. captured responses available as reachability evidence",
+      "feature_references": [
+        "parameters[param_0002].location",
+        "parameters[param_0002].value_type",
+        "parameters[param_0002].values",
+        "parameter_links[param_0002].value_echoed_in_response",
+        "response.available"
+      ]
+    },
+    {
+      "decision_id": "decision_0047",
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:53bd2f1d1af201d29d63ce0ad8c0bb806d5534a58737b8dbce04d7b2ebf95eed",
+      "parameter_name": "SP_ID",
+      "attack_surface": "ssrf",
+      "source_question_ids": [
+        "p_sp_id_ssrf_risk",
+        "p_sp_id_role"
+      ],
+      "score": 1.12,
+      "confidence": 0.04,
+      "probabilities": {
+        "0": 0.67,
+        "1": 0.03,
+        "2": 0.01,
+        "3": 0.06,
+        "4": 0.23
+      },
+      "evidence_refs": [
+        "traffic_0014"
+      ],
+      "has_supporting_evidence": false,
+      "uncertainty": [
+        "low_confidence"
+      ],
+      "agent": "ssrf",
+      "status": "blocked",
+      "selection_decision": "UNKNOWN",
+      "selection_reason": "all captured values are numeric/boolean — observed value types describe the captured samples only, not the parameter's accepted input range (no parameter schema or explicit input constraint is recorded); URL input not excluded. 1 observed value(s) available as evidence. parameter value not echoed in the searched responses",
+      "feature_references": [
+        "parameters[param_0002].location",
+        "parameters[param_0002].value_type",
+        "parameters[param_0002].values",
+        "parameter_links[param_0002].value_echoed_in_response"
+      ]
+    },
+    {
+      "decision_id": "decision_0048",
+      "parameter_id": "param_0007",
+      "parameter_identity": "sha256:f2928a7ca82ca1d6fb9859f350998007fdb75c3a7974c55dd111120f0920a655",
+      "parameter_name": "staffJobId",
+      "attack_surface": "idor",
+      "source_question_ids": [
+        "p_staffjobid_idor_risk",
+        "p_staffjobid_role",
+        "ep_auth_required"
+      ],
+      "score": 2.64,
+      "confidence": 0.67,
+      "probabilities": {
+        "0": 0.07,
+        "1": 0.06,
+        "2": 0.05,
+        "3": 0.8,
+        "4": 0.02
+      },
+      "evidence_refs": [
+        "traffic_0014"
+      ],
+      "has_supporting_evidence": true,
+      "uncertainty": [],
+      "agent": "idor",
+      "status": "blocked",
+      "selection_decision": "SELECTED",
+      "selection_reason": "any parameter can identify an object, user or tenant — identifier role is JEV's judgment. unconditional question — always applicable. 1 observed value(s) available as evidence. parameter value not echoed in the searched responses. authenticated traffic observed (1 principal(s))",
+      "feature_references": [
+        "parameters[param_0007].location",
+        "parameters[param_0007].value_type",
+        "parameters[param_0007].values",
+        "parameter_links[param_0007].value_echoed_in_response",
+        "auth.auth_observed"
+      ]
+    },
+    {
+      "decision_id": "decision_0050",
+      "parameter_id": "param_0007",
+      "parameter_identity": "sha256:f2928a7ca82ca1d6fb9859f350998007fdb75c3a7974c55dd111120f0920a655",
+      "parameter_name": "staffJobId",
+      "attack_surface": "sqli",
+      "source_question_ids": [
+        "p_staffjobid_sqli_risk",
+        "p_staffjobid_role"
+      ],
+      "score": 0.97,
+      "confidence": 0.8,
+      "probabilities": {
+        "0": 0.14,
+        "1": 0.79,
+        "2": 0.04,
+        "3": 0.03,
+        "4": 0.0
+      },
+      "evidence_refs": [
+        "traffic_0014"
+      ],
+      "has_supporting_evidence": true,
+      "uncertainty": [],
+      "agent": "sqli",
+      "status": "blocked",
+      "selection_decision": "SELECTED",
+      "selection_reason": "free-form or structured input may reach a database query — reachability is JEV's judgment. unconditional question — always applicable. 1 observed value(s) available as evidence. parameter value not echoed in the searched responses. captured responses available as reachability evidence",
+      "feature_references": [
+        "parameters[param_0007].location",
+        "parameters[param_0007].value_type",
+        "parameters[param_0007].values",
+        "parameter_links[param_0007].value_echoed_in_response",
+        "response.available"
+      ]
+    },
+    {
+      "decision_id": "decision_0051",
+      "parameter_id": "param_0007",
+      "parameter_identity": "sha256:f2928a7ca82ca1d6fb9859f350998007fdb75c3a7974c55dd111120f0920a655",
+      "parameter_name": "staffJobId",
+      "attack_surface": "ssrf",
+      "source_question_ids": [
+        "p_staffjobid_ssrf_risk",
+        "p_staffjobid_role"
+      ],
+      "score": 1.03,
+      "confidence": 0.14,
+      "probabilities": {
+        "0": 0.71,
+        "1": 0.02,
+        "2": 0.01,
+        "3": 0.05,
+        "4": 0.21
+      },
+      "evidence_refs": [
+        "traffic_0014"
+      ],
+      "has_supporting_evidence": false,
+      "uncertainty": [
+        "low_confidence"
+      ],
+      "agent": "ssrf",
+      "status": "blocked",
+      "selection_decision": "UNKNOWN",
+      "selection_reason": "all captured values are numeric/boolean — observed value types describe the captured samples only, not the parameter's accepted input range (no parameter schema or explicit input constraint is recorded); URL input not excluded. 1 observed value(s) available as evidence. parameter value not echoed in the searched responses",
+      "feature_references": [
+        "parameters[param_0007].location",
+        "parameters[param_0007].value_type",
+        "parameters[param_0007].values",
+        "parameter_links[param_0007].value_echoed_in_response"
+      ]
+    },
+    {
+      "decision_id": "decision_0052",
+      "parameter_id": "param_0008",
+      "parameter_identity": "sha256:6af5d72b1abac05fa41ee7aa8d3f3806794f5ab096c21f2cea97b14a1e873874",
+      "parameter_name": "userId",
+      "attack_surface": "idor",
+      "source_question_ids": [
+        "p_userid_idor_risk",
+        "p_userid_role",
+        "ep_auth_required"
+      ],
+      "score": 2.64,
+      "confidence": 0.67,
+      "probabilities": {
+        "0": 0.06,
+        "1": 0.07,
+        "2": 0.06,
+        "3": 0.79,
+        "4": 0.02
+      },
+      "evidence_refs": [
+        "traffic_0014"
+      ],
+      "has_supporting_evidence": true,
+      "uncertainty": [],
+      "agent": "idor",
+      "status": "blocked",
+      "selection_decision": "SELECTED",
+      "selection_reason": "any parameter can identify an object, user or tenant — identifier role is JEV's judgment. unconditional question — always applicable. 1 observed value(s) available as evidence. parameter value not echoed in the searched responses. authenticated traffic observed (1 principal(s))",
+      "feature_references": [
+        "parameters[param_0008].location",
+        "parameters[param_0008].value_type",
+        "parameters[param_0008].values",
+        "parameter_links[param_0008].value_echoed_in_response",
+        "auth.auth_observed"
+      ]
+    },
+    {
+      "decision_id": "decision_0054",
+      "parameter_id": "param_0008",
+      "parameter_identity": "sha256:6af5d72b1abac05fa41ee7aa8d3f3806794f5ab096c21f2cea97b14a1e873874",
+      "parameter_name": "userId",
+      "attack_surface": "sqli",
+      "source_question_ids": [
+        "p_userid_sqli_risk",
+        "p_userid_role"
+      ],
+      "score": 0.98,
+      "confidence": 0.77,
+      "probabilities": {
+        "0": 0.15,
+        "1": 0.77,
+        "2": 0.04,
+        "3": 0.04,
+        "4": 0.0
+      },
+      "evidence_refs": [
+        "traffic_0014"
+      ],
+      "has_supporting_evidence": true,
+      "uncertainty": [],
+      "agent": "sqli",
+      "status": "blocked",
+      "selection_decision": "SELECTED",
+      "selection_reason": "free-form or structured input may reach a database query — reachability is JEV's judgment. unconditional question — always applicable. 1 observed value(s) available as evidence. parameter value not echoed in the searched responses. captured responses available as reachability evidence",
+      "feature_references": [
+        "parameters[param_0008].location",
+        "parameters[param_0008].value_type",
+        "parameters[param_0008].values",
+        "parameter_links[param_0008].value_echoed_in_response",
+        "response.available"
+      ]
+    },
+    {
+      "decision_id": "decision_0055",
+      "parameter_id": "param_0008",
+      "parameter_identity": "sha256:6af5d72b1abac05fa41ee7aa8d3f3806794f5ab096c21f2cea97b14a1e873874",
+      "parameter_name": "userId",
+      "attack_surface": "ssrf",
+      "source_question_ids": [
+        "p_userid_ssrf_risk",
+        "p_userid_role"
+      ],
+      "score": 1.09,
+      "confidence": 0.11,
+      "probabilities": {
+        "0": 0.7,
+        "1": 0.02,
+        "2": 0.01,
+        "3": 0.05,
+        "4": 0.22
+      },
+      "evidence_refs": [
+        "traffic_0014"
+      ],
+      "has_supporting_evidence": false,
+      "uncertainty": [
+        "low_confidence"
+      ],
+      "agent": "ssrf",
+      "status": "blocked",
+      "selection_decision": "UNKNOWN",
+      "selection_reason": "all captured values are numeric/boolean — observed value types describe the captured samples only, not the parameter's accepted input range (no parameter schema or explicit input constraint is recorded); URL input not excluded. 1 observed value(s) available as evidence. parameter value not echoed in the searched responses",
+      "feature_references": [
+        "parameters[param_0008].location",
+        "parameters[param_0008].value_type",
+        "parameters[param_0008].values",
+        "parameter_links[param_0008].value_echoed_in_response"
+      ]
+    },
+    {
+      "decision_id": "decision_0056",
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:f2ff299e92146c1f956c4eaf040fdcc8a614e2edd666e9f9ffa8833d82680ab0",
+      "parameter_name": "ZSMART_LOCALE",
+      "attack_surface": "idor",
+      "source_question_ids": [
+        "p_zsmart_locale_idor_risk",
+        "p_zsmart_locale_role",
+        "ep_auth_required"
+      ],
+      "score": 2.63,
+      "confidence": 0.68,
+      "probabilities": {
+        "0": 0.06,
+        "1": 0.07,
+        "2": 0.06,
+        "3": 0.8,
+        "4": 0.01
+      },
+      "evidence_refs": [
+        "traffic_0014"
+      ],
+      "has_supporting_evidence": true,
+      "uncertainty": [],
+      "agent": "idor",
+      "status": "blocked",
+      "selection_decision": "SELECTED",
+      "selection_reason": "any parameter can identify an object, user or tenant — identifier role is JEV's judgment. unconditional question — always applicable. 1 observed value(s) available as evidence. parameter value not echoed in the searched responses. authenticated traffic observed (1 principal(s))",
+      "feature_references": [
+        "parameters[param_0003].location",
+        "parameters[param_0003].value_type",
+        "parameters[param_0003].values",
+        "parameter_links[param_0003].value_echoed_in_response",
+        "auth.auth_observed"
+      ]
+    },
+    {
+      "decision_id": "decision_0058",
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:f2ff299e92146c1f956c4eaf040fdcc8a614e2edd666e9f9ffa8833d82680ab0",
+      "parameter_name": "ZSMART_LOCALE",
+      "attack_surface": "sqli",
+      "source_question_ids": [
+        "p_zsmart_locale_sqli_risk",
+        "p_zsmart_locale_role"
+      ],
+      "score": 0.98,
+      "confidence": 0.78,
+      "probabilities": {
+        "0": 0.14,
+        "1": 0.78,
+        "2": 0.04,
+        "3": 0.04,
+        "4": 0.0
+      },
+      "evidence_refs": [
+        "traffic_0014"
+      ],
+      "has_supporting_evidence": true,
+      "uncertainty": [],
+      "agent": "sqli",
+      "status": "blocked",
+      "selection_decision": "SELECTED",
+      "selection_reason": "free-form or structured input may reach a database query — reachability is JEV's judgment. unconditional question — always applicable. 1 observed value(s) available as evidence. parameter value not echoed in the searched responses. captured responses available as reachability evidence",
+      "feature_references": [
+        "parameters[param_0003].location",
+        "parameters[param_0003].value_type",
+        "parameters[param_0003].values",
+        "parameter_links[param_0003].value_echoed_in_response",
+        "response.available"
+      ]
+    },
+    {
+      "decision_id": "decision_0059",
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:f2ff299e92146c1f956c4eaf040fdcc8a614e2edd666e9f9ffa8833d82680ab0",
+      "parameter_name": "ZSMART_LOCALE",
+      "attack_surface": "ssrf",
+      "source_question_ids": [
+        "p_zsmart_locale_ssrf_risk",
+        "p_zsmart_locale_role"
+      ],
+      "score": 1.15,
+      "confidence": 0.02,
+      "probabilities": {
+        "0": 0.66,
+        "1": 0.03,
+        "2": 0.01,
+        "3": 0.07,
+        "4": 0.23
+      },
+      "evidence_refs": [
+        "traffic_0014"
+      ],
+      "has_supporting_evidence": false,
+      "uncertainty": [
+        "low_confidence"
+      ],
+      "agent": "ssrf",
+      "status": "blocked",
+      "selection_decision": "UNKNOWN",
+      "selection_reason": "free-form string values observed — URL-shaped values not observed but not excluded. 1 observed value(s) available as evidence. parameter value not echoed in the searched responses",
+      "feature_references": [
+        "parameters[param_0003].location",
+        "parameters[param_0003].value_type",
+        "parameters[param_0003].values",
+        "parameter_links[param_0003].value_echoed_in_response"
+      ]
+    }
+  ],
+  "tasks": [],
+  "created_at": "2026-11-17T17:44:42+08:00",
+  "selection_summary": {
+    "endpoint_question_count": 15,
+    "parameter_question_counts": {
+      "param_0001": 4,
+      "param_0002": 4,
+      "param_0003": 4,
+      "param_0004": 4,
+      "param_0005": 4,
+      "param_0006": 4,
+      "param_0007": 4,
+      "param_0008": 4,
+      "param_0009": 4,
+      "param_0010": 4,
+      "param_0011": 4
+    },
+    "total_questions": 59,
+    "decisions_by_type": {
+      "SELECTED": 42,
+      "UNKNOWN": 17,
+      "NOT_APPLICABLE": 11
+    },
+    "template_versions": {
+      "ep_role": "v1",
+      "ep_auth_required": "v1",
+      "ep_context_confidence": "v1",
+      "ep_generic_risk": "v1",
+      "ep_idor_risk": "v1",
+      "ep_ownership_model": "v1",
+      "ep_sqli_risk": "v1",
+      "ep_sqli_reachability": "v1",
+      "ep_ssrf_risk": "v1",
+      "ep_url_handling": "v1",
+      "ep_xxe_risk": "v1",
+      "ep_xml_parser_exposure": "v1",
+      "ep_business_logic_risk": "v1",
+      "ep_money_flow": "v1",
+      "ep_state_control": "v1",
+      "p_role": "v1",
+      "p_idor_risk": "v1",
+      "p_sqli_risk": "v1",
+      "p_ssrf_risk": "v1",
+      "p_xxe_risk": "v1"
+    },
+    "caps": []
+  },
+  "selection_version": "jev-2.2.3+jev-registry-v1",
+  "endpoint_identity": "sha256:e0db5dfa95e4039c4148d1625fdb91ce78dbe62a0c9eb8794718d7d4b2199e69",
+  "endpoint_context_fingerprint": "sha256:9653ff495fc1d8e91d207cf62ee8a88930d06176dc26d98ee43bd65e50c20160",
+  "parameter_inventory_fingerprint": "sha256:5f7b49a88fda52e8180b1cde5593b8911e1a8a87bf260440a8d8e08a0e02decc",
+  "context_schema_version": "jev-context-v1",
+  "inventory_id": "sha256:c0efaee221b85176f0f2ece206ccdf7b404aa6189ff52178ed53fbe49aa22be0"
+}

@@ -1,0 +1,7 @@
+HTTP/1.1 200 
+Content-Type: application/json
+Access-Control-Allow-Origin: https://10.10.177.111
+X-Frame-Options: SAMEORIGIN
+Content-Length: 1089
+
+{"cellPriceId":1020,"acctItemTypeId":1,"acctItemTypeName":"TAX","acctItemTypeCode":"CODE:1","conGroupId":73704,"priority":1,"cellPrice":100,"cellTimes":null,"state":"D","stateDate":"2026-11-16 15:16:51","createStaff":1,"updateStaff":1,"createDate":"2026-11-16 15:16:40","updateDate":"2026-11-16 15:16:51","offerId":null,"offerInstId":null,"otcConGroupDto":{"conGroupId":73704,"conGroupName":"(getAttrValue(Customer Feature:testDiana) In \">&lt;img/src=1> ) ","conGroupExpression":"(74104)","otcConTdoList":[],"flag":false},"qryAcctItemFlag":null,"spId":null}

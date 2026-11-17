@@ -1,0 +1,250 @@
+{
+  "traffic_id": "traffic_0022",
+  "source": "burp_xml",
+  "request": {
+    "method": "POST",
+    "scheme": "https",
+    "host": "10.10.177.111",
+    "port": 443,
+    "path": "/portal-web/otc/domain/qryFunctionByApplyTypeList",
+    "raw_target": "/portal-web/otc/domain/qryFunctionByApplyTypeList",
+    "query": {},
+    "headers": [
+      {
+        "name": "Host",
+        "value": "10.10.177.111"
+      },
+      {
+        "name": "Cookie",
+        "value": "<credential:cred_cc0f14c7dfc3>"
+      },
+      {
+        "name": "Content-Length",
+        "value": "10"
+      },
+      {
+        "name": "Sec-Ch-Ua-Platform",
+        "value": "\"macOS\""
+      },
+      {
+        "name": "X-Csrf-Token",
+        "value": "<credential:cred_cc0f14c7dfc3>"
+      },
+      {
+        "name": "Accept-Language",
+        "value": "zh-CN,zh;q=0.9"
+      },
+      {
+        "name": "Sec-Ch-Ua",
+        "value": "\"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"150\""
+      },
+      {
+        "name": "Sec-Ch-Ua-Mobile",
+        "value": "?0"
+      },
+      {
+        "name": "Menu-Id",
+        "value": "120018"
+      },
+      {
+        "name": "X-Requested-With",
+        "value": "XMLHttpRequest"
+      },
+      {
+        "name": "User-Agent",
+        "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+      },
+      {
+        "name": "Accept",
+        "value": "application/json, text/javascript, */*; q=0.01"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "name": "Origin",
+        "value": "https://10.10.177.111"
+      },
+      {
+        "name": "Sec-Fetch-Site",
+        "value": "same-origin"
+      },
+      {
+        "name": "Sec-Fetch-Mode",
+        "value": "cors"
+      },
+      {
+        "name": "Sec-Fetch-Dest",
+        "value": "empty"
+      },
+      {
+        "name": "Referer",
+        "value": "https://10.10.177.111/portal-web/"
+      },
+      {
+        "name": "Accept-Encoding",
+        "value": "gzip, deflate, br"
+      },
+      {
+        "name": "Priority",
+        "value": "u=1, i"
+      },
+      {
+        "name": "Connection",
+        "value": "keep-alive"
+      }
+    ],
+    "cookies": {
+      "isLocked": "false",
+      "staffJobId": "25162",
+      "ZSMART_LOCALE": "en",
+      "SP_ID": "0",
+      "HTML_VERSION": "1794535466642",
+      "areaId": "100",
+      "orgId": "100",
+      "userId": "1",
+      "SESSION": "<credential:cred_cc0f14c7dfc3>"
+    },
+    "content_type": "application/json",
+    "body": {
+      "raw": "[\"1\",\"12\"]",
+      "content_type": "application/json",
+      "charset": null,
+      "binary": false,
+      "size_bytes": 10,
+      "truncated": false,
+      "form": null,
+      "json_value": [
+        "1",
+        "12"
+      ],
+      "xml_paths": null,
+      "parse_warnings": []
+    }
+  },
+  "response": {
+    "available": true,
+    "status": 200,
+    "reason": "",
+    "headers": [
+      {
+        "name": "Date",
+        "value": "Mon, 16 Nov 2026 07:19:12 GMT"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "name": "Connection",
+        "value": "keep-alive"
+      },
+      {
+        "name": "ITRACING_TRACE_ID",
+        "value": "172028108021_368334_1^1794653576196^13165"
+      },
+      {
+        "name": "Vary",
+        "value": "Origin"
+      },
+      {
+        "name": "Vary",
+        "value": "Access-Control-Request-Method"
+      },
+      {
+        "name": "Vary",
+        "value": "Access-Control-Request-Headers"
+      },
+      {
+        "name": "Access-Control-Allow-Origin",
+        "value": "https://10.10.177.111"
+      },
+      {
+        "name": "Access-Control-Expose-Headers",
+        "value": "Set-Cookie"
+      },
+      {
+        "name": "Access-Control-Allow-Credentials",
+        "value": "true"
+      },
+      {
+        "name": "X-Content-Type-Options",
+        "value": "nosniff"
+      },
+      {
+        "name": "X-XSS-Protection",
+        "value": "0"
+      },
+      {
+        "name": "Cache-Control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "name": "Pragma",
+        "value": "no-cache"
+      },
+      {
+        "name": "Expires",
+        "value": "0"
+      },
+      {
+        "name": "Referrer-Policy",
+        "value": "no-referrer-when-downgrade"
+      },
+      {
+        "name": "X-Frame-Options",
+        "value": "SAMEORIGIN"
+      },
+      {
+        "name": "X-Permitted-Cross-Domain-Policies",
+        "value": "master-only"
+      },
+      {
+        "name": "Content-Length",
+        "value": "55779"
+      }
+    ],
+    "content_type": "application/json",
+    "body": {
+      "raw": "[{\"funId\":1,\"dataType\":\"T\",\"isArray\":\"N\",\"resultDataType\":\"T\",\"resultIsArray\":\"N\",\"funName\":\"toYear\",\"funCode\":\"toYear\",\"paramNum\":0,\"param1Name\":null,\"param1DataType\":null,\"param1Desc\":null,\"param2Name\":null,\"param2DataType\":null,\"param2Desc\":null,\"param3Name\":null,\"param3DataType\":null,\"param3Desc\":null,\"resultAttrNbr\":null,\"comments\":\"Change date type to date type with only year,2017\",\"param1DsBean\":null,\"resultDsBean\":null,\"param2DsBean\":null,\"param3DsBean\":null,\"param2PriceFlag\":null,\"param1Null\":null,\"param2Null\":null,\"param3Null\":null},{\"funId\":2,\"dataType\":\"T\",\"isArray\":\"N\",\"resultDataType\":\"T\",\"resultIsArray\":\"N\",\"funName\":\"toMonth\",\"funCode\":\"toMonth\",\"paramNum\":0,\"param1Name\":null,\"param1DataType\":null,\"param1Desc\":null,\"param2Name\":null,\"param2DataType\":null,\"param2Desc\":null,\"param3Name\":null,\"param3DataType\":null,\"param3Desc\":null,\"resultAttrNbr\":null,\"comments\":\"Change date type to date type with years/month.2017-01\",\"param1DsBean\":null,\"resultDsBean\":null,\"param2DsBean\":null,\"param3DsBean\":null,\"param2PriceFlag\":null,\"param1Null\":null,\"param2Null\":null,\"param3Null\":null},{\"funId\":3,\"dataType\":\"T\",\"isArray\":\"N\",\"resultDataType\":\"T\",\"resultIsArray\":\"N\",\"funName\":\"toDate\",\"funCode\":\"toDate\",\"paramNum\":0,\"param1Name\":null,\"param1DataType\":null,\"param1Desc\":null,\"param2Name\":null,\"param2DataType\":null,\"param2Desc\":null,\"param3Name\":null,\"param3DataType\":null,\"param3Desc\":null,\"resultAttrNbr\":null,\"comments\":\"Change date type to date type with days and months and years.,2017-01-01\",\"param1DsBean\":null,\"resultDsBean\":null,\"param2DsBean\":null,\"param3DsBean\":null,\"param2PriceFlag\":null,\"param1Null\":null,\"param2Null\":null,\"param3Null\":null},{\"funId\":5,\"dataType\":\"T\",\"isArray\":\"N\",\"resultDataType\":\"I\",\"resultIsArray\":\"N\",\"funName\":\"getYear\",\"funCode\":\"getYear\",\"paramNum\":0,\"param1Name\":null,\"param1DataType\":null,\"param1Desc\":null,\"param2Name\":null,\"param2DataType\":null,\"param2Desc\":null,\"param3Name\":null,\"param3DataType\":null,\"param3Desc\":null,\"resultAttrNbr\":null,\"comments\":\"Extract the year part of a datetime\",\"param1DsBean\":null,\"resultDsBean\":null,\"param2DsBean\":null,\"param3DsBean\":null,\"param2PriceFlag\":null,\"param1Null\":null,\"param2Null\":null,\"param3Null\":null},{\"funId\":6,\"dataType\":\"T\",\"isArray\":\"N\",\"resultDataType\":\"I\",\"resultIsArray\":\"N\",\"funName\":\"getMonth\",\"funCode\":\"getMonth\",\"paramNum\":0,\"param1Name\":null,\"param1DataType\":null,\"param1Desc\":null,\"param2Name\":null,\"param2DataType\":null,\"param2Desc\":null,\"param3Name\":null,\"param3DataType\":null,\"param3Desc\":null,\"resultAttrNbr\":null,\"comments\":\"Extract the month part of a datetime\",\"param1DsBean\":null,\"resultDsBean\":null,\"param2DsBean\":null,\"param3DsBean\":null,\"param2PriceFlag\":null,\"param1Null\":null,\"param2Null\":null,\"param3Null\":null},{\"funId\":7,\"dataType\":\"T\",\"isArray\":\"N\",\"resultDataType\":\"I\",\"resultIsArray\":\"N\",\"funName\":\"getDay\",\"funCode\":\"getDay\",\"paramNum\":0,\"param1Name\":null,\"param1DataType\":null,\"param1Desc\":null,\"param2Name\":null,\"param2DataType\":null,\"param2Desc\":null,\"param3Name\":null,\"param3DataType\":null,\"param3Desc\":null,\"resultAttrNbr\":null,\"comments\":\"Extract the date part of a datetime\",\"param1DsBean\":null,\"resultDsBean\":null,\"param2DsBean\":null,\"param3DsBean\":null,\"param2PriceFlag\":null,\"param1Null\":null,\"param2Null\":null,\"param3Null\":null},{\"funId\":8,\"dataType\":\"T\",\"isArray\":\"N\",\"resultDataType\":\"I\",\"resultIsArray\":\"N\",\"funName\":\"getWeek\",\"funCode\":\"getWeek\",\"paramNum\":0,\"param1Name\":null,\"param1DataType\":null,\"param1Desc\":null,\"param2Name\":null,\"param2DataType\":null,\"param2Desc\":null,\"param3Name\":null,\"param3DataType\":null,\"param3Desc\":null,\"resultAttrNbr\":null,\"comments\":\"Return the week number\",\"param1DsBean\":null,\"resultDsBean\":null,\"param2DsBean\":null,\"param3DsBean\":null,\"param2PriceFlag\":null,\"param1Null\":null,\"param2Null\":null,\"param3Null\":null},{\"funId\":9,\"dataType\":\"T\",\"isArray\":\"N\",\"resultDataType\":\"I\",\"resultIsArray\":\"N\",\"funName\":\"getHour\",\"funCode\":\"getHour\",\"paramNum\":0,\"param1Name\":null,\"param1DataType\":null,\"param1Desc\":null,\"",
+      "content_type": "application/json",
+      "charset": null,
+      "binary": false,
+      "size_bytes": 4000,
+      "truncated": false,
+      "form": null,
+      "json_value": null,
+      "xml_paths": null,
+      "parse_warnings": []
+    }
+  },
+  "auth_context": {
+    "authenticated": true,
+    "principal_ref": "principal_cc0f14c7dfc3",
+    "credential_ref": "cred_cc0f14c7dfc3",
+    "auth_types": [
+      "api_key",
+      "cookie"
+    ]
+  },
+  "artifacts": [
+    {
+      "artifact_id": "artifact_0043",
+      "type": "http_request",
+      "path": "traffic/traffic_0022/request.txt",
+      "sha256": "0210d1f8243fdaeecd941dc99f55c1c4b0a9771e9a1c2ffa819bfd25a08cf05e",
+      "size_bytes": 956,
+      "created_at": "2026-11-17T17:42:00+08:00"
+    },
+    {
+      "artifact_id": "artifact_0044",
+      "type": "http_response",
+      "path": "traffic/traffic_0022/response.txt",
+      "sha256": "1d85e397623f35aaa059a3642f6538f648a0d295f2ab94d03211432d604aa5b7",
+      "size_bytes": 4667,
+      "created_at": "2026-11-17T17:42:00+08:00"
+    }
+  ],
+  "parse_warnings": []
+}

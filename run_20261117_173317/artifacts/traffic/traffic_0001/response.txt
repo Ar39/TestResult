@@ -1,0 +1,7 @@
+HTTP/1.1 200 
+Content-Type: application/json
+Access-Control-Allow-Origin: https://10.10.177.111
+X-Frame-Options: SAMEORIGIN
+Content-Length: 3639
+
+{"total":5963,"list":[{"offerId":100043,"offerType":"4","offerSysType":null,"offerName":"Kids L","offerSysName":null,"offerSypyName":null,"offerNbr":"100043","offerSysNbr":null,"offerDesc":null,"effDate":null,"manageGrade":null,"expDate":null,"offerProviderId":null,"brandId":null,"valueAddedFlag":null,"initialC

@@ -1,0 +1,166 @@
+{
+  "endpoint_id": "endpoint_0065",
+  "method": "POST",
+  "scheme": "https",
+  "host": "10.10.177.111",
+  "path": "/portal-web/otc/trace/getRespFilterMsgDto",
+  "traffic_ids": [
+    "traffic_0074"
+  ],
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:f96178a82bb8c7696fd2fa7cc33667382873b1694482788a1cd917dc3ff2db17",
+      "name": "HTML_VERSION",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "1794653129366"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0074"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:f3c02f83d07215d20c8b71199c272a72c22ba10a1d2d94d37cd834b01d269919",
+      "name": "SP_ID",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "0"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0074"
+      ]
+    },
+    {
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:e78320a6f6a6212339848d93abe2354bdb0ffad21a0698e27efbda84765db0c9",
+      "name": "ZSMART_LOCALE",
+      "location": "cookie",
+      "type": "string",
+      "values": [
+        "en"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0074"
+      ]
+    },
+    {
+      "parameter_id": "param_0004",
+      "parameter_identity": "sha256:789a95042236356f5d6a3fea83d0fa0b3164d774442c22551cdb94654ec7f8f6",
+      "name": "areaId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "100"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0074"
+      ]
+    },
+    {
+      "parameter_id": "param_0005",
+      "parameter_identity": "sha256:362b5dee27b541d57d645e3eabd27b65eacd70c395a4d7d2baa4e19c1bbd836f",
+      "name": "isLocked",
+      "location": "cookie",
+      "type": "boolean",
+      "values": [
+        "false"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0074"
+      ]
+    },
+    {
+      "parameter_id": "param_0006",
+      "parameter_identity": "sha256:660481cba65a28bc27d577e3baaf41d33016d252fb246a690fc6b38e950ddd8d",
+      "name": "orgId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "100"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0074"
+      ]
+    },
+    {
+      "parameter_id": "param_0007",
+      "parameter_identity": "sha256:df1e9e4f23339988a0331dd74bf82839ff29922b195e36a564d68beb727e12ff",
+      "name": "staffJobId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "25162"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0074"
+      ]
+    },
+    {
+      "parameter_id": "param_0008",
+      "parameter_identity": "sha256:e091b927b7a805916a446b1e20a6c7c49d96cd3aee9474c1d0ccc1398003eb92",
+      "name": "userId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "1"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0074"
+      ]
+    },
+    {
+      "parameter_id": "param_0009",
+      "parameter_identity": "sha256:58bc605f62996a8173371568160cc21f6cc6cc919075c1d4435ac2a436d95c8b",
+      "name": "Menu-Id",
+      "location": "header",
+      "type": "integer",
+      "values": [
+        "120003"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0074"
+      ]
+    },
+    {
+      "parameter_id": "param_0010",
+      "parameter_identity": "sha256:e746f799eac08a5188a1cadd9d5a0651a1b5e4fa2ed070376ed09444a03d44a9",
+      "name": "Priority",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "u=1, i"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0074"
+      ]
+    },
+    {
+      "parameter_id": "param_0011",
+      "parameter_identity": "sha256:6e48ac9470e8ef3673d781700a6beb1bcdf40eb024d4ef122a08ce87502a1301",
+      "name": "traceId",
+      "location": "json",
+      "type": "integer",
+      "values": [
+        "1794797657882000"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0074"
+      ]
+    }
+  ]
+}

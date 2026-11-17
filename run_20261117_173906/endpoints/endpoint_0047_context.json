@@ -1,0 +1,224 @@
+{
+  "endpoint_id": "endpoint_0047",
+  "method": "POST",
+  "scheme": "https",
+  "host": "10.10.177.111",
+  "path": "/portal-web/otc/price/offerServiceRel",
+  "path_examples": [
+    "/portal-web/otc/price/offerServiceRel"
+  ],
+  "traffic_count": 1,
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:afa09482c74c2f6f142d7046841afcbcb4addad17c05d68b6e1fd9484950acde",
+      "name": "HTML_VERSION",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "1794653129366"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0043"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:616cac29b10cd9a13445d41754466a003936cf47c089b92889e1ee621ec5141d",
+      "name": "SP_ID",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "0"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0043"
+      ]
+    },
+    {
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:e483edb83de16bfea53e1577746ec46f37f059bcef2472eb571a736696080ab0",
+      "name": "ZSMART_LOCALE",
+      "location": "cookie",
+      "type": "string",
+      "values": [
+        "en"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0043"
+      ]
+    },
+    {
+      "parameter_id": "param_0004",
+      "parameter_identity": "sha256:95aa54dff70092247bc2d7e64d78598a8077256789186e0091141ac06c9439fb",
+      "name": "areaId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "100"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0043"
+      ]
+    },
+    {
+      "parameter_id": "param_0005",
+      "parameter_identity": "sha256:03e775c299ec5a59e7645fe9ec194b2489d467689296b7c8c7b2c5a70885236b",
+      "name": "isLocked",
+      "location": "cookie",
+      "type": "boolean",
+      "values": [
+        "false"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0043"
+      ]
+    },
+    {
+      "parameter_id": "param_0006",
+      "parameter_identity": "sha256:cd91d69f204bd7132f5f52355940d2de787cb747d164024ac31fe60ca5372332",
+      "name": "orgId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "100"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0043"
+      ]
+    },
+    {
+      "parameter_id": "param_0007",
+      "parameter_identity": "sha256:ac817662f1042db5e2aa94a1059ef8b4b5128e6d8a0b62fef281ee10634e7c57",
+      "name": "staffJobId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "25162"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0043"
+      ]
+    },
+    {
+      "parameter_id": "param_0008",
+      "parameter_identity": "sha256:77483acbf717c35f8f42e72eea7e122513a074a840c66bc2c357d4778b004fa1",
+      "name": "userId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "1"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0043"
+      ]
+    },
+    {
+      "parameter_id": "param_0009",
+      "parameter_identity": "sha256:ee9ce6982386c4e16a5adf10b348934120d435373f30a9346711af0b2a6d8b3a",
+      "name": "Menu-Id",
+      "location": "header",
+      "type": "integer",
+      "values": [
+        "120008"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0043"
+      ]
+    },
+    {
+      "parameter_id": "param_0010",
+      "parameter_identity": "sha256:4ab99fa4c80d2683135531642213c63eb8f96a67491cc0db949bd936ddfb4046",
+      "name": "Priority",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "u=1, i"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0043"
+      ]
+    },
+    {
+      "parameter_id": "param_0011",
+      "parameter_identity": "sha256:2b2fa854be65d4a8dc0763bc2d382ee65c6d8339f809f1d956e82efc6803a05e",
+      "name": "offerId",
+      "location": "json",
+      "type": "integer",
+      "values": [
+        "-1"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0043"
+      ]
+    },
+    {
+      "parameter_id": "param_0012",
+      "parameter_identity": "sha256:bb3bf8b81f626f7956609c90002ffcff0b2ff949ecd645d8b2bedcb464831fdf",
+      "name": "otcFlag",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "Y"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0043"
+      ]
+    }
+  ],
+  "inventory_id": "sha256:d48616943dd25fcdf9124b1aea2e3b2852dbb419e05a77d8aec90b0e913710e5",
+  "request_examples": [
+    {
+      "traffic_id": "traffic_0043",
+      "principal_ref": "principal_c8a93705deac",
+      "method": "POST",
+      "url": "https://10.10.177.111/portal-web/otc/price/offerServiceRel",
+      "content_type": "application/json",
+      "query": null,
+      "body_excerpt": "{\"offerId\":-1,\"otcFlag\":\"Y\"}",
+      "body_sha256": "ad1e242af9299e3a2b89627ef3cdece112ea922caebd7441096360ca6473e585"
+    }
+  ],
+  "response_examples": [
+    {
+      "traffic_id": "traffic_0043",
+      "status": 200,
+      "content_type": "application/json",
+      "body_excerpt": "[{\"serviceOfferId\":77,\"serviceOfferName\":\"(Gota) Quit Organization[77]\",\"serviceOfferDesc\":null,\"statusCd\":null,\"remark\":null},{\"serviceOfferId\":123,\"serviceOfferName\":\"Activation[123]\",\"serviceOfferDesc\":null,\"statusCd\":null,\"remark\":null},{\"serviceOfferId\":237,\"serviceOfferName\":\"Active Individual Price Plan[237]\",\"serviceOfferDesc\":null,\"statusCd\":null,\"remark\":null},{\"serviceOfferId\":392,\"serviceOfferName\":\"Add Member[392]\",\"serviceOfferDesc\":null,\"statusCd\":null,\"remark\":null},{\"serviceOfferId\":427,\"serviceOfferName\":\"Automatic Reagreement[427]\",\"serviceOfferDesc\":null,\"statusCd\":null,\"remark\":null},{\"serviceOfferId\":158,\"serviceOfferName\":\"Balance Inquire[158]\",\"serviceOfferDesc\":null,\"statusCd\":null,\"remark\":null},{\"serviceOfferId\":590,\"serviceOfferName\":\"Block Subscriber[590]\",\"serviceOfferDesc\":null,\"statusCd\":null,\"remark\":null},{\"serviceOfferId\":318,\"serviceOfferName\":\"Call Me Back[318]\",\"serviceOfferDesc\":null,\"statusCd\":null,\"remark\":null},{\"serviceOfferId\":155,\"serviceOfferName\":\"Cancel Individual Price Plan[155]\",\"serviceOfferDesc\":null,\"statusCd\":null,\"remark\":null},{\"serviceOfferId\":584,\"serviceOfferName\":\"Cancel Pre-Termination[584]\",\"serviceOfferDesc\":null,\"statusCd\":null,\"remark\":null},{\"serviceOfferId\":34,\"serviceOfferName\":\"Change Address[34]\",\"serviceOfferDesc\":null,\"statusCd\":null,\"remark\":null},{\"serviceOfferId\":234,\"serviceOfferName\":\"Change Bill Cycle[234]\",\"serviceOfferDesc\":null,\"statusCd\":null,\"remark\":null},{\"serviceOfferId\":596,\"serviceOfferNam...[truncated 2500 chars]",
+      "body_sha256": "7bed6cfecac41320a1c64e24659e6b3954b19f43eca9e8ba4b47a7de762531c7"
+    }
+  ],
+  "auth_contexts": [
+    {
+      "principal_ref": "principal_c8a93705deac",
+      "credential_ref": "cred_c8a93705deac",
+      "auth_types": [
+        "api_key",
+        "cookie"
+      ],
+      "traffic_count": 1
+    }
+  ],
+  "business_context": {
+    "description": null,
+    "evidence": [
+      "parameter 'SP_ID' (cookie) suggests object identifier",
+      "parameter 'orgId' (cookie) suggests tenant identity",
+      "parameter 'userId' (cookie) suggests user identity",
+      "path segment 'price' suggests monetary value"
+    ]
+  },
+  "limitations": []
+}

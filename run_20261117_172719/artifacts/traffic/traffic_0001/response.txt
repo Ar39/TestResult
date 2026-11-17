@@ -1,0 +1,39 @@
+HTTP/1.1 200 
+Date: Mon, 16 Nov 2026 03:25:37 GMT
+Content-Type: application/json
+Connection: keep-alive
+ITRACING_TRACE_ID: 172028108021_368334_1^1794653576196^10090
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Access-Control-Allow-Origin: https://10.10.177.111
+Access-Control-Expose-Headers: Set-Cookie
+Access-Control-Allow-Credentials: true
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Referrer-Policy: no-referrer-when-downgrade
+X-Frame-Options: SAMEORIGIN
+X-Permitted-Cross-Domain-Policies: master-only
+Content-Length: 3639
+
+{"total":5963,"list":[{"offerId":100043,"offerType":"4","offerSysType":null,"offerName":"Kids L","offerSysName":null,"offerSysPyName":null,"offerNbr":"100043","offerSysNbr":null,"offerDesc":null,"effDate":null,"manageGrade":null,"expDate":null,"offerProviderId":null,"brandId":null,"valueAddedFlag":null,"initialCredValue":null,"pricingPlanId":null,"isIndependent":null,"remark":null,"manageRegionId":null,"statusCd":null,"createStaff":null,"updateStaff":null,"createDate":null,"statusDate":null,"updateDate":null,"extOfferId":null,"mainFlag":null,"billItemClass":null,"rtDisctFlag":null,"rentFeeAmount":null,"offerDispClass":null,"priorityValue":null,"subsidyType":null,"offerGrade":null},{"offerId":100042,"offerType":"4","offerSysType":null,"offerName":"Kids M","offerSysName":null,"offerSysPyName":null,"offerNbr":"100042","offerSysNbr":null,"offerDesc":null,"effDate":null,"manageGrade":null,"expDate":null,"offerProviderId":null,"brandId":null,"valueAddedFlag":null,"initialCredValue":null,"pricingPlanId":null,"isIndependent":null,"remark":null,"manageRegionId":null,"statusCd":null,"createStaff":null,"updateStaff":null,"createDate":null,"statusDate":null,"updateDate":null,"extOfferId":null,"mainFlag":null,"billItemClass":null,"rtDisctFlag":null,"rentFeeAmount":null,"offerDispClass":null,"priorityValue":null,"subsidyType":null,"offerGrade":null}],"pageNum":1,"pageSize":5}
+
+POST /portal-web/otc/cacheRefresh/qryOtcCacheVer HTTP/1.1
+Host: 10.10.177.111
+Cookie: ***
+Content-Length: 0
+X-Csrf-Token: 15205785-d11c-4ece-8307-36dab2722d49
+Menu-Id: 120006
+X-Requested-With: XMLHttpRequest
+Content-Type: application/json
+
+HTTP/1.1 200 
+Content-Type: application/json
+Access-Control-Allow-Origin: https://10.10.177.111
+X-Frame-Options: SAMEORIGIN
+Content-Length: 1
+
+1

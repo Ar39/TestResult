@@ -1,0 +1,217 @@
+{
+  "endpoint_id": "endpoint_0020",
+  "method": "GET",
+  "scheme": "https",
+  "host": "10.10.177.111",
+  "path": "/portal-web/otc/pricePlan/qryAllPricePlanGenreList",
+  "path_examples": [
+    "/portal-web/otc/pricePlan/qryAllPricePlanGenreList"
+  ],
+  "traffic_count": 1,
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:67d95327313f5e9ecf28111a809c5617a6f59d7f7618262d0ce0efff8eb93414",
+      "name": "HTML_VERSION",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "1794653129366"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0058"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:9213989e22c196acd1d5a26fb198827b86d1dd936fd1454490b540bb74df3608",
+      "name": "SP_ID",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "0"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0058"
+      ]
+    },
+    {
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:8786d82d5635564fff63d50a778fea3f734e548d8bc4df87d03839ecf3019aeb",
+      "name": "ZSMART_LOCALE",
+      "location": "cookie",
+      "type": "string",
+      "values": [
+        "en"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0058"
+      ]
+    },
+    {
+      "parameter_id": "param_0004",
+      "parameter_identity": "sha256:e8fe8c093f5ac3b584535d358c87b7024268caaffea785a6ac5f285faf343499",
+      "name": "areaId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "100"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0058"
+      ]
+    },
+    {
+      "parameter_id": "param_0005",
+      "parameter_identity": "sha256:83347efc3d4ec8f3e5ac19563e263193e59d4d275e42ac0a40d5cf4c7fa7e397",
+      "name": "isLocked",
+      "location": "cookie",
+      "type": "boolean",
+      "values": [
+        "false"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0058"
+      ]
+    },
+    {
+      "parameter_id": "param_0006",
+      "parameter_identity": "sha256:0979e8a726e58c0603e462907409a6226ea26c20097404548627ffa0681b0616",
+      "name": "orgId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "100"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0058"
+      ]
+    },
+    {
+      "parameter_id": "param_0007",
+      "parameter_identity": "sha256:0093b7b29c12c2822312b35315c79ba5d07942b0c3db4e7a4abdf60f48e0ed98",
+      "name": "staffJobId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "25162"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0058"
+      ]
+    },
+    {
+      "parameter_id": "param_0008",
+      "parameter_identity": "sha256:5456ddad029480d169e152e22082c65172ae0d19feb701134e7b2e1b907cac2a",
+      "name": "userId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "1"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0058"
+      ]
+    },
+    {
+      "parameter_id": "param_0009",
+      "parameter_identity": "sha256:bcf79f4ffc4b56040ffe06b0770bcf1e69602bc0242e6fe1b2f80be3b9e03213",
+      "name": "Menu-Id",
+      "location": "header",
+      "type": "integer",
+      "values": [
+        "120008"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0058"
+      ]
+    },
+    {
+      "parameter_id": "param_0010",
+      "parameter_identity": "sha256:1d5cf71f59b380604ea78089547457b4770af59ec4d7b2f459f6fa3433271600",
+      "name": "Priority",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "u=1, i"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0058"
+      ]
+    },
+    {
+      "parameter_id": "param_0011",
+      "parameter_identity": "sha256:8c04f90e03cc8c4b1efaeb5c2109ed3907c741d6b0ddf45b9ae59ae88754e1a3",
+      "name": "_",
+      "location": "query",
+      "type": "integer",
+      "values": [
+        "1794797359774"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0058"
+      ]
+    }
+  ],
+  "inventory_id": "sha256:8097b78d23e086dec323e5ac6dff159b3a254f5bd9ce237183391fe753205186",
+  "request_examples": [
+    {
+      "traffic_id": "traffic_0058",
+      "principal_ref": "principal_c8a93705deac",
+      "method": "GET",
+      "url": "https://10.10.177.111/portal-web/otc/pricePlan/qryAllPricePlanGenreList?_=1794797359774",
+      "content_type": null,
+      "query": {
+        "_": [
+          "1794797359774"
+        ]
+      },
+      "body_excerpt": null,
+      "body_sha256": null
+    }
+  ],
+  "response_examples": [
+    {
+      "traffic_id": "traffic_0058",
+      "status": 200,
+      "content_type": "application/json",
+      "body_excerpt": "[{\"pricePlanGenre\":\"O\",\"genreName\":\"Offer OTC\",\"tabs\":\"A\",\"comments\":\"OTC related to Offer\"},{\"pricePlanGenre\":\"G\",\"genreName\":\"General OTC\",\"tabs\":\"C\",\"comments\":\"General OTC not related to Offer\"},{\"pricePlanGenre\":\"D\",\"genreName\":\"Deposit\",\"tabs\":\"B\",\"comments\":\"Customer Deposit\"},{\"pricePlanGenre\":\"V\",\"genreName\":\"Overlap OTC\",\"tabs\":\"E\",\"comments\":\"Overlop OTC not related to Offer\"}]",
+      "body_sha256": "e79e686cf9c10cbc9811378e83374c29ee476e97d6d1efc4b79586881bf379fe"
+    }
+  ],
+  "auth_contexts": [
+    {
+      "principal_ref": "principal_c8a93705deac",
+      "credential_ref": "cred_c8a93705deac",
+      "auth_types": [
+        "api_key",
+        "cookie"
+      ],
+      "traffic_count": 1
+    }
+  ],
+  "business_context": {
+    "description": null,
+    "evidence": [
+      "parameter 'SP_ID' (cookie) suggests object identifier",
+      "parameter 'orgId' (cookie) suggests tenant identity",
+      "parameter 'userId' (cookie) suggests user identity",
+      "response field 'pricePlanGenre' suggests monetary value",
+      "response field 'genreName' suggests search / filter",
+      "path segment 'pricePlan' suggests monetary value",
+      "path segment 'qryAllPricePlanGenreList' suggests monetary value"
+    ]
+  },
+  "limitations": []
+}

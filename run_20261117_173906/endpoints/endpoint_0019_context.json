@@ -1,0 +1,258 @@
+{
+  "endpoint_id": "endpoint_0019",
+  "method": "GET",
+  "scheme": "https",
+  "host": "10.10.177.111",
+  "path": "/portal-web/otc/pricePlan/pricePlanVerse/{p0}",
+  "path_examples": [
+    "/portal-web/otc/pricePlan/pricePlanVerse/75800",
+    "/portal-web/otc/pricePlan/pricePlanVerse/75802"
+  ],
+  "traffic_count": 2,
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:2685c82d8a69091e0a95d7bfd93426d976139f70409bb3ff35ab6d4ad34aa97d",
+      "name": "HTML_VERSION",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "1794653129366"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0056",
+        "traffic_0057"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:a64591f4debd9cf2784a8350b9068d51bb7fda5342c78d42c6e6ff79d938e758",
+      "name": "SP_ID",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "0"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0056",
+        "traffic_0057"
+      ]
+    },
+    {
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:228b2431d35c2ace51585ff754e1b499efe40690420a7ee56b673c9835c1d977",
+      "name": "ZSMART_LOCALE",
+      "location": "cookie",
+      "type": "string",
+      "values": [
+        "en"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0056",
+        "traffic_0057"
+      ]
+    },
+    {
+      "parameter_id": "param_0004",
+      "parameter_identity": "sha256:c7b9f57bd4eb346555ab4404de73b5c9a5e6105bdce4ab5ffb82fa4dfa90b487",
+      "name": "areaId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "100"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0056",
+        "traffic_0057"
+      ]
+    },
+    {
+      "parameter_id": "param_0005",
+      "parameter_identity": "sha256:67c4f2827c1b29c1d71da2205f44ee3017f8f96042a067057e671ddaa7fe9d22",
+      "name": "isLocked",
+      "location": "cookie",
+      "type": "boolean",
+      "values": [
+        "false"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0056",
+        "traffic_0057"
+      ]
+    },
+    {
+      "parameter_id": "param_0006",
+      "parameter_identity": "sha256:8fcdc812cc9812690c4c8a617e6df2c654f16912191c1330c067623de3d38b5b",
+      "name": "orgId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "100"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0056",
+        "traffic_0057"
+      ]
+    },
+    {
+      "parameter_id": "param_0007",
+      "parameter_identity": "sha256:0596bc7eda9ebdcc343173e5079ca15ef3475cc0b862845f768a3216333c942f",
+      "name": "staffJobId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "25162"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0056",
+        "traffic_0057"
+      ]
+    },
+    {
+      "parameter_id": "param_0008",
+      "parameter_identity": "sha256:87e8c61987e0c858cc1838825ef6ca7ac160a4b407e067087efd325f1bc72111",
+      "name": "userId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "1"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0056",
+        "traffic_0057"
+      ]
+    },
+    {
+      "parameter_id": "param_0009",
+      "parameter_identity": "sha256:8777abe139d9cd2d9d6114a6125958474708685fb58dd8530abfef2f980a7812",
+      "name": "Menu-Id",
+      "location": "header",
+      "type": "integer",
+      "values": [
+        "120008"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0056",
+        "traffic_0057"
+      ]
+    },
+    {
+      "parameter_id": "param_0010",
+      "parameter_identity": "sha256:ae861489678f0bb8bd933e1120fe9af00b73f647db2b0a693605a55a3092904e",
+      "name": "Priority",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "u=1, i"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0056",
+        "traffic_0057"
+      ]
+    },
+    {
+      "parameter_id": "param_0011",
+      "parameter_identity": "sha256:22b4f8e9901ec6550039261ac78f86c585014b3054637122676516efbb8b0b5c",
+      "name": "p0",
+      "location": "path",
+      "type": "integer",
+      "values": [
+        "75800",
+        "75802"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0056",
+        "traffic_0057"
+      ]
+    },
+    {
+      "parameter_id": "param_0012",
+      "parameter_identity": "sha256:7228969c4474ef93d5980c452e216f58402ce6c939df6aa96c7442a8115f5aa6",
+      "name": "_",
+      "location": "query",
+      "type": "integer",
+      "values": [
+        "1794797359781",
+        "1794797359809"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0056",
+        "traffic_0057"
+      ]
+    }
+  ],
+  "inventory_id": "sha256:6c75e6a037b69be7e54bc0f36b86bad584666908c869e8f1f896006f77ef013c",
+  "request_examples": [
+    {
+      "traffic_id": "traffic_0056",
+      "principal_ref": "principal_c8a93705deac",
+      "method": "GET",
+      "url": "https://10.10.177.111/portal-web/otc/pricePlan/pricePlanVerse/75800?_=1794797359781",
+      "content_type": null,
+      "query": {
+        "_": [
+          "1794797359781"
+        ]
+      },
+      "body_excerpt": null,
+      "body_sha256": null
+    },
+    {
+      "traffic_id": "traffic_0057",
+      "principal_ref": "principal_c8a93705deac",
+      "method": "GET",
+      "url": "https://10.10.177.111/portal-web/otc/pricePlan/pricePlanVerse/75802?_=1794797359809",
+      "content_type": null,
+      "query": {
+        "_": [
+          "1794797359809"
+        ]
+      },
+      "body_excerpt": null,
+      "body_sha256": null
+    }
+  ],
+  "response_examples": [
+    {
+      "traffic_id": "traffic_0056",
+      "status": 200,
+      "content_type": "application/json",
+      "body_excerpt": "[]",
+      "body_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    }
+  ],
+  "auth_contexts": [
+    {
+      "principal_ref": "principal_c8a93705deac",
+      "credential_ref": "cred_c8a93705deac",
+      "auth_types": [
+        "api_key",
+        "cookie"
+      ],
+      "traffic_count": 2
+    }
+  ],
+  "business_context": {
+    "description": null,
+    "evidence": [
+      "parameter 'SP_ID' (cookie) suggests object identifier",
+      "parameter 'orgId' (cookie) suggests tenant identity",
+      "parameter 'userId' (cookie) suggests user identity",
+      "path segment 'pricePlan' suggests monetary value",
+      "path segment 'pricePlanVerse' suggests monetary value"
+    ]
+  },
+  "limitations": []
+}

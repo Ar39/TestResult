@@ -1,0 +1,22 @@
+HTTP/1.1 200 
+Date: Mon, 16 Nov 2026 03:31:40 GMT
+Content-Type: application/json
+Connection: keep-alive
+ITRACING_TRACE_ID: 172028108021_368334_1^1794653576196^10622
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Access-Control-Allow-Origin: https://10.10.177.111
+Access-Control-Expose-Headers: Set-Cookie
+Access-Control-Allow-Credentials: true
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Referrer-Policy: no-referrer-when-downgrade
+X-Frame-Options: SAMEORIGIN
+X-Permitted-Cross-Domain-Policies: master-only
+Content-Length: 1484
+
+{"priceId":904500,"offerId":-1,"otcId":null,"serviceOfferId":123,"serviceOfferName":null,"priceMethod":"2","priority":1,"isListPrice":"N","conGroupId":73700,"createStaff":1,"updateStaff":null,"createDate":"2026-11-16 11:31:43","statusDate":"2026-11-16 11:31:43","updateDate":null,"repriceProdId":null,"chargeFlag":null,"priceClass":"SUBS_DEPOSIT","pricePlanVerId":75800,"otcPriceDepositDtos":[{"depositId":1200,"priceId":904500,"depositTypeId":1,"depositClass":null,"value":null,"depositTypeName":null,"depositTypeCode":null,"applyObj":"S","charge":100,"updateStaff":null,"updateDate":null,"updateStaffId":null,"currencyTypeId":null,"currencyCode":null,"currencySymbol":null,"displayScale":null,"savePrecision":null,"roundMethod":null,"depositTypeDto":null,"displayPriceName":null}],"otcConGroupDto":{"conGroupId":73700,"conGroupName":"(orderedOfferList(Offer Instance Information) Contain Customer Type ) ","conGroupExpression":"(74100)","otcConDtoList":[{"otcConLeft":{"conLeftId":74100,"conName":"orderedOfferList(Offer Instance Information)","conCode":null,"conDesc":null,"funId":56,"lParam1":null,"lParam2":null,"lParam3":null,"factorId":38,"isList":null},"otcConRight":{"conRightId":74100,"conName":"Customer Type","conType":"C","value":null,"factorId":1,"funId":null,"rParam1":null,"rParam2":null},"conId":74100,"conGroupId":73700,"conLeftId":74100,"operator":13,"conRightId":74100,"conName":"orderedOfferList(Offer Instance Information) Contain Customer Type"}],"flag":false}}

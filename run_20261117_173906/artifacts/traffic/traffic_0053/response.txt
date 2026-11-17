@@ -1,0 +1,19 @@
+HTTP/1.1 200 
+Date: Mon, 16 Nov 2026 03:28:59 GMT
+Content-Type: application/json
+Connection: keep-alive
+ITRACING_TRACE_ID: 172028108021_368334_1^1794653576196^10268
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Referrer-Policy: no-referrer-when-downgrade
+X-Frame-Options: SAMEORIGIN
+X-Permitted-Cross-Domain-Policies: master-only
+Content-Length: 622
+
+[{"pricePlanVerId":75800,"pricePlanId":22004800,"seq":1,"spId":null,"effDate":"2026-11-01 00:00:00","expDate":"2026-11-16 00:00:00","usingState":"A","state":"A","createdDate":"2026-11-16 11:29:42","createdStaffId":1,"createdStaffName":"admin","releaseDate":null,"releaseStaffId":null,"releaseStaffName":null,"retireDate":null,"retireStaffId":null,"retireStaffName":null,"submitDate":null,"submitStaffId":null,"approvedDate":null,"comments":null,"oldEffDate":null,"oldExpDate":null,"approvedStaffId":null,"otcPriceList":null,"otcOverlapPriceList":null,"otcDiscountList":null,"otcFreeList":null,"otcComboDiscountList":null}]

@@ -1,0 +1,58 @@
+HTTP/1.1 200 
+Content-Type: application/json
+Access-Control-Allow-Origin: https://10.10.177.111
+X-Frame-Options: SAMEORIGIN
+Content-Length: 1
+
+1[SEP]POST /portal-web/otc/cacheRefresh HTTP/1.1
+Host: 10.10.177.111
+Cookie: ***
+Content-Length: 57
+X-Csrf-Token: 15205785-d11c-4ece-8307-36dab2722d49
+Menu-Id: 120006
+X-Requested-With: XMLHttpRequest
+Content-Type: application/json
+
+{"bean":"cache.cpcOtcCellPriceRefresh","method":"status"}
+
+HTTP/1.1 200 
+Content-Type: application/json
+Access-Control-Allow-Origin: https://10.10.177.111
+X-Frame-Options: SAMEORIGIN
+Content-Length: 124
+
+{"result":{"succCnt":0,"failCnt":0,"status":0,"beginTime":1794653663814,"endTime":1794653663888,"totalCnt":0},"future":null}[SEP]POST /portal-web/otc/cacheRefresh HTTP/1.1
+Host: 10.10.177.111
+Cookie: ***
+Content-Length: 50
+X-Csrf-Token: 15205785-d11c-4ece-8307-36dab2722d49
+Menu-Id: 120006
+X-Requested-With: XMLHttpRequest
+Content-Type: application/json
+
+{"bean":"cache.custDpstRefresh","method":"status"}
+
+HTTP/1.1 200 
+Content-Type: application/json
+Access-Control-Allow-Origin: https://10.10.177.111
+X-Frame-Options: SAMEORIGIN
+Content-Length: 124
+
+{"result":{"endTime":1794653664000,"failCnt":0,"beginTime":1794653663860,"status":0,"totalCnt":0,"succCnt":0},"future":null}[SEP]POST /portal-web/otc/cacheRefresh HTTP/1.1
+Host: 10.10.177.111
+Cookie: ***
+Content-Length: 50
+X-Csrf-Token: 15205785-d11c-4ece-8307-36dab2722d49
+Menu-Id: 120006
+X-Requested-With: XMLHttpRequest
+Content-Type: application/json
+
+{"bean":"cache.functionRefresh","method":"status"}
+
+HTTP/1.1 200 
+Content-Type: application/json
+Access-Control-Allow-Origin: https://10.10.177.111
+X-Frame-Options: SAMEORIGIN
+Content-Length: 128
+
+{"result":{"beginTime":1794653664075,"succCnt":158,"failCnt":0,"endTime":1794653664739,"status":0,"totalCnt":158},"future":null}

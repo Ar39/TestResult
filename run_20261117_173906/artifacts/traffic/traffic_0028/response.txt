@@ -1,0 +1,22 @@
+HTTP/1.1 200 
+Date: Mon, 16 Nov 2026 03:39:21 GMT
+Content-Type: application/json
+Connection: keep-alive
+ITRACING_TRACE_ID: 172028108021_368334_1^1794653576196^10809
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Access-Control-Allow-Origin: https://10.10.177.111
+Access-Control-Expose-Headers: Set-Cookie
+Access-Control-Allow-Credentials: true
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Referrer-Policy: no-referrer-when-downgrade
+X-Frame-Options: SAMEORIGIN
+X-Permitted-Cross-Domain-Policies: master-only
+Content-Length: 924
+
+[{"unitId":4,"unitTypeId":1,"unitName":"Byte","unitCode":"Byte","systemReserve":"Y","displayScale":0,"comments":"System reserve unit of Data","spId":null,"state":"A","createdDate":null,"partyType":null,"partyCode":null,"subUnitId":null},{"unitId":5,"unitTypeId":1,"unitName":"KB","unitCode":"KB","systemReserve":"Y","displayScale":2,"comments":"System reserve unit of Data","spId":null,"state":"A","createdDate":null,"partyType":null,"partyCode":null,"subUnitId":4},{"unitId":6,"unitTypeId":1,"unitName":"MB","unitCode":"MB","systemReserve":"Y","displayScale":2,"comments":"System reserve unit of Data","spId":null,"state":"A","createdDate":null,"partyType":null,"partyCode":null,"subUnitId":5},{"unitId":7,"unitTypeId":1,"unitName":"GB","unitCode":"GB","systemReserve":"Y","displayScale":2,"comments":"System reserve unit of Data","spId":null,"state":"A","createdDate":null,"partyType":null,"partyCode":null,"subUnitId":6}]

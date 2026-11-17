@@ -1,0 +1,227 @@
+{
+  "endpoint_id": "endpoint_0038",
+  "method": "POST",
+  "scheme": "https",
+  "host": "10.10.177.111",
+  "path": "/portal-web/otc/domain/queryUnitList",
+  "path_examples": [
+    "/portal-web/otc/domain/queryUnitList"
+  ],
+  "traffic_count": 1,
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:2e4fef3606af866875b8a469ef8ca14974e964aa620770a924d08e9817e78c38",
+      "name": "HTML_VERSION",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "1794653129366"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0028"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:3667e8cedfc5aebd2bd42e5171639f5b8838f20b8ececf08376e8ae907d88c33",
+      "name": "SP_ID",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "0"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0028"
+      ]
+    },
+    {
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:27a5ec033300322dec4f306ae58d282eb4a434ea219f682d9cbd704ea6490a37",
+      "name": "ZSMART_LOCALE",
+      "location": "cookie",
+      "type": "string",
+      "values": [
+        "en"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0028"
+      ]
+    },
+    {
+      "parameter_id": "param_0004",
+      "parameter_identity": "sha256:3d52254424283e4431c05fd02660de8ca0339c11cc3761971a96a2fd3993f977",
+      "name": "areaId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "100"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0028"
+      ]
+    },
+    {
+      "parameter_id": "param_0005",
+      "parameter_identity": "sha256:f9a9b452892d65c5d38cfd3c830f00cee89cfe84d47666f77bbbf51452d077d2",
+      "name": "isLocked",
+      "location": "cookie",
+      "type": "boolean",
+      "values": [
+        "false"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0028"
+      ]
+    },
+    {
+      "parameter_id": "param_0006",
+      "parameter_identity": "sha256:f102e3a9743b122e7ce4a00ec8afd339a739c170aa3e4586e84004cd1710940f",
+      "name": "orgId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "100"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0028"
+      ]
+    },
+    {
+      "parameter_id": "param_0007",
+      "parameter_identity": "sha256:55c49653009db61bad870c78d32c8a63c3d93a7045b96c2a3c928fddcb5793e7",
+      "name": "staffJobId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "25162"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0028"
+      ]
+    },
+    {
+      "parameter_id": "param_0008",
+      "parameter_identity": "sha256:20cda2670ce219c98b6a0034c31762b8f7e37fcfa054c78793ec7eb04e909d31",
+      "name": "userId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "1"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0028"
+      ]
+    },
+    {
+      "parameter_id": "param_0009",
+      "parameter_identity": "sha256:eaffd270003a4b02f736b8458328adfefcf9aec6b3f769ae1c44ed9ac3a73ca9",
+      "name": "Menu-Id",
+      "location": "header",
+      "type": "integer",
+      "values": [
+        "120008"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0028"
+      ]
+    },
+    {
+      "parameter_id": "param_0010",
+      "parameter_identity": "sha256:a0fb64373f741d1291402ed5364c3a9c2c52820e5e31d5449c8c9cd0c4e72be7",
+      "name": "Priority",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "u=1, i"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0028"
+      ]
+    },
+    {
+      "parameter_id": "param_0011",
+      "parameter_identity": "sha256:2d8b19c563006d1a203de839d00aed6e9ca7aeecf0360d097fabcb86bb537da7",
+      "name": "state",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "A"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0028"
+      ]
+    },
+    {
+      "parameter_id": "param_0012",
+      "parameter_identity": "sha256:ee1f872def5c66abcf544df52d36e0ee4d3ea1927c209a0b8cf2188bf1e41c07",
+      "name": "unitTypeId",
+      "location": "json",
+      "type": "integer",
+      "values": [
+        "1"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0028"
+      ]
+    }
+  ],
+  "inventory_id": "sha256:cdcf330de69b7279cc033ecf18740a41f4d68829c0cb3421a5b790b8b4dcdfa2",
+  "request_examples": [
+    {
+      "traffic_id": "traffic_0028",
+      "principal_ref": "principal_c8a93705deac",
+      "method": "POST",
+      "url": "https://10.10.177.111/portal-web/otc/domain/queryUnitList",
+      "content_type": "application/json",
+      "query": null,
+      "body_excerpt": "{\"state\":\"A\",\"unitTypeId\":1}",
+      "body_sha256": "43a00d609d785fda826f72d114fb694f5c87d28541078509557c0d781c431939"
+    }
+  ],
+  "response_examples": [
+    {
+      "traffic_id": "traffic_0028",
+      "status": 200,
+      "content_type": "application/json",
+      "body_excerpt": "[{\"unitId\":4,\"unitTypeId\":1,\"unitName\":\"Byte\",\"unitCode\":\"Byte\",\"systemReserve\":\"Y\",\"displayScale\":0,\"comments\":\"System reserve unit of Data\",\"spId\":null,\"state\":\"A\",\"createdDate\":null,\"partyType\":null,\"partyCode\":null,\"subUnitId\":null},{\"unitId\":5,\"unitTypeId\":1,\"unitName\":\"KB\",\"unitCode\":\"KB\",\"systemReserve\":\"Y\",\"displayScale\":2,\"comments\":\"System reserve unit of Data\",\"spId\":null,\"state\":\"A\",\"createdDate\":null,\"partyType\":null,\"partyCode\":null,\"subUnitId\":4},{\"unitId\":6,\"unitTypeId\":1,\"unitName\":\"MB\",\"unitCode\":\"MB\",\"systemReserve\":\"Y\",\"displayScale\":2,\"comments\":\"System reserve unit of Data\",\"spId\":null,\"state\":\"A\",\"createdDate\":null,\"partyType\":null,\"partyCode\":null,\"subUnitId\":5},{\"unitId\":7,\"unitTypeId\":1,\"unitName\":\"GB\",\"unitCode\":\"GB\",\"systemReserve\":\"Y\",\"displayScale\":2,\"comments\":\"System reserve unit of Data\",\"spId\":null,\"state\":\"A\",\"createdDate\":null,\"partyType\":null,\"partyCode\":null,\"subUnitId\":6}]",
+      "body_sha256": "6ba6b71e04af38c48b0a87aa5e78846c11efd76eb916d64231c0989070a29531"
+    }
+  ],
+  "auth_contexts": [
+    {
+      "principal_ref": "principal_c8a93705deac",
+      "credential_ref": "cred_c8a93705deac",
+      "auth_types": [
+        "api_key",
+        "cookie"
+      ],
+      "traffic_count": 1
+    }
+  ],
+  "business_context": {
+    "description": null,
+    "evidence": [
+      "parameter 'SP_ID' (cookie) suggests object identifier",
+      "parameter 'orgId' (cookie) suggests tenant identity",
+      "parameter 'userId' (cookie) suggests user identity",
+      "parameter 'state' (json) suggests business state",
+      "response field 'unitName' suggests search / filter",
+      "response field 'state' suggests business state",
+      "path segment 'queryUnitList' suggests search / filter"
+    ]
+  },
+  "limitations": []
+}

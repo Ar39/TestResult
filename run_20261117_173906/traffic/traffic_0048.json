@@ -1,0 +1,384 @@
+{
+  "traffic_id": "traffic_0048",
+  "source": "burp_xml",
+  "request": {
+    "method": "PUT",
+    "scheme": "https",
+    "host": "10.10.177.111",
+    "port": 443,
+    "path": "/portal-web/otc/priceDeposit/addOtcPriceDeposit",
+    "raw_target": "/portal-web/otc/priceDeposit/addOtcPriceDeposit",
+    "query": {},
+    "headers": [
+      {
+        "name": "Host",
+        "value": "10.10.177.111"
+      },
+      {
+        "name": "Cookie",
+        "value": "<credential:cred_c8a93705deac>"
+      },
+      {
+        "name": "Content-Length",
+        "value": "950"
+      },
+      {
+        "name": "Sec-Ch-Ua-Platform",
+        "value": "\"macOS\""
+      },
+      {
+        "name": "X-Csrf-Token",
+        "value": "<credential:cred_c8a93705deac>"
+      },
+      {
+        "name": "Accept-Language",
+        "value": "zh-CN,zh;q=0.9"
+      },
+      {
+        "name": "Sec-Ch-Ua",
+        "value": "\"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"150\""
+      },
+      {
+        "name": "Sec-Ch-Ua-Mobile",
+        "value": "?0"
+      },
+      {
+        "name": "Menu-Id",
+        "value": "120008"
+      },
+      {
+        "name": "X-Requested-With",
+        "value": "XMLHttpRequest"
+      },
+      {
+        "name": "User-Agent",
+        "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+      },
+      {
+        "name": "Accept",
+        "value": "application/json, text/javascript, */*; q=0.01"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "name": "Origin",
+        "value": "https://10.10.177.111"
+      },
+      {
+        "name": "Sec-Fetch-Site",
+        "value": "same-origin"
+      },
+      {
+        "name": "Sec-Fetch-Mode",
+        "value": "cors"
+      },
+      {
+        "name": "Sec-Fetch-Dest",
+        "value": "empty"
+      },
+      {
+        "name": "Referer",
+        "value": "https://10.10.177.111/portal-web/"
+      },
+      {
+        "name": "Accept-Encoding",
+        "value": "gzip, deflate, br"
+      },
+      {
+        "name": "Priority",
+        "value": "u=1, i"
+      },
+      {
+        "name": "Connection",
+        "value": "keep-alive"
+      }
+    ],
+    "cookies": {
+      "isLocked": "false",
+      "staffJobId": "25162",
+      "ZSMART_LOCALE": "en",
+      "SP_ID": "0",
+      "areaId": "100",
+      "orgId": "100",
+      "userId": "1",
+      "HTML_VERSION": "1794653129366",
+      "SESSION": "<credential:cred_c8a93705deac>"
+    },
+    "content_type": "application/json",
+    "body": {
+      "raw": "{\"pricePlanId\":22004800,\"pricePlanName\":\"\\\">&lt;img/src=1>\",\"otcPriceDepositDtos\":[{\"depositTypeId\":1,\"applyObj\":\"S\",\"charge\":100}],\"otcConGroupDto\":{\"conGroupName\":\"(orderedOfferList(Offer Instance Information) Contain Customer Type ) \",\"conGroupExpression\":\"({})\",\"otcConDtoList\":[{\"conName\":\"orderedOfferList(Offer Instance Information) Contain Customer Type\",\"operator\":13,\"otcConLeft\":{\"conName\":\"orderedOfferList(Offer Instance Information)\",\"factorId\":38,\"funId\":56},\"otcConRight\":{\"conName\":\"Customer Type\",\"conType\":\"C\",\"factorId\":1}}],\"conExpDto\":{\"conList\":[{\"conLeftDto\":{\"conName\":\"orderedOfferList(Offer Instance Information)\",\"factorId\":38,\"funId\":56},\"conRightDto\":{\"conName\":\"Customer Type\",\"conType\":\"C\",\"factorId\":1},\"operator\":13}],\"conGroupExp\":\"(1)\"},\"compressedValue\":\"$(56,38)[13](C:1)\"},\"offerId\":\"-1\",\"pricePlanVerId\":75800,\"serviceOfferId\":123,\"priceMethod\":\"2\",\"isListPrice\":\"N\",\"priority\":\"1\",\"priceClass\":\"SUBS_DEPOSIT\"}",
+      "content_type": "application/json",
+      "charset": null,
+      "binary": false,
+      "size_bytes": 950,
+      "truncated": false,
+      "form": null,
+      "json_value": {
+        "pricePlanId": 22004800,
+        "pricePlanName": "\">&lt;img/src=1>",
+        "otcPriceDepositDtos": [
+          {
+            "depositTypeId": 1,
+            "applyObj": "S",
+            "charge": 100
+          }
+        ],
+        "otcConGroupDto": {
+          "conGroupName": "(orderedOfferList(Offer Instance Information) Contain Customer Type ) ",
+          "conGroupExpression": "({})",
+          "otcConDtoList": [
+            {
+              "conName": "orderedOfferList(Offer Instance Information) Contain Customer Type",
+              "operator": 13,
+              "otcConLeft": {
+                "conName": "orderedOfferList(Offer Instance Information)",
+                "factorId": 38,
+                "funId": 56
+              },
+              "otcConRight": {
+                "conName": "Customer Type",
+                "conType": "C",
+                "factorId": 1
+              }
+            }
+          ],
+          "conExpDto": {
+            "conList": [
+              {
+                "conLeftDto": {
+                  "conName": "orderedOfferList(Offer Instance Information)",
+                  "factorId": 38,
+                  "funId": 56
+                },
+                "conRightDto": {
+                  "conName": "Customer Type",
+                  "conType": "C",
+                  "factorId": 1
+                },
+                "operator": 13
+              }
+            ],
+            "conGroupExp": "(1)"
+          },
+          "compressedValue": "$(56,38)[13](C:1)"
+        },
+        "offerId": "-1",
+        "pricePlanVerId": 75800,
+        "serviceOfferId": 123,
+        "priceMethod": "2",
+        "isListPrice": "N",
+        "priority": "1",
+        "priceClass": "SUBS_DEPOSIT"
+      },
+      "xml_paths": null,
+      "parse_warnings": []
+    }
+  },
+  "response": {
+    "available": true,
+    "status": 200,
+    "reason": "",
+    "headers": [
+      {
+        "name": "Date",
+        "value": "Mon, 16 Nov 2026 03:31:40 GMT"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "name": "Connection",
+        "value": "keep-alive"
+      },
+      {
+        "name": "ITRACING_TRACE_ID",
+        "value": "172028108021_368334_1^1794653576196^10622"
+      },
+      {
+        "name": "Vary",
+        "value": "Origin"
+      },
+      {
+        "name": "Vary",
+        "value": "Access-Control-Request-Method"
+      },
+      {
+        "name": "Vary",
+        "value": "Access-Control-Request-Headers"
+      },
+      {
+        "name": "Access-Control-Allow-Origin",
+        "value": "https://10.10.177.111"
+      },
+      {
+        "name": "Access-Control-Expose-Headers",
+        "value": "Set-Cookie"
+      },
+      {
+        "name": "Access-Control-Allow-Credentials",
+        "value": "true"
+      },
+      {
+        "name": "X-Content-Type-Options",
+        "value": "nosniff"
+      },
+      {
+        "name": "X-XSS-Protection",
+        "value": "0"
+      },
+      {
+        "name": "Cache-Control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "name": "Pragma",
+        "value": "no-cache"
+      },
+      {
+        "name": "Expires",
+        "value": "0"
+      },
+      {
+        "name": "Referrer-Policy",
+        "value": "no-referrer-when-downgrade"
+      },
+      {
+        "name": "X-Frame-Options",
+        "value": "SAMEORIGIN"
+      },
+      {
+        "name": "X-Permitted-Cross-Domain-Policies",
+        "value": "master-only"
+      },
+      {
+        "name": "Content-Length",
+        "value": "1484"
+      }
+    ],
+    "content_type": "application/json",
+    "body": {
+      "raw": "{\"priceId\":904500,\"offerId\":-1,\"otcId\":null,\"serviceOfferId\":123,\"serviceOfferName\":null,\"priceMethod\":\"2\",\"priority\":1,\"isListPrice\":\"N\",\"conGroupId\":73700,\"createStaff\":1,\"updateStaff\":null,\"createDate\":\"2026-11-16 11:31:43\",\"statusDate\":\"2026-11-16 11:31:43\",\"updateDate\":null,\"repriceProdId\":null,\"chargeFlag\":null,\"priceClass\":\"SUBS_DEPOSIT\",\"pricePlanVerId\":75800,\"otcPriceDepositDtos\":[{\"depositId\":1200,\"priceId\":904500,\"depositTypeId\":1,\"depositClass\":null,\"value\":null,\"depositTypeName\":null,\"depositTypeCode\":null,\"applyObj\":\"S\",\"charge\":100,\"updateStaff\":null,\"updateDate\":null,\"updateStaffId\":null,\"currencyTypeId\":null,\"currencyCode\":null,\"currencySymbol\":null,\"displayScale\":null,\"savePrecision\":null,\"roundMethod\":null,\"depositTypeDto\":null,\"displayPriceName\":null}],\"otcConGroupDto\":{\"conGroupId\":73700,\"conGroupName\":\"(orderedOfferList(Offer Instance Information) Contain Customer Type ) \",\"conGroupExpression\":\"(74100)\",\"otcConDtoList\":[{\"otcConLeft\":{\"conLeftId\":74100,\"conName\":\"orderedOfferList(Offer Instance Information)\",\"conCode\":null,\"conDesc\":null,\"funId\":56,\"lParam1\":null,\"lParam2\":null,\"lParam3\":null,\"factorId\":38,\"isList\":null},\"otcConRight\":{\"conRightId\":74100,\"conName\":\"Customer Type\",\"conType\":\"C\",\"value\":null,\"factorId\":1,\"funId\":null,\"rParam1\":null,\"rParam2\":null},\"conId\":74100,\"conGroupId\":73700,\"conLeftId\":74100,\"operator\":13,\"conRightId\":74100,\"conName\":\"orderedOfferList(Offer Instance Information) Contain Customer Type\"}],\"flag\":false}}",
+      "content_type": "application/json",
+      "charset": null,
+      "binary": false,
+      "size_bytes": 1484,
+      "truncated": false,
+      "form": null,
+      "json_value": {
+        "priceId": 904500,
+        "offerId": -1,
+        "otcId": null,
+        "serviceOfferId": 123,
+        "serviceOfferName": null,
+        "priceMethod": "2",
+        "priority": 1,
+        "isListPrice": "N",
+        "conGroupId": 73700,
+        "createStaff": 1,
+        "updateStaff": null,
+        "createDate": "2026-11-16 11:31:43",
+        "statusDate": "2026-11-16 11:31:43",
+        "updateDate": null,
+        "repriceProdId": null,
+        "chargeFlag": null,
+        "priceClass": "SUBS_DEPOSIT",
+        "pricePlanVerId": 75800,
+        "otcPriceDepositDtos": [
+          {
+            "depositId": 1200,
+            "priceId": 904500,
+            "depositTypeId": 1,
+            "depositClass": null,
+            "value": null,
+            "depositTypeName": null,
+            "depositTypeCode": null,
+            "applyObj": "S",
+            "charge": 100,
+            "updateStaff": null,
+            "updateDate": null,
+            "updateStaffId": null,
+            "currencyTypeId": null,
+            "currencyCode": null,
+            "currencySymbol": null,
+            "displayScale": null,
+            "savePrecision": null,
+            "roundMethod": null,
+            "depositTypeDto": null,
+            "displayPriceName": null
+          }
+        ],
+        "otcConGroupDto": {
+          "conGroupId": 73700,
+          "conGroupName": "(orderedOfferList(Offer Instance Information) Contain Customer Type ) ",
+          "conGroupExpression": "(74100)",
+          "otcConDtoList": [
+            {
+              "otcConLeft": {
+                "conLeftId": 74100,
+                "conName": "orderedOfferList(Offer Instance Information)",
+                "conCode": null,
+                "conDesc": null,
+                "funId": 56,
+                "lParam1": null,
+                "lParam2": null,
+                "lParam3": null,
+                "factorId": 38,
+                "isList": null
+              },
+              "otcConRight": {
+                "conRightId": 74100,
+                "conName": "Customer Type",
+                "conType": "C",
+                "value": null,
+                "factorId": 1,
+                "funId": null,
+                "rParam1": null,
+                "rParam2": null
+              },
+              "conId": 74100,
+              "conGroupId": 73700,
+              "conLeftId": 74100,
+              "operator": 13,
+              "conRightId": 74100,
+              "conName": "orderedOfferList(Offer Instance Information) Contain Customer Type"
+            }
+          ],
+          "flag": false
+        }
+      },
+      "xml_paths": null,
+      "parse_warnings": []
+    }
+  },
+  "auth_context": {
+    "authenticated": true,
+    "principal_ref": "principal_c8a93705deac",
+    "credential_ref": "cred_c8a93705deac",
+    "auth_types": [
+      "api_key",
+      "cookie"
+    ]
+  },
+  "artifacts": [
+    {
+      "artifact_id": "artifact_0095",
+      "type": "http_request",
+      "path": "traffic/traffic_0048/request.txt",
+      "sha256": "4cbc255de8c928ccb21d8fd7ee4421dd649ceddb63d64a3efcbca55b1bde250f",
+      "size_bytes": 1894,
+      "created_at": "2026-11-17T17:42:01+08:00"
+    },
+    {
+      "artifact_id": "artifact_0096",
+      "type": "http_response",
+      "path": "traffic/traffic_0048/response.txt",
+      "sha256": "d0a1137c4a7d2ad304810ffe8d618779048a8ba8b7a3c6f84eefdbc329d14ab4",
+      "size_bytes": 2150,
+      "created_at": "2026-11-17T17:42:01+08:00"
+    }
+  ],
+  "parse_warnings": []
+}

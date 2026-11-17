@@ -1,0 +1,586 @@
+{
+  "endpoint_id": "endpoint_0068",
+  "method": "PUT",
+  "scheme": "https",
+  "host": "10.10.177.111",
+  "path": "/portal-web/otc/priceDeposit/addOtcPriceDeposit",
+  "traffic_ids": [
+    "traffic_0048"
+  ],
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:0f77c898b4fcc2acf227c20cb9bd32b2ffeeaf203c5bf1f067f7d8b3f56237fb",
+      "name": "HTML_VERSION",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "1794653129366"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0048"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:198d31b57da7213b9f26355d7453310e90774fac2fb9dea9c9fd6b9e131147a1",
+      "name": "SP_ID",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "0"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0048"
+      ]
+    },
+    {
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:ec764419d732d9f7a8d51f0d13a1e8b4110967458f983b1336a76ac5f78b8c78",
+      "name": "ZSMART_LOCALE",
+      "location": "cookie",
+      "type": "string",
+      "values": [
+        "en"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0048"
+      ]
+    },
+    {
+      "parameter_id": "param_0004",
+      "parameter_identity": "sha256:d39f1ae72f79da8d9f7eebe65dfbef121955beaffb9fb7bd7091da492d15aa3c",
+      "name": "areaId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "100"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0048"
+      ]
+    },
+    {
+      "parameter_id": "param_0005",
+      "parameter_identity": "sha256:ea03c18a886fc76476e39bf124a616a3e2b6e1c8e243f93c5ea566d354986667",
+      "name": "isLocked",
+      "location": "cookie",
+      "type": "boolean",
+      "values": [
+        "false"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0048"
+      ]
+    },
+    {
+      "parameter_id": "param_0006",
+      "parameter_identity": "sha256:c1525a69bf7afbce9af8351b5456fc59f0811b125e80d19a69ba1a880b11428a",
+      "name": "orgId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "100"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0048"
+      ]
+    },
+    {
+      "parameter_id": "param_0007",
+      "parameter_identity": "sha256:8569294f877a65cfafbe23ee9f9661f4ac3c330b904dffe61bec3bbc9463e0de",
+      "name": "staffJobId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "25162"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0048"
+      ]
+    },
+    {
+      "parameter_id": "param_0008",
+      "parameter_identity": "sha256:df68abbd021200c16d8ed48fe0de8fba1ee50441fb72583989d8a3a42acccadf",
+      "name": "userId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "1"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0048"
+      ]
+    },
+    {
+      "parameter_id": "param_0009",
+      "parameter_identity": "sha256:5e4021b773772bfab61c2d1df126333a1b32f10c1e3c0587078e9c46b560e8a0",
+      "name": "Menu-Id",
+      "location": "header",
+      "type": "integer",
+      "values": [
+        "120008"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0048"
+      ]
+    },
+    {
+      "parameter_id": "param_0010",
+      "parameter_identity": "sha256:3b318003cb7aa6b44f81855beea0e4c1bb2b53b41e1480e8f25c6a05bba6f964",
+      "name": "Priority",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "u=1, i"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0048"
+      ]
+    },
+    {
+      "parameter_id": "param_0011",
+      "parameter_identity": "sha256:5cab9a78bbbc1f91175cb68e7bc5c7755b25906463edb2b12bd312c69e3b122c",
+      "name": "isListPrice",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "N"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0048"
+      ]
+    },
+    {
+      "parameter_id": "param_0012",
+      "parameter_identity": "sha256:ba7852027f5eb3180c7589f3307378107858edaa37bb4081127f908d57e56c28",
+      "name": "offerId",
+      "location": "json",
+      "type": "integer",
+      "values": [
+        "-1"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0048"
+      ]
+    },
+    {
+      "parameter_id": "param_0013",
+      "parameter_identity": "sha256:bdbd373ec9c33a810d107568020c130580e685ad3e6769e31d7b602c65297141",
+      "name": "otcConGroupDto.compressedValue",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "$(56,38)[13](C:1)"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0048"
+      ]
+    },
+    {
+      "parameter_id": "param_0014",
+      "parameter_identity": "sha256:8d6002585aa9416a80e4f03ced9b41bc2e21c802105c71a6c947a1ca7934e927",
+      "name": "otcConGroupDto.conExpDto.conGroupExp",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "(1)"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0048"
+      ]
+    },
+    {
+      "parameter_id": "param_0015",
+      "parameter_identity": "sha256:880d87c7cbe9b00ac265134b29021408c037fe3c37886f862d7d5888865fc689",
+      "name": "otcConGroupDto.conExpDto.conList[0].conLeftDto.conName",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "orderedOfferList(Offer Instance Information)"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0048"
+      ]
+    },
+    {
+      "parameter_id": "param_0016",
+      "parameter_identity": "sha256:62b77aa80506f1ba6b7dba31e7d21cddbbbfb51bc87e8723acebe0be4a39c3b2",
+      "name": "otcConGroupDto.conExpDto.conList[0].conLeftDto.factorId",
+      "location": "json",
+      "type": "integer",
+      "values": [
+        "38"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0048"
+      ]
+    },
+    {
+      "parameter_id": "param_0017",
+      "parameter_identity": "sha256:c5c070ed6d34559f8fe3bed2ba239e11a3d2a183c5c8e44130d8c6e4c9b2ba34",
+      "name": "otcConGroupDto.conExpDto.conList[0].conLeftDto.funId",
+      "location": "json",
+      "type": "integer",
+      "values": [
+        "56"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0048"
+      ]
+    },
+    {
+      "parameter_id": "param_0018",
+      "parameter_identity": "sha256:1f10cf77a1d1286576e37b30b993b9df52d1ae7061a0fe5bd821d965ebf171b3",
+      "name": "otcConGroupDto.conExpDto.conList[0].conRightDto.conName",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "Customer Type"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0048"
+      ]
+    },
+    {
+      "parameter_id": "param_0019",
+      "parameter_identity": "sha256:2cf59cddada3195b1e5b660cf1429d718049b8ffcbd11db407dd6f1106c590c0",
+      "name": "otcConGroupDto.conExpDto.conList[0].conRightDto.conType",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "C"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0048"
+      ]
+    },
+    {
+      "parameter_id": "param_0020",
+      "parameter_identity": "sha256:9f7743b10c1facc587a342713d4bfe558d654b7ed5071d12223808c9aa8e644b",
+      "name": "otcConGroupDto.conExpDto.conList[0].conRightDto.factorId",
+      "location": "json",
+      "type": "integer",
+      "values": [
+        "1"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0048"
+      ]
+    },
+    {
+      "parameter_id": "param_0021",
+      "parameter_identity": "sha256:c14a8f996d9df37d5ac3090664c11595aa255d4f58ceaf24b7234570c9874b73",
+      "name": "otcConGroupDto.conExpDto.conList[0].operator",
+      "location": "json",
+      "type": "integer",
+      "values": [
+        "13"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0048"
+      ]
+    },
+    {
+      "parameter_id": "param_0022",
+      "parameter_identity": "sha256:676158f72484675f6eb1c09d8e8f9fe77637badcd97971b371bff94d69ee5eb6",
+      "name": "otcConGroupDto.conGroupExpression",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "({})"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0048"
+      ]
+    },
+    {
+      "parameter_id": "param_0023",
+      "parameter_identity": "sha256:6944fda3ff6f2f5976efd650ac1240b17028e00bbf50975b9108d7aba66ae33c",
+      "name": "otcConGroupDto.conGroupName",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "(orderedOfferList(Offer Instance Information) Contain Customer Type ) "
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0048"
+      ]
+    },
+    {
+      "parameter_id": "param_0024",
+      "parameter_identity": "sha256:2152a50b0a5031bd54a07301912477065c128e3b981b2879daba8ebcb7c390b0",
+      "name": "otcConGroupDto.otcConDtoList[0].conName",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "orderedOfferList(Offer Instance Information) Contain Customer Type"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0048"
+      ]
+    },
+    {
+      "parameter_id": "param_0025",
+      "parameter_identity": "sha256:eca3209809d78d064d6e5bfc49d9d8d9e3b1608b419c674c5a32f88ab70026f4",
+      "name": "otcConGroupDto.otcConDtoList[0].operator",
+      "location": "json",
+      "type": "integer",
+      "values": [
+        "13"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0048"
+      ]
+    },
+    {
+      "parameter_id": "param_0026",
+      "parameter_identity": "sha256:2d50363eea73792d2e42eb4d8149301e6ec0eafb910eb7553bea3bc6ce292594",
+      "name": "otcConGroupDto.otcConDtoList[0].otcConLeft.conName",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "orderedOfferList(Offer Instance Information)"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0048"
+      ]
+    },
+    {
+      "parameter_id": "param_0027",
+      "parameter_identity": "sha256:8b3a8b085c1687c3dd6d25e3bc26381e3fb5dc9fd3842e7e856d5296b7a3f7e9",
+      "name": "otcConGroupDto.otcConDtoList[0].otcConLeft.factorId",
+      "location": "json",
+      "type": "integer",
+      "values": [
+        "38"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0048"
+      ]
+    },
+    {
+      "parameter_id": "param_0028",
+      "parameter_identity": "sha256:45d5abb547514c755ca37b13b63db42045d87a95736fa303bebd1e2a1f23da8d",
+      "name": "otcConGroupDto.otcConDtoList[0].otcConLeft.funId",
+      "location": "json",
+      "type": "integer",
+      "values": [
+        "56"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0048"
+      ]
+    },
+    {
+      "parameter_id": "param_0029",
+      "parameter_identity": "sha256:ec8ef7dc95c99aebb14d07aa97dc9f8fe2c4ca39175bcb156429738bd19834d4",
+      "name": "otcConGroupDto.otcConDtoList[0].otcConRight.conName",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "Customer Type"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0048"
+      ]
+    },
+    {
+      "parameter_id": "param_0030",
+      "parameter_identity": "sha256:f5c7086fa190cff549a530ed24a7f4ee4dd2d1bc88aa8a8218d21f846d6a4d11",
+      "name": "otcConGroupDto.otcConDtoList[0].otcConRight.conType",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "C"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0048"
+      ]
+    },
+    {
+      "parameter_id": "param_0031",
+      "parameter_identity": "sha256:92cdff48b90df8148fb6697120971a81dedb4b5cfe2af80a1b17e901ea153c59",
+      "name": "otcConGroupDto.otcConDtoList[0].otcConRight.factorId",
+      "location": "json",
+      "type": "integer",
+      "values": [
+        "1"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0048"
+      ]
+    },
+    {
+      "parameter_id": "param_0032",
+      "parameter_identity": "sha256:029cd3302652d58da2c5d7e5e1ced53bb3e0f5ca330c0db1ff21aa6be6838427",
+      "name": "otcPriceDepositDtos[0].applyObj",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "S"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0048"
+      ]
+    },
+    {
+      "parameter_id": "param_0033",
+      "parameter_identity": "sha256:ede415cfe2bc8b7630271241cbec7158a7f4719f277737b72aa9d1d613719d65",
+      "name": "otcPriceDepositDtos[0].charge",
+      "location": "json",
+      "type": "integer",
+      "values": [
+        "100"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0048"
+      ]
+    },
+    {
+      "parameter_id": "param_0034",
+      "parameter_identity": "sha256:f6719882c542eb03db1430a6917a45cf9a26e6ce4108d754f969da5cd1c5f969",
+      "name": "otcPriceDepositDtos[0].depositTypeId",
+      "location": "json",
+      "type": "integer",
+      "values": [
+        "1"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0048"
+      ]
+    },
+    {
+      "parameter_id": "param_0035",
+      "parameter_identity": "sha256:da69433b2a28ecf259f835642f2d39c57d3f31c40e10fc999eded03cbc8e2457",
+      "name": "priceClass",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "SUBS_DEPOSIT"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0048"
+      ]
+    },
+    {
+      "parameter_id": "param_0036",
+      "parameter_identity": "sha256:ace39ad2cb45ce464a301bd8bc573fabc8de5ca0b5c276b1420942ceeba43f0b",
+      "name": "priceMethod",
+      "location": "json",
+      "type": "integer",
+      "values": [
+        "2"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0048"
+      ]
+    },
+    {
+      "parameter_id": "param_0037",
+      "parameter_identity": "sha256:9f149e0429cf6e3cd29a4813580362ca681ffdae74222d19e6d45bfb3cc0b71a",
+      "name": "pricePlanId",
+      "location": "json",
+      "type": "integer",
+      "values": [
+        "22004800"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0048"
+      ]
+    },
+    {
+      "parameter_id": "param_0038",
+      "parameter_identity": "sha256:c8855cbe707d3ef5a6e897e3453c22937f97104aed764410a28810fd5ba39d4d",
+      "name": "pricePlanName",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "\">&lt;img/src=1>"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0048"
+      ]
+    },
+    {
+      "parameter_id": "param_0039",
+      "parameter_identity": "sha256:1a32c59572bf7f3ef4f5cb6064f5472a43becb3a0245eda0a2ab227fe8186e19",
+      "name": "pricePlanVerId",
+      "location": "json",
+      "type": "integer",
+      "values": [
+        "75800"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0048"
+      ]
+    },
+    {
+      "parameter_id": "param_0040",
+      "parameter_identity": "sha256:d1304b75ee4d141ed125917f97090657f273719a07b10c9efeb4d46e54694276",
+      "name": "priority",
+      "location": "json",
+      "type": "integer",
+      "values": [
+        "1"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0048"
+      ]
+    },
+    {
+      "parameter_id": "param_0041",
+      "parameter_identity": "sha256:bb38e3e13bedade9ae0cc0da524e10f3dc8b2b0a920ca85d8ea632d839d2a459",
+      "name": "serviceOfferId",
+      "location": "json",
+      "type": "integer",
+      "values": [
+        "123"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0048"
+      ]
+    }
+  ]
+}

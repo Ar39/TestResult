@@ -1,0 +1,19 @@
+HTTP/1.1 200 
+Date: Mon, 16 Nov 2026 03:41:50 GMT
+Content-Type: application/json
+Connection: keep-alive
+ITRACING_TRACE_ID: 172028108021_368334_1^1794653576196^11271
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Referrer-Policy: no-referrer-when-downgrade
+X-Frame-Options: SAMEORIGIN
+X-Permitted-Cross-Domain-Policies: master-only
+Content-Length: 1657
+
+{"total":5963,"list":[{"offerId":100043,"offerType":"4","offerName":"Kids L","offerNbr":"100043","brandId":null,"offerGrade":null,"paymentModeCd":null},{"offerId":100042,"offerType":"4","offerName":"Kids M","offerNbr":"100042","brandId":null,"offerGrade":null,"paymentModeCd":null},{"offerId":100040,"offerType":"4","offerName":"Welcome Kids","offerNbr":"100040","brandId":null,"offerGrade":null,"paymentModeCd":null},{"offerId":100041,"offerType":"4","offerName":"Kids S","offerNbr":"100041","brandId":null,"offerGrade":null,"paymentModeCd":null},{"offerId":100064,"offerType":"4","offerName":"Child Whitelist","offerNbr":"100064","brandId":null,"offerGrade":null,"paymentModeCd":null},{"offerId":100059,"offerType":"4","offerName":"MANUAL_INVOICE","offerNbr":"MANUAL_INVOICE","brandId":null,"offerGrade":null,"paymentModeCd":null},{"offerId":100058,"offerType":"4","offerName":"14000F_local_call","offerNbr":"100058","brandId":null,"offerGrade":null,"paymentModeCd":null},{"offerId":100057,"offerType":"4","offerName":"9000F_local_call","offerNbr":"100057","brandId":null,"offerGrade":null,"paymentModeCd":null},{"offerId":100056,"offerType":"4","offerName":"5000F_local_call","offerNbr":"100056","brandId":null,"offerGrade":null,"paymentModeCd":null},{"offerId":100055,"offerType":"4","offerName":"7000F_local_call","offerNbr":"100055","brandId":null,"offerGrade":null,"paymentModeCd":null}],"pageNum":1,"pageSize":10,"size":0,"startRow":0,"endRow":0,"pages":0,"prePage":0,"nextPage":0,"isFirstPage":false,"isLastPage":false,"hasPreviousPage":false,"hasNextPage":false,"navigatePages":0,"navigatepageNums":null,"navigateFirstPage":0,"navigateLastPage":0}

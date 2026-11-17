@@ -1,0 +1,40 @@
+[
+  {
+    "import_id": "import_80409829",
+    "run_id": "run_20261117_173551_02",
+    "total": 5,
+    "success": 5,
+    "failed": 0,
+    "traffic_ids": [
+      "traffic_0001",
+      "traffic_0002",
+      "traffic_0003",
+      "traffic_0004",
+      "traffic_0005"
+    ],
+    "errors": []
+  },
+  {
+    "import_id": "import_cffbd20d",
+    "run_id": "run_20261117_173551_02",
+    "total": 1,
+    "success": 1,
+    "failed": 0,
+    "traffic_ids": [
+      "traffic_0006"
+    ],
+    "errors": []
+  },
+  {
+    "import_id": "import_83c31f27",
+    "run_id": "run_20261117_173551_02",
+    "total": 2,
+    "success": 2,
+    "failed": 0,
+    "traffic_ids": [
+      "traffic_0007",
+      "traffic_0008"
+    ],
+    "errors": []
+  }
+]

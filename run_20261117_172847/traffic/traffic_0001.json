@@ -1,0 +1,75 @@
+{
+  "traffic_id": "traffic_0001",
+  "source": "burp_xml",
+  "request": {
+    "method": "POST",
+    "scheme": "https",
+    "host": "10.10.177.111",
+    "port": 443,
+    "path": "/portal-web/otc/cacheRefresh/qryOtcCacheVer",
+    "raw_target": "/portal-web/otc/cacheRefresh/qryOtcCacheVer",
+    "query": {},
+    "headers": [
+      {
+        "name": "Host",
+        "value": "10.10.177.111"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "cookies": {},
+    "content_type": "application/json",
+    "body": null
+  },
+  "response": {
+    "available": true,
+    "status": 200,
+    "reason": "OK",
+    "headers": [
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "content_type": "application/json",
+    "body": {
+      "raw": "1",
+      "content_type": "application/json",
+      "charset": null,
+      "binary": false,
+      "size_bytes": 1,
+      "truncated": false,
+      "form": null,
+      "json_value": 1,
+      "xml_paths": null,
+      "parse_warnings": []
+    }
+  },
+  "auth_context": {
+    "authenticated": false,
+    "principal_ref": null,
+    "credential_ref": null,
+    "auth_types": []
+  },
+  "artifacts": [
+    {
+      "artifact_id": "artifact_0001",
+      "type": "http_request",
+      "path": "traffic/traffic_0001/request.txt",
+      "sha256": "4ae222321a2138c18c376f7d3df9aefa15ebe96378ebb93e840bf998e9532151",
+      "size_bytes": 114,
+      "created_at": "2026-11-17T17:28:47+08:00"
+    },
+    {
+      "artifact_id": "artifact_0002",
+      "type": "http_response",
+      "path": "traffic/traffic_0001/response.txt",
+      "sha256": "e1a868058d52f6cc2952b5365eff2254a7b987dc26e5b446a75e75017f0cdc03",
+      "size_bytes": 52,
+      "created_at": "2026-11-17T17:28:47+08:00"
+    }
+  ],
+  "parse_warnings": []
+}

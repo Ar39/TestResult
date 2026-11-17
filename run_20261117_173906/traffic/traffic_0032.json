@@ -1,0 +1,247 @@
+{
+  "traffic_id": "traffic_0032",
+  "source": "burp_xml",
+  "request": {
+    "method": "POST",
+    "scheme": "https",
+    "host": "10.10.177.111",
+    "port": 443,
+    "path": "/portal-web/otc/mock",
+    "raw_target": "/portal-web/otc/mock",
+    "query": {},
+    "headers": [
+      {
+        "name": "Host",
+        "value": "10.10.177.111"
+      },
+      {
+        "name": "Cookie",
+        "value": "<credential:cred_c8a93705deac>"
+      },
+      {
+        "name": "Content-Length",
+        "value": "3"
+      },
+      {
+        "name": "Sec-Ch-Ua-Platform",
+        "value": "\"macOS\""
+      },
+      {
+        "name": "X-Csrf-Token",
+        "value": "<credential:cred_c8a93705deac>"
+      },
+      {
+        "name": "Accept-Language",
+        "value": "zh-CN,zh;q=0.9"
+      },
+      {
+        "name": "Sec-Ch-Ua",
+        "value": "\"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"150\""
+      },
+      {
+        "name": "Sec-Ch-Ua-Mobile",
+        "value": "?0"
+      },
+      {
+        "name": "Menu-Id",
+        "value": "120003"
+      },
+      {
+        "name": "X-Requested-With",
+        "value": "XMLHttpRequest"
+      },
+      {
+        "name": "User-Agent",
+        "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+      },
+      {
+        "name": "Accept",
+        "value": "application/json, text/javascript, */*; q=0.01"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "name": "Origin",
+        "value": "https://10.10.177.111"
+      },
+      {
+        "name": "Sec-Fetch-Site",
+        "value": "same-origin"
+      },
+      {
+        "name": "Sec-Fetch-Mode",
+        "value": "cors"
+      },
+      {
+        "name": "Sec-Fetch-Dest",
+        "value": "empty"
+      },
+      {
+        "name": "Referer",
+        "value": "https://10.10.177.111/portal-web/"
+      },
+      {
+        "name": "Accept-Encoding",
+        "value": "gzip, deflate, br"
+      },
+      {
+        "name": "Priority",
+        "value": "u=1, i"
+      },
+      {
+        "name": "Connection",
+        "value": "keep-alive"
+      }
+    ],
+    "cookies": {
+      "isLocked": "false",
+      "staffJobId": "25162",
+      "ZSMART_LOCALE": "en",
+      "SP_ID": "0",
+      "areaId": "100",
+      "orgId": "100",
+      "userId": "1",
+      "HTML_VERSION": "1794653129366",
+      "SESSION": "<credential:cred_c8a93705deac>"
+    },
+    "content_type": "application/json",
+    "body": {
+      "raw": "\"1\"",
+      "content_type": "application/json",
+      "charset": null,
+      "binary": false,
+      "size_bytes": 3,
+      "truncated": false,
+      "form": null,
+      "json_value": "1",
+      "xml_paths": null,
+      "parse_warnings": []
+    }
+  },
+  "response": {
+    "available": true,
+    "status": 200,
+    "reason": "",
+    "headers": [
+      {
+        "name": "Date",
+        "value": "Mon, 16 Nov 2026 03:22:56 GMT"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "name": "Connection",
+        "value": "keep-alive"
+      },
+      {
+        "name": "ITRACING_TRACE_ID",
+        "value": "172028108021_368334_1^1794653576196^10039"
+      },
+      {
+        "name": "Vary",
+        "value": "Origin"
+      },
+      {
+        "name": "Vary",
+        "value": "Access-Control-Request-Method"
+      },
+      {
+        "name": "Vary",
+        "value": "Access-Control-Request-Headers"
+      },
+      {
+        "name": "Access-Control-Allow-Origin",
+        "value": "https://10.10.177.111"
+      },
+      {
+        "name": "Access-Control-Expose-Headers",
+        "value": "Set-Cookie"
+      },
+      {
+        "name": "Access-Control-Allow-Credentials",
+        "value": "true"
+      },
+      {
+        "name": "X-Content-Type-Options",
+        "value": "nosniff"
+      },
+      {
+        "name": "X-XSS-Protection",
+        "value": "0"
+      },
+      {
+        "name": "Cache-Control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "name": "Pragma",
+        "value": "no-cache"
+      },
+      {
+        "name": "Expires",
+        "value": "0"
+      },
+      {
+        "name": "Referrer-Policy",
+        "value": "no-referrer-when-downgrade"
+      },
+      {
+        "name": "X-Frame-Options",
+        "value": "SAMEORIGIN"
+      },
+      {
+        "name": "X-Permitted-Cross-Domain-Policies",
+        "value": "master-only"
+      },
+      {
+        "name": "Content-Length",
+        "value": "7971"
+      }
+    ],
+    "content_type": "application/json",
+    "body": {
+      "raw": "{\"success\":true,\"retMsg\":\"Dubbo接口调用异常:java.lang.ClassCastException: class java.lang.String cannot be cast to class com.iwhalecloud.bss.otc.client.param.OneTimeChargeRequest (java.lang.String is in module java.base of loader 'bootstrap'; com.iwhalecloud.bss.otc.client.param.OneTimeChargeRequest is in unnamed module of loader org.apache.catalina.loader.ParallelWebappClassLoader @300bb303)\\njava.lang.ClassCastException: class java.lang.String cannot be cast to class com.iwhalecloud.bss.otc.client.param.OneTimeChargeRequest (java.lang.String is in module java.base of loader 'bootstrap'; com.iwhalecloud.bss.otc.client.param.OneTimeChargeRequest is in unnamed module of loader org.apache.catalina.loader.ParallelWebappClassLoader @300bb303)\\n\\tat com.iwhalecloud.bss.otc.engine.service.impl.OneTimeChargeServiceImplDubboWrap9.invokeMethod(OneTimeChargeServiceImplDubboWrap9.java)\\n\\tat org.apache.dubbo.rpc.proxy.javassist.JavassistProxyFactory$1.doInvoke(JavassistProxyFactory.java:89)\\n\\tat org.apache.dubbo.rpc.proxy.AbstractProxyInvoker.invoke(AbstractProxyInvoker.java:100)\\n\\tat org.apache.dubbo.config.invoker.DelegateProviderMetaDataInvoker.invoke(DelegateProviderMetaDataInvoker.java:55)\\n\\tat org.apache.dubbo.rpc.protocol.ZDubboProtocolWrapper$ZDubboWrappedInvoker.invoke(ZDubboProtocolWrapper.java:91)\\n\\tat com.whalecloud.itraffic.adapter.zdubbo.protocol.RegistryGroupAwareInvoker.invoke(RegistryGroupAwareInvoker.java:69)\\n\\tat org.apache.dubbo.rpc.protocol.InvokerWrapper.invoke(InvokerWrapper.java:56)\\n\\tat org.apache.dubbo.rpc.filter.ClassLoaderCallbackFilter.invoke(ClassLoaderCallbackFilter.java:38)\\n\\tat org.apache.dubbo.rpc.cluster.filter.FilterChainBuilder$CopyOfFilterChainNode.invoke(FilterChainBuilder.java:349)\\n\\tat org.apache.dubbo.spring.security.filter.AuthenticationExceptionTranslatorFilter.invoke(AuthenticationExceptionTranslatorFilter.java:51)\\n\\tat org.apache.dubbo.rpc.cluster.filter.FilterChainBuilder$CopyOfFilterChainNode.invoke(FilterChainBuilder.java:349)\\n\\tat com.ztesoft.zsmart.scp.oauth.apache.dubbo.ZDubboOAuthFilter.invoke(ZDubboOAuthFilter.java:64)\\n\\tat org.apache.dubbo.rpc.cluster.filter.FilterChainBuilder$CopyOfFilterChainNode.invoke(FilterChainBuilder.java:349)\\n\\tat com.whalecloud.itraffic.adapter.zdubbo.TrafficDubboProviderFilter.invoke(TrafficDubboProviderFilter.java:83)\\n\\tat org.apache.dubbo.rpc.cluster.filter.FilterChainBuilder$CopyOfFilterChainNode.invoke(FilterChainBuilder.java:349)\\n\\tat com.whalecloud.itraffic.adapter.zdubbo.authentication.AuthenticationProviderFilter.invoke(AuthenticationProviderFilter.java:67)\\n\\tat org.apache.dubbo.rpc.cluster.filter.FilterChainBuilder$CopyOfFilterChainNode.invoke(FilterChainBuilder.java:349)\\n\\tat com.whalecloud.itraffic.adapter.zdubbo.TrafficFetchProviderMetricsFilter.invoke(TrafficFetchProviderMetricsFilter.java:65)\\n\\tat org.apache.dubbo.rpc.cluster.filter.FilterChainBuilder$CopyOfFilterChainNode.invoke(FilterChainBuilder.java:349)\\n\\tat org.apache.dubbo.rpc.protocol.dubbo.filter.TraceFilter.invoke(TraceFilter.java:80)\\n\\tat org.apache.dubbo.rpc.cluster.filter.FilterChainBuilder$CopyOfFilterChainNode.invoke(FilterChainBuilder.java:349)\\n\\tat org.apache.dubbo.rpc.filter.TimeoutFilter.invoke(TimeoutFilter.java:45)\\n\\tat org.apache.dubbo.rpc.cluster.filter.FilterChainBuilder$CopyOfFilterChainNode.invoke(FilterChainBuilder.java:349)\\n\\tat com.alibaba.dubbo.rpc.Invoker$CompatibleInvoker.invoke(Invoker.java:77)\\n\\tat com.ztesoft.zsmart.pot.dubbo.filter.ProviderTraceFilter.invoke(ProviderTraceFilter.java:61)\\n\\tat com.alibaba.dubbo.rpc.Filter.invoke(Filter.java:38)\\n\\tat org.apache.dubbo.rpc.cluster.filter.FilterChainBuilder$CopyOfFilterChainNode.invoke(FilterChainBuilder.java:349)\\n\\tat org.apache.dubbo.monitor.support.MonitorFilter.invoke(MonitorFilter.java:108)\\n\\tat org.apache.dubbo.rpc.cluster.filter.FilterChainBuilder$CopyOfFilterChainNode.invoke(FilterChainBuilder.java:349)\\n\\tat com.ztesoft.zsmart.zdubbo.common.filter.locale.LocaleContextFilter.invoke(Loc",
+      "content_type": "application/json",
+      "charset": null,
+      "binary": false,
+      "size_bytes": 4012,
+      "truncated": false,
+      "form": null,
+      "json_value": null,
+      "xml_paths": null,
+      "parse_warnings": []
+    }
+  },
+  "auth_context": {
+    "authenticated": true,
+    "principal_ref": "principal_c8a93705deac",
+    "credential_ref": "cred_c8a93705deac",
+    "auth_types": [
+      "api_key",
+      "cookie"
+    ]
+  },
+  "artifacts": [
+    {
+      "artifact_id": "artifact_0063",
+      "type": "http_request",
+      "path": "traffic/traffic_0032/request.txt",
+      "sha256": "2c6b501f6d17e1630d78b5064764f38239b8fdfd3711a58efd8fcd5cb1bc1b2d",
+      "size_bytes": 919,
+      "created_at": "2026-11-17T17:42:01+08:00"
+    },
+    {
+      "artifact_id": "artifact_0064",
+      "type": "http_response",
+      "path": "traffic/traffic_0032/response.txt",
+      "sha256": "bbcd06479089a97b3ab9ea6efe5d923621dfbd2dd21592ab30b0870581660d31",
+      "size_bytes": 4678,
+      "created_at": "2026-11-17T17:42:01+08:00"
+    }
+  ],
+  "parse_warnings": []
+}

@@ -1,0 +1,18 @@
+{
+  "artifact_0001": {
+    "artifact_id": "artifact_0001",
+    "type": "http_request",
+    "path": "traffic/traffic_0001/request.txt",
+    "sha256": "6124e816d2f6e1b7e363be38df3dcfed0248bc4d9b6438a1b47355fc40148489",
+    "size_bytes": 855,
+    "created_at": "2026-11-17T17:27:20+08:00"
+  },
+  "artifact_0002": {
+    "artifact_id": "artifact_0002",
+    "type": "http_response",
+    "path": "traffic/traffic_0001/response.txt",
+    "sha256": "d5f9931c8e07a97f7eee27e1e03f98cee3dc42ef5bc84d28f642dd949f9e566f",
+    "size_bytes": 2436,
+    "created_at": "2026-11-17T17:27:20+08:00"
+  }
+}

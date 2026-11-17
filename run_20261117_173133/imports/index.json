@@ -1,0 +1,28 @@
+[
+  {
+    "import_id": "import_8ccb74e2",
+    "run_id": "run_20261117_173133",
+    "total": 10,
+    "success": 9,
+    "failed": 1,
+    "traffic_ids": [
+      "traffic_0002",
+      "traffic_0003",
+      "traffic_0004",
+      "traffic_0005",
+      "traffic_0006",
+      "traffic_0007",
+      "traffic_0008",
+      "traffic_0009",
+      "traffic_0010"
+    ],
+    "errors": [
+      {
+        "item_index": 0,
+        "source_name": "OTC.xml#1",
+        "reason": "invalid_response_base64",
+        "detail": "Only base64 data is allowed"
+      }
+    ]
+  }
+]

@@ -1,0 +1,7 @@
+POST /portal-web/otc/cacheRefresh/qryOtcCacheVer HTTP/1.1
+Host: 10.10.177.111
+Cookie: ***
+Content-Length: 0
+X-Csrf-Token: 15205785-d11c-4ece-8307-36dab2722d49
+X-Requested-With: XMLHttpRequest
+Content-Type: application/json

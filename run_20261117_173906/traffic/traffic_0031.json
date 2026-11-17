@@ -1,0 +1,236 @@
+{
+  "traffic_id": "traffic_0031",
+  "source": "burp_xml",
+  "request": {
+    "method": "POST",
+    "scheme": "https",
+    "host": "10.10.177.111",
+    "port": 443,
+    "path": "/portal-web/otc/free/qryAllServiceOffer",
+    "raw_target": "/portal-web/otc/free/qryAllServiceOffer",
+    "query": {},
+    "headers": [
+      {
+        "name": "Host",
+        "value": "10.10.177.111"
+      },
+      {
+        "name": "Cookie",
+        "value": "<credential:cred_c8a93705deac>"
+      },
+      {
+        "name": "Content-Length",
+        "value": "0"
+      },
+      {
+        "name": "Sec-Ch-Ua-Platform",
+        "value": "\"macOS\""
+      },
+      {
+        "name": "X-Csrf-Token",
+        "value": "<credential:cred_c8a93705deac>"
+      },
+      {
+        "name": "Accept-Language",
+        "value": "zh-CN,zh;q=0.9"
+      },
+      {
+        "name": "Sec-Ch-Ua",
+        "value": "\"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"150\""
+      },
+      {
+        "name": "Sec-Ch-Ua-Mobile",
+        "value": "?0"
+      },
+      {
+        "name": "Menu-Id",
+        "value": "120008"
+      },
+      {
+        "name": "X-Requested-With",
+        "value": "XMLHttpRequest"
+      },
+      {
+        "name": "User-Agent",
+        "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+      },
+      {
+        "name": "Accept",
+        "value": "application/json, text/javascript, */*; q=0.01"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "name": "Origin",
+        "value": "https://10.10.177.111"
+      },
+      {
+        "name": "Sec-Fetch-Site",
+        "value": "same-origin"
+      },
+      {
+        "name": "Sec-Fetch-Mode",
+        "value": "cors"
+      },
+      {
+        "name": "Sec-Fetch-Dest",
+        "value": "empty"
+      },
+      {
+        "name": "Referer",
+        "value": "https://10.10.177.111/portal-web/"
+      },
+      {
+        "name": "Accept-Encoding",
+        "value": "gzip, deflate, br"
+      },
+      {
+        "name": "Priority",
+        "value": "u=1, i"
+      },
+      {
+        "name": "Connection",
+        "value": "keep-alive"
+      }
+    ],
+    "cookies": {
+      "isLocked": "false",
+      "staffJobId": "25162",
+      "ZSMART_LOCALE": "en",
+      "SP_ID": "0",
+      "areaId": "100",
+      "orgId": "100",
+      "userId": "1",
+      "HTML_VERSION": "1794653129366",
+      "SESSION": "<credential:cred_c8a93705deac>"
+    },
+    "content_type": "application/json",
+    "body": null
+  },
+  "response": {
+    "available": true,
+    "status": 200,
+    "reason": "",
+    "headers": [
+      {
+        "name": "Date",
+        "value": "Mon, 16 Nov 2026 03:32:26 GMT"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "name": "Connection",
+        "value": "keep-alive"
+      },
+      {
+        "name": "ITRACING_TRACE_ID",
+        "value": "172028108021_368334_1^1794653576196^10667"
+      },
+      {
+        "name": "Vary",
+        "value": "Origin"
+      },
+      {
+        "name": "Vary",
+        "value": "Access-Control-Request-Method"
+      },
+      {
+        "name": "Vary",
+        "value": "Access-Control-Request-Headers"
+      },
+      {
+        "name": "Access-Control-Allow-Origin",
+        "value": "https://10.10.177.111"
+      },
+      {
+        "name": "Access-Control-Expose-Headers",
+        "value": "Set-Cookie"
+      },
+      {
+        "name": "Access-Control-Allow-Credentials",
+        "value": "true"
+      },
+      {
+        "name": "X-Content-Type-Options",
+        "value": "nosniff"
+      },
+      {
+        "name": "X-XSS-Protection",
+        "value": "0"
+      },
+      {
+        "name": "Cache-Control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "name": "Pragma",
+        "value": "no-cache"
+      },
+      {
+        "name": "Expires",
+        "value": "0"
+      },
+      {
+        "name": "Referrer-Policy",
+        "value": "no-referrer-when-downgrade"
+      },
+      {
+        "name": "X-Frame-Options",
+        "value": "SAMEORIGIN"
+      },
+      {
+        "name": "X-Permitted-Cross-Domain-Policies",
+        "value": "master-only"
+      },
+      {
+        "name": "Content-Length",
+        "value": "4082"
+      }
+    ],
+    "content_type": "application/json",
+    "body": {
+      "raw": "[{\"serviceOfferId\":1,\"serviceOfferName\":\"New Connection[1]\",\"serviceOfferDesc\":null,\"statusCd\":null,\"remark\":null},{\"serviceOfferId\":2,\"serviceOfferName\":\"New Individual Price Plan[2]\",\"serviceOfferDesc\":null,\"statusCd\":null,\"remark\":null},{\"serviceOfferId\":3,\"serviceOfferName\":\"Modify Offer[3]\",\"serviceOfferDesc\":null,\"statusCd\":null,\"remark\":null},{\"serviceOfferId\":27,\"serviceOfferName\":\"Dunning Suspension Reactivation[27]\",\"serviceOfferDesc\":null,\"statusCd\":null,\"remark\":null},{\"serviceOfferId\":28,\"serviceOfferName\":\"Voluntary Suspend[28]\",\"serviceOfferDesc\":null,\"statusCd\":null,\"remark\":null},{\"serviceOfferId\":29,\"serviceOfferName\":\"Reactivate Request[29]\",\"serviceOfferDesc\":null,\"statusCd\":null,\"remark\":null},{\"serviceOfferId\":32,\"serviceOfferName\":\"Number Shifting[32]\",\"serviceOfferDesc\":null,\"statusCd\":null,\"remark\":null},{\"serviceOfferId\":33,\"serviceOfferName\":\"Line Shifting[33]\",\"serviceOfferDesc\":null,\"statusCd\":null,\"remark\":null},{\"serviceOfferId\":34,\"serviceOfferName\":\"Change Address[34]\",\"serviceOfferDesc\":null,\"statusCd\":null,\"remark\":null},{\"serviceOfferId\":46,\"serviceOfferName\":\"Termination[46]\",\"serviceOfferDesc\":null,\"statusCd\":null,\"remark\":null},{\"serviceOfferId\":66,\"serviceOfferName\":\"Duplicate SIM Card[66]\",\"serviceOfferDesc\":null,\"statusCd\":null,\"remark\":null},{\"serviceOfferId\":67,\"serviceOfferName\":\"Transfer Ownership[67]\",\"serviceOfferDesc\":null,\"statusCd\":null,\"remark\":null},{\"serviceOfferId\":77,\"serviceOfferName\":\"(Gota) Quit Organization[77]\",\"serviceOfferDesc\":null,\"statusCd\":null,\"remark\":null},{\"serviceOfferId\":89,\"serviceOfferName\":\"Fraud Reactivate[89]\",\"serviceOfferDesc\":null,\"statusCd\":null,\"remark\":null},{\"serviceOfferId\":155,\"serviceOfferName\":\"Cancel Individual Price Plan[155]\",\"serviceOfferDesc\":null,\"statusCd\":null,\"remark\":null},{\"serviceOfferId\":163,\"serviceOfferName\":\"OTAF Active[163]\",\"serviceOfferDesc\":null,\"statusCd\":null,\"remark\":null},{\"serviceOfferId\":178,\"serviceOfferName\":\"Reconnection[178]\",\"serviceOfferDesc\":null,\"statusCd\":null,\"remark\":null},{\"serviceOfferId\":189,\"serviceOfferName\":\"Modify Subscriber[189]\",\"serviceOfferDesc\":null,\"statusCd\":null,\"remark\":null},{\"serviceOfferId\":203,\"serviceOfferName\":\"Join Bundle[203]\",\"serviceOfferDesc\":null,\"statusCd\":null,\"remark\":null},{\"serviceOfferId\":206,\"serviceOfferName\":\"Prepaid to Postpaid[206]\",\"serviceOfferDesc\":null,\"statusCd\":null,\"remark\":null},{\"serviceOfferId\":207,\"serviceOfferName\":\"Postpaid to Prepaid[207]\",\"serviceOfferDesc\":null,\"statusCd\":null,\"remark\":null},{\"serviceOfferId\":263,\"serviceOfferName\":\"SIM Replacement[263]\",\"serviceOfferDesc\":null,\"statusCd\":null,\"remark\":null},{\"serviceOfferId\":267,\"serviceOfferName\":\"Change CreditLimit[267]\",\"serviceOfferDesc\":null,\"statusCd\":null,\"remark\":null},{\"serviceOfferId\":329,\"serviceOfferName\":\"Change Offer[329]\",\"serviceOfferDesc\":null,\"statusCd\":null,\"remark\":null},{\"serviceOfferId\":392,\"serviceOfferName\":\"Add Member[392]\",\"serviceOfferDesc\":null,\"statusCd\":null,\"remark\":null},{\"serviceOfferId\":393,\"serviceOfferName\":\"Remove Member[393]\",\"serviceOfferDesc\":null,\"statusCd\":null,\"remark\":null},{\"serviceOfferId\":427,\"serviceOfferName\":\"Automatic Re-contract[427]\",\"serviceOfferDesc\":null,\"statusCd\":null,\"remark\":null},{\"serviceOfferId\":555,\"serviceOfferName\":\"Retail Sales order[555]\",\"serviceOfferDesc\":null,\"statusCd\":null,\"remark\":null},{\"serviceOfferId\":559,\"serviceOfferName\":\"Active Starter Pack[559]\",\"serviceOfferDesc\":null,\"statusCd\":null,\"remark\":null},{\"serviceOfferId\":568,\"serviceOfferName\":\"Terminate Contract[568]\",\"serviceOfferDesc\":null,\"statusCd\":null,\"remark\":null},{\"serviceOfferId\":569,\"serviceOfferName\":\"Sign Contract[569]\",\"serviceOfferDesc\":null,\"statusCd\":null,\"remark\":null},{\"serviceOfferId\":571,\"serviceOfferName\":\"Change Technology[571]\",\"serviceOfferDesc\":null,\"statusCd\":null,\"remark\":null},{\"serviceOfferId\":574,\"serviceOfferName\":\"Remain Individual Price Plan[574]\",\"serviceOfferDesc\":null,\"statusCd\":null,\"remark\":null},{\"serviceOfferId\":576,\"serviceOfferN",
+      "content_type": "application/json",
+      "charset": null,
+      "binary": false,
+      "size_bytes": 4000,
+      "truncated": false,
+      "form": null,
+      "json_value": null,
+      "xml_paths": null,
+      "parse_warnings": []
+    }
+  },
+  "auth_context": {
+    "authenticated": true,
+    "principal_ref": "principal_c8a93705deac",
+    "credential_ref": "cred_c8a93705deac",
+    "auth_types": [
+      "api_key",
+      "cookie"
+    ]
+  },
+  "artifacts": [
+    {
+      "artifact_id": "artifact_0061",
+      "type": "http_request",
+      "path": "traffic/traffic_0031/request.txt",
+      "sha256": "c6312b0773d15c7e6e006ef25a45c3dc104e0f099c07bee9bb2c97f6b6f50a60",
+      "size_bytes": 935,
+      "created_at": "2026-11-17T17:42:01+08:00"
+    },
+    {
+      "artifact_id": "artifact_0062",
+      "type": "http_response",
+      "path": "traffic/traffic_0031/response.txt",
+      "sha256": "8940e10199f4e2953da9e006fb7f280e88880ccfaad481e5b98386620e0289c4",
+      "size_bytes": 4666,
+      "created_at": "2026-11-17T17:42:01+08:00"
+    }
+  ],
+  "parse_warnings": []
+}

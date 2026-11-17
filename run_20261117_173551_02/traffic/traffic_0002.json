@@ -1,0 +1,149 @@
+{
+  "traffic_id": "traffic_0002",
+  "source": "burp_xml",
+  "request": {
+    "method": "GET",
+    "scheme": "https",
+    "host": "10.10.177.111",
+    "port": 443,
+    "path": "/portal-web/otc/cpc/offers/page",
+    "raw_target": "/portal-web/otc/cpc/offers/page?rowNum=10&page=1&_=1794797359818",
+    "query": {
+      "rowNum": [
+        "10"
+      ],
+      "page": [
+        "1"
+      ],
+      "_": [
+        "1794797359818"
+      ]
+    },
+    "headers": [
+      {
+        "name": "Host",
+        "value": "10.10.177.111"
+      },
+      {
+        "name": "Cookie",
+        "value": "<credential:cred_c8a93705deac>"
+      },
+      {
+        "name": "X-Csrf-Token",
+        "value": "<credential:cred_c8a93705deac>"
+      },
+      {
+        "name": "Menu-Id",
+        "value": "120009"
+      },
+      {
+        "name": "X-Requested-With",
+        "value": "XMLHttpRequest"
+      }
+    ],
+    "cookies": {
+      "isLocked": "false",
+      "staffJobId": "25162",
+      "ZSMART_LOCALE": "en",
+      "SP_ID": "0",
+      "areaId": "100",
+      "orgId": "100",
+      "userId": "1",
+      "HTML_VERSION": "1794653129366",
+      "SESSION": "<credential:cred_c8a93705deac>"
+    },
+    "content_type": null,
+    "body": null
+  },
+  "response": {
+    "available": true,
+    "status": 200,
+    "reason": "",
+    "headers": [
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "name": "X-Frame-Options",
+        "value": "SAMEORIGIN"
+      },
+      {
+        "name": "Content-Length",
+        "value": "1657"
+      }
+    ],
+    "content_type": "application/json",
+    "body": {
+      "raw": "{\"total\":5963,\"list\":[{\"offerId\":100043,\"offerType\":\"4\",\"offerSysType\":null,\"offerName\":\"Kids L\",\"offerSysName\":null,\"offerSypyName\":null,\"offerNbr\":\"100043\",\"offerSysNbr\":null,\"offerDesc\":null,\"effDate\":null,\"manageGrade\":null,\"expDate\":null,\"offerProviderId\":null,\"brandId\":null,\"valueAddedFlag\":null,\"initialChargeValue\":null,\"desc\":null,\"state\":\"A\",\"stateDate\":null,\"orgId\":100,\"stateDate\":null}],\"pageNum\":1,\"pageSize\":10,\"size\":0,\"startRow\":1,\"endRow\":0}",
+      "content_type": "application/json",
+      "charset": null,
+      "binary": false,
+      "size_bytes": 460,
+      "truncated": false,
+      "form": null,
+      "json_value": {
+        "total": 5963,
+        "list": [
+          {
+            "offerId": 100043,
+            "offerType": "4",
+            "offerSysType": null,
+            "offerName": "Kids L",
+            "offerSysName": null,
+            "offerSypyName": null,
+            "offerNbr": "100043",
+            "offerSysNbr": null,
+            "offerDesc": null,
+            "effDate": null,
+            "manageGrade": null,
+            "expDate": null,
+            "offerProviderId": null,
+            "brandId": null,
+            "valueAddedFlag": null,
+            "initialChargeValue": null,
+            "desc": null,
+            "state": "A",
+            "stateDate": null,
+            "orgId": 100
+          }
+        ],
+        "pageNum": 1,
+        "pageSize": 10,
+        "size": 0,
+        "startRow": 1,
+        "endRow": 0
+      },
+      "xml_paths": null,
+      "parse_warnings": []
+    }
+  },
+  "auth_context": {
+    "authenticated": true,
+    "principal_ref": "principal_c8a93705deac",
+    "credential_ref": "cred_c8a93705deac",
+    "auth_types": [
+      "api_key",
+      "cookie"
+    ]
+  },
+  "artifacts": [
+    {
+      "artifact_id": "artifact_0003",
+      "type": "http_request",
+      "path": "traffic/traffic_0002/request.txt",
+      "sha256": "8cc5b0bb844039daea48de0f123dd7d5124172bf909b0232745344c07b06c941",
+      "size_bytes": 374,
+      "created_at": "2026-11-17T17:35:51+08:00"
+    },
+    {
+      "artifact_id": "artifact_0004",
+      "type": "http_response",
+      "path": "traffic/traffic_0002/response.txt",
+      "sha256": "184f2f0c06607dd4990d1739377ccca3eae950953c67f0161b7e8cd5c2fc747f",
+      "size_bytes": 555,
+      "created_at": "2026-11-17T17:35:51+08:00"
+    }
+  ],
+  "parse_warnings": []
+}

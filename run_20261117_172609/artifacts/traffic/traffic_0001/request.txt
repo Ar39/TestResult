@@ -1,0 +1,9 @@
+POST /portal-web/otc/caching/a HTTP/1.1
+Host: 10.10.177.111
+Cookie: ***
+Content-Length: 43
+X-Csrf-Token: abc
+X-Requested-With: XMLHttpRequest
+Content-Type: application/json
+
+{"page":1,"rowNum":5,"pageNum":1,"pageSize":5}

@@ -1,0 +1,22 @@
+HTTP/1.1 200 
+Date: Mon, 16 Nov 2026 03:40:20 GMT
+Content-Type: application/json
+Connection: keep-alive
+ITRACING_TRACE_ID: 172028108021_368334_1^1794653576196^11060
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Access-Control-Allow-Origin: https://10.10.177.111
+Access-Control-Expose-Headers: Set-Cookie
+Access-Control-Allow-Credentials: true
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Referrer-Policy: no-referrer-when-downgrade
+X-Frame-Options: SAMEORIGIN
+X-Permitted-Cross-Domain-Policies: master-only
+Content-Length: 1404
+
+{"total":1888,"list":[{"conResId":1,"balSourceType":1,"conResName":"TAX","deductType":null,"conResCode":"CODE:1","comments":"TAX","priceId":null,"isCurrency":"Y","unitId":null,"currencyTypeId":10002,"unitPrecision":-100,"spId":0},{"conResId":2,"balSourceType":1,"conResName":"VAT tax for Data Bundle","deductType":null,"conResCode":"CODE:2","comments":"TAX","priceId":null,"isCurrency":"Y","unitId":null,"currencyTypeId":10002,"unitPrecision":-100,"spId":0},{"conResId":3,"balSourceType":1,"conResName":"VAT Tax for Voice Bundle","deductType":null,"conResCode":"CODE:3","comments":"TAX","priceId":null,"isCurrency":"Y","unitId":null,"currencyTypeId":10002,"unitPrecision":-100,"spId":0},{"conResId":4,"balSourceType":1,"conResName":"VAT Tax for Usage Fees","deductType":null,"conResCode":"CODE:4","comments":"TAX","priceId":null,"isCurrency":"Y","unitId":null,"currencyTypeId":10002,"unitPrecision":-100,"spId":0},{"conResId":5,"balSourceType":1,"conResName":"VAT Tax for Hybrid Fees","deductType":null,"conResCode":"CODE:5","comments":"TAX","priceId":null,"isCurrency":"Y","unitId":null,"currencyTypeId":10002,"unitPrecision":-100,"spId":0}],"pageNum":1,"pageSize":5,"size":5,"startRow":0,"endRow":0,"pages":0,"prePage":0,"nextPage":0,"isFirstPage":false,"isLastPage":false,"hasPreviousPage":false,"hasNextPage":false,"navigatePages":0,"navigatepageNums":null,"navigateFirstPage":0,"navigateLastPage":0}

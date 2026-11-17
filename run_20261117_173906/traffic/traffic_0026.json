@@ -1,0 +1,311 @@
+{
+  "traffic_id": "traffic_0026",
+  "source": "burp_xml",
+  "request": {
+    "method": "POST",
+    "scheme": "https",
+    "host": "10.10.177.111",
+    "port": 443,
+    "path": "/portal-web/otc/domain/qryOtcOperator",
+    "raw_target": "/portal-web/otc/domain/qryOtcOperator",
+    "query": {},
+    "headers": [
+      {
+        "name": "Host",
+        "value": "10.10.177.111"
+      },
+      {
+        "name": "Cookie",
+        "value": "<credential:cred_fae43c395c0f>"
+      },
+      {
+        "name": "Content-Length",
+        "value": "30"
+      },
+      {
+        "name": "Sec-Ch-Ua-Platform",
+        "value": "\"macOS\""
+      },
+      {
+        "name": "X-Csrf-Token",
+        "value": "<credential:cred_fae43c395c0f>"
+      },
+      {
+        "name": "Accept-Language",
+        "value": "zh-CN,zh;q=0.9"
+      },
+      {
+        "name": "Sec-Ch-Ua",
+        "value": "\"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"150\""
+      },
+      {
+        "name": "Sec-Ch-Ua-Mobile",
+        "value": "?0"
+      },
+      {
+        "name": "Menu-Id",
+        "value": "120019"
+      },
+      {
+        "name": "X-Requested-With",
+        "value": "XMLHttpRequest"
+      },
+      {
+        "name": "User-Agent",
+        "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+      },
+      {
+        "name": "Accept",
+        "value": "application/json, text/javascript, */*; q=0.01"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "name": "Origin",
+        "value": "https://10.10.177.111"
+      },
+      {
+        "name": "Sec-Fetch-Site",
+        "value": "same-origin"
+      },
+      {
+        "name": "Sec-Fetch-Mode",
+        "value": "cors"
+      },
+      {
+        "name": "Sec-Fetch-Dest",
+        "value": "empty"
+      },
+      {
+        "name": "Referer",
+        "value": "https://10.10.177.111/portal-web/"
+      },
+      {
+        "name": "Accept-Encoding",
+        "value": "gzip, deflate, br"
+      },
+      {
+        "name": "Priority",
+        "value": "u=1, i"
+      },
+      {
+        "name": "Connection",
+        "value": "keep-alive"
+      }
+    ],
+    "cookies": {
+      "isLocked": "false",
+      "staffJobId": "25162",
+      "ZSMART_LOCALE": "en",
+      "SP_ID": "0",
+      "areaId": "100",
+      "orgId": "100",
+      "userId": "1",
+      "HTML_VERSION": "1794653129366",
+      "SESSION": "<credential:cred_fae43c395c0f>"
+    },
+    "content_type": "application/json",
+    "body": {
+      "raw": "{\"dataType\":\"I\",\"isArray\":\"N\"}",
+      "content_type": "application/json",
+      "charset": null,
+      "binary": false,
+      "size_bytes": 30,
+      "truncated": false,
+      "form": null,
+      "json_value": {
+        "dataType": "I",
+        "isArray": "N"
+      },
+      "xml_paths": null,
+      "parse_warnings": []
+    }
+  },
+  "response": {
+    "available": true,
+    "status": 200,
+    "reason": "",
+    "headers": [
+      {
+        "name": "Date",
+        "value": "Mon, 16 Nov 2026 08:16:11 GMT"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "name": "Connection",
+        "value": "keep-alive"
+      },
+      {
+        "name": "ITRACING_TRACE_ID",
+        "value": "172028108021_368334_1^1794653576196^14064"
+      },
+      {
+        "name": "Vary",
+        "value": "Origin"
+      },
+      {
+        "name": "Vary",
+        "value": "Access-Control-Request-Method"
+      },
+      {
+        "name": "Vary",
+        "value": "Access-Control-Request-Headers"
+      },
+      {
+        "name": "Access-Control-Allow-Origin",
+        "value": "https://10.10.177.111"
+      },
+      {
+        "name": "Access-Control-Expose-Headers",
+        "value": "Set-Cookie"
+      },
+      {
+        "name": "Access-Control-Allow-Credentials",
+        "value": "true"
+      },
+      {
+        "name": "X-Content-Type-Options",
+        "value": "nosniff"
+      },
+      {
+        "name": "X-XSS-Protection",
+        "value": "0"
+      },
+      {
+        "name": "Cache-Control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "name": "Pragma",
+        "value": "no-cache"
+      },
+      {
+        "name": "Expires",
+        "value": "0"
+      },
+      {
+        "name": "Referrer-Policy",
+        "value": "no-referrer-when-downgrade"
+      },
+      {
+        "name": "X-Frame-Options",
+        "value": "SAMEORIGIN"
+      },
+      {
+        "name": "X-Permitted-Cross-Domain-Policies",
+        "value": "master-only"
+      },
+      {
+        "name": "Content-Length",
+        "value": "719"
+      }
+    ],
+    "content_type": "application/json",
+    "body": {
+      "raw": "[{\"operator\":1,\"operatorName\":\">=\",\"comments\":null,\"operandCount\":\"B\"},{\"operator\":2,\"operatorName\":\"<=\",\"comments\":null,\"operandCount\":\"B\"},{\"operator\":3,\"operatorName\":\"<\",\"comments\":null,\"operandCount\":\"B\"},{\"operator\":4,\"operatorName\":\">\",\"comments\":null,\"operandCount\":\"B\"},{\"operator\":5,\"operatorName\":\"In\",\"comments\":null,\"operandCount\":\"B\"},{\"operator\":6,\"operatorName\":\"Not In\",\"comments\":null,\"operandCount\":\"B\"},{\"operator\":7,\"operatorName\":\"=\",\"comments\":null,\"operandCount\":\"B\"},{\"operator\":8,\"operatorName\":\"!=\",\"comments\":null,\"operandCount\":\"B\"},{\"operator\":9,\"operatorName\":\"Is Empty\",\"comments\":null,\"operandCount\":\"U\"},{\"operator\":15,\"operatorName\":\"Is Not Empty\",\"comments\":null,\"operandCount\":\"U\"}]",
+      "content_type": "application/json",
+      "charset": null,
+      "binary": false,
+      "size_bytes": 719,
+      "truncated": false,
+      "form": null,
+      "json_value": [
+        {
+          "operator": 1,
+          "operatorName": ">=",
+          "comments": null,
+          "operandCount": "B"
+        },
+        {
+          "operator": 2,
+          "operatorName": "<=",
+          "comments": null,
+          "operandCount": "B"
+        },
+        {
+          "operator": 3,
+          "operatorName": "<",
+          "comments": null,
+          "operandCount": "B"
+        },
+        {
+          "operator": 4,
+          "operatorName": ">",
+          "comments": null,
+          "operandCount": "B"
+        },
+        {
+          "operator": 5,
+          "operatorName": "In",
+          "comments": null,
+          "operandCount": "B"
+        },
+        {
+          "operator": 6,
+          "operatorName": "Not In",
+          "comments": null,
+          "operandCount": "B"
+        },
+        {
+          "operator": 7,
+          "operatorName": "=",
+          "comments": null,
+          "operandCount": "B"
+        },
+        {
+          "operator": 8,
+          "operatorName": "!=",
+          "comments": null,
+          "operandCount": "B"
+        },
+        {
+          "operator": 9,
+          "operatorName": "Is Empty",
+          "comments": null,
+          "operandCount": "U"
+        },
+        {
+          "operator": 15,
+          "operatorName": "Is Not Empty",
+          "comments": null,
+          "operandCount": "U"
+        }
+      ],
+      "xml_paths": null,
+      "parse_warnings": []
+    }
+  },
+  "auth_context": {
+    "authenticated": true,
+    "principal_ref": "principal_fae43c395c0f",
+    "credential_ref": "cred_fae43c395c0f",
+    "auth_types": [
+      "api_key",
+      "cookie"
+    ]
+  },
+  "artifacts": [
+    {
+      "artifact_id": "artifact_0051",
+      "type": "http_request",
+      "path": "traffic/traffic_0026/request.txt",
+      "sha256": "762c5d1d99f5433d4354e37ef825daf8a01f028bf606010301eca410b924f5ba",
+      "size_bytes": 964,
+      "created_at": "2026-11-17T17:42:00+08:00"
+    },
+    {
+      "artifact_id": "artifact_0052",
+      "type": "http_response",
+      "path": "traffic/traffic_0026/response.txt",
+      "sha256": "85788e2b41ab30576ece5333471f01b8084a8acde50a000aa172d84938208745",
+      "size_bytes": 1384,
+      "created_at": "2026-11-17T17:42:00+08:00"
+    }
+  ],
+  "parse_warnings": []
+}

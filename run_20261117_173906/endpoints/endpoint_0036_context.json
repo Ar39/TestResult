@@ -1,0 +1,224 @@
+{
+  "endpoint_id": "endpoint_0036",
+  "method": "POST",
+  "scheme": "https",
+  "host": "10.10.177.111",
+  "path": "/portal-web/otc/domain/qryOtcOperator",
+  "path_examples": [
+    "/portal-web/otc/domain/qryOtcOperator"
+  ],
+  "traffic_count": 1,
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:6538ed6dc4b42854fa2edbb7ab21bf7b223ecc004845a64f17b95c67bcf2d82f",
+      "name": "HTML_VERSION",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "1794653129366"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0026"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:5c497b655e6c7cf4c71580597c8dd9dfae78464f1c941f5bf7c7fde5fb6d7cf1",
+      "name": "SP_ID",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "0"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0026"
+      ]
+    },
+    {
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:85d130bd40a2eb9f9a763bfeffa27548fa77f76d4da271db6a4adcaa3684bfb7",
+      "name": "ZSMART_LOCALE",
+      "location": "cookie",
+      "type": "string",
+      "values": [
+        "en"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0026"
+      ]
+    },
+    {
+      "parameter_id": "param_0004",
+      "parameter_identity": "sha256:a287892bc7b4d1160aeb48d578b8bec403ebf5d5503f79969f59fb821ba16253",
+      "name": "areaId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "100"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0026"
+      ]
+    },
+    {
+      "parameter_id": "param_0005",
+      "parameter_identity": "sha256:8eb294ecf650979d058c42a70d8f8de3503153f59dd11df9492b923eb05561a2",
+      "name": "isLocked",
+      "location": "cookie",
+      "type": "boolean",
+      "values": [
+        "false"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0026"
+      ]
+    },
+    {
+      "parameter_id": "param_0006",
+      "parameter_identity": "sha256:4d2da77edbd042c56767b3cd9dcc3577198f3aa2c6d4c48894c181df3a3f7c40",
+      "name": "orgId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "100"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0026"
+      ]
+    },
+    {
+      "parameter_id": "param_0007",
+      "parameter_identity": "sha256:b44ed5e34cf257a8e7fc9a90f1475884e6c6c27f9dc80fb9a8f8d4666a814df3",
+      "name": "staffJobId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "25162"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0026"
+      ]
+    },
+    {
+      "parameter_id": "param_0008",
+      "parameter_identity": "sha256:58e7eb3b6e65c78be36d5b3a25435b926cd45951e37662c33ddf5d4d6cda55ce",
+      "name": "userId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "1"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0026"
+      ]
+    },
+    {
+      "parameter_id": "param_0009",
+      "parameter_identity": "sha256:8f7ee470ecf4d6fff33077d6aaa668fffccb4c827e131b419a841d302a21a379",
+      "name": "Menu-Id",
+      "location": "header",
+      "type": "integer",
+      "values": [
+        "120019"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0026"
+      ]
+    },
+    {
+      "parameter_id": "param_0010",
+      "parameter_identity": "sha256:d9763e162e270b2ad8694ff04819faecaff7f278dee08855ba69e042a66c1658",
+      "name": "Priority",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "u=1, i"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0026"
+      ]
+    },
+    {
+      "parameter_id": "param_0011",
+      "parameter_identity": "sha256:5813d86ff6ee5f17d3ef428d9e610659c4e4d9dc1c6b256f364dfeaf12faba4d",
+      "name": "dataType",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "I"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0026"
+      ]
+    },
+    {
+      "parameter_id": "param_0012",
+      "parameter_identity": "sha256:ea358129b0f3c1c567b5c35944b74bb24c521b0296331d7c3dd8156cb0ec638b",
+      "name": "isArray",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "N"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0026"
+      ]
+    }
+  ],
+  "inventory_id": "sha256:e8cdeb250b02a0ec2ca2c3d143787767ed754ca862801d474cb487a06541209d",
+  "request_examples": [
+    {
+      "traffic_id": "traffic_0026",
+      "principal_ref": "principal_fae43c395c0f",
+      "method": "POST",
+      "url": "https://10.10.177.111/portal-web/otc/domain/qryOtcOperator",
+      "content_type": "application/json",
+      "query": null,
+      "body_excerpt": "{\"dataType\":\"I\",\"isArray\":\"N\"}",
+      "body_sha256": "73bd50cc09db74a78f93332450f0202e448f367f5c2f907da8b575b0a1034e54"
+    }
+  ],
+  "response_examples": [
+    {
+      "traffic_id": "traffic_0026",
+      "status": 200,
+      "content_type": "application/json",
+      "body_excerpt": "[{\"operator\":1,\"operatorName\":\">=\",\"comments\":null,\"operandCount\":\"B\"},{\"operator\":2,\"operatorName\":\"<=\",\"comments\":null,\"operandCount\":\"B\"},{\"operator\":3,\"operatorName\":\"<\",\"comments\":null,\"operandCount\":\"B\"},{\"operator\":4,\"operatorName\":\">\",\"comments\":null,\"operandCount\":\"B\"},{\"operator\":5,\"operatorName\":\"In\",\"comments\":null,\"operandCount\":\"B\"},{\"operator\":6,\"operatorName\":\"Not In\",\"comments\":null,\"operandCount\":\"B\"},{\"operator\":7,\"operatorName\":\"=\",\"comments\":null,\"operandCount\":\"B\"},{\"operator\":8,\"operatorName\":\"!=\",\"comments\":null,\"operandCount\":\"B\"},{\"operator\":9,\"operatorName\":\"Is Empty\",\"comments\":null,\"operandCount\":\"U\"},{\"operator\":15,\"operatorName\":\"Is Not Empty\",\"comments\":null,\"operandCount\":\"U\"}]",
+      "body_sha256": "c13a33aef5767fdecf8f46f518a5d5872b4d55c5511074b0c6d22689c5422fc7"
+    }
+  ],
+  "auth_contexts": [
+    {
+      "principal_ref": "principal_fae43c395c0f",
+      "credential_ref": "cred_fae43c395c0f",
+      "auth_types": [
+        "api_key",
+        "cookie"
+      ],
+      "traffic_count": 1
+    }
+  ],
+  "business_context": {
+    "description": null,
+    "evidence": [
+      "parameter 'SP_ID' (cookie) suggests object identifier",
+      "parameter 'orgId' (cookie) suggests tenant identity",
+      "parameter 'userId' (cookie) suggests user identity",
+      "response field 'operatorName' suggests search / filter"
+    ]
+  },
+  "limitations": []
+}

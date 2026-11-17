@@ -1,0 +1,22 @@
+HTTP/1.1 200 
+Date: Mon, 16 Nov 2026 07:15:28 GMT
+Content-Type: application/json
+Connection: keep-alive
+ITRACING_TRACE_ID: 172028108021_368334_1^1794653576196^13072
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Access-Control-Allow-Origin: https://10.10.177.111
+Access-Control-Expose-Headers: Set-Cookie
+Access-Control-Allow-Credentials: true
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Referrer-Policy: no-referrer-when-downgrade
+X-Frame-Options: SAMEORIGIN
+X-Permitted-Cross-Domain-Policies: master-only
+Content-Length: 567
+
+[{"funId":65,"dataType":"O","isArray":"N","resultDataType":"S","resultIsArray":"N","funName":"getAttrValue","funCode":"getAttrValue","paramNum":1,"param1Name":"Attribute Code","param1DataType":"S","param1Desc":null,"param2Name":null,"param2DataType":null,"param2Desc":null,"param3Name":null,"param3DataType":null,"param3Desc":null,"resultAttrNbr":null,"comments":"Get attribute value of the selected factor.","param1DsBean":null,"resultDsBean":null,"param2DsBean":null,"param3DsBean":null,"param2PriceFlag":null,"param1Null":null,"param2Null":null,"param3Null":null}]

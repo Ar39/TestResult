@@ -1,0 +1,22 @@
+HTTP/1.1 200 
+Date: Mon, 16 Nov 2026 07:15:28 GMT
+Content-Type: application/json
+Connection: keep-alive
+ITRACING_TRACE_ID: 172028108021_368334_1^1794653576196^13071
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Access-Control-Allow-Origin: https://10.10.177.111
+Access-Control-Expose-Headers: Set-Cookie
+Access-Control-Allow-Credentials: true
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Referrer-Policy: no-referrer-when-downgrade
+X-Frame-Options: SAMEORIGIN
+X-Permitted-Cross-Domain-Policies: master-only
+Content-Length: 1091
+
+[{"conAttrTypeId":1,"conAttrTypeName":"Customer Information","dataService":"qryCustomerDetail","comments":null,"otcFactorList":[{"factorId":17,"conAttrTypeId":1,"factorName":"Customer Flag","attrNbr":"CC_CUST_TYPE_FLAG","dataType":"S","dataSourceBeanName":"GetCustTypeFlagSource","useInPrice":null},{"factorId":60,"conAttrTypeId":1,"factorName":"Customer Feature","attrNbr":null,"dataType":"O","dataSourceBeanName":null,"useInPrice":null},{"factorId":73,"conAttrTypeId":1,"factorName":"Customer Doc Type","attrNbr":null,"dataType":"S","dataSourceBeanName":"GetCustCertTypeSource","useInPrice":null},{"factorId":106,"conAttrTypeId":1,"factorName":"Customer Verification","attrNbr":null,"dataType":"S","dataSourceBeanName":null,"useInPrice":"N"}],"factorName":"Customer Information"},{"conAttrTypeId":20,"conAttrTypeName":"Customer Order Information","dataService":null,"comments":null,"otcFactorList":[{"factorId":78,"conAttrTypeId":20,"factorName":"Customer Order Feature","attrNbr":null,"dataType":"O","dataSourceBeanName":null,"useInPrice":"Y"}],"factorName":"Customer Order Information"}]

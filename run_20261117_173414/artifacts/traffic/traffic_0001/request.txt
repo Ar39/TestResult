@@ -1,0 +1,10 @@
+POST /portal-web/otc/cacheRefresh HTTP/1.1
+Host: 10.10.177.111
+Cookie: isLocked=false; staffJobId=25162; ZSMART_LOCALE=en; SP_ID=0; areaId=100; orgId=100; userId=1; HTML_VERSION=1794653129366; SESSION=105f73e4-073a-43a4-83f9-970a48648bed
+Content-Length: 53
+X-Csrf-Token: 15205785-d11c-4ece-8307-36dab2722d49
+Menu-Id: 120006
+X-Requested-With: XMLHttpRequest
+Content-Type: application/json
+
+{"bean":"cache.orderActionRefresh","method":"status"}

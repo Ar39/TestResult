@@ -1,0 +1,21 @@
+HTTP/1.1 200 
+Content-Type: application/json
+Content-Length: 60
+
+{"total":5963,"list":[{"offerId":100043,"offerName":"Kids L"}]}
+
+POST /portal-web/otc/caching/b HTTP/1.1
+Host: 10.10.177.111
+Cookie: ***
+Content-Length: 50
+X-Csrf-Token: abc
+X-Requested-With: XMLHttpRequest
+Content-Type: application/json
+
+{"bean":"cache.custDpstRefresh","method":"status"}
+
+HTTP/1.1 200 
+Content-Type: application/json
+Content-Length: 100
+
+{"result":{"endTime":1794653664000,"failCnt":0,"beginTime":1794653663860,"status":0,"totalCnt":0,"succCnt":0},"future":null}

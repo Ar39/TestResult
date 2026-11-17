@@ -1,0 +1,344 @@
+{
+  "traffic_id": "traffic_0017",
+  "source": "burp_xml",
+  "request": {
+    "method": "POST",
+    "scheme": "https",
+    "host": "10.10.177.111",
+    "port": 443,
+    "path": "/portal-web/otc/domain/consumptionType.do",
+    "raw_target": "/portal-web/otc/domain/consumptionType.do",
+    "query": {},
+    "headers": [
+      {
+        "name": "Host",
+        "value": "10.10.177.111"
+      },
+      {
+        "name": "Cookie",
+        "value": "<credential:cred_c8a93705deac>"
+      },
+      {
+        "name": "Content-Length",
+        "value": "78"
+      },
+      {
+        "name": "Sec-Ch-Ua-Platform",
+        "value": "\"macOS\""
+      },
+      {
+        "name": "X-Csrf-Token",
+        "value": "<credential:cred_c8a93705deac>"
+      },
+      {
+        "name": "Accept-Language",
+        "value": "zh-CN,zh;q=0.9"
+      },
+      {
+        "name": "Sec-Ch-Ua",
+        "value": "\"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"150\""
+      },
+      {
+        "name": "Sec-Ch-Ua-Mobile",
+        "value": "?0"
+      },
+      {
+        "name": "Menu-Id",
+        "value": "120008"
+      },
+      {
+        "name": "X-Requested-With",
+        "value": "XMLHttpRequest"
+      },
+      {
+        "name": "User-Agent",
+        "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+      },
+      {
+        "name": "Accept",
+        "value": "application/json, text/javascript, */*; q=0.01"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "name": "Origin",
+        "value": "https://10.10.177.111"
+      },
+      {
+        "name": "Sec-Fetch-Site",
+        "value": "same-origin"
+      },
+      {
+        "name": "Sec-Fetch-Mode",
+        "value": "cors"
+      },
+      {
+        "name": "Sec-Fetch-Dest",
+        "value": "empty"
+      },
+      {
+        "name": "Referer",
+        "value": "https://10.10.177.111/portal-web/"
+      },
+      {
+        "name": "Accept-Encoding",
+        "value": "gzip, deflate, br"
+      },
+      {
+        "name": "Priority",
+        "value": "u=1, i"
+      },
+      {
+        "name": "Connection",
+        "value": "keep-alive"
+      }
+    ],
+    "cookies": {
+      "isLocked": "false",
+      "staffJobId": "25162",
+      "ZSMART_LOCALE": "en",
+      "SP_ID": "0",
+      "areaId": "100",
+      "orgId": "100",
+      "userId": "1",
+      "HTML_VERSION": "1794653129366",
+      "SESSION": "<credential:cred_c8a93705deac>"
+    },
+    "content_type": "application/json",
+    "body": {
+      "raw": "{\"page\":1,\"rowNum\":5,\"sortName\":\"\",\"sortOrder\":\"asc\",\"pageNum\":1,\"pageSize\":5}",
+      "content_type": "application/json",
+      "charset": null,
+      "binary": false,
+      "size_bytes": 78,
+      "truncated": false,
+      "form": null,
+      "json_value": {
+        "page": 1,
+        "rowNum": 5,
+        "sortName": "",
+        "sortOrder": "asc",
+        "pageNum": 1,
+        "pageSize": 5
+      },
+      "xml_paths": null,
+      "parse_warnings": []
+    }
+  },
+  "response": {
+    "available": true,
+    "status": 200,
+    "reason": "",
+    "headers": [
+      {
+        "name": "Date",
+        "value": "Mon, 16 Nov 2026 03:40:20 GMT"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "name": "Connection",
+        "value": "keep-alive"
+      },
+      {
+        "name": "ITRACING_TRACE_ID",
+        "value": "172028108021_368334_1^1794653576196^11060"
+      },
+      {
+        "name": "Vary",
+        "value": "Origin"
+      },
+      {
+        "name": "Vary",
+        "value": "Access-Control-Request-Method"
+      },
+      {
+        "name": "Vary",
+        "value": "Access-Control-Request-Headers"
+      },
+      {
+        "name": "Access-Control-Allow-Origin",
+        "value": "https://10.10.177.111"
+      },
+      {
+        "name": "Access-Control-Expose-Headers",
+        "value": "Set-Cookie"
+      },
+      {
+        "name": "Access-Control-Allow-Credentials",
+        "value": "true"
+      },
+      {
+        "name": "X-Content-Type-Options",
+        "value": "nosniff"
+      },
+      {
+        "name": "X-XSS-Protection",
+        "value": "0"
+      },
+      {
+        "name": "Cache-Control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "name": "Pragma",
+        "value": "no-cache"
+      },
+      {
+        "name": "Expires",
+        "value": "0"
+      },
+      {
+        "name": "Referrer-Policy",
+        "value": "no-referrer-when-downgrade"
+      },
+      {
+        "name": "X-Frame-Options",
+        "value": "SAMEORIGIN"
+      },
+      {
+        "name": "X-Permitted-Cross-Domain-Policies",
+        "value": "master-only"
+      },
+      {
+        "name": "Content-Length",
+        "value": "1404"
+      }
+    ],
+    "content_type": "application/json",
+    "body": {
+      "raw": "{\"total\":1888,\"list\":[{\"conResId\":1,\"balSourceType\":1,\"conResName\":\"TAX\",\"deductType\":null,\"conResCode\":\"CODE:1\",\"comments\":\"TAX\",\"priceId\":null,\"isCurrency\":\"Y\",\"unitId\":null,\"currencyTypeId\":10002,\"unitPrecision\":-100,\"spId\":0},{\"conResId\":2,\"balSourceType\":1,\"conResName\":\"VAT tax for Data Bundle\",\"deductType\":null,\"conResCode\":\"CODE:2\",\"comments\":\"TAX\",\"priceId\":null,\"isCurrency\":\"Y\",\"unitId\":null,\"currencyTypeId\":10002,\"unitPrecision\":-100,\"spId\":0},{\"conResId\":3,\"balSourceType\":1,\"conResName\":\"VAT Tax for Voice Bundle\",\"deductType\":null,\"conResCode\":\"CODE:3\",\"comments\":\"TAX\",\"priceId\":null,\"isCurrency\":\"Y\",\"unitId\":null,\"currencyTypeId\":10002,\"unitPrecision\":-100,\"spId\":0},{\"conResId\":4,\"balSourceType\":1,\"conResName\":\"VAT Tax for Usage Fees\",\"deductType\":null,\"conResCode\":\"CODE:4\",\"comments\":\"TAX\",\"priceId\":null,\"isCurrency\":\"Y\",\"unitId\":null,\"currencyTypeId\":10002,\"unitPrecision\":-100,\"spId\":0},{\"conResId\":5,\"balSourceType\":1,\"conResName\":\"VAT Tax for Hybrid Fees\",\"deductType\":null,\"conResCode\":\"CODE:5\",\"comments\":\"TAX\",\"priceId\":null,\"isCurrency\":\"Y\",\"unitId\":null,\"currencyTypeId\":10002,\"unitPrecision\":-100,\"spId\":0}],\"pageNum\":1,\"pageSize\":5,\"size\":5,\"startRow\":0,\"endRow\":0,\"pages\":0,\"prePage\":0,\"nextPage\":0,\"isFirstPage\":false,\"isLastPage\":false,\"hasPreviousPage\":false,\"hasNextPage\":false,\"navigatePages\":0,\"navigatepageNums\":null,\"navigateFirstPage\":0,\"navigateLastPage\":0}",
+      "content_type": "application/json",
+      "charset": null,
+      "binary": false,
+      "size_bytes": 1404,
+      "truncated": false,
+      "form": null,
+      "json_value": {
+        "total": 1888,
+        "list": [
+          {
+            "conResId": 1,
+            "balSourceType": 1,
+            "conResName": "TAX",
+            "deductType": null,
+            "conResCode": "CODE:1",
+            "comments": "TAX",
+            "priceId": null,
+            "isCurrency": "Y",
+            "unitId": null,
+            "currencyTypeId": 10002,
+            "unitPrecision": -100,
+            "spId": 0
+          },
+          {
+            "conResId": 2,
+            "balSourceType": 1,
+            "conResName": "VAT tax for Data Bundle",
+            "deductType": null,
+            "conResCode": "CODE:2",
+            "comments": "TAX",
+            "priceId": null,
+            "isCurrency": "Y",
+            "unitId": null,
+            "currencyTypeId": 10002,
+            "unitPrecision": -100,
+            "spId": 0
+          },
+          {
+            "conResId": 3,
+            "balSourceType": 1,
+            "conResName": "VAT Tax for Voice Bundle",
+            "deductType": null,
+            "conResCode": "CODE:3",
+            "comments": "TAX",
+            "priceId": null,
+            "isCurrency": "Y",
+            "unitId": null,
+            "currencyTypeId": 10002,
+            "unitPrecision": -100,
+            "spId": 0
+          },
+          {
+            "conResId": 4,
+            "balSourceType": 1,
+            "conResName": "VAT Tax for Usage Fees",
+            "deductType": null,
+            "conResCode": "CODE:4",
+            "comments": "TAX",
+            "priceId": null,
+            "isCurrency": "Y",
+            "unitId": null,
+            "currencyTypeId": 10002,
+            "unitPrecision": -100,
+            "spId": 0
+          },
+          {
+            "conResId": 5,
+            "balSourceType": 1,
+            "conResName": "VAT Tax for Hybrid Fees",
+            "deductType": null,
+            "conResCode": "CODE:5",
+            "comments": "TAX",
+            "priceId": null,
+            "isCurrency": "Y",
+            "unitId": null,
+            "currencyTypeId": 10002,
+            "unitPrecision": -100,
+            "spId": 0
+          }
+        ],
+        "pageNum": 1,
+        "pageSize": 5,
+        "size": 5,
+        "startRow": 0,
+        "endRow": 0,
+        "pages": 0,
+        "prePage": 0,
+        "nextPage": 0,
+        "isFirstPage": false,
+        "isLastPage": false,
+        "hasPreviousPage": false,
+        "hasNextPage": false,
+        "navigatePages": 0,
+        "navigatepageNums": null,
+        "navigateFirstPage": 0,
+        "navigateLastPage": 0
+      },
+      "xml_paths": null,
+      "parse_warnings": []
+    }
+  },
+  "auth_context": {
+    "authenticated": true,
+    "principal_ref": "principal_c8a93705deac",
+    "credential_ref": "cred_c8a93705deac",
+    "auth_types": [
+      "api_key",
+      "cookie"
+    ]
+  },
+  "artifacts": [
+    {
+      "artifact_id": "artifact_0033",
+      "type": "http_request",
+      "path": "traffic/traffic_0017/request.txt",
+      "sha256": "68520b9241a98133881287be28fc3a3b92f1ec55c9746b671fe57e02d39246b1",
+      "size_bytes": 1016,
+      "created_at": "2026-11-17T17:42:00+08:00"
+    },
+    {
+      "artifact_id": "artifact_0034",
+      "type": "http_response",
+      "path": "traffic/traffic_0017/response.txt",
+      "sha256": "1283e258a550f38b38cea5f1890165794985b0c472376a50889e1946caba27e2",
+      "size_bytes": 2070,
+      "created_at": "2026-11-17T17:42:00+08:00"
+    }
+  ],
+  "parse_warnings": []
+}

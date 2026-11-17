@@ -1,0 +1,220 @@
+{
+  "endpoint_id": "endpoint_0011",
+  "method": "GET",
+  "scheme": "https",
+  "host": "10.10.177.111",
+  "path": "/portal-web/otc/overlapDiscount/getCurrencyType",
+  "path_examples": [
+    "/portal-web/otc/overlapDiscount/getCurrencyType"
+  ],
+  "traffic_count": 1,
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:5d3500173ad820a002f77202a138e37471bba8e6a869a6bfc9652d5fdefbc9e4",
+      "name": "HTML_VERSION",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "1794653129366"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0036"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:0819e60df2a327e6f5363f2a281ea49e62dd94e944ca435aaf7ad61c71bc1ac0",
+      "name": "SP_ID",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "0"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0036"
+      ]
+    },
+    {
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:078b9e2b78bac905322b835a3e1bb331e080ed73d83cbc9902662fffac45aef5",
+      "name": "ZSMART_LOCALE",
+      "location": "cookie",
+      "type": "string",
+      "values": [
+        "en"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0036"
+      ]
+    },
+    {
+      "parameter_id": "param_0004",
+      "parameter_identity": "sha256:bf80b721e1d2733e5ce60f0ef793f2f525daad3d598abd7fe8b658b6684f5d8d",
+      "name": "areaId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "100"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0036"
+      ]
+    },
+    {
+      "parameter_id": "param_0005",
+      "parameter_identity": "sha256:48d7abe4a6662e2ad05262da221edc54090d69c618367e6fc4e970fc222aaf68",
+      "name": "isLocked",
+      "location": "cookie",
+      "type": "boolean",
+      "values": [
+        "false"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0036"
+      ]
+    },
+    {
+      "parameter_id": "param_0006",
+      "parameter_identity": "sha256:f1aee5f58618048286b5d21843a10a232fd05e1535ae7183d139cf446e7d2aa0",
+      "name": "orgId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "100"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0036"
+      ]
+    },
+    {
+      "parameter_id": "param_0007",
+      "parameter_identity": "sha256:56f4dfb0cb5ff1076180a91e601f65ff6549c6570bcfade83bee91f7b9cf7df6",
+      "name": "staffJobId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "25162"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0036"
+      ]
+    },
+    {
+      "parameter_id": "param_0008",
+      "parameter_identity": "sha256:62a178e47289f488d5ede4735b4504e5e69c31915a702365a27ab3a193ab6de0",
+      "name": "userId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "1"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0036"
+      ]
+    },
+    {
+      "parameter_id": "param_0009",
+      "parameter_identity": "sha256:541cf7800ebad019764579e93ec4ef3f1eef340f03546305f5623ae6e0f82332",
+      "name": "Menu-Id",
+      "location": "header",
+      "type": "integer",
+      "values": [
+        "120008"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0036"
+      ]
+    },
+    {
+      "parameter_id": "param_0010",
+      "parameter_identity": "sha256:4b4853fb51342568a13c8da995035c83fb16cc86adaef7d371f44f9f36047d5c",
+      "name": "Priority",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "u=1, i"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0036"
+      ]
+    },
+    {
+      "parameter_id": "param_0011",
+      "parameter_identity": "sha256:a5ba109a819e9a47369a21d78d4275c1270aae4db9ab0d1a1ff6a72817df8509",
+      "name": "_",
+      "location": "query",
+      "type": "integer",
+      "values": [
+        "1794797359786"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0036"
+      ]
+    }
+  ],
+  "inventory_id": "sha256:bf2ed55757c1d485e60dc2b3ffe40cf3631e8036e352dadaf837b7fb9d53cfa6",
+  "request_examples": [
+    {
+      "traffic_id": "traffic_0036",
+      "principal_ref": "principal_c8a93705deac",
+      "method": "GET",
+      "url": "https://10.10.177.111/portal-web/otc/overlapDiscount/getCurrencyType?_=1794797359786",
+      "content_type": null,
+      "query": {
+        "_": [
+          "1794797359786"
+        ]
+      },
+      "body_excerpt": null,
+      "body_sha256": null
+    }
+  ],
+  "response_examples": [
+    {
+      "traffic_id": "traffic_0036",
+      "status": 200,
+      "content_type": "application/json",
+      "body_excerpt": "{\"currencyTypeId\":10002,\"currencyCode\":\"XAF\",\"currencyName\":\"XAF\",\"savePrecision\":-100,\"roundMethod\":\"1\",\"displayScale\":2,\"rateDisplayScale\":2,\"state\":\"A\",\"createdDate\":null,\"partyType\":null,\"partyCode\":null,\"currencySymbol\":\"XAF\"}",
+      "body_sha256": "49f1b81483e3e2b22a4f0002080f373e02170557de34d1457ad38864feceaa1a"
+    }
+  ],
+  "auth_contexts": [
+    {
+      "principal_ref": "principal_c8a93705deac",
+      "credential_ref": "cred_c8a93705deac",
+      "auth_types": [
+        "api_key",
+        "cookie"
+      ],
+      "traffic_count": 1
+    }
+  ],
+  "business_context": {
+    "description": null,
+    "evidence": [
+      "parameter 'SP_ID' (cookie) suggests object identifier",
+      "parameter 'orgId' (cookie) suggests tenant identity",
+      "parameter 'userId' (cookie) suggests user identity",
+      "response field 'currencyTypeId' suggests monetary value",
+      "response field 'currencyCode' suggests monetary value",
+      "response field 'currencyName' suggests monetary value",
+      "response field 'currencyName' suggests search / filter",
+      "response field 'state' suggests business state",
+      "response field 'currencySymbol' suggests monetary value",
+      "path segment 'getCurrencyType' suggests monetary value"
+    ]
+  },
+  "limitations": []
+}

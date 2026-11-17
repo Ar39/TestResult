@@ -1,0 +1,19 @@
+HTTP/1.1 200 
+Date: Mon, 16 Nov 2026 03:28:00 GMT
+Content-Type: application/json
+Connection: keep-alive
+ITRACING_TRACE_ID: 172028108021_368334_1^1794653576196^10213
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Referrer-Policy: no-referrer-when-downgrade
+X-Frame-Options: SAMEORIGIN
+X-Permitted-Cross-Domain-Policies: master-only
+Content-Length: 391
+
+[{"pricePlanGenre":"O","genreName":"Offer OTC","tabs":"A","comments":"OTC related to Offer"},{"pricePlanGenre":"G","genreName":"General OTC","tabs":"C","comments":"General OTC not related to Offer"},{"pricePlanGenre":"D","genreName":"Deposit","tabs":"B","comments":"Customer Deposit"},{"pricePlanGenre":"V","genreName":"Overlap OTC","tabs":"E","comments":"Overlop OTC not related to Offer"}]

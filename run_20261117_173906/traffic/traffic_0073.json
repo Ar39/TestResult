@@ -1,0 +1,250 @@
+{
+  "traffic_id": "traffic_0073",
+  "source": "burp_xml",
+  "request": {
+    "method": "POST",
+    "scheme": "https",
+    "host": "10.10.177.111",
+    "port": 443,
+    "path": "/portal-web/otc/trace/getRequestMsgExt",
+    "raw_target": "/portal-web/otc/trace/getRequestMsgExt",
+    "query": {},
+    "headers": [
+      {
+        "name": "Host",
+        "value": "10.10.177.111"
+      },
+      {
+        "name": "Cookie",
+        "value": "<credential:cred_c8a93705deac>"
+      },
+      {
+        "name": "Content-Length",
+        "value": "22"
+      },
+      {
+        "name": "Sec-Ch-Ua-Platform",
+        "value": "\"macOS\""
+      },
+      {
+        "name": "X-Csrf-Token",
+        "value": "<credential:cred_c8a93705deac>"
+      },
+      {
+        "name": "Accept-Language",
+        "value": "zh-CN,zh;q=0.9"
+      },
+      {
+        "name": "Sec-Ch-Ua",
+        "value": "\"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"150\""
+      },
+      {
+        "name": "Sec-Ch-Ua-Mobile",
+        "value": "?0"
+      },
+      {
+        "name": "Menu-Id",
+        "value": "120003"
+      },
+      {
+        "name": "X-Requested-With",
+        "value": "XMLHttpRequest"
+      },
+      {
+        "name": "User-Agent",
+        "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+      },
+      {
+        "name": "Accept",
+        "value": "application/json, text/javascript, */*; q=0.01"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "name": "Origin",
+        "value": "https://10.10.177.111"
+      },
+      {
+        "name": "Sec-Fetch-Site",
+        "value": "same-origin"
+      },
+      {
+        "name": "Sec-Fetch-Mode",
+        "value": "cors"
+      },
+      {
+        "name": "Sec-Fetch-Dest",
+        "value": "empty"
+      },
+      {
+        "name": "Referer",
+        "value": "https://10.10.177.111/portal-web/"
+      },
+      {
+        "name": "Accept-Encoding",
+        "value": "gzip, deflate, br"
+      },
+      {
+        "name": "Priority",
+        "value": "u=1, i"
+      },
+      {
+        "name": "Connection",
+        "value": "keep-alive"
+      }
+    ],
+    "cookies": {
+      "isLocked": "false",
+      "staffJobId": "25162",
+      "ZSMART_LOCALE": "en",
+      "SP_ID": "0",
+      "areaId": "100",
+      "orgId": "100",
+      "userId": "1",
+      "HTML_VERSION": "1794653129366",
+      "SESSION": "<credential:cred_c8a93705deac>"
+    },
+    "content_type": "application/json",
+    "body": {
+      "raw": "{\"page\":1,\"rowNum\":30}",
+      "content_type": "application/json",
+      "charset": null,
+      "binary": false,
+      "size_bytes": 22,
+      "truncated": false,
+      "form": null,
+      "json_value": {
+        "page": 1,
+        "rowNum": 30
+      },
+      "xml_paths": null,
+      "parse_warnings": []
+    }
+  },
+  "response": {
+    "available": true,
+    "status": 200,
+    "reason": "",
+    "headers": [
+      {
+        "name": "Date",
+        "value": "Mon, 16 Nov 2026 03:02:11 GMT"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "name": "Connection",
+        "value": "keep-alive"
+      },
+      {
+        "name": "ITRACING_TRACE_ID",
+        "value": "172028108021_368334_1^1794653576196^9945"
+      },
+      {
+        "name": "Vary",
+        "value": "Origin"
+      },
+      {
+        "name": "Vary",
+        "value": "Access-Control-Request-Method"
+      },
+      {
+        "name": "Vary",
+        "value": "Access-Control-Request-Headers"
+      },
+      {
+        "name": "Access-Control-Allow-Origin",
+        "value": "https://10.10.177.111"
+      },
+      {
+        "name": "Access-Control-Expose-Headers",
+        "value": "Set-Cookie"
+      },
+      {
+        "name": "Access-Control-Allow-Credentials",
+        "value": "true"
+      },
+      {
+        "name": "X-Content-Type-Options",
+        "value": "nosniff"
+      },
+      {
+        "name": "X-XSS-Protection",
+        "value": "0"
+      },
+      {
+        "name": "Cache-Control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "name": "Pragma",
+        "value": "no-cache"
+      },
+      {
+        "name": "Expires",
+        "value": "0"
+      },
+      {
+        "name": "Referrer-Policy",
+        "value": "no-referrer-when-downgrade"
+      },
+      {
+        "name": "X-Frame-Options",
+        "value": "SAMEORIGIN"
+      },
+      {
+        "name": "X-Permitted-Cross-Domain-Policies",
+        "value": "master-only"
+      },
+      {
+        "name": "Content-Length",
+        "value": "384632"
+      }
+    ],
+    "content_type": "application/json",
+    "body": {
+      "raw": "{\"total\":489,\"list\":[{\"traceId\":1794798117501000,\"createDate\":\"2026-11-16 11:01:57\",\"id\":489,\"custId\":30635019,\"custOrderId\":2611000010438061,\"requestBody\":\"{\\\"msgId\\\":\\\"1794798117488000\\\",\\\"custOrderId\\\":2611000010438061,\\\"custOrderDate\\\":1794798159000,\\\"reserveDate\\\":null,\\\"createdDate\\\":1794798159000,\\\"backdate\\\":null,\\\"custId\\\":30635019,\\\"channelId\\\":null,\\\"instanceFlag\\\":null,\\\"custInfo\\\":{\\\"custFlag\\\":\\\"A\\\",\\\"custType\\\":null,\\\"certType\\\":\\\"2\\\",\\\"custServiceGrade\\\":null,\\\"custAttrList\\\":[{\\\"attrCode\\\":\\\"OTC_CUST_CATGS\\\",\\\"attrValue\\\":\\\"\\\",\\\"operationType\\\":null},{\\\"attrCode\\\":\\\"OTC_CUST_NET_TYPE\\\",\\\"attrValue\\\":\\\"A\\\",\\\"operationType\\\":null}],\\\"custVerif\\\":\\\"U\\\",\\\"custSubType\\\":null,\\\"creditGradeId\\\":null,\\\"impGradeId\\\":1},\\\"deliveryInfo\\\":null,\\\"orderItemList\\\":[{\\\"orderItemId\\\":2611000010436061,\\\"orderItemGroupId\\\":2611000010438061,\\\"serviceOfferId\\\":161,\\\"operType\\\":\\\"1000\\\",\\\"createOrgId\\\":null,\\\"orderReason\\\":null,\\\"contactChannel\\\":\\\"5\\\",\\\"contactChannelCode\\\":\\\"USSD\\\",\\\"acceptDate\\\":1794798159000,\\\"accountId\\\":60630007,\\\"previousAccountId\\\":null,\\\"orderItemAttrList\\\":[{\\\"attrCode\\\":\\\"OTC_ACCT_CHANGE\\\",\\\"attrValue\\\":\\\"N\\\",\\\"operationType\\\":null}],\\\"bundleOfferNbr\\\":null,\\\"previousCustInfo\\\":{\\\"custId\\\":30635019,\\\"custFlag\\\":\\\"A\\\",\\\"certType\\\":\\\"2\\\",\\\"custProfile\\\":null},\\\"offerInstList\\\":[{\\\"offerInstId\\\":783454,\\\"serviceOfferId\\\":161,\\\"offerId\\\":429369,\\\"offerType\\\":\\\"4\\\",\\\"offerNbr\\\":\\\"DP1029369\\\",\\\"brandId\\\":null,\\\"paymentModeCd\\\":\\\"2100\\\",\\\"offerGrade\\\":null,\\\"preDeposit\\\":null,\\\"timeLimit\\\":null,\\\"modelId\\\":null,\\\"quantity\\\":null,\\\"changeOfferInstId\\\":null,\\\"changeOfferId\\\":null,\\\"prodInstId\\\":\\\"496390\\\",\\\"agmEffDate\\\":null,\\\"agmExpDate\\\":null,\\\"agmBreachDate\\\":null,\\\"taxFreeFlag\\\":null,\\\"rentListPrice\\\":null,\\\"mainOfferInst\\\":{\\\"offerInstId\\\":496390,\\\"offerId\\\":700151,\\\"offerNbr\\\":\\\"998\\\",\\\"brandId\\\":null,\\\"paymentModeCd\\\":\\\"2100\\\",\\\"preDeposit\\\":null,\\\"agmEffDate\\\":null,\\\"agmExpDate\\\":null,\\\"mainOfferInstAttrList\\\":[{\\\"attrCode\\\":\\\"OTC-AGM-PERIOD\\\",\\\"attrValue\\\":\\\"\\\",\\\"operationType\\\":null}]},\\\"goodsInstList\\\":null,\\\"offerInstAttrList\\\":[{\\\"attrCode\\\":\\\"EXP_OFFER_ID\\\",\\\"attrValue\\\":\\\"429369\\\",\\\"operationType\\\":null},{\\\"attrCode\\\":\\\"EXP_OFFER_CODE\\\",\\\"attrValue\\\":\\\"DP1029369\\\",\\\"operationType\\\":null},{\\\"attrCode\\\":\\\"ORANGE_BAL_EXP_DATE\\\",\\\"attrValue\\\":\\\"20990101000000\\\",\\\"operationType\\\":null}],\\\"fnAddedCnt\\\":null,\\\"fnModifiedCnt\\\":null,\\\"fnMinUsedDays\\\":null,\\\"ppVerId\\\":null,\\\"effDate\\\":null,\\\"expDate\\\":null,\\\"offerInstState\\\":\\\"A\\\",\\\"extAttr\\\":null,\\\"appointedFee\\\":null,\\\"comptDate\\\":1794795072000,\\\"stateDate\\\":null,\\\"priority\\\":null,\\\"relaOfferId\\\":null,\\\"effOffset\\\":null,\\\"effOffsetUnit\\\":null}],\\\"accessProdInstList\\\":[{\\\"prodSpecId\\\":200151,\\\"accNbr\\\":\\\"655857075\\\",\\\"accNbrClassId\\\":\\\"6\\\",\\\"oldAccNbrClassId\\\":null,\\\"prodInstId\\\":496390,\\\"prodCode\\\":null,\\\"accountId\\\":null,\\\"accessMode\\\":null,\\\"downRate\\\":null,\\\"upRate\\\":null,\\\"paymentModeCd\\\":\\\"2100\\\",\\\"blockType\\\":\\\"0000000000000000000000000000000000000000\\\",\\\"cityCode\\\":null,\\\"externalInstallment\\\":null,\\\"employeePrice\\\":null,\\\"iccid\\\":null,\\\"roleId\\\":null,\\\"actDate\\\":1789574400000,\\\"functionProdInstList\\\":null,\\\"prodInstAttrList\\\":[{\\\"attrCode\\\":\\\"EXP_MAX_RECHARING_AMOUNT\\\",\\\"attrValue\\\":\\\"499999900\\\",\\\"operationType\\\":null},{\\\"attrCode\\\":\\\"EXP_MAX_BAL_EXPIRE\\\",\\\"attrValue\\\":\\\"90\\\",\\\"operationType\\\":null},{\\\"attrCode\\\":\\\"ORANGE_RESTRICTED_SUBS\\\",\\\"attrValue\\\":\\\"NO\\\",\\\"operationType\\\":null}],\\\"prodState\\\":\\\"A\\\",\\\"simCardType\\\":null,\\\"baseCardTypeCode\\\":null,\\\"oldBaseCardTypeCode\\\":\\\"SIM\\\",\\\"oldSimCardType\\\":1,\\\"oldSimCardTypeCode\\\":\\\"USIM\\\",\\\"simCardTypeCode\\\":null,\\\"servType\\\":15,\\\"aotaFlag\\\":null,\\\"oldAotaFlag\\\":null,\\\"installType\\\":null,\\\"arpugrade\\\":null}],\\\"createOrgCode\\\":null,\\\"orderType\\\":\\\"B\\\",\\\"bundleDpOfferNbr\\\":null,\\\"fnModInfo\\\":null}],\\\"custContractPriceList\\\":[],\\\"custContractBenefitList\\\":[],\\\"custContractParamValueList\\\":[],\\\"accountInfoList\\\":[{\\\"accountId\\\":60630007,\\\"billingCycleTypeId\\\":1,\\\"settlementMethod\\\":null,\\\"acctAttrList\\\":[{",
+      "content_type": "application/json",
+      "charset": null,
+      "binary": false,
+      "size_bytes": 4000,
+      "truncated": false,
+      "form": null,
+      "json_value": null,
+      "xml_paths": null,
+      "parse_warnings": []
+    }
+  },
+  "auth_context": {
+    "authenticated": true,
+    "principal_ref": "principal_c8a93705deac",
+    "credential_ref": "cred_c8a93705deac",
+    "auth_types": [
+      "api_key",
+      "cookie"
+    ]
+  },
+  "artifacts": [
+    {
+      "artifact_id": "artifact_0145",
+      "type": "http_request",
+      "path": "traffic/traffic_0073/request.txt",
+      "sha256": "24a9b7fa9b4071fbae0a957081daca0bac21a6d62b359a3b35d692f8532735e1",
+      "size_bytes": 957,
+      "created_at": "2026-11-17T17:42:01+08:00"
+    },
+    {
+      "artifact_id": "artifact_0146",
+      "type": "http_response",
+      "path": "traffic/traffic_0073/response.txt",
+      "sha256": "d77559dee669a625a5ee741d3820b3360cd62f492d56fa04dff4ea4cdce27240",
+      "size_bytes": 4667,
+      "created_at": "2026-11-17T17:42:01+08:00"
+    }
+  ],
+  "parse_warnings": []
+}

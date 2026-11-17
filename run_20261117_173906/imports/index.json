@@ -1,0 +1,355 @@
+[
+  {
+    "import_id": "import_595e9d60",
+    "run_id": "run_20261117_173906",
+    "total": 3,
+    "success": 3,
+    "failed": 0,
+    "traffic_ids": [
+      "traffic_0001",
+      "traffic_0002",
+      "traffic_0003"
+    ],
+    "errors": []
+  },
+  {
+    "import_id": "import_6505c109",
+    "run_id": "run_20261117_173906",
+    "total": 3,
+    "success": 2,
+    "failed": 1,
+    "traffic_ids": [
+      "traffic_0004",
+      "traffic_0005"
+    ],
+    "errors": [
+      {
+        "item_index": 2,
+        "source_name": "OTC.xml",
+        "reason": "invalid_response_base64",
+        "detail": "Invalid base64-encoded string: number of data characters (2321) cannot be 1 more than a multiple of 4"
+      }
+    ]
+  },
+  {
+    "import_id": "import_9566926a",
+    "run_id": "run_20261117_173906",
+    "total": 3,
+    "success": 3,
+    "failed": 0,
+    "traffic_ids": [
+      "traffic_0006",
+      "traffic_0007",
+      "traffic_0008"
+    ],
+    "errors": []
+  },
+  {
+    "import_id": "import_c7f695fa",
+    "run_id": "run_20261117_173906",
+    "total": 3,
+    "success": 3,
+    "failed": 0,
+    "traffic_ids": [
+      "traffic_0009",
+      "traffic_0010",
+      "traffic_0011"
+    ],
+    "errors": []
+  },
+  {
+    "import_id": "import_ee3cd67b",
+    "run_id": "run_20261117_173906",
+    "total": 4,
+    "success": 4,
+    "failed": 0,
+    "traffic_ids": [
+      "traffic_0012",
+      "traffic_0013",
+      "traffic_0014",
+      "traffic_0015"
+    ],
+    "errors": []
+  },
+  {
+    "import_id": "import_1c3e2aa6",
+    "run_id": "run_20261117_173906",
+    "total": 2,
+    "success": 2,
+    "failed": 0,
+    "traffic_ids": [
+      "traffic_0016",
+      "traffic_0017"
+    ],
+    "errors": []
+  },
+  {
+    "import_id": "import_72b62739",
+    "run_id": "run_20261117_173906",
+    "total": 3,
+    "success": 3,
+    "failed": 0,
+    "traffic_ids": [
+      "traffic_0018",
+      "traffic_0019",
+      "traffic_0020"
+    ],
+    "errors": []
+  },
+  {
+    "import_id": "import_498a0ce7",
+    "run_id": "run_20261117_173906",
+    "total": 2,
+    "success": 2,
+    "failed": 0,
+    "traffic_ids": [
+      "traffic_0021",
+      "traffic_0022"
+    ],
+    "errors": []
+  },
+  {
+    "import_id": "import_c5cbb3a4",
+    "run_id": "run_20261117_173906",
+    "total": 2,
+    "success": 2,
+    "failed": 0,
+    "traffic_ids": [
+      "traffic_0023",
+      "traffic_0024"
+    ],
+    "errors": []
+  },
+  {
+    "import_id": "import_ae5f3a22",
+    "run_id": "run_20261117_173906",
+    "total": 4,
+    "success": 4,
+    "failed": 0,
+    "traffic_ids": [
+      "traffic_0025",
+      "traffic_0026",
+      "traffic_0027",
+      "traffic_0028"
+    ],
+    "errors": []
+  },
+  {
+    "import_id": "import_e377a41e",
+    "run_id": "run_20261117_173906",
+    "total": 2,
+    "success": 2,
+    "failed": 0,
+    "traffic_ids": [
+      "traffic_0029",
+      "traffic_0030"
+    ],
+    "errors": []
+  },
+  {
+    "import_id": "import_0849c4d7",
+    "run_id": "run_20261117_173906",
+    "total": 1,
+    "success": 1,
+    "failed": 0,
+    "traffic_ids": [
+      "traffic_0031"
+    ],
+    "errors": []
+  },
+  {
+    "import_id": "import_1e754861",
+    "run_id": "run_20261117_173906",
+    "total": 2,
+    "success": 2,
+    "failed": 0,
+    "traffic_ids": [
+      "traffic_0032",
+      "traffic_0033"
+    ],
+    "errors": []
+  },
+  {
+    "import_id": "import_7ba7972a",
+    "run_id": "run_20261117_173906",
+    "total": 3,
+    "success": 3,
+    "failed": 0,
+    "traffic_ids": [
+      "traffic_0034",
+      "traffic_0035",
+      "traffic_0036"
+    ],
+    "errors": []
+  },
+  {
+    "import_id": "import_4a1a1792",
+    "run_id": "run_20261117_173906",
+    "total": 4,
+    "success": 4,
+    "failed": 0,
+    "traffic_ids": [
+      "traffic_0037",
+      "traffic_0038",
+      "traffic_0039",
+      "traffic_0040"
+    ],
+    "errors": []
+  },
+  {
+    "import_id": "import_4197d2f4",
+    "run_id": "run_20261117_173906",
+    "total": 1,
+    "success": 1,
+    "failed": 0,
+    "traffic_ids": [
+      "traffic_0041"
+    ],
+    "errors": []
+  },
+  {
+    "import_id": "import_4b0d9f0d",
+    "run_id": "run_20261117_173906",
+    "total": 1,
+    "success": 1,
+    "failed": 0,
+    "traffic_ids": [
+      "traffic_0042"
+    ],
+    "errors": []
+  },
+  {
+    "import_id": "import_440c4950",
+    "run_id": "run_20261117_173906",
+    "total": 3,
+    "success": 3,
+    "failed": 0,
+    "traffic_ids": [
+      "traffic_0043",
+      "traffic_0044",
+      "traffic_0045"
+    ],
+    "errors": []
+  },
+  {
+    "import_id": "import_74798104",
+    "run_id": "run_20261117_173906",
+    "total": 3,
+    "success": 3,
+    "failed": 0,
+    "traffic_ids": [
+      "traffic_0046",
+      "traffic_0047",
+      "traffic_0048"
+    ],
+    "errors": []
+  },
+  {
+    "import_id": "import_7884895c",
+    "run_id": "run_20261117_173906",
+    "total": 3,
+    "success": 3,
+    "failed": 0,
+    "traffic_ids": [
+      "traffic_0049",
+      "traffic_0050",
+      "traffic_0051"
+    ],
+    "errors": []
+  },
+  {
+    "import_id": "import_4f7fd746",
+    "run_id": "run_20261117_173906",
+    "total": 4,
+    "success": 4,
+    "failed": 0,
+    "traffic_ids": [
+      "traffic_0052",
+      "traffic_0053",
+      "traffic_0054",
+      "traffic_0055"
+    ],
+    "errors": []
+  },
+  {
+    "import_id": "import_51c71a3f",
+    "run_id": "run_20261117_173906",
+    "total": 5,
+    "success": 5,
+    "failed": 0,
+    "traffic_ids": [
+      "traffic_0056",
+      "traffic_0057",
+      "traffic_0058",
+      "traffic_0059",
+      "traffic_0060"
+    ],
+    "errors": []
+  },
+  {
+    "import_id": "import_b0c33b5a",
+    "run_id": "run_20261117_173906",
+    "total": 2,
+    "success": 2,
+    "failed": 0,
+    "traffic_ids": [
+      "traffic_0061",
+      "traffic_0062"
+    ],
+    "errors": []
+  },
+  {
+    "import_id": "import_f097fac3",
+    "run_id": "run_20261117_173906",
+    "total": 4,
+    "success": 4,
+    "failed": 0,
+    "traffic_ids": [
+      "traffic_0063",
+      "traffic_0064",
+      "traffic_0065",
+      "traffic_0066"
+    ],
+    "errors": []
+  },
+  {
+    "import_id": "import_3d197e5a",
+    "run_id": "run_20261117_173906",
+    "total": 5,
+    "success": 5,
+    "failed": 0,
+    "traffic_ids": [
+      "traffic_0067",
+      "traffic_0068",
+      "traffic_0069",
+      "traffic_0070",
+      "traffic_0071"
+    ],
+    "errors": []
+  },
+  {
+    "import_id": "import_6de9ce7f",
+    "run_id": "run_20261117_173906",
+    "total": 3,
+    "success": 3,
+    "failed": 0,
+    "traffic_ids": [
+      "traffic_0072",
+      "traffic_0073",
+      "traffic_0074"
+    ],
+    "errors": []
+  },
+  {
+    "import_id": "import_b0c48b8d",
+    "run_id": "run_20261117_173906",
+    "total": 2,
+    "success": 2,
+    "failed": 0,
+    "traffic_ids": [
+      "traffic_0075",
+      "traffic_0076"
+    ],
+    "errors": []
+  }
+]

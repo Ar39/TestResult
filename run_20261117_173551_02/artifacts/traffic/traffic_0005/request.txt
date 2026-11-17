@@ -1,0 +1,10 @@
+POST /portal-web/otc/domain/acctItemType.do HTTP/1.1
+Host: 10.10.177.111
+Cookie: isLocked=false; staffJobId=25162; ZSMART_LOCALE=en; SP_ID=0; areaId=100; orgId=100; userId=1; HTML_VERSION=1794653129366; SESSION=6b0994c6-1d9d-4bf6-a16b-31c4c9398828
+Content-Length: 47
+X-Csrf-Token: 1e5cd9c5-7da5-4ecf-a4e4-312f1a8fb294
+Menu-Id: 120011
+X-Requested-With: XMLHttpRequest
+Content-Type: application/json
+
+{"pageNum":1,"pageSize":1}

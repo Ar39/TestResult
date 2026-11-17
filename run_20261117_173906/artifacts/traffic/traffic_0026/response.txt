@@ -1,0 +1,22 @@
+HTTP/1.1 200 
+Date: Mon, 16 Nov 2026 08:16:11 GMT
+Content-Type: application/json
+Connection: keep-alive
+ITRACING_TRACE_ID: 172028108021_368334_1^1794653576196^14064
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Access-Control-Allow-Origin: https://10.10.177.111
+Access-Control-Expose-Headers: Set-Cookie
+Access-Control-Allow-Credentials: true
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Referrer-Policy: no-referrer-when-downgrade
+X-Frame-Options: SAMEORIGIN
+X-Permitted-Cross-Domain-Policies: master-only
+Content-Length: 719
+
+[{"operator":1,"operatorName":">=","comments":null,"operandCount":"B"},{"operator":2,"operatorName":"<=","comments":null,"operandCount":"B"},{"operator":3,"operatorName":"<","comments":null,"operandCount":"B"},{"operator":4,"operatorName":">","comments":null,"operandCount":"B"},{"operator":5,"operatorName":"In","comments":null,"operandCount":"B"},{"operator":6,"operatorName":"Not In","comments":null,"operandCount":"B"},{"operator":7,"operatorName":"=","comments":null,"operandCount":"B"},{"operator":8,"operatorName":"!=","comments":null,"operandCount":"B"},{"operator":9,"operatorName":"Is Empty","comments":null,"operandCount":"U"},{"operator":15,"operatorName":"Is Not Empty","comments":null,"operandCount":"U"}]

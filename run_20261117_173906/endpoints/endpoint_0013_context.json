@@ -1,0 +1,213 @@
+{
+  "endpoint_id": "endpoint_0013",
+  "method": "GET",
+  "scheme": "https",
+  "host": "10.10.177.111",
+  "path": "/portal-web/otc/paymentDecision/otcCrTermsDecision",
+  "path_examples": [
+    "/portal-web/otc/paymentDecision/otcCrTermsDecision"
+  ],
+  "traffic_count": 1,
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:82ef7a92e9948de358c87bedc238c69d9aa92180186a90e6ca4f69ed6de174c5",
+      "name": "HTML_VERSION",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "1794653129366"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0038"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:f4a75843ba14d7883c1804165b492207a7bf6cdb1dab56c4afee73b45977aa29",
+      "name": "SP_ID",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "0"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0038"
+      ]
+    },
+    {
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:5641a0f42539af82bfd57ca993d5183a52a9b0ec5edb230eaec6961b4271b2c2",
+      "name": "ZSMART_LOCALE",
+      "location": "cookie",
+      "type": "string",
+      "values": [
+        "en"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0038"
+      ]
+    },
+    {
+      "parameter_id": "param_0004",
+      "parameter_identity": "sha256:fa9635e1482513e1b00591dd97e1d2eb3d07c6231a38b76d8a7f46a8ec887d86",
+      "name": "areaId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "100"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0038"
+      ]
+    },
+    {
+      "parameter_id": "param_0005",
+      "parameter_identity": "sha256:dfa0aa863b9d3549d8939a7ac12231f84a8f7be45185d10be73d50318f68e8bc",
+      "name": "isLocked",
+      "location": "cookie",
+      "type": "boolean",
+      "values": [
+        "false"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0038"
+      ]
+    },
+    {
+      "parameter_id": "param_0006",
+      "parameter_identity": "sha256:3b3cbb49725e37dc281e14d97f1d3a421d80dcb8dd1ad620395b3549a7da5106",
+      "name": "orgId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "100"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0038"
+      ]
+    },
+    {
+      "parameter_id": "param_0007",
+      "parameter_identity": "sha256:0dba09b53d497f9b79dca31ef5fac14252f7e75d820ddb61840d4bbeb0855b52",
+      "name": "staffJobId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "25162"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0038"
+      ]
+    },
+    {
+      "parameter_id": "param_0008",
+      "parameter_identity": "sha256:e3a1bd71a11971e644ba63a4b1632004056fba0e61301f1b15f7904a17df0396",
+      "name": "userId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "1"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0038"
+      ]
+    },
+    {
+      "parameter_id": "param_0009",
+      "parameter_identity": "sha256:0a23305db2f858eb4eb420811e8a24aeacbf0c4c6c9c729919df8788751d506b",
+      "name": "Menu-Id",
+      "location": "header",
+      "type": "integer",
+      "values": [
+        "120005"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0038"
+      ]
+    },
+    {
+      "parameter_id": "param_0010",
+      "parameter_identity": "sha256:5522a0c1d79a1225a5e82f7ff87d344614dbb597677ea523ed81451f183e6aa9",
+      "name": "Priority",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "u=1, i"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0038"
+      ]
+    },
+    {
+      "parameter_id": "param_0011",
+      "parameter_identity": "sha256:17fc4da8fd901e8a790b371905c6b657b8e2f7ea862d0eb54c45003490100107",
+      "name": "_",
+      "location": "query",
+      "type": "integer",
+      "values": [
+        "1794797359765"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0038"
+      ]
+    }
+  ],
+  "inventory_id": "sha256:e7eede894f34c62b5c0a7fb613f4ec5d84609a368d3ad204bb48a266e36de0be",
+  "request_examples": [
+    {
+      "traffic_id": "traffic_0038",
+      "principal_ref": "principal_c8a93705deac",
+      "method": "GET",
+      "url": "https://10.10.177.111/portal-web/otc/paymentDecision/otcCrTermsDecision?_=1794797359765",
+      "content_type": null,
+      "query": {
+        "_": [
+          "1794797359765"
+        ]
+      },
+      "body_excerpt": null,
+      "body_sha256": null
+    }
+  ],
+  "response_examples": [
+    {
+      "traffic_id": "traffic_0038",
+      "status": 200,
+      "content_type": "application/json",
+      "body_excerpt": "[]",
+      "body_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    }
+  ],
+  "auth_contexts": [
+    {
+      "principal_ref": "principal_c8a93705deac",
+      "credential_ref": "cred_c8a93705deac",
+      "auth_types": [
+        "api_key",
+        "cookie"
+      ],
+      "traffic_count": 1
+    }
+  ],
+  "business_context": {
+    "description": null,
+    "evidence": [
+      "parameter 'SP_ID' (cookie) suggests object identifier",
+      "parameter 'orgId' (cookie) suggests tenant identity",
+      "parameter 'userId' (cookie) suggests user identity"
+    ]
+  },
+  "limitations": []
+}

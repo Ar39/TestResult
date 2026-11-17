@@ -1,0 +1,22 @@
+HTTP/1.1 200 
+Date: Mon, 16 Nov 2026 07:16:36 GMT
+Content-Type: application/json
+Connection: keep-alive
+ITRACING_TRACE_ID: 172028108021_368334_1^1794653576196^13094
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Access-Control-Allow-Origin: https://10.10.177.111
+Access-Control-Expose-Headers: Set-Cookie
+Access-Control-Allow-Credentials: true
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Referrer-Policy: no-referrer-when-downgrade
+X-Frame-Options: SAMEORIGIN
+X-Permitted-Cross-Domain-Policies: master-only
+Content-Length: 1067
+
+{"cellPriceId":null,"acctItemTypeId":1,"acctItemTypeName":"TAX","offerId":null,"offerInstId":null,"otcConGroupDto":{"conGroupId":73704,"conGroupName":"(getAttrValue(Customer Feature:testDiana) In \">&lt;img/src=1> ) ","conGroupExpression":"(74104)","otcConDtoList":[{"otcConLeft":{"conLeftId":74104,"conName":"getAttrValue(Customer Feature:testDiana)","conCode":null,"conDesc":null,"funId":65,"lParam1":"testDiana","lParam2":null,"lParam3":null,"factorId":60,"isList":null},"otcConRight":{"conRightId":74104,"conName":"\">&lt;img/src=1>","conType":"B","value":"\">&lt;img/src=1>","factorId":null,"funId":null,"rParam1":null,"rParam2":null},"conId":74104,"conGroupId":73704,"conLeftId":74104,"operator":5,"conRightId":74104,"conName":"getAttrValue(Customer Feature:testDiana) In \">&lt;img/src=1>"}],"flag":false},"qryAcctItemFlag":null,"spId":null}

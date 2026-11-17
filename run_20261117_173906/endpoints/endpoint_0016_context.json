@@ -1,0 +1,215 @@
+{
+  "endpoint_id": "endpoint_0016",
+  "method": "GET",
+  "scheme": "https",
+  "host": "10.10.177.111",
+  "path": "/portal-web/otc/price/qryOfferTypeList",
+  "path_examples": [
+    "/portal-web/otc/price/qryOfferTypeList"
+  ],
+  "traffic_count": 1,
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:54171a224099fc3fecd97830eb1085dea5eb3c22e86cb3fe1bc5bb700e6dea9a",
+      "name": "HTML_VERSION",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "1794653129366"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0045"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:2821b6eb639035d0f0beec1982807faef172f6779207141c7fb78aa49ede171f",
+      "name": "SP_ID",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "0"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0045"
+      ]
+    },
+    {
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:d57a71ad678071014d6fd1a496a2ce1091504598e556b32c9f2afa8b2091611b",
+      "name": "ZSMART_LOCALE",
+      "location": "cookie",
+      "type": "string",
+      "values": [
+        "en"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0045"
+      ]
+    },
+    {
+      "parameter_id": "param_0004",
+      "parameter_identity": "sha256:b5fb5f9c6c29dfa1f6bf5abbfa169206bc725c52fb1d6bd1145b8dc2fe8320ce",
+      "name": "areaId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "100"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0045"
+      ]
+    },
+    {
+      "parameter_id": "param_0005",
+      "parameter_identity": "sha256:6983d4b8c510e246e495a773a5e1f0f616491b1ae2850deacbadd881f12c2911",
+      "name": "isLocked",
+      "location": "cookie",
+      "type": "boolean",
+      "values": [
+        "false"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0045"
+      ]
+    },
+    {
+      "parameter_id": "param_0006",
+      "parameter_identity": "sha256:222878a6410ecef1c89325655e80b650afa5129a70c9f5e91d87d5e191be79d7",
+      "name": "orgId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "100"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0045"
+      ]
+    },
+    {
+      "parameter_id": "param_0007",
+      "parameter_identity": "sha256:1bd5c0766fe2072d57d97b05b8ffbb5174ee45922dffa3e3ac23ba844e6bee6a",
+      "name": "staffJobId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "25162"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0045"
+      ]
+    },
+    {
+      "parameter_id": "param_0008",
+      "parameter_identity": "sha256:3705d64eb3cda98db6bfab98b4354208a593306d6fcdc89096f80eac1ca42b24",
+      "name": "userId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "1"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0045"
+      ]
+    },
+    {
+      "parameter_id": "param_0009",
+      "parameter_identity": "sha256:f7d4a0bb91cba1f50fa1c7e222a7a7fd255de545e41ba9b71aaaaef27d470143",
+      "name": "Menu-Id",
+      "location": "header",
+      "type": "integer",
+      "values": [
+        "120008"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0045"
+      ]
+    },
+    {
+      "parameter_id": "param_0010",
+      "parameter_identity": "sha256:be2a32fc5c181f7c75b88a46a67f7db0d14483c9539c0e3ea69b86e8f4526c5e",
+      "name": "Priority",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "u=1, i"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0045"
+      ]
+    },
+    {
+      "parameter_id": "param_0011",
+      "parameter_identity": "sha256:84845856f51cd202115a7d744f5ce3bc314444f58d16bdc1baaf63469aef4d45",
+      "name": "_",
+      "location": "query",
+      "type": "integer",
+      "values": [
+        "1794797359777"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0045"
+      ]
+    }
+  ],
+  "inventory_id": "sha256:edec6e53e69d50face9e01062a5eaafc57a77652f7abfe687f4e10565942b38c",
+  "request_examples": [
+    {
+      "traffic_id": "traffic_0045",
+      "principal_ref": "principal_c8a93705deac",
+      "method": "GET",
+      "url": "https://10.10.177.111/portal-web/otc/price/qryOfferTypeList?_=1794797359777",
+      "content_type": null,
+      "query": {
+        "_": [
+          "1794797359777"
+        ]
+      },
+      "body_excerpt": null,
+      "body_sha256": null
+    }
+  ],
+  "response_examples": [
+    {
+      "traffic_id": "traffic_0045",
+      "status": 200,
+      "content_type": "application/json",
+      "body_excerpt": "[{\"offerTypeName\":\"Bundle\",\"offerType\":\"1\"},{\"offerTypeName\":\"Agreement\",\"offerType\":\"10\"},{\"offerTypeName\":\"Promotion\",\"offerType\":\"11\"},{\"offerTypeName\":\"Main Product\",\"offerType\":\"2\"},{\"offerTypeName\":\"Related Product\",\"offerType\":\"3\"},{\"offerTypeName\":\"Additional Offer\",\"offerType\":\"4\"},{\"offerTypeName\":\"Goods Product\",\"offerType\":\"5\"},{\"offerTypeName\":\"Default Price Plan Group\",\"offerType\":\"6\"},{\"offerTypeName\":\"Main Offer\",\"offerType\":\"7\"},{\"offerTypeName\":\"Bundle Subscription Plan\",\"offerType\":\"8\"},{\"offerTypeName\":\"Resource Product\",\"offerType\":\"9\"}]",
+      "body_sha256": "1224d4546c1fe9554e03f233a61bf0f49aa83bff02ac03f443538aeb56cad2bf"
+    }
+  ],
+  "auth_contexts": [
+    {
+      "principal_ref": "principal_c8a93705deac",
+      "credential_ref": "cred_c8a93705deac",
+      "auth_types": [
+        "api_key",
+        "cookie"
+      ],
+      "traffic_count": 1
+    }
+  ],
+  "business_context": {
+    "description": null,
+    "evidence": [
+      "parameter 'SP_ID' (cookie) suggests object identifier",
+      "parameter 'orgId' (cookie) suggests tenant identity",
+      "parameter 'userId' (cookie) suggests user identity",
+      "response field 'offerTypeName' suggests search / filter",
+      "path segment 'price' suggests monetary value"
+    ]
+  },
+  "limitations": []
+}

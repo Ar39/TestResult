@@ -1,0 +1,22 @@
+HTTP/1.1 200 
+Date: Mon, 16 Nov 2026 03:02:42 GMT
+Content-Type: application/json
+Connection: keep-alive
+ITRACING_TRACE_ID: 172028108021_368334_1^1794653576196^9948
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Access-Control-Allow-Origin: https://10.10.177.111
+Access-Control-Expose-Headers: Set-Cookie
+Access-Control-Allow-Credentials: true
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 0
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+Referrer-Policy: no-referrer-when-downgrade
+X-Frame-Options: SAMEORIGIN
+X-Permitted-Cross-Domain-Policies: master-only
+Content-Length: 367
+
+[{"traceId":1794797657882000,"createDate":"2026-11-16 10:54:17","id":1636,"offerId":465371,"offerName":"Offer Code:1065371","offerInstId":783461,"serviceOfferId":2,"priceQuatity":1},{"traceId":1794797657882000,"createDate":"2026-11-16 10:54:17","id":1637,"offerId":1123125,"offerName":"Offer Code:DP105264","offerInstId":765319,"serviceOfferId":189,"priceQuatity":0}]

@@ -1,0 +1,225 @@
+{
+  "endpoint_id": "endpoint_0046",
+  "method": "POST",
+  "scheme": "https",
+  "host": "10.10.177.111",
+  "path": "/portal-web/otc/price/getDataSource",
+  "path_examples": [
+    "/portal-web/otc/price/getDataSource"
+  ],
+  "traffic_count": 1,
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:c283a0ec62781d49344dd4d6ae46eb9e29bfa5a1181ec59eb2bda8f7ff17a4d2",
+      "name": "HTML_VERSION",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "1794653129366"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0042"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:bf4387994448b4e8bf190cb3c2618bcadd555cbd5343f3d79a804c7e005e53e2",
+      "name": "SP_ID",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "0"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0042"
+      ]
+    },
+    {
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:c83db25df4ec996df48d09874611f7ffd65d5d86dd9c9cc7000a34e74f95c5a1",
+      "name": "ZSMART_LOCALE",
+      "location": "cookie",
+      "type": "string",
+      "values": [
+        "en"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0042"
+      ]
+    },
+    {
+      "parameter_id": "param_0004",
+      "parameter_identity": "sha256:b054592cbf0ae858c692621c729569bcc81252d64f0f7a7c9b742a6097127072",
+      "name": "areaId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "100"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0042"
+      ]
+    },
+    {
+      "parameter_id": "param_0005",
+      "parameter_identity": "sha256:066d6d4497ad095c10eb87ccd8219ee9fcc0ed613597247f057d8ea9cde79cf2",
+      "name": "isLocked",
+      "location": "cookie",
+      "type": "boolean",
+      "values": [
+        "false"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0042"
+      ]
+    },
+    {
+      "parameter_id": "param_0006",
+      "parameter_identity": "sha256:06acf2005ee01c479af8895a080b1d66b1e4c390694e0931c58e49afc7bc51c9",
+      "name": "orgId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "100"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0042"
+      ]
+    },
+    {
+      "parameter_id": "param_0007",
+      "parameter_identity": "sha256:9fdd0103701990e599ee4d7fa1a7fc87a8c061b59199f04ec310c7bdef9131b6",
+      "name": "staffJobId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "25162"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0042"
+      ]
+    },
+    {
+      "parameter_id": "param_0008",
+      "parameter_identity": "sha256:20ba28b47fc1c5c52ea5ba7cd7e97c283e3131cc46d8381372ebd8ebe496ee94",
+      "name": "userId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "1"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0042"
+      ]
+    },
+    {
+      "parameter_id": "param_0009",
+      "parameter_identity": "sha256:0598e40e18251f51e622d1407bad7115113fb90ac551417f7621c8509d2e5605",
+      "name": "Menu-Id",
+      "location": "header",
+      "type": "integer",
+      "values": [
+        "120008"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0042"
+      ]
+    },
+    {
+      "parameter_id": "param_0010",
+      "parameter_identity": "sha256:a8e78ab61c9063c36a7bd153daedd0ea4731e4188e6a5a67e790e3290bfdbe5a",
+      "name": "Priority",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "u=1, i"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0042"
+      ]
+    },
+    {
+      "parameter_id": "param_0011",
+      "parameter_identity": "sha256:49e28366d1c2753ff63dc26a29da0063466ab09daa03c12e41f7ce096bdfdd2a",
+      "name": "beanName",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "GetServiceOfferSource"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0042"
+      ]
+    },
+    {
+      "parameter_id": "param_0012",
+      "parameter_identity": "sha256:dcd8e2616543dd7463b0e259c3bd6bd5a0f059ef750b45b754a5b373cd45b129",
+      "name": "serviceOfferId",
+      "location": "json",
+      "type": "string",
+      "values": [
+        ""
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0042"
+      ]
+    }
+  ],
+  "inventory_id": "sha256:b782a99b419f196396858aabb08720b279d3a27ebba400738cc901c9ecce3d92",
+  "request_examples": [
+    {
+      "traffic_id": "traffic_0042",
+      "principal_ref": "principal_c8a93705deac",
+      "method": "POST",
+      "url": "https://10.10.177.111/portal-web/otc/price/getDataSource",
+      "content_type": "application/json",
+      "query": null,
+      "body_excerpt": "{\"beanName\":\"GetServiceOfferSource\",\"serviceOfferId\":null}",
+      "body_sha256": "86a4c850769b099055d1ccce9cb7bb03944b5aaaf48b0973eb0f9020e06286ea"
+    }
+  ],
+  "response_examples": [
+    {
+      "traffic_id": "traffic_0042",
+      "status": 200,
+      "content_type": "application/json",
+      "body_excerpt": "[{\"attrValue\":76,\"attrValueName\":\"(Gota) Join Organization\"},{\"attrValue\":77,\"attrValueName\":\"(Gota) Quit Organization\"},{\"attrValue\":606,\"attrValueName\":\"APN Add Member\"},{\"attrValue\":607,\"attrValueName\":\"APN Delete Member\"},{\"attrValue\":377,\"attrValueName\":\"Abbrv Number  Management\"},{\"attrValue\":123,\"attrValueName\":\"Activation\"},{\"attrValue\":237,\"attrValueName\":\"Active Individual Price Plan\"},{\"attrValue\":389,\"attrValueName\":\"Active Period Expired Barring\"},{\"attrValue\":391,\"attrValueName\":\"Active Period Expired Barring Reactivation\"},{\"attrValue\":151,\"attrValueName\":\"Active Related Product\"},{\"attrValue\":275,\"attrValueName\":\"Active To InActive \"},{\"attrValue\":230,\"attrValueName\":\"Add Abbrv Number\"},{\"attrValue\":84,\"attrValueName\":\"Add Family Number\"},{\"attrValue\":392,\"attrValueName\":\"Add Member\"},{\"attrValue\":285,\"attrValueName\":\"Add One-off Charge\"},{\"attrValue\":81,\"attrValueName\":\"Add Related Product\"},{\"attrValue\":516,\"attrValueName\":\"All One-off Event\"},{\"attrValue\":427,\"attrValueName\":\"Automatic Reagreement\"},{\"attrValue\":352,\"attrValueName\":\"BALANCE ADJUST\"},{\"attrValue\":198,\"attrValueName\":\"Balance Exchange  Balance Exchange  \"},{\"attrValue\":125,\"attrValueName\":\"Balance Expire\"},{\"attrValue\":158,\"attrValueName\":\"Balance Inquire\"},{\"attrValue\":175,\"attrValueName\":\"Balance Inquire(Others) \"},{\"attrValue\":124,\"attrValueName\":\"Balance Insufficient\"},{\"attrValue\":144,\"attrValueName\":\"Balance Transfer \"},{\"attrValue\":94,\"attrValueName\":\"Block For Termination\"},{\"attrValu...[truncated 2500 chars]",
+      "body_sha256": "b2c5ada6a23889da3575e1551a3f7eb3de841dff674233eece3739173706fd6b"
+    }
+  ],
+  "auth_contexts": [
+    {
+      "principal_ref": "principal_c8a93705deac",
+      "credential_ref": "cred_c8a93705deac",
+      "auth_types": [
+        "api_key",
+        "cookie"
+      ],
+      "traffic_count": 1
+    }
+  ],
+  "business_context": {
+    "description": null,
+    "evidence": [
+      "parameter 'SP_ID' (cookie) suggests object identifier",
+      "parameter 'orgId' (cookie) suggests tenant identity",
+      "parameter 'userId' (cookie) suggests user identity",
+      "parameter 'beanName' (json) suggests search / filter",
+      "path segment 'price' suggests monetary value"
+    ]
+  },
+  "limitations": []
+}

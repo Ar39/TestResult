@@ -1,0 +1,207 @@
+{
+  "traffic_id": "traffic_0001",
+  "source": "raw_http",
+  "request": {
+    "method": "POST",
+    "scheme": "http",
+    "host": "10.10.177.111",
+    "port": 80,
+    "path": "/portal-web/otc/cacheRefresh/offers/page.do",
+    "raw_target": "/portal-web/otc/cacheRefresh/offers/page.do",
+    "query": {},
+    "headers": [
+      {
+        "name": "Host",
+        "value": "10.10.177.111"
+      },
+      {
+        "name": "Cookie",
+        "value": "<credential:cred_6f76b68c0174>"
+      },
+      {
+        "name": "Content-Length",
+        "value": "78"
+      },
+      {
+        "name": "X-Csrf-Token",
+        "value": "<credential:cred_6f76b68c0174>"
+      },
+      {
+        "name": "Menu-Id",
+        "value": "120006"
+      },
+      {
+        "name": "X-Requested-With",
+        "value": "XMLHttpRequest"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "cookies": {},
+    "content_type": "application/json",
+    "body": {
+      "raw": "{\"page\":1,\"rowNum\":5,\"sortName\":\"\",\"sortOrder\":\"asc\",\"pageNum\":1,\"pageSize\":5}",
+      "content_type": "application/json",
+      "charset": null,
+      "binary": false,
+      "size_bytes": 78,
+      "truncated": false,
+      "form": null,
+      "json_value": {
+        "page": 1,
+        "rowNum": 5,
+        "sortName": "",
+        "sortOrder": "asc",
+        "pageNum": 1,
+        "pageSize": 5
+      },
+      "xml_paths": null,
+      "parse_warnings": []
+    }
+  },
+  "response": {
+    "available": true,
+    "status": 200,
+    "reason": "",
+    "headers": [
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "name": "Access-Control-Allow-Origin",
+        "value": "https://10.10.177.111"
+      },
+      {
+        "name": "X-Frame-Options",
+        "value": "SAMEORIGIN"
+      },
+      {
+        "name": "Content-Length",
+        "value": "3639"
+      }
+    ],
+    "content_type": "application/json",
+    "body": {
+      "raw": "{\"total\":5963,\"list\":[{\"offerId\":100043,\"offerType\":\"4\",\"offerSysType\":null,\"offerName\":\"Kids L\",\"offerSysName\":null,\"offerSysPyName\":null,\"offerNbr\":\"100043\",\"offerSysNbr\":null,\"offerDesc\":null,\"effDate\":null,\"manageGrade\":null,\"expDate\":null,\"offerProviderId\":null,\"brandId\":null,\"valueAddedFlag\":null,\"initialCredValue\":null,\"pricingPlanId\":null,\"isIndependent\":null,\"remark\":null,\"manageRegionId\":null,\"statusCd\":null,\"createStaff\":null,\"updateStaff\":null,\"createDate\":null,\"statusDate\":null,\"updateDate\":null,\"extOfferId\":null,\"mainFlag\":null,\"billItemClass\":null,\"rtDisctFlag\":null,\"rentFeeAmount\":null,\"offerDispClass\":null,\"priorityValue\":null,\"subsidyType\":null,\"offerGrade\":null},{\"offerId\":100042,\"offerType\":\"4\",\"offerSysType\":null,\"offerName\":\"Kids M\",\"offerSysName\":null,\"offerSysPyName\":null,\"offerNbr\":\"100042\",\"offerSysNbr\":null,\"offerDesc\":null,\"effDate\":null,\"manageGrade\":null,\"expDate\":null,\"offerProviderId\":null,\"brandId\":null,\"valueAddedFlag\":null,\"initialCredValue\":null,\"pricingPlanId\":null,\"isIndependent\":null,\"remark\":null,\"manageRegionId\":null,\"statusCd\":null,\"createStaff\":null,\"updateStaff\":null,\"createDate\":null,\"statusDate\":null,\"updateDate\":null,\"extOfferId\":null,\"mainFlag\":null,\"billItemClass\":null,\"rtDisctFlag\":null,\"rentFeeAmount\":null,\"offerDispClass\":null,\"priorityValue\":null,\"subsidyType\":null,\"offerGrade\":null}],\"pageNum\":1,\"pageSize\":5}",
+      "content_type": "application/json",
+      "charset": null,
+      "binary": false,
+      "size_bytes": 1384,
+      "truncated": false,
+      "form": null,
+      "json_value": {
+        "total": 5963,
+        "list": [
+          {
+            "offerId": 100043,
+            "offerType": "4",
+            "offerSysType": null,
+            "offerName": "Kids L",
+            "offerSysName": null,
+            "offerSysPyName": null,
+            "offerNbr": "100043",
+            "offerSysNbr": null,
+            "offerDesc": null,
+            "effDate": null,
+            "manageGrade": null,
+            "expDate": null,
+            "offerProviderId": null,
+            "brandId": null,
+            "valueAddedFlag": null,
+            "initialCredValue": null,
+            "pricingPlanId": null,
+            "isIndependent": null,
+            "remark": null,
+            "manageRegionId": null,
+            "statusCd": null,
+            "createStaff": null,
+            "updateStaff": null,
+            "createDate": null,
+            "statusDate": null,
+            "updateDate": null,
+            "extOfferId": null,
+            "mainFlag": null,
+            "billItemClass": null,
+            "rtDisctFlag": null,
+            "rentFeeAmount": null,
+            "offerDispClass": null,
+            "priorityValue": null,
+            "subsidyType": null,
+            "offerGrade": null
+          },
+          {
+            "offerId": 100042,
+            "offerType": "4",
+            "offerSysType": null,
+            "offerName": "Kids M",
+            "offerSysName": null,
+            "offerSysPyName": null,
+            "offerNbr": "100042",
+            "offerSysNbr": null,
+            "offerDesc": null,
+            "effDate": null,
+            "manageGrade": null,
+            "expDate": null,
+            "offerProviderId": null,
+            "brandId": null,
+            "valueAddedFlag": null,
+            "initialCredValue": null,
+            "pricingPlanId": null,
+            "isIndependent": null,
+            "remark": null,
+            "manageRegionId": null,
+            "statusCd": null,
+            "createStaff": null,
+            "updateStaff": null,
+            "createDate": null,
+            "statusDate": null,
+            "updateDate": null,
+            "extOfferId": null,
+            "mainFlag": null,
+            "billItemClass": null,
+            "rtDisctFlag": null,
+            "rentFeeAmount": null,
+            "offerDispClass": null,
+            "priorityValue": null,
+            "subsidyType": null,
+            "offerGrade": null
+          }
+        ],
+        "pageNum": 1,
+        "pageSize": 5
+      },
+      "xml_paths": null,
+      "parse_warnings": []
+    }
+  },
+  "auth_context": {
+    "authenticated": true,
+    "principal_ref": "principal_6f76b68c0174",
+    "credential_ref": "cred_6f76b68c0174",
+    "auth_types": [
+      "api_key"
+    ]
+  },
+  "artifacts": [
+    {
+      "artifact_id": "artifact_0001",
+      "type": "http_request",
+      "path": "traffic/traffic_0001/request.txt",
+      "sha256": "066f30d0d4c8467fd3e1e9aea515b265087a9511c2557569b62a9d25a5e6e599",
+      "size_bytes": 319,
+      "created_at": "2026-11-17T17:27:00+08:00"
+    },
+    {
+      "artifact_id": "artifact_0002",
+      "type": "http_response",
+      "path": "traffic/traffic_0001/response.txt",
+      "sha256": "f7378306771cc6a3b2940386799aefd7a4a95ad0782c8332b8b287042d7f8471",
+      "size_bytes": 1530,
+      "created_at": "2026-11-17T17:27:00+08:00"
+    }
+  ],
+  "parse_warnings": []
+}

@@ -1,0 +1,214 @@
+{
+  "endpoint_id": "endpoint_0005",
+  "method": "POST",
+  "scheme": "https",
+  "host": "10.10.177.111",
+  "path": "/portal-web/otc/domain/acctItemType.do",
+  "path_examples": [
+    "/portal-web/otc/domain/acctItemType.do"
+  ],
+  "traffic_count": 1,
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:ae074080b0d25ac2f5d9f02be65aa811cb94867801ad808dbabfb427ff122c33",
+      "name": "HTML_VERSION",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "1794653129366"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0005"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:9ab7ac99fa5c784ff1f260478706f806135106dac81ea65d1af4898549bae60d",
+      "name": "SP_ID",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "0"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0005"
+      ]
+    },
+    {
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:4c39973c4f1a9732135c2d004b909bb5b988c9bc5f87a15f9f48c8c62ee820db",
+      "name": "ZSMART_LOCALE",
+      "location": "cookie",
+      "type": "string",
+      "values": [
+        "en"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0005"
+      ]
+    },
+    {
+      "parameter_id": "param_0004",
+      "parameter_identity": "sha256:880b50017b8bac8961868fd102646eb529bab876776f4d82bb8372e8f59c23d5",
+      "name": "areaId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "100"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0005"
+      ]
+    },
+    {
+      "parameter_id": "param_0005",
+      "parameter_identity": "sha256:9ab36686f7252e2595701f01af25d03fe09ba54f61f7b8306637a150e48fef84",
+      "name": "isLocked",
+      "location": "cookie",
+      "type": "boolean",
+      "values": [
+        "false"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0005"
+      ]
+    },
+    {
+      "parameter_id": "param_0006",
+      "parameter_identity": "sha256:6f40be1986d8233877337b8f5b13bc7fb61b8a1f92e7d7dfc47e88f16966d9b4",
+      "name": "orgId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "100"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0005"
+      ]
+    },
+    {
+      "parameter_id": "param_0007",
+      "parameter_identity": "sha256:e7434900f8faa231de282ad1cc292f04e51093c79cbbef340522cdfc8744e0ea",
+      "name": "staffJobId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "25162"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0005"
+      ]
+    },
+    {
+      "parameter_id": "param_0008",
+      "parameter_identity": "sha256:7f96c348d0349198a60e1ff4d73b6c99d15af1dda6d7524c60bad02ca61fd5af",
+      "name": "userId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "1"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0005"
+      ]
+    },
+    {
+      "parameter_id": "param_0009",
+      "parameter_identity": "sha256:d48fcf0979478ea4a158c1be9023044e3dec0ed4b3b08f92a7c8eba47dc73477",
+      "name": "Menu-Id",
+      "location": "header",
+      "type": "integer",
+      "values": [
+        "120011"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0005"
+      ]
+    },
+    {
+      "parameter_id": "param_0010",
+      "parameter_identity": "sha256:03d745800a0b2ae492eee5f67bed1b844849f675bd32001ac1c03a9b4d2abb02",
+      "name": "pageNum",
+      "location": "json",
+      "type": "integer",
+      "values": [
+        "1"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0005"
+      ]
+    },
+    {
+      "parameter_id": "param_0011",
+      "parameter_identity": "sha256:a637504a7eb0b23e83f49008d7b44e8df6716081749b81c94c20149aa054d5fc",
+      "name": "pageSize",
+      "location": "json",
+      "type": "integer",
+      "values": [
+        "1"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0005"
+      ]
+    }
+  ],
+  "inventory_id": "sha256:7f72b2618830d91dcba9b6275e6f6a21cf2024ee28611ba26d5a5839f913efb2",
+  "request_examples": [
+    {
+      "traffic_id": "traffic_0005",
+      "principal_ref": "principal_fae43c395c0f",
+      "method": "POST",
+      "url": "https://10.10.177.111/portal-web/otc/domain/acctItemType.do",
+      "content_type": "application/json",
+      "query": null,
+      "body_excerpt": "{\"pageNum\":1,\"pageSize\":1}",
+      "body_sha256": "7748b3690b42b45a0c56242eec492d897935913cdc32e9287d5f6b1591ac4061"
+    }
+  ],
+  "response_examples": [
+    {
+      "traffic_id": "traffic_0005",
+      "status": 200,
+      "content_type": "application/json",
+      "body_excerpt": "{\"total\":1,\"list\":[{\"acctItemTypeId\":1,\"gstType\":null,\"acctResId\":1,\"acctResName\":\"Main Balance\",\"parentId\":null,\"exchangeItemTypeId\":null,\"acctItemTypeName\":\"TAX\",\"comments\":\"TAX\",\"acctItemTypeCode\":\"CODE:1\",\"usageType\":\"A\",\"currencySymbol\":\"XAF\",\"displayScale\":2,\"state\":\"A\",\"spId\":0,\"partyType\":\"E\",\"partyCode\":null,\"savePrecision\":2,\"createdDate\":\"2020-01-01 00:00:00\"}],\"pageNum\":1,\"pageSize\":1,\"size\":1,\"startRow\":1,\"endRow\":1,\"pages\":0,\"prePage\":0,\"nextPage\":0,\"isFirstPage\":false,\"isLastPage\":false,\"hasPreviousPage\":false,\"hasNextPage\":false,\"navigatePages\":0,\"navigatePageNums\":null,\"navigateFirstPage\":0,\"navigateLastPage\":0}",
+      "body_sha256": "cec1ed79d1a776184c30f3920298408137b53c914a610ed7431b7e7f491d806b"
+    }
+  ],
+  "auth_contexts": [
+    {
+      "principal_ref": "principal_fae43c395c0f",
+      "credential_ref": "cred_fae43c395c0f",
+      "auth_types": [
+        "api_key",
+        "cookie"
+      ],
+      "traffic_count": 1
+    }
+  ],
+  "business_context": {
+    "description": null,
+    "evidence": [
+      "parameter 'SP_ID' (cookie) suggests object identifier",
+      "parameter 'orgId' (cookie) suggests tenant identity",
+      "parameter 'userId' (cookie) suggests user identity",
+      "response field 'total' suggests monetary value",
+      "response field 'list.acctResName' suggests search / filter",
+      "response field 'list.acctItemTypeName' suggests search / filter",
+      "response field 'list.currencySymbol' suggests monetary value",
+      "response field 'list.state' suggests business state"
+    ]
+  },
+  "limitations": []
+}

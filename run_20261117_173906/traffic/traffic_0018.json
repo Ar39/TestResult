@@ -1,0 +1,225 @@
+{
+  "traffic_id": "traffic_0018",
+  "source": "burp_xml",
+  "request": {
+    "method": "GET",
+    "scheme": "https",
+    "host": "10.10.177.111",
+    "port": 443,
+    "path": "/portal-web/otc/domain/factors",
+    "raw_target": "/portal-web/otc/domain/factors?funId=173&dataType=I&useInPrice=&_=1794812784761",
+    "query": {
+      "funId": [
+        "173"
+      ],
+      "dataType": [
+        "I"
+      ],
+      "useInPrice": [
+        ""
+      ],
+      "_": [
+        "1794812784761"
+      ]
+    },
+    "headers": [
+      {
+        "name": "Host",
+        "value": "10.10.177.111"
+      },
+      {
+        "name": "Cookie",
+        "value": "<credential:cred_fae43c395c0f>"
+      },
+      {
+        "name": "Sec-Ch-Ua-Platform",
+        "value": "\"macOS\""
+      },
+      {
+        "name": "X-Csrf-Token",
+        "value": "<credential:cred_fae43c395c0f>"
+      },
+      {
+        "name": "Accept-Language",
+        "value": "zh-CN,zh;q=0.9"
+      },
+      {
+        "name": "Sec-Ch-Ua",
+        "value": "\"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"150\""
+      },
+      {
+        "name": "Sec-Ch-Ua-Mobile",
+        "value": "?0"
+      },
+      {
+        "name": "Menu-Id",
+        "value": "120019"
+      },
+      {
+        "name": "X-Requested-With",
+        "value": "XMLHttpRequest"
+      },
+      {
+        "name": "User-Agent",
+        "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+      },
+      {
+        "name": "Accept",
+        "value": "application/json, text/javascript, */*; q=0.01"
+      },
+      {
+        "name": "Sec-Fetch-Site",
+        "value": "same-origin"
+      },
+      {
+        "name": "Sec-Fetch-Mode",
+        "value": "cors"
+      },
+      {
+        "name": "Sec-Fetch-Dest",
+        "value": "empty"
+      },
+      {
+        "name": "Referer",
+        "value": "https://10.10.177.111/portal-web/"
+      },
+      {
+        "name": "Accept-Encoding",
+        "value": "gzip, deflate, br"
+      },
+      {
+        "name": "Priority",
+        "value": "u=1, i"
+      },
+      {
+        "name": "Connection",
+        "value": "keep-alive"
+      }
+    ],
+    "cookies": {
+      "isLocked": "false",
+      "staffJobId": "25162",
+      "ZSMART_LOCALE": "en",
+      "SP_ID": "0",
+      "areaId": "100",
+      "orgId": "100",
+      "userId": "1",
+      "HTML_VERSION": "1794653129366",
+      "SESSION": "<credential:cred_fae43c395c0f>"
+    },
+    "content_type": null,
+    "body": null
+  },
+  "response": {
+    "available": true,
+    "status": 200,
+    "reason": "",
+    "headers": [
+      {
+        "name": "Date",
+        "value": "Mon, 16 Nov 2026 08:16:11 GMT"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "name": "Connection",
+        "value": "keep-alive"
+      },
+      {
+        "name": "ITRACING_TRACE_ID",
+        "value": "172028108021_368334_1^1794653576196^14063"
+      },
+      {
+        "name": "Vary",
+        "value": "Origin"
+      },
+      {
+        "name": "Vary",
+        "value": "Access-Control-Request-Method"
+      },
+      {
+        "name": "Vary",
+        "value": "Access-Control-Request-Headers"
+      },
+      {
+        "name": "X-Content-Type-Options",
+        "value": "nosniff"
+      },
+      {
+        "name": "X-XSS-Protection",
+        "value": "0"
+      },
+      {
+        "name": "Cache-Control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "name": "Pragma",
+        "value": "no-cache"
+      },
+      {
+        "name": "Expires",
+        "value": "0"
+      },
+      {
+        "name": "Referrer-Policy",
+        "value": "no-referrer-when-downgrade"
+      },
+      {
+        "name": "X-Frame-Options",
+        "value": "SAMEORIGIN"
+      },
+      {
+        "name": "X-Permitted-Cross-Domain-Policies",
+        "value": "master-only"
+      },
+      {
+        "name": "Content-Length",
+        "value": "7028"
+      }
+    ],
+    "content_type": "application/json",
+    "body": {
+      "raw": "[{\"conAttrTypeId\":1,\"conAttrTypeName\":\"Customer Information\",\"dataService\":\"qryCustomerDetail\",\"comments\":null,\"otcFactorList\":[{\"factorId\":131,\"conAttrTypeId\":1,\"factorName\":\"Customer Credit Grade\",\"attrNbr\":null,\"dataType\":\"I\",\"dataSourceBeanName\":\"GetCreditGradeSource\",\"useInPrice\":\"N\"},{\"factorId\":132,\"conAttrTypeId\":1,\"factorName\":\"Customer Important Grade\",\"attrNbr\":null,\"dataType\":\"I\",\"dataSourceBeanName\":\"GetImpGradeSource\",\"useInPrice\":\"N\"}],\"factorName\":\"Customer Information\"},{\"conAttrTypeId\":2,\"conAttrTypeName\":\"Offer Information\",\"dataService\":null,\"comments\":null,\"otcFactorList\":[{\"factorId\":46,\"conAttrTypeId\":2,\"factorName\":\"Offer Grade\",\"attrNbr\":null,\"dataType\":\"I\",\"dataSourceBeanName\":null,\"useInPrice\":null},{\"factorId\":76,\"conAttrTypeId\":2,\"factorName\":\"Rent List Price\",\"attrNbr\":null,\"dataType\":\"I\",\"dataSourceBeanName\":null,\"useInPrice\":\"Y\"}],\"factorName\":\"Offer Information\"},{\"conAttrTypeId\":3,\"conAttrTypeName\":\"Offer Instance Information\",\"dataService\":null,\"comments\":null,\"otcFactorList\":[{\"factorId\":79,\"conAttrTypeId\":3,\"factorName\":\"Fellow Number Added Times\",\"attrNbr\":null,\"dataType\":\"I\",\"dataSourceBeanName\":null,\"useInPrice\":null},{\"factorId\":80,\"conAttrTypeId\":3,\"factorName\":\"Fellow Number Modified Times\",\"attrNbr\":null,\"dataType\":\"I\",\"dataSourceBeanName\":null,\"useInPrice\":null},{\"factorId\":81,\"conAttrTypeId\":3,\"factorName\":\"Fellow Number Min Used Days\",\"attrNbr\":null,\"dataType\":\"I\",\"dataSourceBeanName\":null,\"useInPrice\":null},{\"factorId\":91,\"conAttrTypeId\":3,\"factorName\":\"Appointed Fee\",\"attrNbr\":null,\"dataType\":\"I\",\"dataSourceBeanName\":null,\"useInPrice\":\"Y\"},{\"factorId\":103,\"conAttrTypeId\":3,\"factorName\":\"Change Offer Instance ID\",\"attrNbr\":null,\"dataType\":\"I\",\"dataSourceBeanName\":null,\"useInPrice\":\"N\"},{\"factorId\":108,\"conAttrTypeId\":3,\"factorName\":\"Quantity\",\"attrNbr\":null,\"dataType\":\"I\",\"dataSourceBeanName\":null,\"useInPrice\":\"Y\"},{\"factorId\":110,\"conAttrTypeId\":3,\"factorName\":\"Related Offer ID\",\"attrNbr\":null,\"dataType\":\"I\",\"dataSourceBeanName\":null,\"useInPrice\":\"N\"},{\"factorId\":123,\"conAttrTypeId\":3,\"factorName\":\"Offer ID\",\"attrNbr\":null,\"dataType\":\"I\",\"dataSourceBeanName\":null,\"useInPrice\":\"N\"}],\"factorName\":\"Offer Instance Information\"},{\"conAttrTypeId\":4,\"conAttrTypeName\":\"Fee calculation Object\",\"dataService\":null,\"comments\":null,\"otcFactorList\":[{\"factorId\":5,\"conAttrTypeId\":4,\"factorName\":\"Change to Offer ID\",\"attrNbr\":null,\"dataType\":\"I\",\"dataSourceBeanName\":null,\"useInPrice\":null},{\"factorId\":6,\"conAttrTypeId\":4,\"factorName\":\"Change from Offer ID\",\"attrNbr\":null,\"dataType\":\"I\",\"dataSourceBeanName\":null,\"useInPrice\":null},{\"factorId\":102,\"conAttrTypeId\":4,\"factorName\":\"Message ID\",\"attrNbr\":null,\"dataType\":\"I\",\"dataSourceBeanName\":null,\"useInPrice\":\"N\"}],\"factorName\":\"Fee calculation Object\"},{\"conAttrTypeId\":5,\"conAttrTypeName\":\"SimCard Information\",\"dataService\":null,\"comments\":null,\"otcFactorList\":[{\"factorId\":7,\"conAttrTypeId\":5,\"factorName\":\"SIM Card Type\",\"attrNbr\":null,\"dataType\":\"I\",\"dataSourceBeanName\":\"GetCardTypeSource\",\"useInPrice\":null},{\"factorId\":97,\"conAttrTypeId\":5,\"factorName\":\"Old SIM Card Type\",\"attrNbr\":null,\"dataType\":\"I\",\"dataSourceBeanName\":\"GetCardTypeSource\",\"useInPrice\":\"N\"}],\"factorName\":\"SimCard Information\"},{\"conAttrTypeId\":7,\"conAttrTypeName\":\"Order Information\",\"dataService\":null,\"comments\":null,\"otcFactorList\":[{\"factorId\":25,\"conAttrTypeId\":7,\"factorName\":\"Order Item Id\",\"attrNbr\":null,\"dataType\":\"I\",\"dataSourceBeanName\":null,\"useInPrice\":\"Y\"},{\"factorId\":35,\"conAttrTypeId\":7,\"factorName\":\"Service Offer\",\"attrNbr\":null,\"dataType\":\"I\",\"dataSourceBeanName\":\"GetServiceOfferSource\",\"useInPrice\":null},{\"factorId\":37,\"conAttrTypeId\":7,\"factorName\":\"Create Organization\",\"attrNbr\":null,\"dataType\":\"I\",\"dataSourceBeanName\":null,\"useInPrice\":null}],\"factorName\":\"Order Information\"},{\"conAttrTypeId\":9,\"conAttrTypeName\":\"Main Offer Information\",\"dataService\":null,\"comments\":null,\"otcFactorList\":[{\"factorId\":100,\"conAttrTypeId\":9,\"factorName\":\"Offer ID\",\"attrNbr\":nu",
+      "content_type": "application/json",
+      "charset": null,
+      "binary": false,
+      "size_bytes": 4000,
+      "truncated": false,
+      "form": null,
+      "json_value": null,
+      "xml_paths": null,
+      "parse_warnings": []
+    }
+  },
+  "auth_context": {
+    "authenticated": true,
+    "principal_ref": "principal_fae43c395c0f",
+    "credential_ref": "cred_fae43c395c0f",
+    "auth_types": [
+      "api_key",
+      "cookie"
+    ]
+  },
+  "artifacts": [
+    {
+      "artifact_id": "artifact_0035",
+      "type": "http_request",
+      "path": "traffic/traffic_0018/request.txt",
+      "sha256": "a97600a7133a0543ecb50c9ebf062d74b15cfe8e5cf519d70a00986c13963f7b",
+      "size_bytes": 895,
+      "created_at": "2026-11-17T17:42:00+08:00"
+    },
+    {
+      "artifact_id": "artifact_0036",
+      "type": "http_response",
+      "path": "traffic/traffic_0018/response.txt",
+      "sha256": "dedfce0f2cada5ac2ef69725deb6237b85064131da5d8c266aebdbaabaddfbe4",
+      "size_bytes": 4534,
+      "created_at": "2026-11-17T17:42:00+08:00"
+    }
+  ],
+  "parse_warnings": []
+}

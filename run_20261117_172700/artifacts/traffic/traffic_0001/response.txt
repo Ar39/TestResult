@@ -1,0 +1,7 @@
+HTTP/1.1 200 
+Content-Type: application/json
+Access-Control-Allow-Origin: https://10.10.177.111
+X-Frame-Options: SAMEORIGIN
+Content-Length: 3639
+
+{"total":5963,"list":[{"offerId":100043,"offerType":"4","offerSysType":null,"offerName":"Kids L","offerSysName":null,"offerSysPyName":null,"offerNbr":"100043","offerSysNbr":null,"offerDesc":null,"effDate":null,"manageGrade":null,"expDate":null,"offerProviderId":null,"brandId":null,"valueAddedFlag":null,"initialCredValue":null,"pricingPlanId":null,"isIndependent":null,"remark":null,"manageRegionId":null,"statusCd":null,"createStaff":null,"updateStaff":null,"createDate":null,"statusDate":null,"updateDate":null,"extOfferId":null,"mainFlag":null,"billItemClass":null,"rtDisctFlag":null,"rentFeeAmount":null,"offerDispClass":null,"priorityValue":null,"subsidyType":null,"offerGrade":null},{"offerId":100042,"offerType":"4","offerSysType":null,"offerName":"Kids M","offerSysName":null,"offerSysPyName":null,"offerNbr":"100042","offerSysNbr":null,"offerDesc":null,"effDate":null,"manageGrade":null,"expDate":null,"offerProviderId":null,"brandId":null,"valueAddedFlag":null,"initialCredValue":null,"pricingPlanId":null,"isIndependent":null,"remark":null,"manageRegionId":null,"statusCd":null,"createStaff":null,"updateStaff":null,"createDate":null,"statusDate":null,"updateDate":null,"extOfferId":null,"mainFlag":null,"billItemClass":null,"rtDisctFlag":null,"rentFeeAmount":null,"offerDispClass":null,"priorityValue":null,"subsidyType":null,"offerGrade":null}],"pageNum":1,"pageSize":5}

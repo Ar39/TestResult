@@ -1,0 +1,173 @@
+{
+  "traffic_id": "traffic_0001",
+  "source": "burp_xml",
+  "request": {
+    "method": "POST",
+    "scheme": "https",
+    "host": "10.10.177.111",
+    "port": 443,
+    "path": "/portal-web/otc/cellingPrice/addCellingPrice",
+    "raw_target": "/portal-web/otc/cellingPrice/addCellingPrice",
+    "query": {},
+    "headers": [
+      {
+        "name": "Host",
+        "value": "10.10.177.111"
+      },
+      {
+        "name": "Cookie",
+        "value": "<credential:cred_fae43c395c0f>"
+      },
+      {
+        "name": "Content-Length",
+        "value": "803"
+      },
+      {
+        "name": "X-Csrf-Token",
+        "value": "<credential:cred_fae43c395c0f>"
+      },
+      {
+        "name": "Menu-Id",
+        "value": "120011"
+      },
+      {
+        "name": "X-Requested-With",
+        "value": "XMLHttpRequest"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "cookies": {
+      "isLocked": "false",
+      "staffJobId": "25162",
+      "ZSMART_LOCALE": "en",
+      "SP_ID": "0",
+      "areaId": "100",
+      "orgId": "100",
+      "userId": "1",
+      "HTML_VERSION": "1794653129366",
+      "SESSION": "<credential:cred_fae43c395c0f>"
+    },
+    "content_type": "application/json",
+    "body": {
+      "raw": "{\"acctItemTypeId\":1,\"priority\":\"1\",\"otcConGroupDto\":{\"conGroupName\":\"(getAttrValue(Customer Feature:testDiana) In \\\"><img/src=1> ) \",\"conGroupExpression\":\"({})\",\"otcConDtoList\":[{\"conName\":\"getAttrValue(Customer Feature:testDiana) In \\\"><img/src=1>\",\"operator\":5,\"otcConLeft\":{\"conName\":\"getAttrValue(Customer Feature:testDiana)\",\"lParam1\":\"testDiana\",\"factorId\":60,\"funId\":65},\"otcConRight\":{\"conName\":\"\\\"><img/src=1>\",\"conType\":\"B\",\"value\":\"\\\"><img/src=1>\"}}],\"conExpDto\":{\"conList\":[{\"conLeftDto\":{\"conLeftId\":65,\"conName\":\"getAttrValue(Customer Feature:testDiana)\",\"funId\":65,\"lParam1\":\"testDiana\",\"factorId\":60}},\"conRightDto\":{\"conRightId\":65,\"conName\":\"\\\"><img/src=1>\",\"value\":\"\\\"><img/src=1>\",\"conType\":\"B\"},\"operator\":5}],\"falg\":false},\"cellPrice\":\"100\"}",
+      "content_type": "application/json",
+      "charset": null,
+      "binary": false,
+      "size_bytes": 763,
+      "truncated": false,
+      "form": null,
+      "json_value": null,
+      "xml_paths": null,
+      "parse_warnings": []
+    }
+  },
+  "response": {
+    "available": true,
+    "status": 200,
+    "reason": "",
+    "headers": [
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "name": "Access-Control-Allow-Origin",
+        "value": "https://10.10.177.111"
+      },
+      {
+        "name": "X-Frame-Options",
+        "value": "SAMEORIGIN"
+      },
+      {
+        "name": "Content-Length",
+        "value": "1067"
+      }
+    ],
+    "content_type": "application/json",
+    "body": {
+      "raw": "{\"cellPriceId\":1020,\"acctItemTypeId\":1,\"acctItemTypeName\":null,\"acctItemTypeCode\":null,\"conGroupId\":73704,\"priority\":1,\"cellPrice\":100,\"cellTimes\":null,\"state\":\"A\",\"stateDate\":null,\"createStaff\":1,\"updateStaff\":1,\"createDate\":\"2026-11-16 15:16:40\",\"updateDate\":\"2026-11-16 15:16:40\",\"offerId\":null,\"offerInstId\":null,\"otcConGroupDto\":{\"conGroupId\":73704,\"conGroupName\":\"(getAttrValue(Customer Feature:testDiana) In \\\">&lt;img/src=1> ) \",\"conGroupExpression\":\"(74104)\",\"otcConDtoList\":[{\"otcConLeft\":{\"conLeftId\":74104,\"conName\":\"getAttrValue(Customer Feature:testDiana)\",\"funId\":65,\"lParam1\":\"testDiana\",\"factorId\":60},\"otcConRight\":{\"conRightId\":74104,\"conName\":\"\\\">&lt;img/src=1>\",\"conType\":\"B\",\"value\":\"\\\">&lt;img/src=1>\"}}],\"flag\":false},\"qryAcctItemFlag\":null,\"spId\":null}",
+      "content_type": "application/json",
+      "charset": null,
+      "binary": false,
+      "size_bytes": 777,
+      "truncated": false,
+      "form": null,
+      "json_value": {
+        "cellPriceId": 1020,
+        "acctItemTypeId": 1,
+        "acctItemTypeName": null,
+        "acctItemTypeCode": null,
+        "conGroupId": 73704,
+        "priority": 1,
+        "cellPrice": 100,
+        "cellTimes": null,
+        "state": "A",
+        "stateDate": null,
+        "createStaff": 1,
+        "updateStaff": 1,
+        "createDate": "2026-11-16 15:16:40",
+        "updateDate": "2026-11-16 15:16:40",
+        "offerId": null,
+        "offerInstId": null,
+        "otcConGroupDto": {
+          "conGroupId": 73704,
+          "conGroupName": "(getAttrValue(Customer Feature:testDiana) In \">&lt;img/src=1> ) ",
+          "conGroupExpression": "(74104)",
+          "otcConDtoList": [
+            {
+              "otcConLeft": {
+                "conLeftId": 74104,
+                "conName": "getAttrValue(Customer Feature:testDiana)",
+                "funId": 65,
+                "lParam1": "testDiana",
+                "factorId": 60
+              },
+              "otcConRight": {
+                "conRightId": 74104,
+                "conName": "\">&lt;img/src=1>",
+                "conType": "B",
+                "value": "\">&lt;img/src=1>"
+              }
+            }
+          ],
+          "flag": false
+        },
+        "qryAcctItemFlag": null,
+        "spId": null
+      },
+      "xml_paths": null,
+      "parse_warnings": []
+    }
+  },
+  "auth_context": {
+    "authenticated": true,
+    "principal_ref": "principal_fae43c395c0f",
+    "credential_ref": "cred_fae43c395c0f",
+    "auth_types": [
+      "api_key",
+      "cookie"
+    ]
+  },
+  "artifacts": [
+    {
+      "artifact_id": "artifact_0001",
+      "type": "http_request",
+      "path": "traffic/traffic_0001/request.txt",
+      "sha256": "0f3a4f80882df7e2b005dd2d9598f014543b84e9928efc132357d95975c3ca38",
+      "size_bytes": 1169,
+      "created_at": "2026-11-17T17:35:51+08:00"
+    },
+    {
+      "artifact_id": "artifact_0002",
+      "type": "http_response",
+      "path": "traffic/traffic_0001/response.txt",
+      "sha256": "fd7045d28610db1a880a1616c1fc09c4327457c0cbb4c225ab23ce81fc8865ca",
+      "size_bytes": 923,
+      "created_at": "2026-11-17T17:35:51+08:00"
+    }
+  ],
+  "parse_warnings": []
+}

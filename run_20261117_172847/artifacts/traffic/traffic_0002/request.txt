@@ -1,0 +1,5 @@
+POST /portal-web/otc/cacheRefresh/offers/page.do HTTP/1.1
+Host: 10.10.177.111
+Content-Type: application/json
+
+{"page":1}

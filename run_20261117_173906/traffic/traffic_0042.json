@@ -1,0 +1,250 @@
+{
+  "traffic_id": "traffic_0042",
+  "source": "burp_xml",
+  "request": {
+    "method": "POST",
+    "scheme": "https",
+    "host": "10.10.177.111",
+    "port": 443,
+    "path": "/portal-web/otc/price/getDataSource",
+    "raw_target": "/portal-web/otc/price/getDataSource",
+    "query": {},
+    "headers": [
+      {
+        "name": "Host",
+        "value": "10.10.177.111"
+      },
+      {
+        "name": "Cookie",
+        "value": "<credential:cred_c8a93705deac>"
+      },
+      {
+        "name": "Content-Length",
+        "value": "58"
+      },
+      {
+        "name": "Sec-Ch-Ua-Platform",
+        "value": "\"macOS\""
+      },
+      {
+        "name": "X-Csrf-Token",
+        "value": "<credential:cred_c8a93705deac>"
+      },
+      {
+        "name": "Accept-Language",
+        "value": "zh-CN,zh;q=0.9"
+      },
+      {
+        "name": "Sec-Ch-Ua",
+        "value": "\"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"150\""
+      },
+      {
+        "name": "Sec-Ch-Ua-Mobile",
+        "value": "?0"
+      },
+      {
+        "name": "Menu-Id",
+        "value": "120008"
+      },
+      {
+        "name": "X-Requested-With",
+        "value": "XMLHttpRequest"
+      },
+      {
+        "name": "User-Agent",
+        "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+      },
+      {
+        "name": "Accept",
+        "value": "application/json, text/javascript, */*; q=0.01"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "name": "Origin",
+        "value": "https://10.10.177.111"
+      },
+      {
+        "name": "Sec-Fetch-Site",
+        "value": "same-origin"
+      },
+      {
+        "name": "Sec-Fetch-Mode",
+        "value": "cors"
+      },
+      {
+        "name": "Sec-Fetch-Dest",
+        "value": "empty"
+      },
+      {
+        "name": "Referer",
+        "value": "https://10.10.177.111/portal-web/"
+      },
+      {
+        "name": "Accept-Encoding",
+        "value": "gzip, deflate, br"
+      },
+      {
+        "name": "Priority",
+        "value": "u=1, i"
+      },
+      {
+        "name": "Connection",
+        "value": "keep-alive"
+      }
+    ],
+    "cookies": {
+      "isLocked": "false",
+      "staffJobId": "25162",
+      "ZSMART_LOCALE": "en",
+      "SP_ID": "0",
+      "areaId": "100",
+      "orgId": "100",
+      "userId": "1",
+      "HTML_VERSION": "1794653129366",
+      "SESSION": "<credential:cred_c8a93705deac>"
+    },
+    "content_type": "application/json",
+    "body": {
+      "raw": "{\"beanName\":\"GetServiceOfferSource\",\"serviceOfferId\":null}",
+      "content_type": "application/json",
+      "charset": null,
+      "binary": false,
+      "size_bytes": 58,
+      "truncated": false,
+      "form": null,
+      "json_value": {
+        "beanName": "GetServiceOfferSource",
+        "serviceOfferId": null
+      },
+      "xml_paths": null,
+      "parse_warnings": []
+    }
+  },
+  "response": {
+    "available": true,
+    "status": 200,
+    "reason": "",
+    "headers": [
+      {
+        "name": "Date",
+        "value": "Mon, 16 Nov 2026 03:28:25 GMT"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "name": "Connection",
+        "value": "keep-alive"
+      },
+      {
+        "name": "ITRACING_TRACE_ID",
+        "value": "172028108021_368334_1^1794653576196^10229"
+      },
+      {
+        "name": "Vary",
+        "value": "Origin"
+      },
+      {
+        "name": "Vary",
+        "value": "Access-Control-Request-Method"
+      },
+      {
+        "name": "Vary",
+        "value": "Access-Control-Request-Headers"
+      },
+      {
+        "name": "Access-Control-Allow-Origin",
+        "value": "https://10.10.177.111"
+      },
+      {
+        "name": "Access-Control-Expose-Headers",
+        "value": "Set-Cookie"
+      },
+      {
+        "name": "Access-Control-Allow-Credentials",
+        "value": "true"
+      },
+      {
+        "name": "X-Content-Type-Options",
+        "value": "nosniff"
+      },
+      {
+        "name": "X-XSS-Protection",
+        "value": "0"
+      },
+      {
+        "name": "Cache-Control",
+        "value": "no-cache, no-store, max-age=0, must-revalidate"
+      },
+      {
+        "name": "Pragma",
+        "value": "no-cache"
+      },
+      {
+        "name": "Expires",
+        "value": "0"
+      },
+      {
+        "name": "Referrer-Policy",
+        "value": "no-referrer-when-downgrade"
+      },
+      {
+        "name": "X-Frame-Options",
+        "value": "SAMEORIGIN"
+      },
+      {
+        "name": "X-Permitted-Cross-Domain-Policies",
+        "value": "master-only"
+      },
+      {
+        "name": "Content-Length",
+        "value": "15833"
+      }
+    ],
+    "content_type": "application/json",
+    "body": {
+      "raw": "[{\"attrValue\":76,\"attrValueName\":\"(Gota) Join Organization\"},{\"attrValue\":77,\"attrValueName\":\"(Gota) Quit Organization\"},{\"attrValue\":606,\"attrValueName\":\"APN Add Member\"},{\"attrValue\":607,\"attrValueName\":\"APN Delete Member\"},{\"attrValue\":377,\"attrValueName\":\"Abbrv Number  Management\"},{\"attrValue\":123,\"attrValueName\":\"Activation\"},{\"attrValue\":237,\"attrValueName\":\"Active Individual Price Plan\"},{\"attrValue\":389,\"attrValueName\":\"Active Period Expired Barring\"},{\"attrValue\":391,\"attrValueName\":\"Active Period Expired Barring Reactivation\"},{\"attrValue\":151,\"attrValueName\":\"Active Related Product\"},{\"attrValue\":275,\"attrValueName\":\"Active To InActive \"},{\"attrValue\":230,\"attrValueName\":\"Add Abbrv Number\"},{\"attrValue\":84,\"attrValueName\":\"Add Family Number\"},{\"attrValue\":392,\"attrValueName\":\"Add Member\"},{\"attrValue\":285,\"attrValueName\":\"Add One-off Charge\"},{\"attrValue\":81,\"attrValueName\":\"Add Related Product\"},{\"attrValue\":516,\"attrValueName\":\"All One-off Event\"},{\"attrValue\":427,\"attrValueName\":\"Automatic Reagreement\"},{\"attrValue\":352,\"attrValueName\":\"BALANCE ADJUST\"},{\"attrValue\":198,\"attrValueName\":\"Balance Exchange  Balance Exchange  \"},{\"attrValue\":125,\"attrValueName\":\"Balance Expire\"},{\"attrValue\":158,\"attrValueName\":\"Balance Inquire\"},{\"attrValue\":175,\"attrValueName\":\"Balance Inquire(Others) \"},{\"attrValue\":124,\"attrValueName\":\"Balance Insufficient\"},{\"attrValue\":144,\"attrValueName\":\"Balance Transfer \"},{\"attrValue\":94,\"attrValueName\":\"Block For Termination\"},{\"attrValue\":590,\"attrValueName\":\"Block Subscriber\"},{\"attrValue\":476,\"attrValueName\":\"Bundle Delete Member\"},{\"attrValue\":475,\"attrValueName\":\"Bundle Join Member(Exist)\"},{\"attrValue\":477,\"attrValueName\":\"Bundle Join Member(Newconnection)\"},{\"attrValue\":313,\"attrValueName\":\"C To C/G\"},{\"attrValue\":314,\"attrValueName\":\"C/G To C \"},{\"attrValue\":315,\"attrValueName\":\"C/G To G \"},{\"attrValue\":435,\"attrValueName\":\"CC Ctrl Event\"},{\"attrValue\":176,\"attrValueName\":\"CDR Inquire(Others)\"},{\"attrValue\":318,\"attrValueName\":\"Call Me Back\"},{\"attrValue\":518,\"attrValueName\":\"Cancel A Lottery Ticket\"},{\"attrValue\":44,\"attrValueName\":\"Cancel Individual Price Plan\"},{\"attrValue\":155,\"attrValueName\":\"Cancel Individual Price Plan\"},{\"attrValue\":433,\"attrValueName\":\"Cancel Order\"},{\"attrValue\":101,\"attrValueName\":\"Cancel Pre-New Connection\"},{\"attrValue\":584,\"attrValueName\":\"Cancel Pre-Termination\"},{\"attrValue\":82,\"attrValueName\":\"Cancel Related Product\"},{\"attrValue\":37,\"attrValueName\":\"Change Account\"},{\"attrValue\":292,\"attrValueName\":\"Change Account Delivery Type\"},{\"attrValue\":49,\"attrValueName\":\"Change Additional Offer Feature\"},{\"attrValue\":34,\"attrValueName\":\"Change Address\"},{\"attrValue\":78,\"attrValueName\":\"Change Address And Number Shifting\"},{\"attrValue\":575,\"attrValueName\":\"Change Bandwidth\"},{\"attrValue\":234,\"attrValueName\":\"Change Bill Cycle\"},{\"attrValue\":604,\"attrValueName\":\"Change Customer Route\"},{\"attrValue\":98,\"attrValueName\":\"Change ESN\"},{\"attrValue\":40,\"attrValueName\":\"Change Guarantee\"},{\"attrValue\":85,\"attrValueName\":\"Change Home Zone\"},{\"attrValue\":596,\"attrValueName\":\"Change IMSI\"},{\"attrValue\":161,\"attrValueName\":\"Change Language\"},{\"attrValue\":567,\"attrValueName\":\"Change MRC\"},{\"attrValue\":32,\"attrValueName\":\"Change MSISDN \"},{\"attrValue\":35,\"attrValueName\":\"Change Main Product(Brand)\"},{\"attrValue\":329,\"attrValueName\":\"Change Offer\"},{\"attrValue\":41,\"attrValueName\":\"Change Owner(Obsolete)\"},{\"attrValue\":42,\"attrValueName\":\"Change Password\"},{\"attrValue\":311,\"attrValueName\":\"Change Price Plan Feature \"},{\"attrValue\":39,\"attrValueName\":\"Change Relation Binding\"},{\"attrValue\":267,\"attrValueName\":\"Change Spending Limit\"},{\"attrValue\":50,\"attrValueName\":\"Change Subscriber Profile\"},{\"attrValue\":571,\"attrValueName\":\"Change Technology\"},{\"attrValue\":43,\"attrValueName\":\"Change User\"},{\"attrValue\":594,\"attrValueName\":\"Change of Plan(COP)\"},{\"attrValue\":3,\"attrValueName\":\"Charge Modify Offer\"},{\"attrValue\":294,\"attrValueName\":\"Choose Card\"},{\"attrValue\":295,\"attrVal",
+      "content_type": "application/json",
+      "charset": null,
+      "binary": false,
+      "size_bytes": 4000,
+      "truncated": false,
+      "form": null,
+      "json_value": null,
+      "xml_paths": null,
+      "parse_warnings": []
+    }
+  },
+  "auth_context": {
+    "authenticated": true,
+    "principal_ref": "principal_c8a93705deac",
+    "credential_ref": "cred_c8a93705deac",
+    "auth_types": [
+      "api_key",
+      "cookie"
+    ]
+  },
+  "artifacts": [
+    {
+      "artifact_id": "artifact_0083",
+      "type": "http_request",
+      "path": "traffic/traffic_0042/request.txt",
+      "sha256": "498ac2c30a77a432a7d2f38881b40e6518766adccd2fdc12b6469acf81957fb5",
+      "size_bytes": 990,
+      "created_at": "2026-11-17T17:42:01+08:00"
+    },
+    {
+      "artifact_id": "artifact_0084",
+      "type": "http_response",
+      "path": "traffic/traffic_0042/response.txt",
+      "sha256": "ca1f1ca490f6bb2e0e566238620b9d040a5f574241724dc24d147bb1b2d41642",
+      "size_bytes": 4667,
+      "created_at": "2026-11-17T17:42:01+08:00"
+    }
+  ],
+  "parse_warnings": []
+}

@@ -1,0 +1,113 @@
+{
+  "traffic_id": "traffic_0001",
+  "source": "raw_http",
+  "request": {
+    "method": "POST",
+    "scheme": "http",
+    "host": "10.10.177.111",
+    "port": 80,
+    "path": "/portal-web/otc/caching/a",
+    "raw_target": "/portal-web/otc/caching/a",
+    "query": {},
+    "headers": [
+      {
+        "name": "Host",
+        "value": "10.10.177.111"
+      },
+      {
+        "name": "Cookie",
+        "value": "<credential:cred_aa40c091bf48>"
+      },
+      {
+        "name": "Content-Length",
+        "value": "43"
+      },
+      {
+        "name": "X-Csrf-Token",
+        "value": "<credential:cred_aa40c091bf48>"
+      },
+      {
+        "name": "X-Requested-With",
+        "value": "XMLHttpRequest"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ],
+    "cookies": {},
+    "content_type": "application/json",
+    "body": {
+      "raw": "{\"page\":1,\"rowNum\":5,\"pageNum\":1,\"pageSize\":5}",
+      "content_type": "application/json",
+      "charset": null,
+      "binary": false,
+      "size_bytes": 46,
+      "truncated": false,
+      "form": null,
+      "json_value": {
+        "page": 1,
+        "rowNum": 5,
+        "pageNum": 1,
+        "pageSize": 5
+      },
+      "xml_paths": null,
+      "parse_warnings": []
+    }
+  },
+  "response": {
+    "available": true,
+    "status": 200,
+    "reason": "",
+    "headers": [
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "name": "Content-Length",
+        "value": "60"
+      }
+    ],
+    "content_type": "application/json",
+    "body": {
+      "raw": "{\"total\":5963,\"list\":[{\"offerId\":100043,\"offerName\":\"Kids L\"}]}\n\nPOST /portal-web/otc/caching/b HTTP/1.1\nHost: 10.10.177.111\nCookie: ***\nContent-Length: 50\nX-Csrf-Token: abc\nX-Requested-With: XMLHttpRequest\nContent-Type: application/json\n\n{\"bean\":\"cache.custDpstRefresh\",\"method\":\"status\"}\n\nHTTP/1.1 200 \nContent-Type: application/json\nContent-Length: 100\n\n{\"result\":{\"endTime\":1794653664000,\"failCnt\":0,\"beginTime\":1794653663860,\"status\":0,\"totalCnt\":0,\"succCnt\":0},\"future\":null}",
+      "content_type": "application/json",
+      "charset": null,
+      "binary": false,
+      "size_bytes": 481,
+      "truncated": false,
+      "form": null,
+      "json_value": null,
+      "xml_paths": null,
+      "parse_warnings": []
+    }
+  },
+  "auth_context": {
+    "authenticated": true,
+    "principal_ref": "principal_aa40c091bf48",
+    "credential_ref": "cred_aa40c091bf48",
+    "auth_types": [
+      "api_key"
+    ]
+  },
+  "artifacts": [
+    {
+      "artifact_id": "artifact_0001",
+      "type": "http_request",
+      "path": "traffic/traffic_0001/request.txt",
+      "sha256": "4f451de6452de6b0ef7cf05ba35c6520ae24fc8a10406e6a2c27ef03f47973dc",
+      "size_bytes": 220,
+      "created_at": "2026-11-17T17:26:09+08:00"
+    },
+    {
+      "artifact_id": "artifact_0002",
+      "type": "http_response",
+      "path": "traffic/traffic_0001/response.txt",
+      "sha256": "3652139f3440cc4f75d73d3f19f0520e7c42f807f545cce5577b4f89c776a958",
+      "size_bytes": 546,
+      "created_at": "2026-11-17T17:26:09+08:00"
+    }
+  ],
+  "parse_warnings": []
+}

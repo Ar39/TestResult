@@ -1,0 +1,6 @@
+HTTP/1.1 200 
+Content-Type: application/json
+X-Frame-Options: SAMEORIGIN
+Content-Length: 1657
+
+{"total":5963,"list":[{"offerId":100043,"offerType":"4","offerSysType":null,"offerName":"Kids L","offerSysName":null,"offerSypyName":null,"offerNbr":"100043","offerSysNbr":null,"offerDesc":null,"effDate":null,"manageGrade":null,"expDate":null,"offerProviderId":null,"brandId":null,"valueAddedFlag":null,"initialChargeValue":null,"desc":null,"state":"A","stateDate":null,"orgId":100,"stateDate":null}],"pageNum":1,"pageSize":10,"size":0,"startRow":1,"endRow":0}

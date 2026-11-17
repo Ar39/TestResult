@@ -1,0 +1,7 @@
+HTTP/1.1 200 
+Content-Type: application/json
+Access-Control-Allow-Origin: https://10.10.177.111
+X-Frame-Options: SAMEORIGIN
+Content-Length: 124
+
+{"result":{"failCnt":0,"beginTime":1794653665549,"succCnt":0,"endTime":1794653665588,"status":0,"totalCnt":0},"future":null}
