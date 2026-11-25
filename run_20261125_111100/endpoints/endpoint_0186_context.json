@@ -1,0 +1,227 @@
+{
+  "endpoint_id": "endpoint_0186",
+  "method": "POST",
+  "scheme": "https",
+  "host": "10.10.177.111",
+  "path": "/portal-web/otc/scriptTemplate/list",
+  "path_examples": [
+    "/portal-web/otc/scriptTemplate/list"
+  ],
+  "traffic_count": 2,
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:cdbaa01a39445ce91b515f12983d4327a1e052dc786d64c9268c4571f737fdb1",
+      "name": "HTML_VERSION",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "1794535466642"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0295",
+        "traffic_0296"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:8e1d19350fefddf75b7787bb24deb27153f6b789d5e40dcf413139496778dd11",
+      "name": "SP_ID",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "0"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0295",
+        "traffic_0296"
+      ]
+    },
+    {
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:106961d84794bcdc4c43df60faa89d08392bfd4eb6dbd1f31e19e675ef877809",
+      "name": "ZSMART_LOCALE",
+      "location": "cookie",
+      "type": "string",
+      "values": [
+        "en"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0295",
+        "traffic_0296"
+      ]
+    },
+    {
+      "parameter_id": "param_0004",
+      "parameter_identity": "sha256:28af08ed02eded7198dd9dbfc51930f90a5c1984fe89d084c28da866ab698a46",
+      "name": "areaId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "100"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0295",
+        "traffic_0296"
+      ]
+    },
+    {
+      "parameter_id": "param_0005",
+      "parameter_identity": "sha256:3d421deb7aa86aff62fd4cdac0fe1c7398cb509fa2d994aba9c0ab9a96a63d4e",
+      "name": "isLocked",
+      "location": "cookie",
+      "type": "boolean",
+      "values": [
+        "false"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0295",
+        "traffic_0296"
+      ]
+    },
+    {
+      "parameter_id": "param_0006",
+      "parameter_identity": "sha256:e1c9b2cfa483331d6b191f29b3ebe84726e9cd9c44131fbcbfe26ffc92f0dbd0",
+      "name": "orgId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "100"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0295",
+        "traffic_0296"
+      ]
+    },
+    {
+      "parameter_id": "param_0007",
+      "parameter_identity": "sha256:194bfca0020cc618871fd9928d87aefb535a9b1f278ecaa464c74c36f14d48ee",
+      "name": "staffJobId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "25162"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0295",
+        "traffic_0296"
+      ]
+    },
+    {
+      "parameter_id": "param_0008",
+      "parameter_identity": "sha256:eca1c83519b1929e23d0d161948f9e535be210c9a4ef9e7ce5194666d9b9aa5a",
+      "name": "userId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "1"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0295",
+        "traffic_0296"
+      ]
+    },
+    {
+      "parameter_id": "param_0009",
+      "parameter_identity": "sha256:201f9cbdf54f9729b7a1c3a69a5b5045b88dd19dd929408b9043dda7096508ca",
+      "name": "Menu-Id",
+      "location": "header",
+      "type": "integer",
+      "values": [
+        "120018"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0295",
+        "traffic_0296"
+      ]
+    },
+    {
+      "parameter_id": "param_0010",
+      "parameter_identity": "sha256:1d78e17088cf51de4810b040a1f0e4020bdc5dce1c99f967e4d79a1df2c7bfdf",
+      "name": "Priority",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "u=1, i"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0295",
+        "traffic_0296"
+      ]
+    },
+    {
+      "parameter_id": "param_0011",
+      "parameter_identity": "sha256:ff9b783b0078ad1e80917ef7f2b345741594fa1e8f4cea50fd7b91559b9b2ff4",
+      "name": "stateFilter",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "A,B",
+        "A,B,C"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0295",
+        "traffic_0296"
+      ]
+    }
+  ],
+  "inventory_id": "sha256:f32ef16f5670ca79068836655316f54a5d227cc00a605c09d82f0121746ed1ba",
+  "request_examples": [
+    {
+      "traffic_id": "traffic_0295",
+      "principal_ref": "principal_cc0f14c7dfc3",
+      "method": "POST",
+      "url": "https://10.10.177.111/portal-web/otc/scriptTemplate/list",
+      "content_type": "application/json",
+      "query": null,
+      "body_excerpt": "{\"stateFilter\":\"A,B\"}",
+      "body_sha256": "0d1b691bd86e0a538fe1f8bc3ed492f80b2cf2457a1d8369e450707ec8815884"
+    },
+    {
+      "traffic_id": "traffic_0296",
+      "principal_ref": "principal_cc0f14c7dfc3",
+      "method": "POST",
+      "url": "https://10.10.177.111/portal-web/otc/scriptTemplate/list",
+      "content_type": "application/json",
+      "query": null,
+      "body_excerpt": "{\"stateFilter\":\"A,B,C\"}",
+      "body_sha256": "55fddb2df5ae41b22da4a69d5dfea54ab2270572058894f5fc617db41516225b"
+    }
+  ],
+  "response_examples": [],
+  "auth_contexts": [
+    {
+      "principal_ref": "principal_cc0f14c7dfc3",
+      "credential_ref": "cred_cc0f14c7dfc3",
+      "auth_types": [
+        "api_key",
+        "cookie"
+      ],
+      "traffic_count": 2
+    }
+  ],
+  "business_context": {
+    "description": null,
+    "evidence": [
+      "parameter 'SP_ID' (cookie) suggests object identifier",
+      "parameter 'orgId' (cookie) suggests tenant identity",
+      "parameter 'userId' (cookie) suggests user identity",
+      "parameter 'stateFilter' (json) suggests business state",
+      "parameter 'stateFilter' (json) suggests search / filter"
+    ]
+  },
+  "limitations": [
+    "2/2 traffic items have no captured response"
+  ]
+}

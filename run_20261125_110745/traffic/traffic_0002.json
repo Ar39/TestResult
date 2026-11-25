@@ -1,0 +1,51 @@
+{
+  "traffic_id": "traffic_0002",
+  "source": "burp",
+  "request": {
+    "method": "GET",
+    "scheme": "http",
+    "host": "10.10.177.111",
+    "port": 80,
+    "path": "/portal-web/otc/domain/getProjectCode",
+    "raw_target": "/portal-web/otc/domain/getProjectCode?_=1794797359772",
+    "query": {
+      "_": [
+        "1794797359772"
+      ]
+    },
+    "headers": [
+      {
+        "name": "Host",
+        "value": "10.10.177.111"
+      },
+      {
+        "name": "Cookie",
+        "value": "userId=1; orgId=100"
+      }
+    ],
+    "cookies": {
+      "userId": "1",
+      "orgId": "100"
+    },
+    "content_type": null,
+    "body": null
+  },
+  "response": null,
+  "auth_context": {
+    "authenticated": false,
+    "principal_ref": null,
+    "credential_ref": null,
+    "auth_types": []
+  },
+  "artifacts": [
+    {
+      "artifact_id": "artifact_0002",
+      "type": "http_request",
+      "path": "traffic/traffic_0002/request.txt",
+      "sha256": "f18d9fb83fc57dfd7b8172b09b57844308d43d98442d4a27deeefc8c14c59038",
+      "size_bytes": 120,
+      "created_at": "2026-11-25T11:07:45+08:00"
+    }
+  ],
+  "parse_warnings": []
+}

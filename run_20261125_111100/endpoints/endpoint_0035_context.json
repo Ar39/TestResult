@@ -1,0 +1,232 @@
+{
+  "endpoint_id": "endpoint_0035",
+  "method": "GET",
+  "scheme": "https",
+  "host": "10.10.177.111",
+  "path": "/portal-web/otc/modules/codemirror-5.63.3/lib/codemirror.js",
+  "path_examples": [
+    "/portal-web/otc/modules/codemirror-5.63.3/lib/codemirror.js"
+  ],
+  "traffic_count": 2,
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:8a4a3bd9f8bc35825be633415b5cfacd373492db028589dea99393c2f1a44877",
+      "name": "HTML_VERSION",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "1794535466642",
+        "1794653129366"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0109",
+        "traffic_0110"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:ff987cc2008d08df9c0216d2abffacc5b259030a15e1af914285f545c775e7a6",
+      "name": "SP_ID",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "0"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0109",
+        "traffic_0110"
+      ]
+    },
+    {
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:7d2417497c1a21c7fe61a617a49ff4590795e673c3dd4768cd8a242f0a69d318",
+      "name": "ZSMART_LOCALE",
+      "location": "cookie",
+      "type": "string",
+      "values": [
+        "en"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0109",
+        "traffic_0110"
+      ]
+    },
+    {
+      "parameter_id": "param_0004",
+      "parameter_identity": "sha256:bef007a3967abec6311e070901ce8bbfdd9b7ed75b094d4462d38ce05fbdf5f5",
+      "name": "areaId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "100"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0109",
+        "traffic_0110"
+      ]
+    },
+    {
+      "parameter_id": "param_0005",
+      "parameter_identity": "sha256:4a0c2c1d59f481e7f82be0aa8a56480bbf16c9dec16e49bbd31619a490b18abe",
+      "name": "isLocked",
+      "location": "cookie",
+      "type": "boolean",
+      "values": [
+        "false"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0109",
+        "traffic_0110"
+      ]
+    },
+    {
+      "parameter_id": "param_0006",
+      "parameter_identity": "sha256:d8d6595cebc13ab226d96be357e2838a73489281202bdac56c496d6816428155",
+      "name": "orgId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "100"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0109",
+        "traffic_0110"
+      ]
+    },
+    {
+      "parameter_id": "param_0007",
+      "parameter_identity": "sha256:bbaeb7fd0779808219b14e46955e3615ae61f1bf7d92b549603769f0efe7d77b",
+      "name": "staffJobId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "25162"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0109",
+        "traffic_0110"
+      ]
+    },
+    {
+      "parameter_id": "param_0008",
+      "parameter_identity": "sha256:277ea3d25a92e70f4ce3e126f8c74c6080c55d714e3f1ec3d33067db5cd66f5f",
+      "name": "userId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "1"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0109",
+        "traffic_0110"
+      ]
+    },
+    {
+      "parameter_id": "param_0009",
+      "parameter_identity": "sha256:d66bfdf5bcb7b252ae709ab43f3d4a97787713e9721c6d30ca669c5f25398aef",
+      "name": "htmlVersion",
+      "location": "query",
+      "type": "integer",
+      "values": [
+        "1794535466642",
+        "1794653129366"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0109",
+        "traffic_0110"
+      ]
+    },
+    {
+      "parameter_id": "param_0010",
+      "parameter_identity": "sha256:b4938c8a68d92f55a7515998ac4ee489ad778df31fa864deb7d767a8f182a5f0",
+      "name": "v",
+      "location": "query",
+      "type": "string",
+      "values": [
+        "9.3.6"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0109",
+        "traffic_0110"
+      ]
+    }
+  ],
+  "inventory_id": "sha256:4ae27f778dc8951a08889ab65d03e434701280308b5a6229a2a7a5f5f692ec79",
+  "request_examples": [
+    {
+      "traffic_id": "traffic_0109",
+      "principal_ref": "principal_653024f0fcdd",
+      "method": "GET",
+      "url": "https://10.10.177.111/portal-web/otc/modules/codemirror-5.63.3/lib/codemirror.js?v=9.3.6&htmlVersion=1794535466642",
+      "content_type": null,
+      "query": {
+        "v": [
+          "9.3.6"
+        ],
+        "htmlVersion": [
+          "1794535466642"
+        ]
+      },
+      "body_excerpt": null,
+      "body_sha256": null
+    },
+    {
+      "traffic_id": "traffic_0110",
+      "principal_ref": "principal_33c24ad7c530",
+      "method": "GET",
+      "url": "https://10.10.177.111/portal-web/otc/modules/codemirror-5.63.3/lib/codemirror.js?v=9.3.6&htmlVersion=1794653129366",
+      "content_type": null,
+      "query": {
+        "v": [
+          "9.3.6"
+        ],
+        "htmlVersion": [
+          "1794653129366"
+        ]
+      },
+      "body_excerpt": null,
+      "body_sha256": null
+    }
+  ],
+  "response_examples": [],
+  "auth_contexts": [
+    {
+      "principal_ref": "principal_33c24ad7c530",
+      "credential_ref": "cred_33c24ad7c530",
+      "auth_types": [
+        "cookie"
+      ],
+      "traffic_count": 1
+    },
+    {
+      "principal_ref": "principal_653024f0fcdd",
+      "credential_ref": "cred_653024f0fcdd",
+      "auth_types": [
+        "cookie"
+      ],
+      "traffic_count": 1
+    }
+  ],
+  "business_context": {
+    "description": null,
+    "evidence": [
+      "parameter 'SP_ID' (cookie) suggests object identifier",
+      "parameter 'orgId' (cookie) suggests tenant identity",
+      "parameter 'userId' (cookie) suggests user identity"
+    ]
+  },
+  "limitations": [
+    "2/2 traffic items have no captured response"
+  ]
+}

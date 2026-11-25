@@ -1,0 +1,417 @@
+{
+  "endpoint_id": "endpoint_0107",
+  "method": "GET",
+  "scheme": "https",
+  "host": "10.10.177.111",
+  "path": "/portal-web/otc/modules/pricedeposit/templates/ComponentTemplate.html",
+  "path_examples": [
+    "/portal-web/otc/modules/pricedeposit/templates/ComponentTemplate.html"
+  ],
+  "traffic_count": 2,
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:e01b519c7eb4b61f19c5268494c31e0a675542d7b835e625b4b3d34b91b97bb7",
+      "name": "HTML_VERSION",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "1794653129366"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0197",
+        "traffic_0198"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:eb0895cb41e265e549bf79c32b9340648798873a5bf70fe7808b579e8a885b81",
+      "name": "SP_ID",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "0"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0197",
+        "traffic_0198"
+      ]
+    },
+    {
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:4a4415a2700847c0d932d4b7816ccbb8044c58275413c2f728cc3b94c4986e4e",
+      "name": "ZSMART_LOCALE",
+      "location": "cookie",
+      "type": "string",
+      "values": [
+        "en"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0197",
+        "traffic_0198"
+      ]
+    },
+    {
+      "parameter_id": "param_0004",
+      "parameter_identity": "sha256:2ebfa54798c2435db1c5dc1adcb81a32439c8273dfa230edee1665aed4fffea8",
+      "name": "areaId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "100"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0197",
+        "traffic_0198"
+      ]
+    },
+    {
+      "parameter_id": "param_0005",
+      "parameter_identity": "sha256:12e0461340f945b1d61e2e4938fea2c42a1056749de3c087ebfe1c5f77357d9a",
+      "name": "isLocked",
+      "location": "cookie",
+      "type": "boolean",
+      "values": [
+        "false"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0197",
+        "traffic_0198"
+      ]
+    },
+    {
+      "parameter_id": "param_0006",
+      "parameter_identity": "sha256:c67819a76113f57bd4bf1178dbc99896ca764bb58e2b6964a3c8cffbcf7231fe",
+      "name": "orgId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "100"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0197",
+        "traffic_0198"
+      ]
+    },
+    {
+      "parameter_id": "param_0007",
+      "parameter_identity": "sha256:0d33b3e6ade560a1d61f3896d8ff07546f0df6ee5841b233123b9c6eb83b4e29",
+      "name": "staffJobId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "25162"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0197",
+        "traffic_0198"
+      ]
+    },
+    {
+      "parameter_id": "param_0008",
+      "parameter_identity": "sha256:70c4449c3ba522b6f53f4cebe67213e7b35d7b97c0c4fda3d091cf9979ba849f",
+      "name": "userId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "1"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0197",
+        "traffic_0198"
+      ]
+    },
+    {
+      "parameter_id": "param_0009",
+      "parameter_identity": "sha256:f315314a0554ad3d7f113eb1500cefc5723af5f72b39d1bf1bb6759fc534216b",
+      "name": "Menu-Id",
+      "location": "header",
+      "type": "integer",
+      "values": [
+        "120008"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0197",
+        "traffic_0198"
+      ]
+    },
+    {
+      "parameter_id": "param_0010",
+      "parameter_identity": "sha256:37ca4c35931cd8b1261ab721193a7e60867bbbb31842f0a34c77e10aa07f80d5",
+      "name": "Priority",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "u=1, i"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0197",
+        "traffic_0198"
+      ]
+    },
+    {
+      "parameter_id": "param_0011",
+      "parameter_identity": "sha256:5e8508f207352bf3bb8bd74cd385f558bff6949be598b413cc56ae64a5ae2e9e",
+      "name": "conGroupExpression",
+      "location": "query",
+      "type": "string",
+      "values": [
+        "test"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0197"
+      ]
+    },
+    {
+      "parameter_id": "param_0012",
+      "parameter_identity": "sha256:4c6d858a95956bfbe2250a8bb0b94885996784a7c05e44786dfd44a68fe42e74",
+      "name": "decisionId",
+      "location": "query",
+      "type": "string",
+      "values": [
+        ""
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0197"
+      ]
+    },
+    {
+      "parameter_id": "param_0013",
+      "parameter_identity": "sha256:1a065b5f44c6f8bb3d1453409d3ad8fe9a5a96128e380be88a3e1d5f27a8d42a",
+      "name": "depositType",
+      "location": "query",
+      "type": "string",
+      "values": [
+        "test"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0197"
+      ]
+    },
+    {
+      "parameter_id": "param_0014",
+      "parameter_identity": "sha256:db0d8373c25867c2e928baf36402626dcd52cb7c7638c9fce96ce9732a643205",
+      "name": "htmlVersion",
+      "location": "query",
+      "type": "integer",
+      "values": [
+        "1794653129366"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0198"
+      ]
+    },
+    {
+      "parameter_id": "param_0015",
+      "parameter_identity": "sha256:8af4f9244fc29b48683306411c124f6af7c957240ba2285a8752bfdd4ee32204",
+      "name": "isDeposit",
+      "location": "query",
+      "type": "string",
+      "values": [
+        "Y",
+        "N"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0197"
+      ]
+    },
+    {
+      "parameter_id": "param_0016",
+      "parameter_identity": "sha256:b32b4c0c83871cb54262f04b1c2f5502ae623f59ffcaf35ab1295c38faa86a54",
+      "name": "offer",
+      "location": "query",
+      "type": "string",
+      "values": [
+        "test"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0197"
+      ]
+    },
+    {
+      "parameter_id": "param_0017",
+      "parameter_identity": "sha256:1c8b63d53c3d2a6249cfd09ac3c29779add02f2df4609542cab81375d554e010",
+      "name": "orderAction",
+      "location": "query",
+      "type": "string",
+      "values": [
+        "test"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0197"
+      ]
+    },
+    {
+      "parameter_id": "param_0018",
+      "parameter_identity": "sha256:b290126435d49630f3c272029fb8a33d403da7ef1203c8097ab0793a9dde969f",
+      "name": "orderActionId",
+      "location": "query",
+      "type": "string",
+      "values": [
+        ""
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0197"
+      ]
+    },
+    {
+      "parameter_id": "param_0019",
+      "parameter_identity": "sha256:b5c98af58006ae4e00ca4c04f645ecdd8d8414b7ab7d6953d743d93a37d0d45c",
+      "name": "priority",
+      "location": "query",
+      "type": "string",
+      "values": [
+        "test"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0197"
+      ]
+    },
+    {
+      "parameter_id": "param_0020",
+      "parameter_identity": "sha256:832bfe24871f38a26373c04bdb7d1cf47dd72ac504e34e2a285743600a2f6d60",
+      "name": "v",
+      "location": "query",
+      "type": "string",
+      "values": [
+        "9.3.6"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0198"
+      ]
+    },
+    {
+      "parameter_id": "param_0021",
+      "parameter_identity": "sha256:6808615062b661ebbf355d4553c598492b417e946d237adf075d9521a7cdcf38",
+      "name": "value",
+      "location": "query",
+      "type": "string",
+      "values": [
+        "test"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0197"
+      ]
+    },
+    {
+      "parameter_id": "param_0022",
+      "parameter_identity": "sha256:4a7efd8952f36b80aec5f57515d25b90c5ef2b15edcf9bcc573a133d4480f035",
+      "name": "valueType",
+      "location": "query",
+      "type": "string",
+      "values": [
+        "test"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0197"
+      ]
+    }
+  ],
+  "inventory_id": "sha256:4b60a3cb0d507a91e7b7e3db5fc8adcb107b5abce352ecbc724c863852fd42e2",
+  "request_examples": [
+    {
+      "traffic_id": "traffic_0197",
+      "principal_ref": "principal_33c24ad7c530",
+      "method": "GET",
+      "url": "https://10.10.177.111/portal-web/otc/modules/pricedeposit/templates/ComponentTemplate.html?offer=test&orderActionId=&orderAction=test&decisionId=&conGroupExpression=test&priority=test&isDeposit=Y&isDeposit=N&depositType=test&valueType=test&value=test",
+      "content_type": null,
+      "query": {
+        "offer": [
+          "test"
+        ],
+        "orderActionId": [
+          ""
+        ],
+        "orderAction": [
+          "test"
+        ],
+        "decisionId": [
+          ""
+        ],
+        "conGroupExpression": [
+          "test"
+        ],
+        "priority": [
+          "test"
+        ],
+        "isDeposit": [
+          "Y",
+          "N"
+        ],
+        "depositType": [
+          "test"
+        ],
+        "valueType": [
+          "test"
+        ],
+        "value": [
+          "test"
+        ]
+      },
+      "body_excerpt": null,
+      "body_sha256": null
+    },
+    {
+      "traffic_id": "traffic_0198",
+      "principal_ref": "principal_33c24ad7c530",
+      "method": "GET",
+      "url": "https://10.10.177.111/portal-web/otc/modules/pricedeposit/templates/ComponentTemplate.html?v=9.3.6&htmlVersion=1794653129366",
+      "content_type": null,
+      "query": {
+        "v": [
+          "9.3.6"
+        ],
+        "htmlVersion": [
+          "1794653129366"
+        ]
+      },
+      "body_excerpt": null,
+      "body_sha256": null
+    }
+  ],
+  "response_examples": [],
+  "auth_contexts": [
+    {
+      "principal_ref": "principal_33c24ad7c530",
+      "credential_ref": "cred_33c24ad7c530",
+      "auth_types": [
+        "cookie"
+      ],
+      "traffic_count": 2
+    }
+  ],
+  "business_context": {
+    "description": null,
+    "evidence": [
+      "parameter 'SP_ID' (cookie) suggests object identifier",
+      "parameter 'orgId' (cookie) suggests tenant identity",
+      "parameter 'userId' (cookie) suggests user identity",
+      "path segment 'pricedeposit' suggests monetary value"
+    ]
+  },
+  "limitations": [
+    "2/2 traffic items have no captured response"
+  ]
+}

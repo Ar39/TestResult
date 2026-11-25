@@ -1,0 +1,225 @@
+{
+  "endpoint_id": "endpoint_0091",
+  "method": "GET",
+  "scheme": "https",
+  "host": "10.10.177.111",
+  "path": "/portal-web/otc/modules/price/templates/AddPriceView.html",
+  "path_examples": [
+    "/portal-web/otc/modules/price/templates/AddPriceView.html"
+  ],
+  "traffic_count": 1,
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:01bb6508f0bd9c173dcf03bcc56b1d5b1f1ad4fc00db310dc3434d5cc91082b0",
+      "name": "HTML_VERSION",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "1794653129366"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0178"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:c3e6feaf592b9dc72d65fe6e32f679b35956a4648ffe7d7b8abb092f640f5813",
+      "name": "SP_ID",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "0"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0178"
+      ]
+    },
+    {
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:513e6c356bb7cac5e9a0f3b24cd8eac9a43fc43734ad0813a0747a74a4114d23",
+      "name": "ZSMART_LOCALE",
+      "location": "cookie",
+      "type": "string",
+      "values": [
+        "en"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0178"
+      ]
+    },
+    {
+      "parameter_id": "param_0004",
+      "parameter_identity": "sha256:b95fff4971ad707789ae31a052d2bfab6d7d1cb2f23cc81ee2449b13dfb35e23",
+      "name": "areaId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "100"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0178"
+      ]
+    },
+    {
+      "parameter_id": "param_0005",
+      "parameter_identity": "sha256:f51db3c4754830132c61bd2dd185b29789290b113f68298c59050c66997047cc",
+      "name": "isLocked",
+      "location": "cookie",
+      "type": "boolean",
+      "values": [
+        "false"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0178"
+      ]
+    },
+    {
+      "parameter_id": "param_0006",
+      "parameter_identity": "sha256:0f73eeffce04112ab65c7968d6f97a03691023e53e0382d7fb773a0c157ab052",
+      "name": "orgId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "100"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0178"
+      ]
+    },
+    {
+      "parameter_id": "param_0007",
+      "parameter_identity": "sha256:85230c325e3740be25a0aa111e2a80a41eb867ca9638778669d7993bef019ae5",
+      "name": "staffJobId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "25162"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0178"
+      ]
+    },
+    {
+      "parameter_id": "param_0008",
+      "parameter_identity": "sha256:88381351402b545478cfb0eb16c98737a1a87ca04a67f35d727e90b22698068c",
+      "name": "userId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "1"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0178"
+      ]
+    },
+    {
+      "parameter_id": "param_0009",
+      "parameter_identity": "sha256:f032a49f730ffc4cb0cc22ac46dcea2f14bb7d197d8041e841bb4ef1b92a87d5",
+      "name": "Menu-Id",
+      "location": "header",
+      "type": "integer",
+      "values": [
+        "120008"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0178"
+      ]
+    },
+    {
+      "parameter_id": "param_0010",
+      "parameter_identity": "sha256:e571b55421c098469b4da48b223344469394c36c6db851cac763a54259357612",
+      "name": "Priority",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "u=1, i"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0178"
+      ]
+    },
+    {
+      "parameter_id": "param_0011",
+      "parameter_identity": "sha256:18beb34520274047e0fa6f05a85176b99f75b28b7b0d3fb88c8b190315b4dfe6",
+      "name": "htmlVersion",
+      "location": "query",
+      "type": "integer",
+      "values": [
+        "1794653129366"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0178"
+      ]
+    },
+    {
+      "parameter_id": "param_0012",
+      "parameter_identity": "sha256:1c8d2a76121cbd774a6cebbffe83388df3ab5e70e22942b0f77ae99b905f7513",
+      "name": "v",
+      "location": "query",
+      "type": "string",
+      "values": [
+        "9.3.6"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0178"
+      ]
+    }
+  ],
+  "inventory_id": "sha256:64a34f8e3366f8dbdcd9367a6e35bdb7e232c56b352208c93520f7ca536a40c7",
+  "request_examples": [
+    {
+      "traffic_id": "traffic_0178",
+      "principal_ref": "principal_33c24ad7c530",
+      "method": "GET",
+      "url": "https://10.10.177.111/portal-web/otc/modules/price/templates/AddPriceView.html?v=9.3.6&htmlVersion=1794653129366",
+      "content_type": null,
+      "query": {
+        "v": [
+          "9.3.6"
+        ],
+        "htmlVersion": [
+          "1794653129366"
+        ]
+      },
+      "body_excerpt": null,
+      "body_sha256": null
+    }
+  ],
+  "response_examples": [],
+  "auth_contexts": [
+    {
+      "principal_ref": "principal_33c24ad7c530",
+      "credential_ref": "cred_33c24ad7c530",
+      "auth_types": [
+        "cookie"
+      ],
+      "traffic_count": 1
+    }
+  ],
+  "business_context": {
+    "description": null,
+    "evidence": [
+      "parameter 'SP_ID' (cookie) suggests object identifier",
+      "parameter 'orgId' (cookie) suggests tenant identity",
+      "parameter 'userId' (cookie) suggests user identity",
+      "path segment 'price' suggests monetary value",
+      "path segment 'AddPriceView.html' suggests monetary value"
+    ]
+  },
+  "limitations": [
+    "1/1 traffic items have no captured response"
+  ]
+}

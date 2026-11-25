@@ -1,0 +1,152 @@
+{
+  "endpoint_id": "endpoint_0170",
+  "method": "POST",
+  "scheme": "https",
+  "host": "10.10.177.111",
+  "path": "/portal-web/otc/free/qryAllServiceOffer",
+  "traffic_ids": [
+    "traffic_0079"
+  ],
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:7daf74b5df2206400d1f5d8c818fc9df0d715cf84e6929b0f1352140da463df8",
+      "name": "HTML_VERSION",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "1794653129366"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0079"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:3453cb0f00574b4f23e95bf576b2b9d17a14bf98d8258b253c3f5e1d41747a47",
+      "name": "SP_ID",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "0"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0079"
+      ]
+    },
+    {
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:4671d4e3f72c52eed7e061ddda8de3f275fd8d34d74529ce339638d79b4fb46f",
+      "name": "ZSMART_LOCALE",
+      "location": "cookie",
+      "type": "string",
+      "values": [
+        "en"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0079"
+      ]
+    },
+    {
+      "parameter_id": "param_0004",
+      "parameter_identity": "sha256:9b63bbffb8d87adb5fd69d99a8c1eb7c18e63707ad9967e419e3b653063788bf",
+      "name": "areaId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "100"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0079"
+      ]
+    },
+    {
+      "parameter_id": "param_0005",
+      "parameter_identity": "sha256:5d5586c3963e1062be92682639722675cf3d4c60babd2316693ae4be09fef075",
+      "name": "isLocked",
+      "location": "cookie",
+      "type": "boolean",
+      "values": [
+        "false"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0079"
+      ]
+    },
+    {
+      "parameter_id": "param_0006",
+      "parameter_identity": "sha256:7597442d4b4ef7bf97401c9975f6782ff601ecf96de9d5d262e21e4a9ba03d4d",
+      "name": "orgId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "100"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0079"
+      ]
+    },
+    {
+      "parameter_id": "param_0007",
+      "parameter_identity": "sha256:76a9fe9cf106a589393f90dfd5ea9576b96e7d819d14c87d4a1a310979cf458e",
+      "name": "staffJobId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "25162"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0079"
+      ]
+    },
+    {
+      "parameter_id": "param_0008",
+      "parameter_identity": "sha256:4542960cdcc8abc737a6e484fefd8d2edf64d07b8af8f243080e4517da1d6ae7",
+      "name": "userId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "1"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0079"
+      ]
+    },
+    {
+      "parameter_id": "param_0009",
+      "parameter_identity": "sha256:e6f846d173d19b6eb9682a55a376c0dc03f0922c5459129232a98b475a033302",
+      "name": "Menu-Id",
+      "location": "header",
+      "type": "integer",
+      "values": [
+        "120008"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0079"
+      ]
+    },
+    {
+      "parameter_id": "param_0010",
+      "parameter_identity": "sha256:2e87c22d3e641dc3376dbbe5e27bd1d35fb9f4b32e0c7193da45475b40a47253",
+      "name": "Priority",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "u=1, i"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0079"
+      ]
+    }
+  ]
+}

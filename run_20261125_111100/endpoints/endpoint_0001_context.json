@@ -1,0 +1,235 @@
+{
+  "endpoint_id": "endpoint_0001",
+  "method": "DELETE",
+  "scheme": "https",
+  "host": "10.10.177.111",
+  "path": "/portal-web/otc/pricePlan/{p0}",
+  "path_examples": [
+    "/portal-web/otc/pricePlan/22004800"
+  ],
+  "traffic_count": 1,
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:827a895aed9aed0f419b47b745fb9b086f72b1ac87b1db8723d37d331fb0f6ba",
+      "name": "HTML_VERSION",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "1794653129366"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0273"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:9a7f55f2637db196fc3dd6e7abef2bdcafc4e49bb4be618b5eedd05045550523",
+      "name": "SP_ID",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "0"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0273"
+      ]
+    },
+    {
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:e6a0631a3f0f761b2c558139975ac5755ec0f4825ad61cfc0f1834b24a8ffe86",
+      "name": "ZSMART_LOCALE",
+      "location": "cookie",
+      "type": "string",
+      "values": [
+        "en"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0273"
+      ]
+    },
+    {
+      "parameter_id": "param_0004",
+      "parameter_identity": "sha256:6bd7c1564857a2581801d983189b5a36332e694670a7865f33ffc3bb40b5b6b6",
+      "name": "areaId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "100"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0273"
+      ]
+    },
+    {
+      "parameter_id": "param_0005",
+      "parameter_identity": "sha256:b8d70d58f7ea3be830955bf66f6cfe034d7af1604e5d53f7e9c395bc45e14548",
+      "name": "isLocked",
+      "location": "cookie",
+      "type": "boolean",
+      "values": [
+        "false"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0273"
+      ]
+    },
+    {
+      "parameter_id": "param_0006",
+      "parameter_identity": "sha256:d2426cc996bbc44fa87278bb5c97299b2895dd1005c3f88033c6616d193ea11d",
+      "name": "orgId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "100"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0273"
+      ]
+    },
+    {
+      "parameter_id": "param_0007",
+      "parameter_identity": "sha256:abf3609b7c6868065258ef810a45fa2a216785bff574f86ebd430e1f7f73daff",
+      "name": "staffJobId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "25162"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0273"
+      ]
+    },
+    {
+      "parameter_id": "param_0008",
+      "parameter_identity": "sha256:74c0118fb281026b46625f72f763753a9b88ab80b597347ccbb72ec677820ca4",
+      "name": "userId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "1"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0273"
+      ]
+    },
+    {
+      "parameter_id": "param_0009",
+      "parameter_identity": "sha256:5d758a9ae73192fabcf9523d7135102cacc5fb7721e8c1f7ba23804b08b79909",
+      "name": "Menu-Id",
+      "location": "header",
+      "type": "integer",
+      "values": [
+        "120008"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0273"
+      ]
+    },
+    {
+      "parameter_id": "param_0010",
+      "parameter_identity": "sha256:ce9a169e2a2163bdd99b8d81285f5da3aceaa6a95bfd8cb0049bcb85fa72b70a",
+      "name": "Priority",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "u=1, i"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0273"
+      ]
+    },
+    {
+      "parameter_id": "param_0011",
+      "parameter_identity": "sha256:551cd69e52d27625f3c869e125a2e69cf7c0378a6a47b4f5ba0474aa7c66f36f",
+      "name": "pricePlanId",
+      "location": "json",
+      "type": "integer",
+      "values": [
+        "22004800"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0273"
+      ]
+    },
+    {
+      "parameter_id": "param_0012",
+      "parameter_identity": "sha256:3019a6467812fd2e39cab2b589bf5e611248ff11640b49738fc6a67cbd6c61ea",
+      "name": "pricePlanName",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "\">&lt;img/src=1>"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0273"
+      ]
+    },
+    {
+      "parameter_id": "param_0013",
+      "parameter_identity": "sha256:fe919b412a711a10704bfbf7524b2a344a990788ccbe50d81c58927121861852",
+      "name": "p0",
+      "location": "path",
+      "type": "integer",
+      "values": [
+        "22004800"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0273"
+      ]
+    }
+  ],
+  "inventory_id": "sha256:f94a07048083ad9d93b80c8947a9e6a52e8b4dfae4fa816b2bbbd5251e846a30",
+  "request_examples": [
+    {
+      "traffic_id": "traffic_0273",
+      "principal_ref": "principal_c8a93705deac",
+      "method": "DELETE",
+      "url": "https://10.10.177.111/portal-web/otc/pricePlan/22004800",
+      "content_type": "application/json",
+      "query": null,
+      "body_excerpt": "{\"pricePlanId\":22004800,\"pricePlanName\":\"\\\">&lt;img/src=1>\"}",
+      "body_sha256": "9b038f52fb29b64ce75f8e1e361407bc06c8e3904455807435e6c6c7b2e39240"
+    }
+  ],
+  "response_examples": [],
+  "auth_contexts": [
+    {
+      "principal_ref": "principal_c8a93705deac",
+      "credential_ref": "cred_c8a93705deac",
+      "auth_types": [
+        "api_key",
+        "cookie"
+      ],
+      "traffic_count": 1
+    }
+  ],
+  "business_context": {
+    "description": null,
+    "evidence": [
+      "parameter 'SP_ID' (cookie) suggests object identifier",
+      "parameter 'orgId' (cookie) suggests tenant identity",
+      "parameter 'userId' (cookie) suggests user identity",
+      "parameter 'pricePlanId' (json) suggests monetary value",
+      "parameter 'pricePlanName' (json) suggests monetary value",
+      "parameter 'pricePlanName' (json) suggests search / filter",
+      "path segment 'pricePlan' suggests monetary value"
+    ]
+  },
+  "limitations": [
+    "1/1 traffic items have no captured response"
+  ]
+}

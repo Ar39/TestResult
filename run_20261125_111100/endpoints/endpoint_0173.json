@@ -1,0 +1,320 @@
+{
+  "endpoint_id": "endpoint_0173",
+  "method": "POST",
+  "scheme": "https",
+  "host": "10.10.177.111",
+  "path": "/portal-web/otc/paramValConfig/qryParamValTree",
+  "traffic_ids": [
+    "traffic_0249"
+  ],
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:e94e66e1ebde81b14c0d66f5997af616da3b9484b73d48a0bd569d608d1a9130",
+      "name": "HTML_VERSION",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "1794653129366"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0249"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:dc41d5531d9c185dd8b95d0fff4082fa50adb96253a695ff9a17be7598567759",
+      "name": "SP_ID",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "0"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0249"
+      ]
+    },
+    {
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:2e575260bb1b7910b4c8eaf06edcaa53474cb5676b6a58edeb71761efe167f6a",
+      "name": "ZSMART_LOCALE",
+      "location": "cookie",
+      "type": "string",
+      "values": [
+        "en"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0249"
+      ]
+    },
+    {
+      "parameter_id": "param_0004",
+      "parameter_identity": "sha256:7dda0d38af2eb0fe5a6a33b7451d7eb2ef743f8ab3d422561b5bb4d59966f163",
+      "name": "areaId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "100"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0249"
+      ]
+    },
+    {
+      "parameter_id": "param_0005",
+      "parameter_identity": "sha256:2794dfb9aec1f6e2cf88e16abd3889785580f21391dcd50e75553227a25e05ce",
+      "name": "isLocked",
+      "location": "cookie",
+      "type": "boolean",
+      "values": [
+        "false"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0249"
+      ]
+    },
+    {
+      "parameter_id": "param_0006",
+      "parameter_identity": "sha256:e49aef5b8c3778d92b60eea52241458e1400689e5e77331ac417702163ed2fc4",
+      "name": "orgId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "100"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0249"
+      ]
+    },
+    {
+      "parameter_id": "param_0007",
+      "parameter_identity": "sha256:7882909ea622991be3dff541565c77546dd0978982d854417e77284fab9e1980",
+      "name": "staffJobId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "25162"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0249"
+      ]
+    },
+    {
+      "parameter_id": "param_0008",
+      "parameter_identity": "sha256:831d82f7439e3e32092fa435be21f025026ee3a5b7c784893e9a9abe0a420c5d",
+      "name": "userId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "1"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0249"
+      ]
+    },
+    {
+      "parameter_id": "param_0009",
+      "parameter_identity": "sha256:2db7b7b589c2495782749cf89dbbd728f0f186854d8aa251e890abf4de006215",
+      "name": "Menu-Id",
+      "location": "header",
+      "type": "integer",
+      "values": [
+        "120009"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0249"
+      ]
+    },
+    {
+      "parameter_id": "param_0010",
+      "parameter_identity": "sha256:df646af845e044ce0064c55b4c85fe795fbf9956be2f5863b6787ca156e0561b",
+      "name": "Priority",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "u=1, i"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0249"
+      ]
+    },
+    {
+      "parameter_id": "param_0011",
+      "parameter_identity": "sha256:7f775644cb1daf52756e75904f3e44b17e443e853c6c07defc1860b248c36ede",
+      "name": "extRule",
+      "location": "json",
+      "type": "string",
+      "values": [
+        ""
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0249"
+      ]
+    },
+    {
+      "parameter_id": "param_0012",
+      "parameter_identity": "sha256:433283be0ad3d51cce8e9ed99c737c943afa1852b798e44d198b8cd75068911a",
+      "name": "offerId",
+      "location": "json",
+      "type": "integer",
+      "values": [
+        "80893"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0249"
+      ]
+    },
+    {
+      "parameter_id": "param_0013",
+      "parameter_identity": "sha256:1b4cfa2a40c943c6dc0065e6e21e0bd0f13b138dcde1314e56b841e9f6a64b37",
+      "name": "offerName",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "Redmi Pad 2 256GB+8GB+Stylet+Stand keyboard case 24Month Contract"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0249"
+      ]
+    },
+    {
+      "parameter_id": "param_0014",
+      "parameter_identity": "sha256:6e54365aa92508a35e6f94fa3bc8022757941d20a91b0c06c1d0fb452a400fd0",
+      "name": "offerParamValueVerList",
+      "location": "json",
+      "type": "string",
+      "values": [
+        ""
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0249"
+      ]
+    },
+    {
+      "parameter_id": "param_0015",
+      "parameter_identity": "sha256:6f603df8a65a38dfe9499febc71603dd1328c0ba491947e4152cf5bee85fdc61",
+      "name": "offerPriceId",
+      "location": "json",
+      "type": "integer",
+      "values": [
+        "1108513"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0249"
+      ]
+    },
+    {
+      "parameter_id": "param_0016",
+      "parameter_identity": "sha256:78b878f942b74dd8413b3019d6cd243b1ff4116bd52aba1d664944204d5c8a90",
+      "name": "offerType",
+      "location": "json",
+      "type": "integer",
+      "values": [
+        "10"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0249"
+      ]
+    },
+    {
+      "parameter_id": "param_0017",
+      "parameter_identity": "sha256:733b07010b979d30631120198ab7f8b4698ad948392b16d960bb10f4705e2301",
+      "name": "pricePlanGenre",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "O"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0249"
+      ]
+    },
+    {
+      "parameter_id": "param_0018",
+      "parameter_identity": "sha256:9c0e865bf8d93e676114c4491382a2a30b0148826fd05172daa1e6ecbe0003d6",
+      "name": "pricePlanId",
+      "location": "json",
+      "type": "integer",
+      "values": [
+        "80893"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0249"
+      ]
+    },
+    {
+      "parameter_id": "param_0019",
+      "parameter_identity": "sha256:5f09c748a85f5fb554044593e113ee2cfbbce2e7b6af2f58bf75f8870e5478f9",
+      "name": "pricePlanName",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "Redmi Pad 2 256GB+8GB+Stylet+Stand keyboard case 24Month"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0249"
+      ]
+    },
+    {
+      "parameter_id": "param_0020",
+      "parameter_identity": "sha256:bb791093f0d008d3b82e965e1e5cad448912c14770f0b5e4e993cbaaeffbe9c4",
+      "name": "priority",
+      "location": "json",
+      "type": "integer",
+      "values": [
+        "1"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0249"
+      ]
+    },
+    {
+      "parameter_id": "param_0021",
+      "parameter_identity": "sha256:84fac9a6decf4c9542fad2b8b64b5b2cac52761a781050fa8dbab34aff4b710e",
+      "name": "spId",
+      "location": "json",
+      "type": "string",
+      "values": [
+        ""
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0249"
+      ]
+    },
+    {
+      "parameter_id": "param_0022",
+      "parameter_identity": "sha256:bf08ed271ac6ed431ddd2b0443fd74c8731abc3cec1d912a2f3a625e5d68d326",
+      "name": "stpOfferValueVerList",
+      "location": "json",
+      "type": "string",
+      "values": [
+        ""
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0249"
+      ]
+    }
+  ]
+}

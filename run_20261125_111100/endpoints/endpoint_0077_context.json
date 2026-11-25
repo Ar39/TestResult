@@ -1,0 +1,315 @@
+{
+  "endpoint_id": "endpoint_0077",
+  "method": "GET",
+  "scheme": "https",
+  "host": "10.10.177.111",
+  "path": "/portal-web/otc/modules/orderpricerule/templates/OrderPriceRuleGridTpl.hbs",
+  "path_examples": [
+    "/portal-web/otc/modules/orderpricerule/templates/OrderPriceRuleGridTpl.hbs"
+  ],
+  "traffic_count": 2,
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:ec1cc0dd27cb4f52b30db414bb5ce8434c9f444ce54e70666d2f4899a2d6d0e4",
+      "name": "HTML_VERSION",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "1794653129366"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0160",
+        "traffic_0161"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:4f9d07fb56371fa6465fe556e7c49b216f9c8079b78392d5a622a91624671ebf",
+      "name": "SP_ID",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "0"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0160",
+        "traffic_0161"
+      ]
+    },
+    {
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:2937892854bb89115a3542e20443e05b1db35856d3a26d5663bd96a28926fc6d",
+      "name": "ZSMART_LOCALE",
+      "location": "cookie",
+      "type": "string",
+      "values": [
+        "en"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0160",
+        "traffic_0161"
+      ]
+    },
+    {
+      "parameter_id": "param_0004",
+      "parameter_identity": "sha256:7a338c0760f82f392bd711ec87dd1f82a162fa5e6065c541cbfa5a11fada92a3",
+      "name": "areaId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "100"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0160",
+        "traffic_0161"
+      ]
+    },
+    {
+      "parameter_id": "param_0005",
+      "parameter_identity": "sha256:d05e854060f678fc9468e3605bde8cb489f00067c256bdcf7e4f811949148840",
+      "name": "isLocked",
+      "location": "cookie",
+      "type": "boolean",
+      "values": [
+        "false"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0160",
+        "traffic_0161"
+      ]
+    },
+    {
+      "parameter_id": "param_0006",
+      "parameter_identity": "sha256:21723007a8ad52c808c163af6ed51a132e82dd12df454065c1e58df537a2ece9",
+      "name": "orgId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "100"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0160",
+        "traffic_0161"
+      ]
+    },
+    {
+      "parameter_id": "param_0007",
+      "parameter_identity": "sha256:7eaab528f8930de2308fc4bddb23f252fc84907aef9f77192145e046ee4e4976",
+      "name": "staffJobId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "25162"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0160",
+        "traffic_0161"
+      ]
+    },
+    {
+      "parameter_id": "param_0008",
+      "parameter_identity": "sha256:15f3e6a2a7046c9e29763b942963918616a4cbcad0a04d32b8c90e6296afd6e3",
+      "name": "userId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "1"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0160",
+        "traffic_0161"
+      ]
+    },
+    {
+      "parameter_id": "param_0009",
+      "parameter_identity": "sha256:40482073aea68e2ba2dcabe89d97680a1238bf09e887281d49e7e0fd7f9024bb",
+      "name": "Menu-Id",
+      "location": "header",
+      "type": "integer",
+      "values": [
+        "120019"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0160",
+        "traffic_0161"
+      ]
+    },
+    {
+      "parameter_id": "param_0010",
+      "parameter_identity": "sha256:056cdb5b0009bf30dfe42ce3ae071233bb91c26a945afbdc42f33984cc229749",
+      "name": "Priority",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "u=1, i"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0160",
+        "traffic_0161"
+      ]
+    },
+    {
+      "parameter_id": "param_0011",
+      "parameter_identity": "sha256:5849c765f3ca1731ddf5bb3cd3dd2b43bd9d3d27afd5a7f5d6904d6c691e8b93",
+      "name": "effDateEnd",
+      "location": "query",
+      "type": "string",
+      "values": [
+        ""
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0160"
+      ]
+    },
+    {
+      "parameter_id": "param_0012",
+      "parameter_identity": "sha256:f735df9fde8da701004ae91260596e116784aed8ed647b8faeaf8ef501f79e2b",
+      "name": "effDateStart",
+      "location": "query",
+      "type": "string",
+      "values": [
+        ""
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0160"
+      ]
+    },
+    {
+      "parameter_id": "param_0013",
+      "parameter_identity": "sha256:c5457b9f97ead3ddcc2e4f99941da7e70f73964ca8fd06c2a59a9d9db13606b2",
+      "name": "htmlVersion",
+      "location": "query",
+      "type": "integer",
+      "values": [
+        "1794653129366"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0161"
+      ]
+    },
+    {
+      "parameter_id": "param_0014",
+      "parameter_identity": "sha256:ee78636566c2d073944ce5a5ad91a7aa044f4952397f59fed5786d0fdb287e3f",
+      "name": "ruleCode",
+      "location": "query",
+      "type": "string",
+      "values": [
+        ""
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0160"
+      ]
+    },
+    {
+      "parameter_id": "param_0015",
+      "parameter_identity": "sha256:fea5dc2f94d1ce9f6089e10aaf00ad90201e07d5456ddf4762d656b7a1222b65",
+      "name": "ruleName",
+      "location": "query",
+      "type": "string",
+      "values": [
+        ""
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0160"
+      ]
+    },
+    {
+      "parameter_id": "param_0016",
+      "parameter_identity": "sha256:90f8a1c58eef096efa54ca3c86ea23015c1bb84b37940fb4a74fcc74910cbf63",
+      "name": "v",
+      "location": "query",
+      "type": "string",
+      "values": [
+        "9.3.6"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0161"
+      ]
+    }
+  ],
+  "inventory_id": "sha256:83b3b86790100c0cef2477091759392fe7d384e5dc9b7493cca2bed192e3c8e3",
+  "request_examples": [
+    {
+      "traffic_id": "traffic_0160",
+      "principal_ref": "principal_2a1109ea593e",
+      "method": "GET",
+      "url": "https://10.10.177.111/portal-web/otc/modules/orderpricerule/templates/OrderPriceRuleGridTpl.hbs?ruleName=&ruleCode=&effDateStart=&effDateEnd=",
+      "content_type": null,
+      "query": {
+        "ruleName": [
+          ""
+        ],
+        "ruleCode": [
+          ""
+        ],
+        "effDateStart": [
+          ""
+        ],
+        "effDateEnd": [
+          ""
+        ]
+      },
+      "body_excerpt": null,
+      "body_sha256": null
+    },
+    {
+      "traffic_id": "traffic_0161",
+      "principal_ref": "principal_2a1109ea593e",
+      "method": "GET",
+      "url": "https://10.10.177.111/portal-web/otc/modules/orderpricerule/templates/OrderPriceRuleGridTpl.hbs?v=9.3.6&htmlVersion=1794653129366",
+      "content_type": null,
+      "query": {
+        "v": [
+          "9.3.6"
+        ],
+        "htmlVersion": [
+          "1794653129366"
+        ]
+      },
+      "body_excerpt": null,
+      "body_sha256": null
+    }
+  ],
+  "response_examples": [],
+  "auth_contexts": [
+    {
+      "principal_ref": "principal_2a1109ea593e",
+      "credential_ref": "cred_2a1109ea593e",
+      "auth_types": [
+        "cookie"
+      ],
+      "traffic_count": 2
+    }
+  ],
+  "business_context": {
+    "description": null,
+    "evidence": [
+      "parameter 'SP_ID' (cookie) suggests object identifier",
+      "parameter 'orgId' (cookie) suggests tenant identity",
+      "parameter 'userId' (cookie) suggests user identity",
+      "parameter 'ruleName' (query) suggests search / filter",
+      "path segment 'orderpricerule' suggests monetary value",
+      "path segment 'OrderPriceRuleGridTpl.hbs' suggests monetary value"
+    ]
+  },
+  "limitations": [
+    "2/2 traffic items have no captured response"
+  ]
+}

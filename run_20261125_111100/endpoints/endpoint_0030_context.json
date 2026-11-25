@@ -1,0 +1,225 @@
+{
+  "endpoint_id": "endpoint_0030",
+  "method": "GET",
+  "scheme": "https",
+  "host": "10.10.177.111",
+  "path": "/portal-web/otc/modules/cellingprice/templates/CellPriceView.html",
+  "path_examples": [
+    "/portal-web/otc/modules/cellingprice/templates/CellPriceView.html"
+  ],
+  "traffic_count": 1,
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:e81f19499b86c53b0ccb6d578122235f4ff0be29a34b4373677d0740c7b2d25b",
+      "name": "HTML_VERSION",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "1794653129366"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0102"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:c5e1dfefdf6d71764e374906b39749a35e4130078a4fb56e259a3552dc56a7aa",
+      "name": "SP_ID",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "0"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0102"
+      ]
+    },
+    {
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:8eb994615927a8bbf7065c08b9e3ae48a3df32d0a686d8bf2bbaf4bdee352a9f",
+      "name": "ZSMART_LOCALE",
+      "location": "cookie",
+      "type": "string",
+      "values": [
+        "en"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0102"
+      ]
+    },
+    {
+      "parameter_id": "param_0004",
+      "parameter_identity": "sha256:358020edea349bc168efd0d1cfa534351a15d1f37947b1c7ff32db7e6272d350",
+      "name": "areaId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "100"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0102"
+      ]
+    },
+    {
+      "parameter_id": "param_0005",
+      "parameter_identity": "sha256:fdd1c1408855bdbf6d4601f033bbbb3a7dc8faadfd4e02b42b92bdfec0399b62",
+      "name": "isLocked",
+      "location": "cookie",
+      "type": "boolean",
+      "values": [
+        "false"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0102"
+      ]
+    },
+    {
+      "parameter_id": "param_0006",
+      "parameter_identity": "sha256:36953d265351db68c6a5c3953890a572902d38a7a62daf8e5c6c68c7654573c7",
+      "name": "orgId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "100"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0102"
+      ]
+    },
+    {
+      "parameter_id": "param_0007",
+      "parameter_identity": "sha256:59a462619e55e49010aa75978429a11625f5e97459004361702442b21582f929",
+      "name": "staffJobId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "25162"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0102"
+      ]
+    },
+    {
+      "parameter_id": "param_0008",
+      "parameter_identity": "sha256:e869197faa980c0f8cf086e8ca182fd1b36ac420656ded6a29cba11bbbb72001",
+      "name": "userId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "1"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0102"
+      ]
+    },
+    {
+      "parameter_id": "param_0009",
+      "parameter_identity": "sha256:64a4232d087c5f0a3ac33d75031340f43d8d2687c633e9ac22e2b03cc2974fd2",
+      "name": "Menu-Id",
+      "location": "header",
+      "type": "integer",
+      "values": [
+        "120011"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0102"
+      ]
+    },
+    {
+      "parameter_id": "param_0010",
+      "parameter_identity": "sha256:d71f6c3259ea9ce2d11fd3dbb8420a73d0b5fa04d51abf80ae73d47334c04331",
+      "name": "Priority",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "u=1, i"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0102"
+      ]
+    },
+    {
+      "parameter_id": "param_0011",
+      "parameter_identity": "sha256:cba15e0005befe30399824300405af4d3ce76c9e8fd74444926b0ace15e8c201",
+      "name": "htmlVersion",
+      "location": "query",
+      "type": "integer",
+      "values": [
+        "1794653129366"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0102"
+      ]
+    },
+    {
+      "parameter_id": "param_0012",
+      "parameter_identity": "sha256:3db3ef4ae9e0b9736904db31d5656a2d5272ad660538d7ed8f833ba2c34d941c",
+      "name": "v",
+      "location": "query",
+      "type": "string",
+      "values": [
+        "9.3.6"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0102"
+      ]
+    }
+  ],
+  "inventory_id": "sha256:74035fcf1aa23b1b7e1c22c50c9ef0a88ae9d23fba751fb64ca6267c0474fb45",
+  "request_examples": [
+    {
+      "traffic_id": "traffic_0102",
+      "principal_ref": "principal_2a1109ea593e",
+      "method": "GET",
+      "url": "https://10.10.177.111/portal-web/otc/modules/cellingprice/templates/CellPriceView.html?v=9.3.6&htmlVersion=1794653129366",
+      "content_type": null,
+      "query": {
+        "v": [
+          "9.3.6"
+        ],
+        "htmlVersion": [
+          "1794653129366"
+        ]
+      },
+      "body_excerpt": null,
+      "body_sha256": null
+    }
+  ],
+  "response_examples": [],
+  "auth_contexts": [
+    {
+      "principal_ref": "principal_2a1109ea593e",
+      "credential_ref": "cred_2a1109ea593e",
+      "auth_types": [
+        "cookie"
+      ],
+      "traffic_count": 1
+    }
+  ],
+  "business_context": {
+    "description": null,
+    "evidence": [
+      "parameter 'SP_ID' (cookie) suggests object identifier",
+      "parameter 'orgId' (cookie) suggests tenant identity",
+      "parameter 'userId' (cookie) suggests user identity",
+      "path segment 'cellingprice' suggests monetary value",
+      "path segment 'CellPriceView.html' suggests monetary value"
+    ]
+  },
+  "limitations": [
+    "1/1 traffic items have no captured response"
+  ]
+}

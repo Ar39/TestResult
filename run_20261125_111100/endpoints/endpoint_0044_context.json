@@ -1,0 +1,501 @@
+{
+  "endpoint_id": "endpoint_0044",
+  "method": "GET",
+  "scheme": "https",
+  "host": "10.10.177.111",
+  "path": "/portal-web/otc/modules/discount/templates/DiscountComponentTpl.html",
+  "path_examples": [
+    "/portal-web/otc/modules/discount/templates/DiscountComponentTpl.html"
+  ],
+  "traffic_count": 2,
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:ca8eaa71aa4347ee403e724a591c85b38b31c02cb128a964bc4b20a5973f8993",
+      "name": "HTML_VERSION",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "1794653129366"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0121",
+        "traffic_0122"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:5584b3d8eb763910ad54f1b3d024f518266c1803bcbe77a5c836bba5562cb327",
+      "name": "SP_ID",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "0"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0121",
+        "traffic_0122"
+      ]
+    },
+    {
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:5a336abf1333c3193541ba5d482860149bdffe750f8555009193fcd4a251fcc2",
+      "name": "ZSMART_LOCALE",
+      "location": "cookie",
+      "type": "string",
+      "values": [
+        "en"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0121",
+        "traffic_0122"
+      ]
+    },
+    {
+      "parameter_id": "param_0004",
+      "parameter_identity": "sha256:f2ac0c6f0278821ba85d3ec8f69a44a1f1e278573a1ba7de670478e017d0d1d4",
+      "name": "areaId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "100"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0121",
+        "traffic_0122"
+      ]
+    },
+    {
+      "parameter_id": "param_0005",
+      "parameter_identity": "sha256:b0e9c20c689a1bcf25f2e086799e753a3b296f306d487ff5f1d787ff956c6fb2",
+      "name": "isLocked",
+      "location": "cookie",
+      "type": "boolean",
+      "values": [
+        "false"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0121",
+        "traffic_0122"
+      ]
+    },
+    {
+      "parameter_id": "param_0006",
+      "parameter_identity": "sha256:b3d5eda900b716be5884c3f9f18a188731f9ab467bdcdf8457bc957328b76e67",
+      "name": "orgId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "100"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0121",
+        "traffic_0122"
+      ]
+    },
+    {
+      "parameter_id": "param_0007",
+      "parameter_identity": "sha256:94516a94f4b8d9e0136a7678b2f104ef67239536bf1b97a20b046d4f1e2d5108",
+      "name": "staffJobId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "25162"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0121",
+        "traffic_0122"
+      ]
+    },
+    {
+      "parameter_id": "param_0008",
+      "parameter_identity": "sha256:4d5b3478e6e833ad03c385b7838d34a2307cbc1f4e8e276fb45df68ae9cbf324",
+      "name": "userId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "1"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0121",
+        "traffic_0122"
+      ]
+    },
+    {
+      "parameter_id": "param_0009",
+      "parameter_identity": "sha256:03062ec649d257abf88255cee7c09b909b5595cc6a2b4c2d22f413fb3b8d6d78",
+      "name": "Menu-Id",
+      "location": "header",
+      "type": "integer",
+      "values": [
+        "120008"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0121",
+        "traffic_0122"
+      ]
+    },
+    {
+      "parameter_id": "param_0010",
+      "parameter_identity": "sha256:897c1f3e2d999a761a5dbab28818345f59ac79f82d806a2bd81ee366bd065e14",
+      "name": "Priority",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "u=1, i"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0121",
+        "traffic_0122"
+      ]
+    },
+    {
+      "parameter_id": "param_0011",
+      "parameter_identity": "sha256:8220453a808ca73f6d00f43712274902c2a96ded4098e252727a1bb26e9e9cb1",
+      "name": "accountItemType",
+      "location": "query",
+      "type": "string",
+      "values": [
+        "test"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0121"
+      ]
+    },
+    {
+      "parameter_id": "param_0012",
+      "parameter_identity": "sha256:7528818a234bb1603f3ec351a623954b22414a4a4de4992e4369ebda164bccf0",
+      "name": "affectOffer",
+      "location": "query",
+      "type": "string",
+      "values": [
+        "test"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0121"
+      ]
+    },
+    {
+      "parameter_id": "param_0013",
+      "parameter_identity": "sha256:f93d9ba8990d96ae3e9f907a871c580c515443ce056ea9d406824492df122bcd",
+      "name": "checkAll",
+      "location": "query",
+      "type": "string",
+      "values": [
+        "A",
+        "B"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0121"
+      ]
+    },
+    {
+      "parameter_id": "param_0014",
+      "parameter_identity": "sha256:e2add0d3a4fbf0667aa0a7ee2cdc6b8e2a61ca784b60012983a2c0684cecc06f",
+      "name": "conGroupExpression",
+      "location": "query",
+      "type": "string",
+      "values": [
+        "test"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0121"
+      ]
+    },
+    {
+      "parameter_id": "param_0015",
+      "parameter_identity": "sha256:ca9471830adb83b9724d88fa44a0b0c63bff9b3dc8a869ee6f7c7efe59215cce",
+      "name": "deduction",
+      "location": "query",
+      "type": "string",
+      "values": [
+        "test"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0121"
+      ]
+    },
+    {
+      "parameter_id": "param_0016",
+      "parameter_identity": "sha256:22717a752fe228a440f7ae1c8da0e972f4e71930cc506f8059b2c0ae24db9b12",
+      "name": "deductionExpression",
+      "location": "query",
+      "type": "string",
+      "values": [
+        "test"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0121"
+      ]
+    },
+    {
+      "parameter_id": "param_0017",
+      "parameter_identity": "sha256:beb2bdff4998a7cd4ce67a4dcece4126f0fff4864fb38a64b9068e29b44d3df2",
+      "name": "deductionType",
+      "location": "query",
+      "type": "string",
+      "values": [
+        "test"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0121"
+      ]
+    },
+    {
+      "parameter_id": "param_0018",
+      "parameter_identity": "sha256:dfdcb0887230e63f25e020cb5913a82927a1dad1632b7abf291b549eb755b71f",
+      "name": "discountAccountItemType",
+      "location": "query",
+      "type": "string",
+      "values": [
+        "test"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0121"
+      ]
+    },
+    {
+      "parameter_id": "param_0019",
+      "parameter_identity": "sha256:a01b4b0e1631bba19cca32a534e2f475575ea847e9266dc71b9eef71e16c2200",
+      "name": "discountType",
+      "location": "query",
+      "type": "string",
+      "values": [
+        "test"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0121"
+      ]
+    },
+    {
+      "parameter_id": "param_0020",
+      "parameter_identity": "sha256:f55cb01a01e2b8eca2709e12ba6d82efefe1f1c90174f404ff7b4953d9ecff15",
+      "name": "htmlVersion",
+      "location": "query",
+      "type": "integer",
+      "values": [
+        "1794653129366"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0122"
+      ]
+    },
+    {
+      "parameter_id": "param_0021",
+      "parameter_identity": "sha256:3d7172afa27d8271dc3245b32be78c890d20172185a50acd05f0a7d1d81a5c35",
+      "name": "orderAction",
+      "location": "query",
+      "type": "string",
+      "values": [
+        "test"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0121"
+      ]
+    },
+    {
+      "parameter_id": "param_0022",
+      "parameter_identity": "sha256:16f8ce6b35ccbf932742702ecfdec990d3d9fb21e7d7bd4681408837f9d99dda",
+      "name": "priority",
+      "location": "query",
+      "type": "string",
+      "values": [
+        "test"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0121"
+      ]
+    },
+    {
+      "parameter_id": "param_0023",
+      "parameter_identity": "sha256:57e64fcab201cc6da74441db11b3464f6761a50898041234ad7981ce26a84844",
+      "name": "resultValue",
+      "location": "query",
+      "type": "string",
+      "values": [
+        "test"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0121"
+      ]
+    },
+    {
+      "parameter_id": "param_0024",
+      "parameter_identity": "sha256:bfec10f3d0c4a36394856f079578199793cf67374e466803cd0bfbefc43b2e9f",
+      "name": "resultValueExp",
+      "location": "query",
+      "type": "string",
+      "values": [
+        "test"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0121"
+      ]
+    },
+    {
+      "parameter_id": "param_0025",
+      "parameter_identity": "sha256:bf767da1b21841114cec305d536918c64e7d95f071efa0f8e58bedd2f3380d69",
+      "name": "resultValueType",
+      "location": "query",
+      "type": "string",
+      "values": [
+        "test"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0121"
+      ]
+    },
+    {
+      "parameter_id": "param_0026",
+      "parameter_identity": "sha256:0283d9c3d8124e4b1dd2e243a02ffb11b9ba97ba3298a96c719c64b5e69d1d1d",
+      "name": "unitType",
+      "location": "query",
+      "type": "string",
+      "values": [
+        "test"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0121"
+      ]
+    },
+    {
+      "parameter_id": "param_0027",
+      "parameter_identity": "sha256:08d43c3ca947f447da344af407ddeaebf0c1c39bd3adfc351dcf827ba1277bde",
+      "name": "v",
+      "location": "query",
+      "type": "string",
+      "values": [
+        "9.3.6"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0122"
+      ]
+    }
+  ],
+  "inventory_id": "sha256:10d2efa989c04c6bed259a6783429df2aa990a8500fe5c94d9afcc60aa4c57e7",
+  "request_examples": [
+    {
+      "traffic_id": "traffic_0121",
+      "principal_ref": "principal_33c24ad7c530",
+      "method": "GET",
+      "url": "https://10.10.177.111/portal-web/otc/modules/discount/templates/DiscountComponentTpl.html?affectOffer=test&orderAction=test&priority=test&conGroupExpression=test&checkAll=A&checkAll=B&accountItemType=test&discountType=test&resultValueType=test&resultValue=test&resultValueExp=test&deductionType=test&deduction=test&deductionExpression=test&unitType=test&discountAccountItemType=test",
+      "content_type": null,
+      "query": {
+        "affectOffer": [
+          "test"
+        ],
+        "orderAction": [
+          "test"
+        ],
+        "priority": [
+          "test"
+        ],
+        "conGroupExpression": [
+          "test"
+        ],
+        "checkAll": [
+          "A",
+          "B"
+        ],
+        "accountItemType": [
+          "test"
+        ],
+        "discountType": [
+          "test"
+        ],
+        "resultValueType": [
+          "test"
+        ],
+        "resultValue": [
+          "test"
+        ],
+        "resultValueExp": [
+          "test"
+        ],
+        "deductionType": [
+          "test"
+        ],
+        "deduction": [
+          "test"
+        ],
+        "deductionExpression": [
+          "test"
+        ],
+        "unitType": [
+          "test"
+        ],
+        "discountAccountItemType": [
+          "test"
+        ]
+      },
+      "body_excerpt": null,
+      "body_sha256": null
+    },
+    {
+      "traffic_id": "traffic_0122",
+      "principal_ref": "principal_33c24ad7c530",
+      "method": "GET",
+      "url": "https://10.10.177.111/portal-web/otc/modules/discount/templates/DiscountComponentTpl.html?v=9.3.6&htmlVersion=1794653129366",
+      "content_type": null,
+      "query": {
+        "v": [
+          "9.3.6"
+        ],
+        "htmlVersion": [
+          "1794653129366"
+        ]
+      },
+      "body_excerpt": null,
+      "body_sha256": null
+    }
+  ],
+  "response_examples": [],
+  "auth_contexts": [
+    {
+      "principal_ref": "principal_33c24ad7c530",
+      "credential_ref": "cred_33c24ad7c530",
+      "auth_types": [
+        "cookie"
+      ],
+      "traffic_count": 2
+    }
+  ],
+  "business_context": {
+    "description": null,
+    "evidence": [
+      "parameter 'SP_ID' (cookie) suggests object identifier",
+      "parameter 'orgId' (cookie) suggests tenant identity",
+      "parameter 'userId' (cookie) suggests user identity"
+    ]
+  },
+  "limitations": [
+    "2/2 traffic items have no captured response"
+  ]
+}

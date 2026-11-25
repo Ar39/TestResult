@@ -1,0 +1,438 @@
+{
+  "endpoint_id": "endpoint_0039",
+  "method": "GET",
+  "scheme": "https",
+  "host": "10.10.177.111",
+  "path": "/portal-web/otc/modules/combodiscount/templates/ComboDiscountComponentTpl.html",
+  "path_examples": [
+    "/portal-web/otc/modules/combodiscount/templates/ComboDiscountComponentTpl.html"
+  ],
+  "traffic_count": 2,
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:a4acf4704fe2eb5f00ab4e3bcf3898427f6c989c7df0667d662e7e24a5651e00",
+      "name": "HTML_VERSION",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "1794653129366"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0115",
+        "traffic_0116"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:c698eb3d96f168e75af9257e2473dacf913d0953b1c185c12bfd323c45db5d7e",
+      "name": "SP_ID",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "0"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0115",
+        "traffic_0116"
+      ]
+    },
+    {
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:70609a78e7b90158cab23a46e03ee5733c2818356d68f2b2e79d380d2c4489b8",
+      "name": "ZSMART_LOCALE",
+      "location": "cookie",
+      "type": "string",
+      "values": [
+        "en"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0115",
+        "traffic_0116"
+      ]
+    },
+    {
+      "parameter_id": "param_0004",
+      "parameter_identity": "sha256:53e1533305a563de9a2a78a7e4280ecb48ee8375735a62ba9ce0eb6bee133ba2",
+      "name": "areaId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "100"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0115",
+        "traffic_0116"
+      ]
+    },
+    {
+      "parameter_id": "param_0005",
+      "parameter_identity": "sha256:61b575495de44368585dca2627da94bca61b5e47d761aa8a050b533b1ce1d255",
+      "name": "isLocked",
+      "location": "cookie",
+      "type": "boolean",
+      "values": [
+        "false"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0115",
+        "traffic_0116"
+      ]
+    },
+    {
+      "parameter_id": "param_0006",
+      "parameter_identity": "sha256:6c1016b394b818f2fcea6903930847fc9c9b19f9d19d39546d51d4b6cfebd820",
+      "name": "orgId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "100"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0115",
+        "traffic_0116"
+      ]
+    },
+    {
+      "parameter_id": "param_0007",
+      "parameter_identity": "sha256:e9c1ca384f950b45f96e83fe5d7f34e53a09b67ba6fc4a8a84469c6663f9ac2a",
+      "name": "staffJobId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "25162"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0115",
+        "traffic_0116"
+      ]
+    },
+    {
+      "parameter_id": "param_0008",
+      "parameter_identity": "sha256:72f939e01cf2e6563d8b37a2aab08e054eeb43750ec12a3e0c0339c01963573b",
+      "name": "userId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "1"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0115",
+        "traffic_0116"
+      ]
+    },
+    {
+      "parameter_id": "param_0009",
+      "parameter_identity": "sha256:244ed9fd6d395752beb9f2dbcbf9cbbcb303c8329388b0f9ea6e2e3d483ae25b",
+      "name": "Menu-Id",
+      "location": "header",
+      "type": "integer",
+      "values": [
+        "120008"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0115",
+        "traffic_0116"
+      ]
+    },
+    {
+      "parameter_id": "param_0010",
+      "parameter_identity": "sha256:b85777ce62c827d62d472cc99c2146335f0366d452061a0a26e7f8f27df1d11f",
+      "name": "Priority",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "u=1, i"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0115",
+        "traffic_0116"
+      ]
+    },
+    {
+      "parameter_id": "param_0011",
+      "parameter_identity": "sha256:be2309b42f4e0a9e9d8010820382eee4c7a55cba8ae1280497cd099e801ee882",
+      "name": "accountItemType",
+      "location": "query",
+      "type": "string",
+      "values": [
+        "test"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0115"
+      ]
+    },
+    {
+      "parameter_id": "param_0012",
+      "parameter_identity": "sha256:ce5eaa883b0a0b66d8ec2e0db5e67dd9bcba8522f914182792e28cf083575013",
+      "name": "affectOffer",
+      "location": "query",
+      "type": "string",
+      "values": [
+        "test"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0115"
+      ]
+    },
+    {
+      "parameter_id": "param_0013",
+      "parameter_identity": "sha256:4e2979862df390dab4f5bb1238aebf3592176e365fafb9fd4076c54987e0757b",
+      "name": "comboType",
+      "location": "query",
+      "type": "string",
+      "values": [
+        "A",
+        "B"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0115"
+      ]
+    },
+    {
+      "parameter_id": "param_0014",
+      "parameter_identity": "sha256:1a8b758840d31738809b07a9c9098170297af575de68c58cedc3cb85c7b9d1e1",
+      "name": "conGroupExpression",
+      "location": "query",
+      "type": "string",
+      "values": [
+        "test"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0115"
+      ]
+    },
+    {
+      "parameter_id": "param_0015",
+      "parameter_identity": "sha256:9b64451711b22f8f2983bfa1293866fea6d77efc63c5c2413090ec13565f1237",
+      "name": "deduction",
+      "location": "query",
+      "type": "string",
+      "values": [
+        "test"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0115"
+      ]
+    },
+    {
+      "parameter_id": "param_0016",
+      "parameter_identity": "sha256:9b7909ed2eeb0e6a4f4cb1b2e84fa963130fd6a4677f9de7d70fd50bc35d681e",
+      "name": "discountAccountItemType",
+      "location": "query",
+      "type": "string",
+      "values": [
+        "test"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0115"
+      ]
+    },
+    {
+      "parameter_id": "param_0017",
+      "parameter_identity": "sha256:ed5b029a434fcf52868a183392449e87db5cc4570eb331a5115aedee1baab9ca",
+      "name": "exp",
+      "location": "query",
+      "type": "string",
+      "values": [
+        "test"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0115"
+      ]
+    },
+    {
+      "parameter_id": "param_0018",
+      "parameter_identity": "sha256:1e22994b089719e0a1f8efc8c808ac0be95badeee721ad08bba93193ccb8fbea",
+      "name": "htmlVersion",
+      "location": "query",
+      "type": "integer",
+      "values": [
+        "1794653129366"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0116"
+      ]
+    },
+    {
+      "parameter_id": "param_0019",
+      "parameter_identity": "sha256:1346dc2618e169dabc7e4d6290fc87653d680a823f9f106de50e80540e3019ad",
+      "name": "orderAction",
+      "location": "query",
+      "type": "string",
+      "values": [
+        "test"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0115"
+      ]
+    },
+    {
+      "parameter_id": "param_0020",
+      "parameter_identity": "sha256:01f7d4f48577b6297022ba4fe5cf3449dfd0b85a4c9548b09da380a1ad1f52be",
+      "name": "priority",
+      "location": "query",
+      "type": "string",
+      "values": [
+        "test"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0115"
+      ]
+    },
+    {
+      "parameter_id": "param_0021",
+      "parameter_identity": "sha256:696ca2c2f37e443d0ec8de62138748f482e40ff85dfaeb16253e9b261cc45b0b",
+      "name": "v",
+      "location": "query",
+      "type": "string",
+      "values": [
+        "9.3.6"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0116"
+      ]
+    },
+    {
+      "parameter_id": "param_0022",
+      "parameter_identity": "sha256:cdebcc7aaed994f33acd48d7152021a1d5fc6632874f0b2f3b039f35616bdc01",
+      "name": "valuePriority",
+      "location": "query",
+      "type": "string",
+      "values": [
+        "test"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0115"
+      ]
+    },
+    {
+      "parameter_id": "param_0023",
+      "parameter_identity": "sha256:9f3507adcccc4fbb5e18e183a0e1e467f2256a05dbdc91c5e91509684aa1bc00",
+      "name": "valueType",
+      "location": "query",
+      "type": "string",
+      "values": [
+        "test"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0115"
+      ]
+    }
+  ],
+  "inventory_id": "sha256:213d63b11a6e5e0d7fd5a2a154e28cc7fe876e6b3765b21e40510872d2341c70",
+  "request_examples": [
+    {
+      "traffic_id": "traffic_0115",
+      "principal_ref": "principal_33c24ad7c530",
+      "method": "GET",
+      "url": "https://10.10.177.111/portal-web/otc/modules/combodiscount/templates/ComboDiscountComponentTpl.html?conGroupExpression=test&priority=test&valueType=test&deduction=test&exp=test&comboType=A&comboType=B&valuePriority=test&affectOffer=test&orderAction=test&accountItemType=test&discountAccountItemType=test&valuePriority=test&affectOffer=test&orderAction=test&accountItemType=test&discountAccountItemType=test",
+      "content_type": null,
+      "query": {
+        "conGroupExpression": [
+          "test"
+        ],
+        "priority": [
+          "test"
+        ],
+        "valueType": [
+          "test"
+        ],
+        "deduction": [
+          "test"
+        ],
+        "exp": [
+          "test"
+        ],
+        "comboType": [
+          "A",
+          "B"
+        ],
+        "valuePriority": [
+          "test",
+          "test"
+        ],
+        "affectOffer": [
+          "test",
+          "test"
+        ],
+        "orderAction": [
+          "test",
+          "test"
+        ],
+        "accountItemType": [
+          "test",
+          "test"
+        ],
+        "discountAccountItemType": [
+          "test",
+          "test"
+        ]
+      },
+      "body_excerpt": null,
+      "body_sha256": null
+    },
+    {
+      "traffic_id": "traffic_0116",
+      "principal_ref": "principal_33c24ad7c530",
+      "method": "GET",
+      "url": "https://10.10.177.111/portal-web/otc/modules/combodiscount/templates/ComboDiscountComponentTpl.html?v=9.3.6&htmlVersion=1794653129366",
+      "content_type": null,
+      "query": {
+        "v": [
+          "9.3.6"
+        ],
+        "htmlVersion": [
+          "1794653129366"
+        ]
+      },
+      "body_excerpt": null,
+      "body_sha256": null
+    }
+  ],
+  "response_examples": [],
+  "auth_contexts": [
+    {
+      "principal_ref": "principal_33c24ad7c530",
+      "credential_ref": "cred_33c24ad7c530",
+      "auth_types": [
+        "cookie"
+      ],
+      "traffic_count": 2
+    }
+  ],
+  "business_context": {
+    "description": null,
+    "evidence": [
+      "parameter 'SP_ID' (cookie) suggests object identifier",
+      "parameter 'orgId' (cookie) suggests tenant identity",
+      "parameter 'userId' (cookie) suggests user identity"
+    ]
+  },
+  "limitations": [
+    "2/2 traffic items have no captured response"
+  ]
+}

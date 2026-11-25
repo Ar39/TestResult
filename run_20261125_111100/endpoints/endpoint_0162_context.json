@@ -1,0 +1,258 @@
+{
+  "endpoint_id": "endpoint_0162",
+  "method": "POST",
+  "scheme": "https",
+  "host": "10.10.177.111",
+  "path": "/portal-web/otc/domain/qryFunction",
+  "path_examples": [
+    "/portal-web/otc/domain/qryFunction"
+  ],
+  "traffic_count": 3,
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:1782ad309283c6cc71c2b55614d9f4f757baa1369317dc8d8ff1efff4fa16d63",
+      "name": "HTML_VERSION",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "1794653129366"
+      ],
+      "occurrence_count": 3,
+      "traffic_ids": [
+        "traffic_0058",
+        "traffic_0059",
+        "traffic_0060"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:5fd02e84d8060a729d9916a09479a408b44bd851f6f1c28ff9cbcb9bb3c7a9f3",
+      "name": "SP_ID",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "0"
+      ],
+      "occurrence_count": 3,
+      "traffic_ids": [
+        "traffic_0058",
+        "traffic_0059",
+        "traffic_0060"
+      ]
+    },
+    {
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:1caab0c3df0da0900e5867602db1892a03ed7767a4d2e8779fcc4412d57adce6",
+      "name": "ZSMART_LOCALE",
+      "location": "cookie",
+      "type": "string",
+      "values": [
+        "en"
+      ],
+      "occurrence_count": 3,
+      "traffic_ids": [
+        "traffic_0058",
+        "traffic_0059",
+        "traffic_0060"
+      ]
+    },
+    {
+      "parameter_id": "param_0004",
+      "parameter_identity": "sha256:b906cc11ae7f3693b8f7c9aa14ac7322ba1ecfe0ee890fcc58f5721b8765ad1c",
+      "name": "areaId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "100"
+      ],
+      "occurrence_count": 3,
+      "traffic_ids": [
+        "traffic_0058",
+        "traffic_0059",
+        "traffic_0060"
+      ]
+    },
+    {
+      "parameter_id": "param_0005",
+      "parameter_identity": "sha256:eb1b6c54a551894888bf9f85171fc7ce5eacfc9e0406effbb35cc0a620118539",
+      "name": "isLocked",
+      "location": "cookie",
+      "type": "boolean",
+      "values": [
+        "false"
+      ],
+      "occurrence_count": 3,
+      "traffic_ids": [
+        "traffic_0058",
+        "traffic_0059",
+        "traffic_0060"
+      ]
+    },
+    {
+      "parameter_id": "param_0006",
+      "parameter_identity": "sha256:6c1562ad711a2dcc2ef742b9bd7a8da4768de049e3b1d51bdb8b124d14b8a991",
+      "name": "orgId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "100"
+      ],
+      "occurrence_count": 3,
+      "traffic_ids": [
+        "traffic_0058",
+        "traffic_0059",
+        "traffic_0060"
+      ]
+    },
+    {
+      "parameter_id": "param_0007",
+      "parameter_identity": "sha256:680df3abdad7baf16c472106f4cbab9a9cf8f142b16345481443a26cd64402ad",
+      "name": "staffJobId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "25162"
+      ],
+      "occurrence_count": 3,
+      "traffic_ids": [
+        "traffic_0058",
+        "traffic_0059",
+        "traffic_0060"
+      ]
+    },
+    {
+      "parameter_id": "param_0008",
+      "parameter_identity": "sha256:c2407ebc1a9baa4e4f5e123f70a279959a735a0d66dff559e73b5d7abe79f992",
+      "name": "userId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "1"
+      ],
+      "occurrence_count": 3,
+      "traffic_ids": [
+        "traffic_0058",
+        "traffic_0059",
+        "traffic_0060"
+      ]
+    },
+    {
+      "parameter_id": "param_0009",
+      "parameter_identity": "sha256:3c435e1a7ffc60c0ee39a4acc8d90135230e5420bb8743b7fe3388223164a21f",
+      "name": "Menu-Id",
+      "location": "header",
+      "type": "integer",
+      "values": [
+        "120011",
+        "120019",
+        "120008"
+      ],
+      "occurrence_count": 3,
+      "traffic_ids": [
+        "traffic_0058",
+        "traffic_0059",
+        "traffic_0060"
+      ]
+    },
+    {
+      "parameter_id": "param_0010",
+      "parameter_identity": "sha256:ca1b99c2e38b5d98e1b6aaec019f18cc86d4f974beaf110799402c2b7eafad7f",
+      "name": "Priority",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "u=1, i"
+      ],
+      "occurrence_count": 3,
+      "traffic_ids": [
+        "traffic_0058",
+        "traffic_0059",
+        "traffic_0060"
+      ]
+    },
+    {
+      "parameter_id": "param_0011",
+      "parameter_identity": "sha256:fe3c8e7a2a825dc91bcd1f6cb99ea5907e2e4620a5833d183513595b43825778",
+      "name": "applyType",
+      "location": "json",
+      "type": "integer",
+      "values": [
+        "13",
+        "17",
+        "5"
+      ],
+      "occurrence_count": 3,
+      "traffic_ids": [
+        "traffic_0058",
+        "traffic_0059",
+        "traffic_0060"
+      ]
+    }
+  ],
+  "inventory_id": "sha256:cb6e82009a31bdc66d3791d37a156fa1a79479a1163f82ec724cdf7037a84056",
+  "request_examples": [
+    {
+      "traffic_id": "traffic_0058",
+      "principal_ref": "principal_fae43c395c0f",
+      "method": "POST",
+      "url": "https://10.10.177.111/portal-web/otc/domain/qryFunction",
+      "content_type": "application/json",
+      "query": null,
+      "body_excerpt": "{\"applyType\":\"13\"}",
+      "body_sha256": "cee0caa60c67604f3d513df0d2de9172938d77c79e12d5dd6eeeeb0be7c0c093"
+    },
+    {
+      "traffic_id": "traffic_0059",
+      "principal_ref": "principal_fae43c395c0f",
+      "method": "POST",
+      "url": "https://10.10.177.111/portal-web/otc/domain/qryFunction",
+      "content_type": "application/json",
+      "query": null,
+      "body_excerpt": "{\"applyType\":\"17\"}",
+      "body_sha256": "2c472d6a49300ef542173c189d5cb8c4fb70233744b3ebfccc73771eee5ae261"
+    },
+    {
+      "traffic_id": "traffic_0060",
+      "principal_ref": "principal_c8a93705deac",
+      "method": "POST",
+      "url": "https://10.10.177.111/portal-web/otc/domain/qryFunction",
+      "content_type": "application/json",
+      "query": null,
+      "body_excerpt": "{\"applyType\":\"5\"}",
+      "body_sha256": "7ded4362c6f60dcd259aef45e83905190ec2474688611f672c0e9fc219c361ea"
+    }
+  ],
+  "response_examples": [],
+  "auth_contexts": [
+    {
+      "principal_ref": "principal_c8a93705deac",
+      "credential_ref": "cred_c8a93705deac",
+      "auth_types": [
+        "api_key",
+        "cookie"
+      ],
+      "traffic_count": 1
+    },
+    {
+      "principal_ref": "principal_fae43c395c0f",
+      "credential_ref": "cred_fae43c395c0f",
+      "auth_types": [
+        "api_key",
+        "cookie"
+      ],
+      "traffic_count": 2
+    }
+  ],
+  "business_context": {
+    "description": null,
+    "evidence": [
+      "parameter 'SP_ID' (cookie) suggests object identifier",
+      "parameter 'orgId' (cookie) suggests tenant identity",
+      "parameter 'userId' (cookie) suggests user identity"
+    ]
+  },
+  "limitations": [
+    "3/3 traffic items have no captured response"
+  ]
+}

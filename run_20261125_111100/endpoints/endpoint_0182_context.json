@@ -1,0 +1,306 @@
+{
+  "endpoint_id": "endpoint_0182",
+  "method": "POST",
+  "scheme": "https",
+  "host": "10.10.177.111",
+  "path": "/portal-web/otc/pricePlan",
+  "path_examples": [
+    "/portal-web/otc/pricePlan"
+  ],
+  "traffic_count": 1,
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:f5eb4a3338755fddfecc05ddc9bddd244212bd5c0863d387714a194ccc16f7f0",
+      "name": "HTML_VERSION",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "1794653129366"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0289"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:92691f0c845ce13dfd21b58992feee8a65c6c0152138514ef764afa1c161b6bb",
+      "name": "SP_ID",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "0"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0289"
+      ]
+    },
+    {
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:f086442f8fbbc99a300ec7cfbca4f07133f2889c9b3458e75f7ca36b90beb155",
+      "name": "ZSMART_LOCALE",
+      "location": "cookie",
+      "type": "string",
+      "values": [
+        "en"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0289"
+      ]
+    },
+    {
+      "parameter_id": "param_0004",
+      "parameter_identity": "sha256:6075afd9f4a76b11799e44bda4592cbc30d6a5a2f57c305c3b52322739a9732c",
+      "name": "areaId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "100"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0289"
+      ]
+    },
+    {
+      "parameter_id": "param_0005",
+      "parameter_identity": "sha256:7386691f99eb3eb8f9bd55aba8ee6c6ba8a1e8a1d1c4f03629863edd1936f27b",
+      "name": "isLocked",
+      "location": "cookie",
+      "type": "boolean",
+      "values": [
+        "false"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0289"
+      ]
+    },
+    {
+      "parameter_id": "param_0006",
+      "parameter_identity": "sha256:ffa2de200aa3ce70c5bd092cc7f46dbe4bd307ee49e1973d392cc6e5459d05fa",
+      "name": "orgId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "100"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0289"
+      ]
+    },
+    {
+      "parameter_id": "param_0007",
+      "parameter_identity": "sha256:e00fbc87ae6ee8543674c2329defd424843402dc7a9e8f3f22bed4345ae1581f",
+      "name": "staffJobId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "25162"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0289"
+      ]
+    },
+    {
+      "parameter_id": "param_0008",
+      "parameter_identity": "sha256:35d801d5f4323b6a1552bf6847c845f7e76d113a6181375aff46a32fd422aab7",
+      "name": "userId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "1"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0289"
+      ]
+    },
+    {
+      "parameter_id": "param_0009",
+      "parameter_identity": "sha256:9db4b8417343a9646b91d45cd18b208541bf26d696510b3a788a9ad1239fb1bd",
+      "name": "Menu-Id",
+      "location": "header",
+      "type": "integer",
+      "values": [
+        "120008"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0289"
+      ]
+    },
+    {
+      "parameter_id": "param_0010",
+      "parameter_identity": "sha256:2d2f291896ddedf9abc3da2d3ac27d46db52bd1cf484e53a6506432fa0898070",
+      "name": "Priority",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "u=1, i"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0289"
+      ]
+    },
+    {
+      "parameter_id": "param_0011",
+      "parameter_identity": "sha256:2162241a5657188fce2fa97a4618969f73c60129a330e8437e15517530dddaf9",
+      "name": "effDate",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "2026-11-01"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0289"
+      ]
+    },
+    {
+      "parameter_id": "param_0012",
+      "parameter_identity": "sha256:a44e6fb39baa74db08c05b69711eb24b3d9919145c0e534a13b110cee757fe06",
+      "name": "expDate",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "2026-11-16"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0289"
+      ]
+    },
+    {
+      "parameter_id": "param_0013",
+      "parameter_identity": "sha256:f0202bbbebffaf40dee041aa3be72864be8b5f975db73e451d1afbc898a27f00",
+      "name": "globalRule",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "{}"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0289"
+      ]
+    },
+    {
+      "parameter_id": "param_0014",
+      "parameter_identity": "sha256:c147a9bdd52261ef4bd062242cab4a4dbae1916f35c386393b60ae69f167b551",
+      "name": "offerType",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "E"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0289"
+      ]
+    },
+    {
+      "parameter_id": "param_0015",
+      "parameter_identity": "sha256:ff89cb21db9851c1025f5909e14edf6dd555536757a3e67f87389a2eb764ecb9",
+      "name": "pricePlanCode",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "\"><img/src=1>"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0289"
+      ]
+    },
+    {
+      "parameter_id": "param_0016",
+      "parameter_identity": "sha256:baebc5cfdd8f89b6070c941b273759598100b0c9b78b6ec072e3949219f1db57",
+      "name": "pricePlanGenre",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "O"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0289"
+      ]
+    },
+    {
+      "parameter_id": "param_0017",
+      "parameter_identity": "sha256:582a263f77437a96e6ef0ce9c018fd18a2eecafcd7514b1e9c26e41dbdb9e8e9",
+      "name": "pricePlanName",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "\"><img/src=1>"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0289"
+      ]
+    },
+    {
+      "parameter_id": "param_0018",
+      "parameter_identity": "sha256:5523cc265c3398648a16b6d666f5d2e18819af391057cb9143a07cd57263bcf2",
+      "name": "subsType",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "E"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0289"
+      ]
+    }
+  ],
+  "inventory_id": "sha256:74a55448d8e7468296c051f54a45e6ea6c05793f0e86a85dd734433a35753039",
+  "request_examples": [
+    {
+      "traffic_id": "traffic_0289",
+      "principal_ref": "principal_c8a93705deac",
+      "method": "POST",
+      "url": "https://10.10.177.111/portal-web/otc/pricePlan",
+      "content_type": "application/json",
+      "query": null,
+      "body_excerpt": "{\"pricePlanGenre\":\"O\",\"pricePlanName\":\"\\\"><img/src=1>\",\"pricePlanCode\":\"\\\"><img/src=1>\",\"effDate\":\"2026-11-01\",\"expDate\":\"2026-11-16\",\"subsType\":\"E\",\"offerType\":\"E\",\"globalRule\":\"{}\",\"srcPricePlanVerList\":[]}",
+      "body_sha256": "1d3c7bd7c25f43b943f6e4487c3eb054534d3838f8e7a12b181c49b2c5927e7d"
+    }
+  ],
+  "response_examples": [],
+  "auth_contexts": [
+    {
+      "principal_ref": "principal_c8a93705deac",
+      "credential_ref": "cred_c8a93705deac",
+      "auth_types": [
+        "api_key",
+        "cookie"
+      ],
+      "traffic_count": 1
+    }
+  ],
+  "business_context": {
+    "description": null,
+    "evidence": [
+      "parameter 'SP_ID' (cookie) suggests object identifier",
+      "parameter 'orgId' (cookie) suggests tenant identity",
+      "parameter 'userId' (cookie) suggests user identity",
+      "parameter 'pricePlanCode' (json) suggests monetary value",
+      "parameter 'pricePlanGenre' (json) suggests monetary value",
+      "parameter 'pricePlanName' (json) suggests monetary value",
+      "parameter 'pricePlanName' (json) suggests search / filter",
+      "path segment 'pricePlan' suggests monetary value"
+    ]
+  },
+  "limitations": [
+    "1/1 traffic items have no captured response"
+  ]
+}

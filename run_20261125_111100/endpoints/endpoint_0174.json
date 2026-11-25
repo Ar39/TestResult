@@ -1,0 +1,236 @@
+{
+  "endpoint_id": "endpoint_0174",
+  "method": "POST",
+  "scheme": "https",
+  "host": "10.10.177.111",
+  "path": "/portal-web/otc/paymentDecision/otcCrTermsDecision",
+  "traffic_ids": [
+    "traffic_0252"
+  ],
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:c8eaf9a3404677272f5251dbc75ca09e8a488f9038401071e3a75d24e865fd12",
+      "name": "HTML_VERSION",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "1794653129366"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0252"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:02b986947298f7212e4a7cbf597de1c25750c0336de2c5a9b55ab3c93e00af6e",
+      "name": "SP_ID",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "0"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0252"
+      ]
+    },
+    {
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:78546fce3e8b9925f9f04e562fe87071f45b563d5b24efa3adf6dade32e473da",
+      "name": "ZSMART_LOCALE",
+      "location": "cookie",
+      "type": "string",
+      "values": [
+        "en"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0252"
+      ]
+    },
+    {
+      "parameter_id": "param_0004",
+      "parameter_identity": "sha256:3d3515ab62c593e0f0abeb86cab12f097ca29400bcf64b1878274c2ed289c838",
+      "name": "areaId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "100"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0252"
+      ]
+    },
+    {
+      "parameter_id": "param_0005",
+      "parameter_identity": "sha256:73d20893f56ef1b8f905e13cb408b0ce6eb76b16d58fa4f3a2209b6037ee1df8",
+      "name": "isLocked",
+      "location": "cookie",
+      "type": "boolean",
+      "values": [
+        "false"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0252"
+      ]
+    },
+    {
+      "parameter_id": "param_0006",
+      "parameter_identity": "sha256:1065f33fcafffc9a40f63732e841bdb7f27231b636b39c2921b68e6aac436544",
+      "name": "orgId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "100"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0252"
+      ]
+    },
+    {
+      "parameter_id": "param_0007",
+      "parameter_identity": "sha256:9ed675544d6e028f6985c1704516f055b348161407ae3b428c10870358a99b49",
+      "name": "staffJobId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "25162"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0252"
+      ]
+    },
+    {
+      "parameter_id": "param_0008",
+      "parameter_identity": "sha256:02c3debb6e92899df2bc8fb87c0e50a5ac8501216ecf3683c203e811cce672af",
+      "name": "userId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "1"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0252"
+      ]
+    },
+    {
+      "parameter_id": "param_0009",
+      "parameter_identity": "sha256:421665a5b6fddac1f30110032d25887943cd3c2eb6d606470f943caa64f9fa03",
+      "name": "Menu-Id",
+      "location": "header",
+      "type": "integer",
+      "values": [
+        "120005"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0252"
+      ]
+    },
+    {
+      "parameter_id": "param_0010",
+      "parameter_identity": "sha256:3debd14502df9e3136612282aaf506bfe16ce6a54ad9564f4f8828f720335c5a",
+      "name": "Priority",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "u=1, i"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0252"
+      ]
+    },
+    {
+      "parameter_id": "param_0011",
+      "parameter_identity": "sha256:7659c6b2ba2d58031c5f9fe61ae3cfe1555c32cd0503fb463dc391dae289648c",
+      "name": "creditTerms",
+      "location": "json",
+      "type": "integer",
+      "values": [
+        "1"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0252"
+      ]
+    },
+    {
+      "parameter_id": "param_0012",
+      "parameter_identity": "sha256:a211aa197ce8fb6af1c9845c3480759d20c8a0b04c367eef6905accf2dc961da",
+      "name": "decisionId",
+      "location": "json",
+      "type": "string",
+      "values": [
+        ""
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0252"
+      ]
+    },
+    {
+      "parameter_id": "param_0013",
+      "parameter_identity": "sha256:38bf5793eafc97d692c55de73130f1354c34e7c5d17eee702580f0bdceab2953",
+      "name": "otcConGroupDto",
+      "location": "json",
+      "type": "string",
+      "values": [
+        ""
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0252"
+      ]
+    },
+    {
+      "parameter_id": "param_0014",
+      "parameter_identity": "sha256:765abb824cd3b5775fdbd970ed0f95c6eeb41be21d28850807efef9f39c0f363",
+      "name": "paymentType",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "S"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0252"
+      ]
+    },
+    {
+      "parameter_id": "param_0015",
+      "parameter_identity": "sha256:d08b58101b39475d7ee9ca16b8d400255b6ddaaed9c23a918070b9529118e723",
+      "name": "priority",
+      "location": "json",
+      "type": "integer",
+      "values": [
+        "1"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0252"
+      ]
+    },
+    {
+      "parameter_id": "param_0016",
+      "parameter_identity": "sha256:9aa043b2e108748e9dfe0d5f06084e9b3612484a143a0265591482f8fb6f7384",
+      "name": "termsUnit",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "D"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0252"
+      ]
+    }
+  ]
+}

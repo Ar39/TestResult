@@ -1,0 +1,280 @@
+{
+  "endpoint_id": "endpoint_0049",
+  "method": "GET",
+  "scheme": "https",
+  "host": "10.10.177.111",
+  "path": "/portal-web/otc/modules/free/templates/FreeComponentTpl.html",
+  "path_examples": [
+    "/portal-web/otc/modules/free/templates/FreeComponentTpl.html"
+  ],
+  "traffic_count": 2,
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:6c06837440a48957385f74a58d0e6c0d7586474ac22947dcf3aacaf55373c5a4",
+      "name": "HTML_VERSION",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "1794653129366"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0127",
+        "traffic_0128"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:724928f67a8fffd4a0f0ebed2559e52da3b337bc872826cc847d8056f7d4ac38",
+      "name": "SP_ID",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "0"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0127",
+        "traffic_0128"
+      ]
+    },
+    {
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:1f724d4c73d5aa5555bf4e5775d7239d097470002275aac7a234c43ba037e817",
+      "name": "ZSMART_LOCALE",
+      "location": "cookie",
+      "type": "string",
+      "values": [
+        "en"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0127",
+        "traffic_0128"
+      ]
+    },
+    {
+      "parameter_id": "param_0004",
+      "parameter_identity": "sha256:f4401f096b02b99a529d76d4926853a19cbf40e91823044483911a072beebf5d",
+      "name": "areaId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "100"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0127",
+        "traffic_0128"
+      ]
+    },
+    {
+      "parameter_id": "param_0005",
+      "parameter_identity": "sha256:1c5407df6fae05e3b25ef8704e97b352414d773fb8f2a6d0ee6146681343a247",
+      "name": "isLocked",
+      "location": "cookie",
+      "type": "boolean",
+      "values": [
+        "false"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0127",
+        "traffic_0128"
+      ]
+    },
+    {
+      "parameter_id": "param_0006",
+      "parameter_identity": "sha256:19c73ade9c6c5ac28561224eead02f94341bf65fe9fd2cd85fed4cd7ba75abe2",
+      "name": "orgId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "100"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0127",
+        "traffic_0128"
+      ]
+    },
+    {
+      "parameter_id": "param_0007",
+      "parameter_identity": "sha256:564d2d9831251092fd5442bb8ace55f07db5799ee74729701d3639587c9eb73d",
+      "name": "staffJobId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "25162"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0127",
+        "traffic_0128"
+      ]
+    },
+    {
+      "parameter_id": "param_0008",
+      "parameter_identity": "sha256:48bb328f5ca19affae809dd434888d2cdb6b1ddc2a6917dd15025c1841814f1b",
+      "name": "userId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "1"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0127",
+        "traffic_0128"
+      ]
+    },
+    {
+      "parameter_id": "param_0009",
+      "parameter_identity": "sha256:2a6c0bfe2b38805f9c6d673f28f1d086dbaf576561bfb9ab80ca229cd482ca7e",
+      "name": "Menu-Id",
+      "location": "header",
+      "type": "integer",
+      "values": [
+        "120008"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0127",
+        "traffic_0128"
+      ]
+    },
+    {
+      "parameter_id": "param_0010",
+      "parameter_identity": "sha256:ac2ad162b5743fbaa52b4a75b418b5add4e5baf9d91af7087f8cdf1a91fef240",
+      "name": "Priority",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "u=1, i"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0127",
+        "traffic_0128"
+      ]
+    },
+    {
+      "parameter_id": "param_0011",
+      "parameter_identity": "sha256:aadaf4dd9a7c642073e1e44fd0a77c655438b89e3fbaba7a8849b12a46130235",
+      "name": "checkAll",
+      "location": "query",
+      "type": "string",
+      "values": [
+        "A",
+        "B"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0127"
+      ]
+    },
+    {
+      "parameter_id": "param_0012",
+      "parameter_identity": "sha256:85dff480ffc511facc159d7ee582a0a28ac9612c9301d26a6f9b235093ca6b14",
+      "name": "freeOffer",
+      "location": "query",
+      "type": "string",
+      "values": [
+        "test"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0127"
+      ]
+    },
+    {
+      "parameter_id": "param_0013",
+      "parameter_identity": "sha256:89afad33f32e5d94047354b5175a7258fb7a205b3f61269c9dac285bc706741a",
+      "name": "htmlVersion",
+      "location": "query",
+      "type": "integer",
+      "values": [
+        "1794653129366"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0128"
+      ]
+    },
+    {
+      "parameter_id": "param_0014",
+      "parameter_identity": "sha256:09c51eb26b3393d5bd2d84233eac30832a7e3765025edd99196234ed93fd46cd",
+      "name": "v",
+      "location": "query",
+      "type": "string",
+      "values": [
+        "9.3.6"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0128"
+      ]
+    }
+  ],
+  "inventory_id": "sha256:956d82b6c6636ea37d51bac35c55e7b102675ff6dd85834bd031df1918b9efa6",
+  "request_examples": [
+    {
+      "traffic_id": "traffic_0127",
+      "principal_ref": "principal_33c24ad7c530",
+      "method": "GET",
+      "url": "https://10.10.177.111/portal-web/otc/modules/free/templates/FreeComponentTpl.html?freeOffer=test&checkAll=A&checkAll=B",
+      "content_type": null,
+      "query": {
+        "freeOffer": [
+          "test"
+        ],
+        "checkAll": [
+          "A",
+          "B"
+        ]
+      },
+      "body_excerpt": null,
+      "body_sha256": null
+    },
+    {
+      "traffic_id": "traffic_0128",
+      "principal_ref": "principal_33c24ad7c530",
+      "method": "GET",
+      "url": "https://10.10.177.111/portal-web/otc/modules/free/templates/FreeComponentTpl.html?v=9.3.6&htmlVersion=1794653129366",
+      "content_type": null,
+      "query": {
+        "v": [
+          "9.3.6"
+        ],
+        "htmlVersion": [
+          "1794653129366"
+        ]
+      },
+      "body_excerpt": null,
+      "body_sha256": null
+    }
+  ],
+  "response_examples": [],
+  "auth_contexts": [
+    {
+      "principal_ref": "principal_33c24ad7c530",
+      "credential_ref": "cred_33c24ad7c530",
+      "auth_types": [
+        "cookie"
+      ],
+      "traffic_count": 2
+    }
+  ],
+  "business_context": {
+    "description": null,
+    "evidence": [
+      "parameter 'SP_ID' (cookie) suggests object identifier",
+      "parameter 'orgId' (cookie) suggests tenant identity",
+      "parameter 'userId' (cookie) suggests user identity"
+    ]
+  },
+  "limitations": [
+    "2/2 traffic items have no captured response"
+  ]
+}

@@ -1,0 +1,331 @@
+{
+  "endpoint_id": "endpoint_0090",
+  "method": "GET",
+  "scheme": "https",
+  "host": "10.10.177.111",
+  "path": "/portal-web/otc/modules/price/templates/AddParameterPriceTpl.html",
+  "traffic_ids": [
+    "traffic_0176",
+    "traffic_0177"
+  ],
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:dfb374ff41f731236951eb60d90547a5ae4151fcca37ea1247421f8d9f8d0cf8",
+      "name": "HTML_VERSION",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "1794653129366"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0176",
+        "traffic_0177"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:781159b75917bbd20a2375b5542f5dc24d19d6d9653602cf573374fa2f457ae8",
+      "name": "SP_ID",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "0"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0176",
+        "traffic_0177"
+      ]
+    },
+    {
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:94b09480ac368e19dc133371de810af1691dc074f71963df572a021503d89cbf",
+      "name": "ZSMART_LOCALE",
+      "location": "cookie",
+      "type": "string",
+      "values": [
+        "en"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0176",
+        "traffic_0177"
+      ]
+    },
+    {
+      "parameter_id": "param_0004",
+      "parameter_identity": "sha256:ba56145a6c610e57fdc142b0d97c044955efc3dd25fa1989b776444bbcc95a3d",
+      "name": "areaId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "100"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0176",
+        "traffic_0177"
+      ]
+    },
+    {
+      "parameter_id": "param_0005",
+      "parameter_identity": "sha256:ec98aa7552f6d04a11bfbe865001cd96ffd2a8afa7c035e63cc955993207ef3c",
+      "name": "isLocked",
+      "location": "cookie",
+      "type": "boolean",
+      "values": [
+        "false"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0176",
+        "traffic_0177"
+      ]
+    },
+    {
+      "parameter_id": "param_0006",
+      "parameter_identity": "sha256:0911eff369adf7c780852798cb7df003522de6935d59e0289db9b0c03b142bec",
+      "name": "orgId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "100"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0176",
+        "traffic_0177"
+      ]
+    },
+    {
+      "parameter_id": "param_0007",
+      "parameter_identity": "sha256:a535e6c4e5e157434518df0171d66c2c55c303c14de96d8ad674d5c5d34053bc",
+      "name": "staffJobId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "25162"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0176",
+        "traffic_0177"
+      ]
+    },
+    {
+      "parameter_id": "param_0008",
+      "parameter_identity": "sha256:35613680991438cc2157bab4aca4bf3c1b355e50b2c961a37dcb5df9861de182",
+      "name": "userId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "1"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0176",
+        "traffic_0177"
+      ]
+    },
+    {
+      "parameter_id": "param_0009",
+      "parameter_identity": "sha256:11ec576456c4c64001a6fcf4e0730abc0b7a74c0d63578151980812f253fa1ec",
+      "name": "Menu-Id",
+      "location": "header",
+      "type": "integer",
+      "values": [
+        "120008"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0176",
+        "traffic_0177"
+      ]
+    },
+    {
+      "parameter_id": "param_0010",
+      "parameter_identity": "sha256:0e38ff1cb1c0c438a25a76b388246cd95ee7892f3654fbfe8fa165f847f194f7",
+      "name": "Priority",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "u=1, i"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0176",
+        "traffic_0177"
+      ]
+    },
+    {
+      "parameter_id": "param_0011",
+      "parameter_identity": "sha256:eadeb6ad55a20172de3003a48ad17c224083d29fc8005cee8fc4171ac4ad124e",
+      "name": "acctItemTypeId",
+      "location": "query",
+      "type": "string",
+      "values": [
+        "test"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0176"
+      ]
+    },
+    {
+      "parameter_id": "param_0012",
+      "parameter_identity": "sha256:fb6e96e047fd2eb7c9695ff88541f12a0407103babfc4493b7a9ff831aa62013",
+      "name": "benefitCodeParam",
+      "location": "query",
+      "type": "string",
+      "values": [
+        "test"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0176"
+      ]
+    },
+    {
+      "parameter_id": "param_0013",
+      "parameter_identity": "sha256:6b9f91489ff3867473221b97b89a72a6d8ca59424c892e4df05e16a558b98338",
+      "name": "benefitValue",
+      "location": "query",
+      "type": "string",
+      "values": [
+        "test"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0176"
+      ]
+    },
+    {
+      "parameter_id": "param_0014",
+      "parameter_identity": "sha256:9211b0c06d7974879f00883193fb62931f61c65fb84ba84c72d0c5847eda7fb1",
+      "name": "cdMainIdParam",
+      "location": "query",
+      "type": "string",
+      "values": [
+        "test"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0176"
+      ]
+    },
+    {
+      "parameter_id": "param_0015",
+      "parameter_identity": "sha256:5a07ca57c42d98891c8371acc6bedb9c74863189da3d919b1fd621a1fe670876",
+      "name": "chargeParameterType",
+      "location": "query",
+      "type": "string",
+      "values": [
+        "test"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0176"
+      ]
+    },
+    {
+      "parameter_id": "param_0016",
+      "parameter_identity": "sha256:3d50e6372328a0e573366b62c798cf1a0f900c2b7f854128bd8ce2499f34f449",
+      "name": "conResId",
+      "location": "query",
+      "type": "string",
+      "values": [
+        "test"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0176"
+      ]
+    },
+    {
+      "parameter_id": "param_0017",
+      "parameter_identity": "sha256:86959eaa85cbdd249073bc24f44e68ba23a861a29d3b274534b26193fc18474d",
+      "name": "factorData",
+      "location": "query",
+      "type": "string",
+      "values": [
+        "test"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0176"
+      ]
+    },
+    {
+      "parameter_id": "param_0018",
+      "parameter_identity": "sha256:882f23f877fae1c2489159950f6961b9e510f4373945d364f5dc213cde5506c0",
+      "name": "factorId",
+      "location": "query",
+      "type": "string",
+      "values": [
+        "test"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0176"
+      ]
+    },
+    {
+      "parameter_id": "param_0019",
+      "parameter_identity": "sha256:140826f454438d1cb156a794c3c669a38a3e5c783de20de44420c295c97c8bcf",
+      "name": "htmlVersion",
+      "location": "query",
+      "type": "integer",
+      "values": [
+        "1794653129366"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0177"
+      ]
+    },
+    {
+      "parameter_id": "param_0020",
+      "parameter_identity": "sha256:c2cccfb9a81c4f1b71a19121dd9f3cf73a08dc7b0eb9358bc75c0ec11c7ebe6c",
+      "name": "parameterName",
+      "location": "query",
+      "type": "string",
+      "values": [
+        "test"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0176"
+      ]
+    },
+    {
+      "parameter_id": "param_0021",
+      "parameter_identity": "sha256:28d2791449dfa2b0f89eabe33592d53fdb25980876fb8824a1294bb03caa3b4f",
+      "name": "v",
+      "location": "query",
+      "type": "string",
+      "values": [
+        "9.3.6"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0177"
+      ]
+    },
+    {
+      "parameter_id": "param_0022",
+      "parameter_identity": "sha256:49adf3cea498009ef5c15eb06a48121a4f17998e7c52ac05b978441372e96f39",
+      "name": "valueType",
+      "location": "query",
+      "type": "string",
+      "values": [
+        "test"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0176"
+      ]
+    }
+  ]
+}

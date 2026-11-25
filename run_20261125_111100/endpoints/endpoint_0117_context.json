@@ -1,0 +1,336 @@
+{
+  "endpoint_id": "endpoint_0117",
+  "method": "GET",
+  "scheme": "https",
+  "host": "10.10.177.111",
+  "path": "/portal-web/otc/modules/priceplan/templates/PricePlanVersionAddTpl.html",
+  "path_examples": [
+    "/portal-web/otc/modules/priceplan/templates/PricePlanVersionAddTpl.html"
+  ],
+  "traffic_count": 2,
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:0bb5fe6cf7ec2a96a6b4a4ff59868e7aa6b68515699c8e7c872e82e3490fb39c",
+      "name": "HTML_VERSION",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "1794653129366"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0209",
+        "traffic_0210"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:05cd1ee9da89323b98261231bbd21a6a63c3acaa6d24223c31c1fe07f8bf13c6",
+      "name": "SP_ID",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "0"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0209",
+        "traffic_0210"
+      ]
+    },
+    {
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:807025f2fd1ae0b87c43e6fb3677682f009dea8813f511a942e5654993ee720b",
+      "name": "ZSMART_LOCALE",
+      "location": "cookie",
+      "type": "string",
+      "values": [
+        "en"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0209",
+        "traffic_0210"
+      ]
+    },
+    {
+      "parameter_id": "param_0004",
+      "parameter_identity": "sha256:ef9676dd573daf9090e1a56533b33c45acc9f45b06f024749f7bdd2ebcbe40f0",
+      "name": "areaId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "100"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0209",
+        "traffic_0210"
+      ]
+    },
+    {
+      "parameter_id": "param_0005",
+      "parameter_identity": "sha256:43c969dc534b3ec9a19a43db91c17f7927861acb8be17a0d0fece124f0a4a860",
+      "name": "isLocked",
+      "location": "cookie",
+      "type": "boolean",
+      "values": [
+        "false"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0209",
+        "traffic_0210"
+      ]
+    },
+    {
+      "parameter_id": "param_0006",
+      "parameter_identity": "sha256:58d22f54ff2be82f659a9244eb3bfb831981e274e0fe87bff706663a91993b23",
+      "name": "orgId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "100"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0209",
+        "traffic_0210"
+      ]
+    },
+    {
+      "parameter_id": "param_0007",
+      "parameter_identity": "sha256:07817236c33f28fa54a49f559e424d7e1fffa317141e8e6065842d461f24fa5a",
+      "name": "staffJobId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "25162"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0209",
+        "traffic_0210"
+      ]
+    },
+    {
+      "parameter_id": "param_0008",
+      "parameter_identity": "sha256:9b41c15d2cfb300781eb5b9aecf4f47ed4fde497dfb63d382462f6f3eed81ea1",
+      "name": "userId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "1"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0209",
+        "traffic_0210"
+      ]
+    },
+    {
+      "parameter_id": "param_0009",
+      "parameter_identity": "sha256:ae96964d4e6a1a66cb4400b07819042e86bb41e732154f9743d3b0dc0bc8051e",
+      "name": "Menu-Id",
+      "location": "header",
+      "type": "integer",
+      "values": [
+        "120008"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0209",
+        "traffic_0210"
+      ]
+    },
+    {
+      "parameter_id": "param_0010",
+      "parameter_identity": "sha256:1dd9a505e73cdd6bcd8234289099dbd24be920eb6ce82816cd722c8d8eb599c1",
+      "name": "Priority",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "u=1, i"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0209",
+        "traffic_0210"
+      ]
+    },
+    {
+      "parameter_id": "param_0011",
+      "parameter_identity": "sha256:213444847501f2e558cc5a35651ffb68fa6adfee811582de7561657e80ccbbc0",
+      "name": "comments",
+      "location": "query",
+      "type": "string",
+      "values": [
+        ""
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0209"
+      ]
+    },
+    {
+      "parameter_id": "param_0012",
+      "parameter_identity": "sha256:0c4c8161eb342467d903de509c694c7563ef68e1b62e326d21053b296b808139",
+      "name": "cpVersion",
+      "location": "query",
+      "type": "string",
+      "values": [
+        "A",
+        "B",
+        "C"
+      ],
+      "occurrence_count": 3,
+      "traffic_ids": [
+        "traffic_0209"
+      ]
+    },
+    {
+      "parameter_id": "param_0013",
+      "parameter_identity": "sha256:72310e7af93115fdcb8e93de795f833295d88888198cbee1918baba0c02e10c4",
+      "name": "effDate",
+      "location": "query",
+      "type": "string",
+      "values": [
+        ""
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0209"
+      ]
+    },
+    {
+      "parameter_id": "param_0014",
+      "parameter_identity": "sha256:e5ed28b2c35e4799fab9bd6ad692c39698a365062e1bea1b9af8d7c60e45e9a0",
+      "name": "expDate",
+      "location": "query",
+      "type": "string",
+      "values": [
+        ""
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0209"
+      ]
+    },
+    {
+      "parameter_id": "param_0015",
+      "parameter_identity": "sha256:829dcfa476c4234e6a83a898b99ac960a54d85f2aa3dfe3c64dadf7fe6dc4f1c",
+      "name": "htmlVersion",
+      "location": "query",
+      "type": "integer",
+      "values": [
+        "1794653129366"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0210"
+      ]
+    },
+    {
+      "parameter_id": "param_0016",
+      "parameter_identity": "sha256:4eb4ccc947f6701eca60e2f82e8071317cc97e6baae089fc7c24b044c1da2711",
+      "name": "srcPricePlanVer",
+      "location": "query",
+      "type": "string",
+      "values": [
+        "test"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0209"
+      ]
+    },
+    {
+      "parameter_id": "param_0017",
+      "parameter_identity": "sha256:09f310f855b8d0581afe6cfcbb5ac5b335e63dbbff2167b2b1f7df1cfac63681",
+      "name": "v",
+      "location": "query",
+      "type": "string",
+      "values": [
+        "9.3.6"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0210"
+      ]
+    }
+  ],
+  "inventory_id": "sha256:5934aca475bf17422dfa522ec91678127135d2efc6a213a64fb234f08c108295",
+  "request_examples": [
+    {
+      "traffic_id": "traffic_0209",
+      "principal_ref": "principal_33c24ad7c530",
+      "method": "GET",
+      "url": "https://10.10.177.111/portal-web/otc/modules/priceplan/templates/PricePlanVersionAddTpl.html?effDate=&expDate=&cpVersion=A&cpVersion=B&cpVersion=C&srcPricePlanVer=test&comments=",
+      "content_type": null,
+      "query": {
+        "effDate": [
+          ""
+        ],
+        "expDate": [
+          ""
+        ],
+        "cpVersion": [
+          "A",
+          "B",
+          "C"
+        ],
+        "srcPricePlanVer": [
+          "test"
+        ],
+        "comments": [
+          ""
+        ]
+      },
+      "body_excerpt": null,
+      "body_sha256": null
+    },
+    {
+      "traffic_id": "traffic_0210",
+      "principal_ref": "principal_33c24ad7c530",
+      "method": "GET",
+      "url": "https://10.10.177.111/portal-web/otc/modules/priceplan/templates/PricePlanVersionAddTpl.html?v=9.3.6&htmlVersion=1794653129366",
+      "content_type": null,
+      "query": {
+        "v": [
+          "9.3.6"
+        ],
+        "htmlVersion": [
+          "1794653129366"
+        ]
+      },
+      "body_excerpt": null,
+      "body_sha256": null
+    }
+  ],
+  "response_examples": [],
+  "auth_contexts": [
+    {
+      "principal_ref": "principal_33c24ad7c530",
+      "credential_ref": "cred_33c24ad7c530",
+      "auth_types": [
+        "cookie"
+      ],
+      "traffic_count": 2
+    }
+  ],
+  "business_context": {
+    "description": null,
+    "evidence": [
+      "parameter 'SP_ID' (cookie) suggests object identifier",
+      "parameter 'orgId' (cookie) suggests tenant identity",
+      "parameter 'userId' (cookie) suggests user identity",
+      "parameter 'srcPricePlanVer' (query) suggests monetary value",
+      "path segment 'priceplan' suggests monetary value",
+      "path segment 'PricePlanVersionAddTpl.html' suggests monetary value"
+    ]
+  },
+  "limitations": [
+    "2/2 traffic items have no captured response"
+  ]
+}

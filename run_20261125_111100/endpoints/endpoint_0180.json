@@ -1,0 +1,180 @@
+{
+  "endpoint_id": "endpoint_0180",
+  "method": "POST",
+  "scheme": "https",
+  "host": "10.10.177.111",
+  "path": "/portal-web/otc/priceDeposit/qryAllPriceDeposit",
+  "traffic_ids": [
+    "traffic_0269"
+  ],
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:9aed510306beaba9654d3e84fb10c78b921630c5c7004484463c9b08795af509",
+      "name": "HTML_VERSION",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "1794653129366"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0269"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:702ebb4afaca60c9440aeeebc0307f02f734d35c958645a5cb4d97cf48e4f380",
+      "name": "SP_ID",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "0"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0269"
+      ]
+    },
+    {
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:6c70252bbe3e668b40164bac247a06dc298dfa0f70ecb462755199582c9cde86",
+      "name": "ZSMART_LOCALE",
+      "location": "cookie",
+      "type": "string",
+      "values": [
+        "en"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0269"
+      ]
+    },
+    {
+      "parameter_id": "param_0004",
+      "parameter_identity": "sha256:13788c3ffb9e48855f31d971118be0082a3f4cc037b9ed84f4c2dfb9505f2859",
+      "name": "areaId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "100"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0269"
+      ]
+    },
+    {
+      "parameter_id": "param_0005",
+      "parameter_identity": "sha256:20bbf3dd4b9f7f90a454b3a69839f132217969693610fffd85b42a46f046560e",
+      "name": "isLocked",
+      "location": "cookie",
+      "type": "boolean",
+      "values": [
+        "false"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0269"
+      ]
+    },
+    {
+      "parameter_id": "param_0006",
+      "parameter_identity": "sha256:4e601cf7b5efe7842e5cdd0a91a61b8bde0cb41d42b1f5a61493556ef901683b",
+      "name": "orgId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "100"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0269"
+      ]
+    },
+    {
+      "parameter_id": "param_0007",
+      "parameter_identity": "sha256:310b011d7fce58744ea7f0619917b6693d09eeb97fad8e3620242aa5a89258af",
+      "name": "staffJobId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "25162"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0269"
+      ]
+    },
+    {
+      "parameter_id": "param_0008",
+      "parameter_identity": "sha256:4dfab50df12fbe677fe936d88c840c44176519d7a823693eef920ffc892ad927",
+      "name": "userId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "1"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0269"
+      ]
+    },
+    {
+      "parameter_id": "param_0009",
+      "parameter_identity": "sha256:2096c6c59c9073492584e5dc1726b465a829aed5052939b923507ef2e13f40b8",
+      "name": "Menu-Id",
+      "location": "header",
+      "type": "integer",
+      "values": [
+        "120008"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0269"
+      ]
+    },
+    {
+      "parameter_id": "param_0010",
+      "parameter_identity": "sha256:4f25960ad3167ce40377375de7186346692f28f23d42c4d8961ad0560338fe0f",
+      "name": "Priority",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "u=1, i"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0269"
+      ]
+    },
+    {
+      "parameter_id": "param_0011",
+      "parameter_identity": "sha256:0604c5fc0cf4a00df04bd8d4a6c56c08a8c8da08ba39a626212cd7f2dcdf5302",
+      "name": "priceClass",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "SUBS_DEPOSIT"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0269"
+      ]
+    },
+    {
+      "parameter_id": "param_0012",
+      "parameter_identity": "sha256:29daaab0ebdc91509e411c3079b40bf83b1a2dfd857ee2d3bcecb1763a0f7c1b",
+      "name": "pricePlanVerId",
+      "location": "json",
+      "type": "integer",
+      "values": [
+        "75800"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0269"
+      ]
+    }
+  ]
+}

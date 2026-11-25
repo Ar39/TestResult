@@ -1,0 +1,4 @@
+GET /portal-web/otc/domain/getProjectCode?_=1794797359772 HTTP/1.1
+Host: 10.10.177.111
+Cookie: userId=1; orgId=100
+

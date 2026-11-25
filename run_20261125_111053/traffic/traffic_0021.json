@@ -1,0 +1,201 @@
+{
+  "traffic_id": "traffic_0021",
+  "source": "burp_xml",
+  "request": {
+    "method": "POST",
+    "scheme": "https",
+    "host": "10.10.177.111",
+    "port": 443,
+    "path": "/portal-web/otc/cellingPrice/modCellingPrice",
+    "raw_target": "/portal-web/otc/cellingPrice/modCellingPrice",
+    "query": {},
+    "headers": [
+      {
+        "name": "Host",
+        "value": "10.10.177.111"
+      },
+      {
+        "name": "Cookie",
+        "value": "<credential:cred_fae43c395c0f>"
+      },
+      {
+        "name": "Content-Length",
+        "value": "1072"
+      },
+      {
+        "name": "Sec-Ch-Ua-Platform",
+        "value": "\"macOS\""
+      },
+      {
+        "name": "X-Csrf-Token",
+        "value": "<credential:cred_fae43c395c0f>"
+      },
+      {
+        "name": "Accept-Language",
+        "value": "zh-CN,zh;q=0.9"
+      },
+      {
+        "name": "Sec-Ch-Ua",
+        "value": "\"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"150\""
+      },
+      {
+        "name": "Sec-Ch-Ua-Mobile",
+        "value": "?0"
+      },
+      {
+        "name": "Menu-Id",
+        "value": "120011"
+      },
+      {
+        "name": "X-Requested-With",
+        "value": "XMLHttpRequest"
+      },
+      {
+        "name": "User-Agent",
+        "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+      },
+      {
+        "name": "Accept",
+        "value": "application/json, text/javascript, */*; q=0.01"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "name": "Origin",
+        "value": "https://10.10.177.111"
+      },
+      {
+        "name": "Sec-Fetch-Site",
+        "value": "same-origin"
+      },
+      {
+        "name": "Sec-Fetch-Mode",
+        "value": "cors"
+      },
+      {
+        "name": "Sec-Fetch-Dest",
+        "value": "empty"
+      },
+      {
+        "name": "Referer",
+        "value": "https://10.10.177.111/portal-web/"
+      },
+      {
+        "name": "Accept-Encoding",
+        "value": "gzip, deflate, br"
+      },
+      {
+        "name": "Priority",
+        "value": "u=1, i"
+      },
+      {
+        "name": "Connection",
+        "value": "keep-alive"
+      }
+    ],
+    "cookies": {
+      "isLocked": "false",
+      "staffJobId": "25162",
+      "ZSMART_LOCALE": "en",
+      "SP_ID": "0",
+      "areaId": "100",
+      "orgId": "100",
+      "userId": "1",
+      "HTML_VERSION": "1794653129366",
+      "SESSION": "<credential:cred_fae43c395c0f>"
+    },
+    "content_type": "application/json",
+    "body": {
+      "raw": "{\"cellPriceId\":1020,\"acctItemTypeId\":1,\"acctItemTypeName\":\"TAX\",\"acctItemTypeCode\":\"CODE:1\",\"conGroupId\":73704,\"priority\":1,\"cellPrice\":100,\"cellTimes\":null,\"state\":\"D\",\"stateDate\":null,\"createStaff\":1,\"updateStaff\":1,\"createDate\":\"2026-11-16 15:16:40\",\"updateDate\":\"2026-11-16 15:16:40\",\"offerId\":null,\"offerInstId\":null,\"otcConGroupDto\":{\"conGroupId\":73704,\"conGroupName\":\"(getAttrValue(Customer Feature:testDiana) In \\\">&lt;img/src=1> ) \",\"conGroupExpression\":\"(74104)\",\"otcConDtoList\":[{\"otcConLeft\":{\"conLeftId\":74104,\"conName\":\"getAttrValue(Customer Feature:testDiana)\",\"conCode\":null,\"conDesc\":null,\"funId\":65,\"lParam1\":\"testDiana\",\"lParam2\":null,\"lParam3\":null,\"factorId\":60,\"isList\":null},\"otcConRight\":{\"conRightId\":74104,\"conName\":\"\\\">&lt;img/src=1>\",\"conType\":\"B\",\"value\":\"\\\">&lt;img/src=1>\",\"factorId\":null,\"funId\":null,\"rParam1\":null,\"rParam2\":null},\"conId\":74104,\"conGroupId\":73704,\"conLeftId\":74104,\"operator\":5,\"conRightId\":74104,\"conName\":\"getAttrValue(Customer Feature:testDiana) In \\\">&lt;img/src=1>\"}],\"flag\":false},\"qryAcctItemFlag\":null,\"spId\":null}",
+      "content_type": "application/json",
+      "charset": null,
+      "binary": false,
+      "size_bytes": 1072,
+      "truncated": false,
+      "form": null,
+      "json_value": {
+        "cellPriceId": 1020,
+        "acctItemTypeId": 1,
+        "acctItemTypeName": "TAX",
+        "acctItemTypeCode": "CODE:1",
+        "conGroupId": 73704,
+        "priority": 1,
+        "cellPrice": 100,
+        "cellTimes": null,
+        "state": "D",
+        "stateDate": null,
+        "createStaff": 1,
+        "updateStaff": 1,
+        "createDate": "2026-11-16 15:16:40",
+        "updateDate": "2026-11-16 15:16:40",
+        "offerId": null,
+        "offerInstId": null,
+        "otcConGroupDto": {
+          "conGroupId": 73704,
+          "conGroupName": "(getAttrValue(Customer Feature:testDiana) In \">&lt;img/src=1> ) ",
+          "conGroupExpression": "(74104)",
+          "otcConDtoList": [
+            {
+              "otcConLeft": {
+                "conLeftId": 74104,
+                "conName": "getAttrValue(Customer Feature:testDiana)",
+                "conCode": null,
+                "conDesc": null,
+                "funId": 65,
+                "lParam1": "testDiana",
+                "lParam2": null,
+                "lParam3": null,
+                "factorId": 60,
+                "isList": null
+              },
+              "otcConRight": {
+                "conRightId": 74104,
+                "conName": "\">&lt;img/src=1>",
+                "conType": "B",
+                "value": "\">&lt;img/src=1>",
+                "factorId": null,
+                "funId": null,
+                "rParam1": null,
+                "rParam2": null
+              },
+              "conId": 74104,
+              "conGroupId": 73704,
+              "conLeftId": 74104,
+              "operator": 5,
+              "conRightId": 74104,
+              "conName": "getAttrValue(Customer Feature:testDiana) In \">&lt;img/src=1>"
+            }
+          ],
+          "flag": false
+        },
+        "qryAcctItemFlag": null,
+        "spId": null
+      },
+      "xml_paths": null,
+      "parse_warnings": []
+    }
+  },
+  "response": null,
+  "auth_context": {
+    "authenticated": true,
+    "principal_ref": "principal_fae43c395c0f",
+    "credential_ref": "cred_fae43c395c0f",
+    "auth_types": [
+      "api_key",
+      "cookie"
+    ]
+  },
+  "artifacts": [
+    {
+      "artifact_id": "artifact_0021",
+      "type": "http_request",
+      "path": "traffic/traffic_0021/request.txt",
+      "sha256": "8e36b3c5f4257cae0a8e47304785aa24fbbc12e058275e56a12ccd5689c41f96",
+      "size_bytes": 2015,
+      "created_at": "2026-11-25T11:10:53+08:00"
+    }
+  ],
+  "parse_warnings": []
+}

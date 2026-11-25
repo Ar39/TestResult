@@ -1,0 +1,236 @@
+{
+  "endpoint_id": "endpoint_0148",
+  "method": "GET",
+  "scheme": "https",
+  "host": "10.10.177.111",
+  "path": "/portal-web/otc/pricePlan/pricePlanVer/{p0}",
+  "traffic_ids": [
+    "traffic_0274",
+    "traffic_0275",
+    "traffic_0276",
+    "traffic_0277",
+    "traffic_0278"
+  ],
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:2510ba5edd5a2ff51b5b96c2f38829c883f2161fd638a86a58ed8d20de20d04b",
+      "name": "HTML_VERSION",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "1794653129366"
+      ],
+      "occurrence_count": 5,
+      "traffic_ids": [
+        "traffic_0274",
+        "traffic_0275",
+        "traffic_0276",
+        "traffic_0277",
+        "traffic_0278"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:473a032f94fcd3978fabaa1e00842f4c555b569313a3256db55585252d6da4fc",
+      "name": "SP_ID",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "0"
+      ],
+      "occurrence_count": 5,
+      "traffic_ids": [
+        "traffic_0274",
+        "traffic_0275",
+        "traffic_0276",
+        "traffic_0277",
+        "traffic_0278"
+      ]
+    },
+    {
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:82280b42b7f0b40cc24352135d44317a92730c1690fd4e3783efddd8327849ac",
+      "name": "ZSMART_LOCALE",
+      "location": "cookie",
+      "type": "string",
+      "values": [
+        "en"
+      ],
+      "occurrence_count": 5,
+      "traffic_ids": [
+        "traffic_0274",
+        "traffic_0275",
+        "traffic_0276",
+        "traffic_0277",
+        "traffic_0278"
+      ]
+    },
+    {
+      "parameter_id": "param_0004",
+      "parameter_identity": "sha256:c04b03b6d107dd0b5f5c73861def2269110b7bdb89142ae06464e34832254cce",
+      "name": "areaId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "100"
+      ],
+      "occurrence_count": 5,
+      "traffic_ids": [
+        "traffic_0274",
+        "traffic_0275",
+        "traffic_0276",
+        "traffic_0277",
+        "traffic_0278"
+      ]
+    },
+    {
+      "parameter_id": "param_0005",
+      "parameter_identity": "sha256:750fcda470fe45114bd1a8179ff766ff21a43996e5a88bbc1e9d5a8b2a5e7b01",
+      "name": "isLocked",
+      "location": "cookie",
+      "type": "boolean",
+      "values": [
+        "false"
+      ],
+      "occurrence_count": 5,
+      "traffic_ids": [
+        "traffic_0274",
+        "traffic_0275",
+        "traffic_0276",
+        "traffic_0277",
+        "traffic_0278"
+      ]
+    },
+    {
+      "parameter_id": "param_0006",
+      "parameter_identity": "sha256:a55f7b2642317142928cc3a60935959616f8143cda847aa99d2813f9dc27a9a2",
+      "name": "orgId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "100"
+      ],
+      "occurrence_count": 5,
+      "traffic_ids": [
+        "traffic_0274",
+        "traffic_0275",
+        "traffic_0276",
+        "traffic_0277",
+        "traffic_0278"
+      ]
+    },
+    {
+      "parameter_id": "param_0007",
+      "parameter_identity": "sha256:e4675f3239395d1598c5d16205818063d778cf5f90c7bb4998341e93fe069f19",
+      "name": "staffJobId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "25162"
+      ],
+      "occurrence_count": 5,
+      "traffic_ids": [
+        "traffic_0274",
+        "traffic_0275",
+        "traffic_0276",
+        "traffic_0277",
+        "traffic_0278"
+      ]
+    },
+    {
+      "parameter_id": "param_0008",
+      "parameter_identity": "sha256:4b2919502a2269f1eb75299807f0ab247e18201b876560cc4bd79ccfa94c5591",
+      "name": "userId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "1"
+      ],
+      "occurrence_count": 5,
+      "traffic_ids": [
+        "traffic_0274",
+        "traffic_0275",
+        "traffic_0276",
+        "traffic_0277",
+        "traffic_0278"
+      ]
+    },
+    {
+      "parameter_id": "param_0009",
+      "parameter_identity": "sha256:bb406a63628ac81d0754bea622ed9a5134804a54c9b84d0877e04da15e0f9780",
+      "name": "Menu-Id",
+      "location": "header",
+      "type": "integer",
+      "values": [
+        "120008"
+      ],
+      "occurrence_count": 5,
+      "traffic_ids": [
+        "traffic_0274",
+        "traffic_0275",
+        "traffic_0276",
+        "traffic_0277",
+        "traffic_0278"
+      ]
+    },
+    {
+      "parameter_id": "param_0010",
+      "parameter_identity": "sha256:278c0d71054c78f4246b9656e223ce78a8156bbc49aae454b5cdf10fed006d9e",
+      "name": "Priority",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "u=1, i"
+      ],
+      "occurrence_count": 5,
+      "traffic_ids": [
+        "traffic_0274",
+        "traffic_0275",
+        "traffic_0276",
+        "traffic_0277",
+        "traffic_0278"
+      ]
+    },
+    {
+      "parameter_id": "param_0011",
+      "parameter_identity": "sha256:ea855653c344be23cc08fa6f4f6b71e7b523c0e629beb727fb1f2ca7c886d724",
+      "name": "p0",
+      "location": "path",
+      "type": "integer",
+      "values": [
+        "22004800"
+      ],
+      "occurrence_count": 5,
+      "traffic_ids": [
+        "traffic_0274",
+        "traffic_0275",
+        "traffic_0276",
+        "traffic_0277",
+        "traffic_0278"
+      ]
+    },
+    {
+      "parameter_id": "param_0012",
+      "parameter_identity": "sha256:2b14b4f4f24b473cc58516d42b922c1ec0b0a3624d0bc2cf5867c8ecc46715f3",
+      "name": "_",
+      "location": "query",
+      "type": "integer",
+      "values": [
+        "1794797359780",
+        "1794797359791",
+        "1794797359803",
+        "1794797359807",
+        "1794797359808"
+      ],
+      "occurrence_count": 5,
+      "traffic_ids": [
+        "traffic_0274",
+        "traffic_0275",
+        "traffic_0276",
+        "traffic_0277",
+        "traffic_0278"
+      ]
+    }
+  ]
+}

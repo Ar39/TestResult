@@ -1,0 +1,488 @@
+{
+  "endpoint_id": "endpoint_0155",
+  "method": "POST",
+  "scheme": "https",
+  "host": "10.10.177.111",
+  "path": "/portal-web/otc/cellingPrice/addCellingPrice",
+  "traffic_ids": [
+    "traffic_0017"
+  ],
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:1b941f592f0b879be268fb5e4efae28d99689bad361c8cd1a9b3a0cd748def60",
+      "name": "HTML_VERSION",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "1794653129366"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0017"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:a375744fa8806208e62c83ba642372cb853523c9de482fea111c0ef9c539b4d1",
+      "name": "SP_ID",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "0"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0017"
+      ]
+    },
+    {
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:bf97781c1b8c9daf3da9ee042b6ad22ef2da70e821532d565a5ca97fb2da5ea3",
+      "name": "ZSMART_LOCALE",
+      "location": "cookie",
+      "type": "string",
+      "values": [
+        "en"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0017"
+      ]
+    },
+    {
+      "parameter_id": "param_0004",
+      "parameter_identity": "sha256:8e55c5ff8c930e51e8c7f7e9a756843ff5e2c47ca40d7a054d67f8a9ecca5080",
+      "name": "areaId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "100"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0017"
+      ]
+    },
+    {
+      "parameter_id": "param_0005",
+      "parameter_identity": "sha256:bcb5513d48d526e1c7425eac6660f69176602b47892c64214dd30744a584fe02",
+      "name": "isLocked",
+      "location": "cookie",
+      "type": "boolean",
+      "values": [
+        "false"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0017"
+      ]
+    },
+    {
+      "parameter_id": "param_0006",
+      "parameter_identity": "sha256:2f2af83141db1d495e9607411bdd3ee8848a6147f2b937e42fd07e8eb84f0ffb",
+      "name": "orgId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "100"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0017"
+      ]
+    },
+    {
+      "parameter_id": "param_0007",
+      "parameter_identity": "sha256:54cbfac10b6122dc52dfb4e45a4e284e756eba773d530d37cf538989874aed25",
+      "name": "staffJobId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "25162"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0017"
+      ]
+    },
+    {
+      "parameter_id": "param_0008",
+      "parameter_identity": "sha256:ce541d55b56303fdc5a533624f2e9eb2e0029cba0af28dacd3e8e7e4a5ec2f69",
+      "name": "userId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "1"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0017"
+      ]
+    },
+    {
+      "parameter_id": "param_0009",
+      "parameter_identity": "sha256:5af17bd5ddda90e2c4b48252d9fc6b70276b7cf488c6c0443262f7a634b23653",
+      "name": "Menu-Id",
+      "location": "header",
+      "type": "integer",
+      "values": [
+        "120011"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0017"
+      ]
+    },
+    {
+      "parameter_id": "param_0010",
+      "parameter_identity": "sha256:fa812be2c527205f46a227bcb33911c500608c34c7ade7737b875bfae8bbbab3",
+      "name": "Priority",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "u=1, i"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0017"
+      ]
+    },
+    {
+      "parameter_id": "param_0011",
+      "parameter_identity": "sha256:7b46319ffeb7ae650e963cbcd3602d19391e1f6ac1af626c6300d0b1a8ebfd9e",
+      "name": "acctItemTypeId",
+      "location": "json",
+      "type": "integer",
+      "values": [
+        "1"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0017"
+      ]
+    },
+    {
+      "parameter_id": "param_0012",
+      "parameter_identity": "sha256:bf69bc8c3597a8b44e5da6d6deaf577b4b2c0a714c0f0beb1a0173cf4c7c5dd6",
+      "name": "cellPrice",
+      "location": "json",
+      "type": "integer",
+      "values": [
+        "100"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0017"
+      ]
+    },
+    {
+      "parameter_id": "param_0013",
+      "parameter_identity": "sha256:c60238f446685ed8e7853bf7911aefcc4736f3ea91d41f61de9c74dee189b681",
+      "name": "otcConGroupDto.compressedValue",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "$(65,60,\"testDiana\")[5](B:\"><img/src=1>)"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0017"
+      ]
+    },
+    {
+      "parameter_id": "param_0014",
+      "parameter_identity": "sha256:3fb448d5d61f3f9ea28c15bc932ce58746716820a62a682de5bdcacfd22764f9",
+      "name": "otcConGroupDto.conExpDto.conGroupExp",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "(1)"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0017"
+      ]
+    },
+    {
+      "parameter_id": "param_0015",
+      "parameter_identity": "sha256:507d317adbf9efe79f1b3c02ba33fb4018a3a2d15791fcf6a62aaf061c028bfc",
+      "name": "otcConGroupDto.conExpDto.conList[0].conLeftDto.conName",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "getAttrValue(Customer Feature:testDiana)"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0017"
+      ]
+    },
+    {
+      "parameter_id": "param_0016",
+      "parameter_identity": "sha256:b08d591980655341d3933cfe1a9a6d14915ee33f9dafd6aea5a7122a9d9658ab",
+      "name": "otcConGroupDto.conExpDto.conList[0].conLeftDto.factorId",
+      "location": "json",
+      "type": "integer",
+      "values": [
+        "60"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0017"
+      ]
+    },
+    {
+      "parameter_id": "param_0017",
+      "parameter_identity": "sha256:a70435e0723c92e7aeeb92c15fd84dd484f13800cef05fa01544435eab2dfb5e",
+      "name": "otcConGroupDto.conExpDto.conList[0].conLeftDto.funId",
+      "location": "json",
+      "type": "integer",
+      "values": [
+        "65"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0017"
+      ]
+    },
+    {
+      "parameter_id": "param_0018",
+      "parameter_identity": "sha256:888fb57579b823d90d5436c526d50aaa104e6a79de5dd4796b180cbe29038fb1",
+      "name": "otcConGroupDto.conExpDto.conList[0].conLeftDto.lParam1",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "testDiana"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0017"
+      ]
+    },
+    {
+      "parameter_id": "param_0019",
+      "parameter_identity": "sha256:88cbd59b2080804043269423cec756e06fe5f005646ab4eac5284e54a0694dd9",
+      "name": "otcConGroupDto.conExpDto.conList[0].conRightDto.conName",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "\"><img/src=1>"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0017"
+      ]
+    },
+    {
+      "parameter_id": "param_0020",
+      "parameter_identity": "sha256:55e4be06ce28931d3bb08a00ac37ffcc6a64c5881cd3ba4ee588fac68d32863e",
+      "name": "otcConGroupDto.conExpDto.conList[0].conRightDto.conType",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "B"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0017"
+      ]
+    },
+    {
+      "parameter_id": "param_0021",
+      "parameter_identity": "sha256:5d69b0de380eecc483af6ad0facc0259a1d4eeab68185f1d7b8e604782620547",
+      "name": "otcConGroupDto.conExpDto.conList[0].conRightDto.value",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "\"><img/src=1>"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0017"
+      ]
+    },
+    {
+      "parameter_id": "param_0022",
+      "parameter_identity": "sha256:a58de7e13c2b2f559641eb0edb26dd470aa28efa280143c9a22ae2f599489de3",
+      "name": "otcConGroupDto.conExpDto.conList[0].operator",
+      "location": "json",
+      "type": "integer",
+      "values": [
+        "5"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0017"
+      ]
+    },
+    {
+      "parameter_id": "param_0023",
+      "parameter_identity": "sha256:7f56eead58e2e7ad9b1eb83362f8d217a5f262550121bde5fb930d0915045ed9",
+      "name": "otcConGroupDto.conGroupExpression",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "({})"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0017"
+      ]
+    },
+    {
+      "parameter_id": "param_0024",
+      "parameter_identity": "sha256:976d6bfd6873b50d3c2e6cacc49432e300331678e82ab27767ed061a2d03fcac",
+      "name": "otcConGroupDto.conGroupName",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "(getAttrValue(Customer Feature:testDiana) In \"><img/src=1> ) "
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0017"
+      ]
+    },
+    {
+      "parameter_id": "param_0025",
+      "parameter_identity": "sha256:e71d54c7531ed21bae3aa6f81de067a88accb8364b6f862c937cc307cd0fec65",
+      "name": "otcConGroupDto.otcConDtoList[0].conName",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "getAttrValue(Customer Feature:testDiana) In \"><img/src=1>"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0017"
+      ]
+    },
+    {
+      "parameter_id": "param_0026",
+      "parameter_identity": "sha256:7a92189f7a70d4a59142c861e10b48eadbe43be0bfecefd86b586dc9f88e8308",
+      "name": "otcConGroupDto.otcConDtoList[0].operator",
+      "location": "json",
+      "type": "integer",
+      "values": [
+        "5"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0017"
+      ]
+    },
+    {
+      "parameter_id": "param_0027",
+      "parameter_identity": "sha256:94b570440bf1ff31d6c53ec22a12979beb61aa2373dd69c18f66efd367e93fd6",
+      "name": "otcConGroupDto.otcConDtoList[0].otcConLeft.conName",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "getAttrValue(Customer Feature:testDiana)"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0017"
+      ]
+    },
+    {
+      "parameter_id": "param_0028",
+      "parameter_identity": "sha256:a2ea1a33f7a640542582d938c8a31cfcc8a18272bd4935c0592bbe35392a2e55",
+      "name": "otcConGroupDto.otcConDtoList[0].otcConLeft.factorId",
+      "location": "json",
+      "type": "integer",
+      "values": [
+        "60"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0017"
+      ]
+    },
+    {
+      "parameter_id": "param_0029",
+      "parameter_identity": "sha256:0276913bf4f2075fcaf652ce343fdb458582eb20cc88b04a75f26a8eae11df81",
+      "name": "otcConGroupDto.otcConDtoList[0].otcConLeft.funId",
+      "location": "json",
+      "type": "integer",
+      "values": [
+        "65"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0017"
+      ]
+    },
+    {
+      "parameter_id": "param_0030",
+      "parameter_identity": "sha256:4141e06a1164d07a58d809244b4f7a640ab6d78e31bf1d05b115bd05d3d3d3ec",
+      "name": "otcConGroupDto.otcConDtoList[0].otcConLeft.lParam1",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "testDiana"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0017"
+      ]
+    },
+    {
+      "parameter_id": "param_0031",
+      "parameter_identity": "sha256:1e95e10b8d8c94b3587113c8f27759437746fb3eeaaa8d9d729a69c6c2f6c324",
+      "name": "otcConGroupDto.otcConDtoList[0].otcConRight.conName",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "\"><img/src=1>"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0017"
+      ]
+    },
+    {
+      "parameter_id": "param_0032",
+      "parameter_identity": "sha256:556786eefb53286f6ffd9e0117ec63339d3832424211be944f1f8990a138e932",
+      "name": "otcConGroupDto.otcConDtoList[0].otcConRight.conType",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "B"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0017"
+      ]
+    },
+    {
+      "parameter_id": "param_0033",
+      "parameter_identity": "sha256:216042cb1a4373eecedc3ee9e9ad8c7ca0d8e476d17db0c38c41532453db63f1",
+      "name": "otcConGroupDto.otcConDtoList[0].otcConRight.value",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "\"><img/src=1>"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0017"
+      ]
+    },
+    {
+      "parameter_id": "param_0034",
+      "parameter_identity": "sha256:4ceefdcd61c09438f27ab75770a4effc0a838075acf5738b22919e324962890e",
+      "name": "priority",
+      "location": "json",
+      "type": "integer",
+      "values": [
+        "1"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0017"
+      ]
+    }
+  ]
+}

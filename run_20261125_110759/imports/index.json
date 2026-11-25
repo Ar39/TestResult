@@ -1,0 +1,13 @@
+[
+  {
+    "import_id": "import_831ca3fe",
+    "run_id": "run_20261125_110759",
+    "total": 1,
+    "success": 1,
+    "failed": 0,
+    "traffic_ids": [
+      "traffic_0001"
+    ],
+    "errors": []
+  }
+]

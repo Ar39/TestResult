@@ -1,0 +1,111 @@
+{
+  "traffic_id": "traffic_0024",
+  "source": "burp_xml",
+  "request": {
+    "method": "GET",
+    "scheme": "https",
+    "host": "10.10.177.111",
+    "port": 443,
+    "path": "/portal-web/otc/constant/Constant.js",
+    "raw_target": "/portal-web/otc/constant/Constant.js?v=9.3.6&htmlVersion=1794653129366",
+    "query": {
+      "v": [
+        "9.3.6"
+      ],
+      "htmlVersion": [
+        "1794653129366"
+      ]
+    },
+    "headers": [
+      {
+        "name": "Host",
+        "value": "10.10.177.111"
+      },
+      {
+        "name": "Cookie",
+        "value": "<credential:cred_33c24ad7c530>"
+      },
+      {
+        "name": "Sec-Ch-Ua-Platform",
+        "value": "\"macOS\""
+      },
+      {
+        "name": "Accept-Language",
+        "value": "zh-CN,zh;q=0.9"
+      },
+      {
+        "name": "Sec-Ch-Ua",
+        "value": "\"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"150\""
+      },
+      {
+        "name": "User-Agent",
+        "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+      },
+      {
+        "name": "Sec-Ch-Ua-Mobile",
+        "value": "?0"
+      },
+      {
+        "name": "Accept",
+        "value": "*/*"
+      },
+      {
+        "name": "Sec-Fetch-Site",
+        "value": "same-origin"
+      },
+      {
+        "name": "Sec-Fetch-Mode",
+        "value": "no-cors"
+      },
+      {
+        "name": "Sec-Fetch-Dest",
+        "value": "script"
+      },
+      {
+        "name": "Referer",
+        "value": "https://10.10.177.111/portal-web/"
+      },
+      {
+        "name": "Accept-Encoding",
+        "value": "gzip, deflate, br"
+      },
+      {
+        "name": "Connection",
+        "value": "keep-alive"
+      }
+    ],
+    "cookies": {
+      "isLocked": "false",
+      "staffJobId": "25162",
+      "ZSMART_LOCALE": "en",
+      "SP_ID": "0",
+      "areaId": "100",
+      "orgId": "100",
+      "userId": "1",
+      "HTML_VERSION": "1794653129366",
+      "SESSION": "<credential:cred_33c24ad7c530>"
+    },
+    "content_type": null,
+    "body": null
+  },
+  "response": null,
+  "auth_context": {
+    "authenticated": true,
+    "principal_ref": "principal_33c24ad7c530",
+    "credential_ref": "cred_33c24ad7c530",
+    "auth_types": [
+      "cookie"
+    ]
+  },
+  "artifacts": [
+    {
+      "artifact_id": "artifact_0024",
+      "type": "http_request",
+      "path": "traffic/traffic_0024/request.txt",
+      "sha256": "81b7e49f838bbcb026b07e32bd546ba0a7bd7e3f82b7afafb4f69eb7cbdb8c7f",
+      "size_bytes": 730,
+      "created_at": "2026-11-25T11:10:53+08:00"
+    }
+  ],
+  "parse_warnings": []
+}

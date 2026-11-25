@@ -1,0 +1,166 @@
+{
+  "endpoint_id": "endpoint_0179",
+  "method": "POST",
+  "scheme": "https",
+  "host": "10.10.177.111",
+  "path": "/portal-web/otc/priceDeposit/qryAllDepositType",
+  "traffic_ids": [
+    "traffic_0268"
+  ],
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:67cc9a36d4d4ea2431fc0b4cb479cdb87b9376fbebb0fcf74f6e0c2d535a7c56",
+      "name": "HTML_VERSION",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "1794653129366"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0268"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:66afd6f6af0c4d1a38e5709f4dd3695f56cb0122398add0a05eae678d096b63d",
+      "name": "SP_ID",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "0"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0268"
+      ]
+    },
+    {
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:92f2878627f9445b8cb5ce93742ba966224728f36d3ab944da5208ac40260962",
+      "name": "ZSMART_LOCALE",
+      "location": "cookie",
+      "type": "string",
+      "values": [
+        "en"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0268"
+      ]
+    },
+    {
+      "parameter_id": "param_0004",
+      "parameter_identity": "sha256:6dd2c38c4c99afa98a4aec2338d6ba44f4e000f8f0040ebe95f8d416835789f1",
+      "name": "areaId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "100"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0268"
+      ]
+    },
+    {
+      "parameter_id": "param_0005",
+      "parameter_identity": "sha256:0be6619649bba64b24d7f6722ab8def84817d50e24ad94023a2bdeeb64c65c4b",
+      "name": "isLocked",
+      "location": "cookie",
+      "type": "boolean",
+      "values": [
+        "false"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0268"
+      ]
+    },
+    {
+      "parameter_id": "param_0006",
+      "parameter_identity": "sha256:4cc7c6192fe90f6fa5f8a0e15328ac4d7008c57410b989796187341d7264b5f9",
+      "name": "orgId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "100"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0268"
+      ]
+    },
+    {
+      "parameter_id": "param_0007",
+      "parameter_identity": "sha256:99e86d0cee6c043df54402c2d5f540366f16c83d4c51b9c3e0393f02ad1f756c",
+      "name": "staffJobId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "25162"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0268"
+      ]
+    },
+    {
+      "parameter_id": "param_0008",
+      "parameter_identity": "sha256:f3e1db432f55f64c49f32c67d49df66edc705edfb94ea0bcde591083a44ebcc2",
+      "name": "userId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "1"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0268"
+      ]
+    },
+    {
+      "parameter_id": "param_0009",
+      "parameter_identity": "sha256:8f7f6a29aa21b16db05bc16fbf3c3544002374941bd6307ec9bbcb246d47983e",
+      "name": "Menu-Id",
+      "location": "header",
+      "type": "integer",
+      "values": [
+        "120008"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0268"
+      ]
+    },
+    {
+      "parameter_id": "param_0010",
+      "parameter_identity": "sha256:f65b249e4886ab15eb60fc913c7889f1cc07a234ea30e72a3a24e7320bf42365",
+      "name": "Priority",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "u=1, i"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0268"
+      ]
+    },
+    {
+      "parameter_id": "param_0011",
+      "parameter_identity": "sha256:947c21931e1dddd43c1ea36157ddb9fe9e3d758e8a74538f9365cb507ae058b8",
+      "name": "applyObj",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "S"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0268"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,267 @@
+{
+  "endpoint_id": "endpoint_0184",
+  "method": "POST",
+  "scheme": "https",
+  "host": "10.10.177.111",
+  "path": "/portal-web/otc/scriptTemplate/add",
+  "path_examples": [
+    "/portal-web/otc/scriptTemplate/add"
+  ],
+  "traffic_count": 2,
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:3ef3ff2a1ae9e34a0591e78756c0d53fa6dffa65bd9ce62db6f0915fa0834bea",
+      "name": "HTML_VERSION",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "1794653129366",
+        "1794535466642"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0290",
+        "traffic_0291"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:936b6d008facb4f062f7383dda1f75561aacb73737e2e4e3256fd493f8226808",
+      "name": "SP_ID",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "0"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0290",
+        "traffic_0291"
+      ]
+    },
+    {
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:b4e8ac97f9c58ee609a5387e36f73f5b076c832e400a073e2a3782282a1b7b4a",
+      "name": "ZSMART_LOCALE",
+      "location": "cookie",
+      "type": "string",
+      "values": [
+        "en"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0290",
+        "traffic_0291"
+      ]
+    },
+    {
+      "parameter_id": "param_0004",
+      "parameter_identity": "sha256:bec9758c0a463304aaf656c6e11d2c9f881eb83fa2dd35444b62371d72395248",
+      "name": "areaId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "100"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0290",
+        "traffic_0291"
+      ]
+    },
+    {
+      "parameter_id": "param_0005",
+      "parameter_identity": "sha256:7db83581ceef009f06640b118ca49664aacb31949ba528361b520b912157cf85",
+      "name": "isLocked",
+      "location": "cookie",
+      "type": "boolean",
+      "values": [
+        "false"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0290",
+        "traffic_0291"
+      ]
+    },
+    {
+      "parameter_id": "param_0006",
+      "parameter_identity": "sha256:c33c56b681c2bfbf6e043e08ffb00a17aaf6c4fab912081f706b978b4a640219",
+      "name": "orgId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "100"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0290",
+        "traffic_0291"
+      ]
+    },
+    {
+      "parameter_id": "param_0007",
+      "parameter_identity": "sha256:7a1d0fc9bc1c280f17ed1ce5123fde308f876dc01b5d8f2b1824d874f10c0195",
+      "name": "staffJobId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "25162"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0290",
+        "traffic_0291"
+      ]
+    },
+    {
+      "parameter_id": "param_0008",
+      "parameter_identity": "sha256:0ad3e1df1ee06095344e182e0aa211f3b9ac1f041a605b2fa87621e5832a7638",
+      "name": "userId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "1"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0290",
+        "traffic_0291"
+      ]
+    },
+    {
+      "parameter_id": "param_0009",
+      "parameter_identity": "sha256:6e5ea7f5ed929de4852c7983e94ef8571e4e7256723d437876a8ab6d42384bee",
+      "name": "Menu-Id",
+      "location": "header",
+      "type": "integer",
+      "values": [
+        "120018"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0290",
+        "traffic_0291"
+      ]
+    },
+    {
+      "parameter_id": "param_0010",
+      "parameter_identity": "sha256:0f7e1daea01b0fd82070fc7e7aadfa955f0251e05805c3134237223f279a3228",
+      "name": "Priority",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "u=1, i"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0290",
+        "traffic_0291"
+      ]
+    },
+    {
+      "parameter_id": "param_0011",
+      "parameter_identity": "sha256:8d25fd2ba72652cacd425757b9f23ec4c4196b054c3a5e37535b4d710b99a55b",
+      "name": "comments",
+      "location": "json",
+      "type": "string",
+      "values": [
+        ""
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0290",
+        "traffic_0291"
+      ]
+    },
+    {
+      "parameter_id": "param_0012",
+      "parameter_identity": "sha256:0bd4975e8a3749d0e0dc73aa92612384c62faa03010f41833f9e622d74db868a",
+      "name": "ruleScript",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "ParamUtils.getNumberParam('1')\nprint(\"123\")",
+        "print(\"123\")"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0290",
+        "traffic_0291"
+      ]
+    },
+    {
+      "parameter_id": "param_0013",
+      "parameter_identity": "sha256:a558e8b813d8f277361e94e32e4ac7484c4a8bf48d1f9c45579fb59323c02695",
+      "name": "templateName",
+      "location": "json",
+      "type": "integer",
+      "values": [
+        "1",
+        "123"
+      ],
+      "occurrence_count": 2,
+      "traffic_ids": [
+        "traffic_0290",
+        "traffic_0291"
+      ]
+    }
+  ],
+  "inventory_id": "sha256:c3c93ed638e232b95d046248c50e345ae532d4b603dc3de5635edd011f8d1b90",
+  "request_examples": [
+    {
+      "traffic_id": "traffic_0290",
+      "principal_ref": "principal_fae43c395c0f",
+      "method": "POST",
+      "url": "https://10.10.177.111/portal-web/otc/scriptTemplate/add",
+      "content_type": "application/json",
+      "query": null,
+      "body_excerpt": "{\"templateName\":\"1\",\"ruleScript\":\"ParamUtils.getNumberParam('1')\\nprint(\\\"123\\\")\",\"comments\":\"\"}",
+      "body_sha256": "29f940e9626c4a17f340754fc6cd857bcda4a10827bdd06103ebe83393476197"
+    },
+    {
+      "traffic_id": "traffic_0291",
+      "principal_ref": "principal_cc0f14c7dfc3",
+      "method": "POST",
+      "url": "https://10.10.177.111/portal-web/otc/scriptTemplate/add",
+      "content_type": "application/json",
+      "query": null,
+      "body_excerpt": "{\"templateName\":\"123\",\"ruleScript\":\"print(\\\"123\\\")\",\"comments\":\"\"}",
+      "body_sha256": "47a3c8842f643fdfd7e91525e893e3052bf6f710f30a8853c1a41c574e8bda32"
+    }
+  ],
+  "response_examples": [],
+  "auth_contexts": [
+    {
+      "principal_ref": "principal_cc0f14c7dfc3",
+      "credential_ref": "cred_cc0f14c7dfc3",
+      "auth_types": [
+        "api_key",
+        "cookie"
+      ],
+      "traffic_count": 1
+    },
+    {
+      "principal_ref": "principal_fae43c395c0f",
+      "credential_ref": "cred_fae43c395c0f",
+      "auth_types": [
+        "api_key",
+        "cookie"
+      ],
+      "traffic_count": 1
+    }
+  ],
+  "business_context": {
+    "description": null,
+    "evidence": [
+      "parameter 'SP_ID' (cookie) suggests object identifier",
+      "parameter 'orgId' (cookie) suggests tenant identity",
+      "parameter 'userId' (cookie) suggests user identity",
+      "parameter 'templateName' (json) suggests search / filter"
+    ]
+  },
+  "limitations": [
+    "2/2 traffic items have no captured response"
+  ]
+}

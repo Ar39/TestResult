@@ -1,0 +1,19 @@
+GET /portal-web/otc/modules/price/templates/CondPopTpl.html?funId=&factorId=&operator=&conType=B&conType=C&conType=A&value= HTTP/1.1
+Host: 10.10.177.111
+Cookie: isLocked=false; staffJobId=25162; ZSMART_LOCALE=en; SP_ID=0; areaId=100; orgId=100; userId=1; HTML_VERSION=1794653129366; SESSION=105f73e4-073a-43a4-83f9-970a48648bed
+Sec-Ch-Ua-Platform: "macOS"
+Accept-Language: zh-CN,zh;q=0.9
+Sec-Ch-Ua: "Not;A=Brand";v="8", "Chromium";v="150"
+Sec-Ch-Ua-Mobile: ?0
+Menu-Id: 120008
+X-Requested-With: XMLHttpRequest
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36
+Accept: text/plain, */*; q=0.01
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: https://10.10.177.111/portal-web/
+Accept-Encoding: gzip, deflate, br
+Priority: u=1, i
+Connection: keep-alive
+

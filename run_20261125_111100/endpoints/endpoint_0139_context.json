@@ -1,0 +1,241 @@
+{
+  "endpoint_id": "endpoint_0139",
+  "method": "GET",
+  "scheme": "https",
+  "host": "10.10.177.111",
+  "path": "/portal-web/otc/offerPricing",
+  "path_examples": [
+    "/portal-web/otc/offerPricing"
+  ],
+  "traffic_count": 1,
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:9a4637240797362d2091cfac584119dec6b4ce3042c52b5cf63881c98ef7dd0f",
+      "name": "HTML_VERSION",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "1794653129366"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0240"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:37ac4601ac44800fe21ad6900261d947277129278273df90acf257dabfde084a",
+      "name": "SP_ID",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "0"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0240"
+      ]
+    },
+    {
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:56989ede07727b2b387fbf63458a9e275d2ea34d6bbe11d41459b83f279814bd",
+      "name": "ZSMART_LOCALE",
+      "location": "cookie",
+      "type": "string",
+      "values": [
+        "en"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0240"
+      ]
+    },
+    {
+      "parameter_id": "param_0004",
+      "parameter_identity": "sha256:798c6506b7623387cf8cf88206ecf09e3372f9a2f5b643da34d62495722ff2ec",
+      "name": "areaId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "100"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0240"
+      ]
+    },
+    {
+      "parameter_id": "param_0005",
+      "parameter_identity": "sha256:48c23c3c006cf6550ba191e057cf182838567fe983cf1485e5369a244b3161e6",
+      "name": "isLocked",
+      "location": "cookie",
+      "type": "boolean",
+      "values": [
+        "false"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0240"
+      ]
+    },
+    {
+      "parameter_id": "param_0006",
+      "parameter_identity": "sha256:553d6379266837ce1db391bbae1e3c8c1c38482461a4dcd82add107b0a961775",
+      "name": "orgId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "100"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0240"
+      ]
+    },
+    {
+      "parameter_id": "param_0007",
+      "parameter_identity": "sha256:940607b822b7d35dac6f61c0a0bc28f2e54ab6d04efaaa255f4c58ec012675d5",
+      "name": "staffJobId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "25162"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0240"
+      ]
+    },
+    {
+      "parameter_id": "param_0008",
+      "parameter_identity": "sha256:fd5c3d597e9ee8c39d3d7f29e594a9b32658e531dfd8c21772863ff3b217dbd8",
+      "name": "userId",
+      "location": "cookie",
+      "type": "integer",
+      "values": [
+        "1"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0240"
+      ]
+    },
+    {
+      "parameter_id": "param_0009",
+      "parameter_identity": "sha256:47bf2d5f5f703859759db89ac6270c72ee058f46591fe47c6194f4accc9a7b0c",
+      "name": "Menu-Id",
+      "location": "header",
+      "type": "integer",
+      "values": [
+        "120009"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0240"
+      ]
+    },
+    {
+      "parameter_id": "param_0010",
+      "parameter_identity": "sha256:2aba1befc52c5d1dd70d85c31b3a15825c9b976a8191f5940c4963d0bb77cff6",
+      "name": "Priority",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "u=1, i"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0240"
+      ]
+    },
+    {
+      "parameter_id": "param_0011",
+      "parameter_identity": "sha256:c26ff79bc7bed3af6d33299362276a22c99c7fd468242a4e5edd31c89bb8de6c",
+      "name": "_",
+      "location": "query",
+      "type": "integer",
+      "values": [
+        "1794797359817"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0240"
+      ]
+    },
+    {
+      "parameter_id": "param_0012",
+      "parameter_identity": "sha256:1a088e32432c21ec4084acf25fcec8b79efbdf4e3f79047b3905a2d19f3b98cf",
+      "name": "page",
+      "location": "query",
+      "type": "integer",
+      "values": [
+        "1"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0240"
+      ]
+    },
+    {
+      "parameter_id": "param_0013",
+      "parameter_identity": "sha256:6e5192a86e8b260296309cd610aadbec4946bc0e1229fdcdba23ea20ad4a8bb5",
+      "name": "rowNum",
+      "location": "query",
+      "type": "integer",
+      "values": [
+        "10"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0240"
+      ]
+    }
+  ],
+  "inventory_id": "sha256:62a196dc4d107a2c84e313f6d812e70c585ba3fa4dc59d60e14e7896a221f3b1",
+  "request_examples": [
+    {
+      "traffic_id": "traffic_0240",
+      "principal_ref": "principal_c8a93705deac",
+      "method": "GET",
+      "url": "https://10.10.177.111/portal-web/otc/offerPricing?rowNum=10&page=1&_=1794797359817",
+      "content_type": null,
+      "query": {
+        "rowNum": [
+          "10"
+        ],
+        "page": [
+          "1"
+        ],
+        "_": [
+          "1794797359817"
+        ]
+      },
+      "body_excerpt": null,
+      "body_sha256": null
+    }
+  ],
+  "response_examples": [],
+  "auth_contexts": [
+    {
+      "principal_ref": "principal_c8a93705deac",
+      "credential_ref": "cred_c8a93705deac",
+      "auth_types": [
+        "api_key",
+        "cookie"
+      ],
+      "traffic_count": 1
+    }
+  ],
+  "business_context": {
+    "description": null,
+    "evidence": [
+      "parameter 'SP_ID' (cookie) suggests object identifier",
+      "parameter 'orgId' (cookie) suggests tenant identity",
+      "parameter 'userId' (cookie) suggests user identity"
+    ]
+  },
+  "limitations": [
+    "1/1 traffic items have no captured response"
+  ]
+}

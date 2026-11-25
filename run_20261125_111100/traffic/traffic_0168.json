@@ -1,0 +1,132 @@
+{
+  "traffic_id": "traffic_0168",
+  "source": "burp_xml",
+  "request": {
+    "method": "GET",
+    "scheme": "https",
+    "host": "10.10.177.111",
+    "port": 443,
+    "path": "/portal-web/otc/modules/paymentdecision/templates/CreditTermsTpl.html",
+    "raw_target": "/portal-web/otc/modules/paymentdecision/templates/CreditTermsTpl.html?decisionId=&conGroupExpression=test&priority=test&creditTerms=test&termsUnit=test",
+    "query": {
+      "decisionId": [
+        ""
+      ],
+      "conGroupExpression": [
+        "test"
+      ],
+      "priority": [
+        "test"
+      ],
+      "creditTerms": [
+        "test"
+      ],
+      "termsUnit": [
+        "test"
+      ]
+    },
+    "headers": [
+      {
+        "name": "Host",
+        "value": "10.10.177.111"
+      },
+      {
+        "name": "Cookie",
+        "value": "<credential:cred_33c24ad7c530>"
+      },
+      {
+        "name": "Sec-Ch-Ua-Platform",
+        "value": "\"macOS\""
+      },
+      {
+        "name": "Accept-Language",
+        "value": "zh-CN,zh;q=0.9"
+      },
+      {
+        "name": "Sec-Ch-Ua",
+        "value": "\"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"150\""
+      },
+      {
+        "name": "Sec-Ch-Ua-Mobile",
+        "value": "?0"
+      },
+      {
+        "name": "Menu-Id",
+        "value": "120005"
+      },
+      {
+        "name": "X-Requested-With",
+        "value": "XMLHttpRequest"
+      },
+      {
+        "name": "User-Agent",
+        "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+      },
+      {
+        "name": "Accept",
+        "value": "text/plain, */*; q=0.01"
+      },
+      {
+        "name": "Sec-Fetch-Site",
+        "value": "same-origin"
+      },
+      {
+        "name": "Sec-Fetch-Mode",
+        "value": "cors"
+      },
+      {
+        "name": "Sec-Fetch-Dest",
+        "value": "empty"
+      },
+      {
+        "name": "Referer",
+        "value": "https://10.10.177.111/portal-web/"
+      },
+      {
+        "name": "Accept-Encoding",
+        "value": "gzip, deflate, br"
+      },
+      {
+        "name": "Priority",
+        "value": "u=1, i"
+      },
+      {
+        "name": "Connection",
+        "value": "keep-alive"
+      }
+    ],
+    "cookies": {
+      "isLocked": "false",
+      "staffJobId": "25162",
+      "ZSMART_LOCALE": "en",
+      "SP_ID": "0",
+      "areaId": "100",
+      "orgId": "100",
+      "userId": "1",
+      "HTML_VERSION": "1794653129366",
+      "SESSION": "<credential:cred_33c24ad7c530>"
+    },
+    "content_type": null,
+    "body": null
+  },
+  "response": null,
+  "auth_context": {
+    "authenticated": true,
+    "principal_ref": "principal_33c24ad7c530",
+    "credential_ref": "cred_33c24ad7c530",
+    "auth_types": [
+      "cookie"
+    ]
+  },
+  "artifacts": [
+    {
+      "artifact_id": "artifact_0168",
+      "type": "http_request",
+      "path": "traffic/traffic_0168/request.txt",
+      "sha256": "9a9919ea318357a81ef04261ac97c6a9f2f47e12241f4da8656bc7ad5155b75b",
+      "size_bytes": 893,
+      "created_at": "2026-11-25T11:11:04+08:00"
+    }
+  ],
+  "parse_warnings": []
+}

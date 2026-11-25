@@ -1,0 +1,146 @@
+{
+  "traffic_id": "traffic_0063",
+  "source": "burp_xml",
+  "request": {
+    "method": "POST",
+    "scheme": "https",
+    "host": "10.10.177.111",
+    "port": 443,
+    "path": "/portal-web/otc/domain/qryOtcConAttrType",
+    "raw_target": "/portal-web/otc/domain/qryOtcConAttrType",
+    "query": {},
+    "headers": [
+      {
+        "name": "Host",
+        "value": "10.10.177.111"
+      },
+      {
+        "name": "Cookie",
+        "value": "<credential:cred_fae43c395c0f>"
+      },
+      {
+        "name": "Content-Length",
+        "value": "18"
+      },
+      {
+        "name": "Sec-Ch-Ua-Platform",
+        "value": "\"macOS\""
+      },
+      {
+        "name": "X-Csrf-Token",
+        "value": "<credential:cred_fae43c395c0f>"
+      },
+      {
+        "name": "Accept-Language",
+        "value": "zh-CN,zh;q=0.9"
+      },
+      {
+        "name": "Sec-Ch-Ua",
+        "value": "\"Not;A=Brand\";v=\"8\", \"Chromium\";v=\"150\""
+      },
+      {
+        "name": "Sec-Ch-Ua-Mobile",
+        "value": "?0"
+      },
+      {
+        "name": "Menu-Id",
+        "value": "120019"
+      },
+      {
+        "name": "X-Requested-With",
+        "value": "XMLHttpRequest"
+      },
+      {
+        "name": "User-Agent",
+        "value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+      },
+      {
+        "name": "Accept",
+        "value": "application/json, text/javascript, */*; q=0.01"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "name": "Origin",
+        "value": "https://10.10.177.111"
+      },
+      {
+        "name": "Sec-Fetch-Site",
+        "value": "same-origin"
+      },
+      {
+        "name": "Sec-Fetch-Mode",
+        "value": "cors"
+      },
+      {
+        "name": "Sec-Fetch-Dest",
+        "value": "empty"
+      },
+      {
+        "name": "Referer",
+        "value": "https://10.10.177.111/portal-web/"
+      },
+      {
+        "name": "Accept-Encoding",
+        "value": "gzip, deflate, br"
+      },
+      {
+        "name": "Priority",
+        "value": "u=1, i"
+      },
+      {
+        "name": "Connection",
+        "value": "keep-alive"
+      }
+    ],
+    "cookies": {
+      "isLocked": "false",
+      "staffJobId": "25162",
+      "ZSMART_LOCALE": "en",
+      "SP_ID": "0",
+      "areaId": "100",
+      "orgId": "100",
+      "userId": "1",
+      "HTML_VERSION": "1794653129366",
+      "SESSION": "<credential:cred_fae43c395c0f>"
+    },
+    "content_type": "application/json",
+    "body": {
+      "raw": "{\"applyType\":\"17\"}",
+      "content_type": "application/json",
+      "charset": null,
+      "binary": false,
+      "size_bytes": 18,
+      "truncated": false,
+      "form": null,
+      "json_value": {
+        "applyType": "17"
+      },
+      "xml_paths": null,
+      "parse_warnings": []
+    }
+  },
+  "response": null,
+  "auth_context": {
+    "authenticated": true,
+    "principal_ref": "principal_fae43c395c0f",
+    "credential_ref": "cred_fae43c395c0f",
+    "auth_types": [
+      "api_key",
+      "cookie"
+    ]
+  },
+  "artifacts": [
+    {
+      "artifact_id": "artifact_0063",
+      "type": "http_request",
+      "path": "traffic/traffic_0063/request.txt",
+      "sha256": "38036175e801bda9c9e5b0c797ee8a501839bdcb0da9b02040bc0ef845c2850a",
+      "size_bytes": 955,
+      "created_at": "2026-11-25T11:11:02+08:00"
+    }
+  ],
+  "parse_warnings": []
+}
