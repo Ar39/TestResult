@@ -1,0 +1,3 @@
+GET /a1 HTTP/1.1
+Host: devnull.example.invalid
+

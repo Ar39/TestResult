@@ -1,0 +1,78 @@
+{
+  "endpoint_id": "endpoint_0060",
+  "method": "POST",
+  "scheme": "http",
+  "host": "lab-otc.example.invalid",
+  "path": "/api/v1/xml/validate",
+  "path_examples": [
+    "/api/v1/xml/validate"
+  ],
+  "traffic_count": 1,
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:16abe3296a48f80ab0d3026f9b720d1646a922a3d9357bff15d98306c79817d6",
+      "name": "X-Lab-Case",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "OTC-BENCH-026"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0026"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:30209566e4b30efb3ac0b1c9ebc8d58d0188e7234ec9b2223e9a17d36e2a0345",
+      "name": "root/name",
+      "location": "xml",
+      "type": "string",
+      "values": [
+        "LAB"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0026"
+      ]
+    }
+  ],
+  "inventory_id": "sha256:001d476ba7214d9b348372b466fed887ea20fd730ec2b85e0ec989665b4e8f8a",
+  "request_examples": [
+    {
+      "traffic_id": "traffic_0026",
+      "principal_ref": null,
+      "method": "POST",
+      "url": "http://lab-otc.example.invalid/api/v1/xml/validate",
+      "content_type": "application/xml",
+      "query": null,
+      "body_excerpt": "\n<root><name>LAB</name></root>",
+      "body_sha256": "790f25ada01923b4ef158dc4243fb30ee7061f2ee62380ce641d486723a6e9be"
+    }
+  ],
+  "response_examples": [
+    {
+      "traffic_id": "traffic_0026",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "body_excerpt": "\n{\"fixture\": \"mock\", \"case\": \"OTC-CAND-026\", \"result\": \"synthetic\"}",
+      "body_sha256": "1bc6b14afb504683e00ea6c35b6720e4f54bcd6b80ca4b0c99bc176f5ef0bab5"
+    }
+  ],
+  "auth_contexts": [
+    {
+      "principal_ref": null,
+      "credential_ref": null,
+      "auth_types": [],
+      "traffic_count": 1
+    }
+  ],
+  "business_context": {
+    "description": null,
+    "evidence": [
+      "parameter 'root/name' (xml) suggests search / filter"
+    ]
+  },
+  "limitations": []
+}

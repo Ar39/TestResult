@@ -1,0 +1,54 @@
+{
+  "endpoint_id": "endpoint_0018",
+  "method": "GET",
+  "scheme": "http",
+  "host": "lab-otc.example.invalid",
+  "path": "/api/v1/profile",
+  "traffic_ids": [
+    "traffic_0001"
+  ],
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:0213a66be04f838e28599aee59a5b74c84ca92c29f7b170a9e83b02becb25ba3",
+      "name": "X-Lab-Case",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "OTC-BENCH-001"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0001"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:8dc2cd356995a8763a074daccfda732f30483ae6fbe8c41e0efa7fce6f490fee",
+      "name": "X-Lab-Identity",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "user-lab-a"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0001"
+      ]
+    },
+    {
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:c94f4b441236c80d8dc76af5cef75e306ca79766061035f9b1095fa2a1a83eee",
+      "name": "userId",
+      "location": "query",
+      "type": "integer",
+      "values": [
+        "10021"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0001"
+      ]
+    }
+  ]
+}

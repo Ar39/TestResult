@@ -1,0 +1,10 @@
+POST /api/v1/reports/query HTTP/1.1
+Host: lab-otc.example.invalid
+User-Agent: OTC-Benchmark/2.0
+Accept: application/json
+X-Lab-Case: OTC-BENCH-008
+Content-Type: application/json
+Content-Length: 61
+
+
+{"reportType":"sales","from":"2026-01-01","to":"2026-01-31"}

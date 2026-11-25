@@ -1,0 +1,54 @@
+{
+  "endpoint_id": "endpoint_0058",
+  "method": "POST",
+  "scheme": "http",
+  "host": "lab-otc.example.invalid",
+  "path": "/api/v1/webhook/test",
+  "traffic_ids": [
+    "traffic_0020"
+  ],
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:a7c0cdbf8be6eb671548493050258600ebb914af2f6bb075a95177f408dfc006",
+      "name": "X-Lab-Case",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "OTC-BENCH-020"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0020"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:8a06f8d67e1fc7983f740faa7cb7f0b937ed3e1dc9857cf5452b0d6fd0385ee3",
+      "name": "event",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "ping"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0020"
+      ]
+    },
+    {
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:b4afa406ae736e5cd6f4cee5b08397de78fe3053a979180953c7bd982a47a37f",
+      "name": "targetUrl",
+      "location": "json",
+      "type": "url",
+      "values": [
+        "https://hooks.example.invalid/demo"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0020"
+      ]
+    }
+  ]
+}

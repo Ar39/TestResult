@@ -1,0 +1,10 @@
+POST /api/v1/metrics/ingest?source=agent&count=5 HTTP/1.1
+Host: lab-otc.example.invalid
+User-Agent: OTC-Benchmark/2.0
+Accept: application/json
+X-Lab-Case: OTC-BENCH-024
+Content-Type: application/json
+Content-Length: 29
+
+
+{"source":"agent","count":5}

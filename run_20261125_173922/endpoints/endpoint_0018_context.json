@@ -1,0 +1,98 @@
+{
+  "endpoint_id": "endpoint_0018",
+  "method": "GET",
+  "scheme": "http",
+  "host": "lab-otc.example.invalid",
+  "path": "/api/v1/profile",
+  "path_examples": [
+    "/api/v1/profile"
+  ],
+  "traffic_count": 1,
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:0213a66be04f838e28599aee59a5b74c84ca92c29f7b170a9e83b02becb25ba3",
+      "name": "X-Lab-Case",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "OTC-BENCH-001"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0001"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:8dc2cd356995a8763a074daccfda732f30483ae6fbe8c41e0efa7fce6f490fee",
+      "name": "X-Lab-Identity",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "user-lab-a"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0001"
+      ]
+    },
+    {
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:c94f4b441236c80d8dc76af5cef75e306ca79766061035f9b1095fa2a1a83eee",
+      "name": "userId",
+      "location": "query",
+      "type": "integer",
+      "values": [
+        "10021"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0001"
+      ]
+    }
+  ],
+  "inventory_id": "sha256:48c43fb9bb31a204b6bfee3b21c714b801144b473afae6114432f7463f20508a",
+  "request_examples": [
+    {
+      "traffic_id": "traffic_0001",
+      "principal_ref": "principal_e102f6241c9c",
+      "method": "GET",
+      "url": "http://lab-otc.example.invalid/api/v1/profile?userId=10021",
+      "content_type": null,
+      "query": {
+        "userId": [
+          "10021"
+        ]
+      },
+      "body_excerpt": null,
+      "body_sha256": null
+    }
+  ],
+  "response_examples": [
+    {
+      "traffic_id": "traffic_0001",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "body_excerpt": "\n{\"fixture\": \"mock\", \"owner\": \"user-lab-b\", \"objectId\": \"10021\", \"case\": \"OTC-CAND-001\"}",
+      "body_sha256": "5427f38ebcfe7807dcd1ae3eac5a1da6b6d34ea94fc8356875e5d3cc78392b5d"
+    }
+  ],
+  "auth_contexts": [
+    {
+      "principal_ref": "principal_e102f6241c9c",
+      "credential_ref": "cred_e102f6241c9c",
+      "auth_types": [
+        "cookie"
+      ],
+      "traffic_count": 1
+    }
+  ],
+  "business_context": {
+    "description": null,
+    "evidence": [
+      "parameter 'userId' (query) suggests user identity"
+    ]
+  },
+  "limitations": []
+}

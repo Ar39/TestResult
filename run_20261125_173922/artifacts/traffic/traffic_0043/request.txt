@@ -1,0 +1,12 @@
+POST /api/v1/cart/apply-coupon HTTP/1.1
+Host: lab-otc.example.invalid
+User-Agent: OTC-Benchmark/2.0
+Accept: application/json
+X-Lab-Case: OTC-BENCH-043
+Content-Type: application/json
+Cookie: LAB_SESSION=synthetic-session-043
+X-Lab-Identity: user-lab-a
+Content-Length: 35
+
+
+{"cartId":"C-7","coupon":"LAB-10"}

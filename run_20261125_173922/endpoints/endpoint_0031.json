@@ -1,0 +1,54 @@
+{
+  "endpoint_id": "endpoint_0031",
+  "method": "POST",
+  "scheme": "http",
+  "host": "lab-otc.example.invalid",
+  "path": "/api/v1/email/render",
+  "traffic_ids": [
+    "traffic_0032"
+  ],
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:72d02c1382c34b5fbf2e2723d2b7fe4fa76be324d2b93fe1e8ff8614304fb417",
+      "name": "X-Lab-Case",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "OTC-BENCH-032"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0032"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:9d52899a27aebc3f72c3faa4b819929a0e0dfe767b5afcf4a69dfe4c78dca92f",
+      "name": "bodyTemplate",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "Dear {{ name }}"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0032"
+      ]
+    },
+    {
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:274084d4325d1eaaebcc87db7dd331718a956d3e63cb16fc13dd83665db4013c",
+      "name": "name",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "LabUser"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0032"
+      ]
+    }
+  ]
+}

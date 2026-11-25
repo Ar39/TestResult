@@ -1,0 +1,127 @@
+{
+  "endpoint_id": "endpoint_0034",
+  "method": "POST",
+  "scheme": "http",
+  "host": "lab-otc.example.invalid",
+  "path": "/api/v1/feedback",
+  "path_examples": [
+    "/api/v1/feedback"
+  ],
+  "traffic_count": 1,
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:464892396c26cbae9194bb98afb873b33986debacf68310234dbc26214614a98",
+      "name": "X-Lab-Case",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "OTC-BENCH-048"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0048"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:6adc00b5950e1ea22ffbcdadc839393c01762534a357a42749d505814a74aea1",
+      "name": "message",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "good"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0048"
+      ]
+    },
+    {
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:b7e2b1a32136b793cb10388016149c79c5660d8fb59964f3d5b724d985e42673",
+      "name": "rating",
+      "location": "json",
+      "type": "integer",
+      "values": [
+        "5"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0048"
+      ]
+    },
+    {
+      "parameter_id": "param_0004",
+      "parameter_identity": "sha256:0bfdf3d05b30d62410d8464ac3ea3d159b06cb4352617433c7c75ec1926c805e",
+      "name": "message",
+      "location": "query",
+      "type": "string",
+      "values": [
+        "good"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0048"
+      ]
+    },
+    {
+      "parameter_id": "param_0005",
+      "parameter_identity": "sha256:28aea9417aaf40c28e4d027fbdbd1d77d06b01323aec8d8aac7438f176c7d4db",
+      "name": "rating",
+      "location": "query",
+      "type": "integer",
+      "values": [
+        "5"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0048"
+      ]
+    }
+  ],
+  "inventory_id": "sha256:f279d6192c9136c63095e9e820dc12d80e1a69c73b94576da4628776e3f8fd99",
+  "request_examples": [
+    {
+      "traffic_id": "traffic_0048",
+      "principal_ref": null,
+      "method": "POST",
+      "url": "http://lab-otc.example.invalid/api/v1/feedback?rating=5&message=good",
+      "content_type": "application/json",
+      "query": {
+        "rating": [
+          "5"
+        ],
+        "message": [
+          "good"
+        ]
+      },
+      "body_excerpt": "\n{\"rating\":5,\"message\":\"good\"}",
+      "body_sha256": "a5f091784d421f56c0b2fee7b43d13890ab080793fe108cde06348c9d64f177d"
+    }
+  ],
+  "response_examples": [
+    {
+      "traffic_id": "traffic_0048",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "body_excerpt": "\n{\"fixture\": \"mock\", \"case\": \"OTC-CAND-048\", \"result\": \"synthetic\"}",
+      "body_sha256": "c7699a2d8da32ff9d84eda6600574115b4d3d95daf8a4a32043673a798bfc5a1"
+    }
+  ],
+  "auth_contexts": [
+    {
+      "principal_ref": null,
+      "credential_ref": null,
+      "auth_types": [],
+      "traffic_count": 1
+    }
+  ],
+  "business_context": {
+    "description": null,
+    "evidence": [
+      "path segment 'feedback' suggests monetary value"
+    ]
+  },
+  "limitations": []
+}

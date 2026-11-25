@@ -1,0 +1,24 @@
+[
+  {
+    "import_id": "import_10f99b2f",
+    "run_id": "run_20261125_173749",
+    "total": 1,
+    "success": 1,
+    "failed": 0,
+    "traffic_ids": [
+      "traffic_0001"
+    ],
+    "errors": []
+  },
+  {
+    "import_id": "import_de3e22b0",
+    "run_id": "run_20261125_173749",
+    "total": 1,
+    "success": 1,
+    "failed": 0,
+    "traffic_ids": [
+      "traffic_0002"
+    ],
+    "errors": []
+  }
+]

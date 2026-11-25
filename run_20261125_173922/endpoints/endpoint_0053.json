@@ -1,0 +1,54 @@
+{
+  "endpoint_id": "endpoint_0053",
+  "method": "POST",
+  "scheme": "http",
+  "host": "lab-otc.example.invalid",
+  "path": "/api/v1/support/ticket",
+  "traffic_ids": [
+    "traffic_0016"
+  ],
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:7cb1fd7ae9c5da1d3c5402c90a10f03eb85a409212db0eff4aab3f5be2854cc9",
+      "name": "X-Lab-Case",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "OTC-BENCH-016"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0016"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:94ee36e40999d39aadb884424c0a3ade75b0cdbd2e5d26755b1eab9be6970931",
+      "name": "message",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "Please review lab ticket"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0016"
+      ]
+    },
+    {
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:09c1711ca02ebfec1d5bed4f4ce4c9a061db1a83a4222b4711c36ab617ad68de",
+      "name": "subject",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "LAB_MARKER <script>alert(1)</script>"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0016"
+      ]
+    }
+  ]
+}

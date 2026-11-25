@@ -1,0 +1,8 @@
+GET /api/v1/invoices?customerId=C-88&page=1 HTTP/1.1
+Host: lab-otc.example.invalid
+User-Agent: OTC-Benchmark/2.0
+Accept: application/json
+X-Lab-Case: OTC-BENCH-004
+Cookie: LAB_SESSION=synthetic-session-004
+X-Lab-Identity: user-lab-a
+

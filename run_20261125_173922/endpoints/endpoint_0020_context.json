@@ -1,0 +1,82 @@
+{
+  "endpoint_id": "endpoint_0020",
+  "method": "GET",
+  "scheme": "http",
+  "host": "lab-otc.example.invalid",
+  "path": "/api/v1/public/faq",
+  "path_examples": [
+    "/api/v1/public/faq"
+  ],
+  "traffic_count": 1,
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:52494ce219fd5172c3606e1bbb1dfdaf4036d24049e10e6169828a68125bf616",
+      "name": "X-Lab-Case",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "OTC-BENCH-047"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0047"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:7d3fb0421ade63e888690bf702f1f2f12ecbd5e1362ebc1a0c39f72672d52880",
+      "name": "topic",
+      "location": "query",
+      "type": "string",
+      "values": [
+        "billing"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0047"
+      ]
+    }
+  ],
+  "inventory_id": "sha256:3e9d0d94b0a6e000c95263e6bcf748dd08e9b0a60e770772e8f7ff0aa37fbd9f",
+  "request_examples": [
+    {
+      "traffic_id": "traffic_0047",
+      "principal_ref": null,
+      "method": "GET",
+      "url": "http://lab-otc.example.invalid/api/v1/public/faq?topic=billing",
+      "content_type": null,
+      "query": {
+        "topic": [
+          "billing"
+        ]
+      },
+      "body_excerpt": null,
+      "body_sha256": null
+    }
+  ],
+  "response_examples": [
+    {
+      "traffic_id": "traffic_0047",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "body_excerpt": "\n{\"fixture\": \"mock\", \"case\": \"OTC-CAND-047\", \"result\": \"synthetic\"}",
+      "body_sha256": "7ebe9991c7e077a845ba73aef513d9e4325345a3b58924ae85b0a6ca6e01836c"
+    }
+  ],
+  "auth_contexts": [
+    {
+      "principal_ref": null,
+      "credential_ref": null,
+      "auth_types": [],
+      "traffic_count": 1
+    }
+  ],
+  "business_context": {
+    "description": null,
+    "evidence": [
+      "path segment 'faq' suggests search / filter"
+    ]
+  },
+  "limitations": []
+}

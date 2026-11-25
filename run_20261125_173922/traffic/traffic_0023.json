@@ -1,0 +1,95 @@
+{
+  "traffic_id": "traffic_0023",
+  "source": "burp_xml",
+  "request": {
+    "method": "GET",
+    "scheme": "http",
+    "host": "lab-otc.example.invalid",
+    "port": 80,
+    "path": "/api/v1/docs",
+    "raw_target": "/api/v1/docs",
+    "query": {},
+    "headers": [
+      {
+        "name": "Host",
+        "value": "lab-otc.example.invalid"
+      },
+      {
+        "name": "User-Agent",
+        "value": "OTC-Benchmark/2.0"
+      },
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "X-Lab-Case",
+        "value": "OTC-BENCH-023"
+      }
+    ],
+    "cookies": {},
+    "content_type": null,
+    "body": null
+  },
+  "response": {
+    "available": true,
+    "status": 200,
+    "reason": "OK",
+    "headers": [
+      {
+        "name": "Content-Type",
+        "value": "application/json; charset=utf-8"
+      },
+      {
+        "name": "X-Lab-Fixture",
+        "value": "mock-only"
+      },
+      {
+        "name": "Content-Length",
+        "value": "67"
+      }
+    ],
+    "content_type": "application/json; charset=utf-8",
+    "body": {
+      "raw": "\n{\"fixture\": \"mock\", \"case\": \"OTC-CAND-023\", \"result\": \"synthetic\"}",
+      "content_type": "application/json; charset=utf-8",
+      "charset": "utf-8",
+      "binary": false,
+      "size_bytes": 67,
+      "truncated": false,
+      "form": null,
+      "json_value": {
+        "fixture": "mock",
+        "case": "OTC-CAND-023",
+        "result": "synthetic"
+      },
+      "xml_paths": null,
+      "parse_warnings": []
+    }
+  },
+  "auth_context": {
+    "authenticated": false,
+    "principal_ref": null,
+    "credential_ref": null,
+    "auth_types": []
+  },
+  "artifacts": [
+    {
+      "artifact_id": "artifact_0045",
+      "type": "http_request",
+      "path": "traffic/traffic_0023/request.txt",
+      "sha256": "0bb974de9930969048a68bdc58bb702d256ace9cb21f450f197a854b75629417",
+      "size_bytes": 144,
+      "created_at": "2026-11-25T17:39:22+08:00"
+    },
+    {
+      "artifact_id": "artifact_0046",
+      "type": "http_response",
+      "path": "traffic/traffic_0023/response.txt",
+      "sha256": "a97e53bf4e2aa2d89891ad0e8f2ea631a3706e04e8977e448c2e3a5c20f4043f",
+      "size_bytes": 179,
+      "created_at": "2026-11-25T17:39:22+08:00"
+    }
+  ],
+  "parse_warnings": []
+}

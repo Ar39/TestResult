@@ -1,0 +1,106 @@
+{
+  "endpoint_id": "endpoint_0036",
+  "method": "POST",
+  "scheme": "http",
+  "host": "lab-otc.example.invalid",
+  "path": "/api/v1/inventory/filter",
+  "path_examples": [
+    "/api/v1/inventory/filter"
+  ],
+  "traffic_count": 1,
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:6fddcc89e1a57bec141c98f82bf0e56fa628fff1b3b315434292624f5f01c9c1",
+      "name": "X-Lab-Case",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "OTC-BENCH-010"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0010"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:911e0cd2237a4279cce167e09f11dad8ae854ef46c7e5af76e755fa9dab8ed81",
+      "name": "minQty",
+      "location": "json",
+      "type": "integer",
+      "values": [
+        "1"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0010"
+      ]
+    },
+    {
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:e9cb4fd42c6a24761879a7dd2ba95aea7734e71ece99d8c366af16a8ba5533db",
+      "name": "sku",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "SKU-200"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0010"
+      ]
+    },
+    {
+      "parameter_id": "param_0004",
+      "parameter_identity": "sha256:fcdfc014d118df79379fff8287f6479e798583ea0f17ba7de3ddbe90fa1bc633",
+      "name": "warehouse",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "W-2"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0010"
+      ]
+    }
+  ],
+  "inventory_id": "sha256:28d323bdd782c01df54a06a13e75300cb1327480f4d964ff36169cec7a7bf68b",
+  "request_examples": [
+    {
+      "traffic_id": "traffic_0010",
+      "principal_ref": null,
+      "method": "POST",
+      "url": "http://lab-otc.example.invalid/api/v1/inventory/filter",
+      "content_type": "application/json",
+      "query": null,
+      "body_excerpt": "\n{\"sku\":\"SKU-200\",\"warehouse\":\"W-2\",\"minQty\":1}",
+      "body_sha256": "225ef56a43b46787d7d82ccb933a1532467d01807a9a467a74b0aeea7dbb9848"
+    }
+  ],
+  "response_examples": [
+    {
+      "traffic_id": "traffic_0010",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "body_excerpt": "\n{\"fixture\": \"mock\", \"case\": \"OTC-CAND-010\", \"result\": \"synthetic\"}",
+      "body_sha256": "1f4e439dee3930e7a2fad45db535effbd43245318ee7803250215413548a7b5a"
+    }
+  ],
+  "auth_contexts": [
+    {
+      "principal_ref": null,
+      "credential_ref": null,
+      "auth_types": [],
+      "traffic_count": 1
+    }
+  ],
+  "business_context": {
+    "description": null,
+    "evidence": [
+      "path segment 'filter' suggests search / filter"
+    ]
+  },
+  "limitations": []
+}

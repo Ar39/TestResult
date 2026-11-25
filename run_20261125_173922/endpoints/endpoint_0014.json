@@ -1,0 +1,40 @@
+{
+  "endpoint_id": "endpoint_0014",
+  "method": "GET",
+  "scheme": "http",
+  "host": "lab-otc.example.invalid",
+  "path": "/api/v1/lookup/country-codes",
+  "traffic_ids": [
+    "traffic_0012"
+  ],
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:02938514b6b940e3b78c2a8330f737f60a8aa4dfc4ea30df32702f274cf63925",
+      "name": "X-Lab-Case",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "OTC-BENCH-012"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0012"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:4ba45915eeec2cd97041644c38b9cfb4a7b7221e23cbe5d5779bdc0ecbce336c",
+      "name": "prefix",
+      "location": "query",
+      "type": "string",
+      "values": [
+        "US"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0012"
+      ]
+    }
+  ]
+}

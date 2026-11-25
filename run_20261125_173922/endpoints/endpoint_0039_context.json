@@ -1,0 +1,106 @@
+{
+  "endpoint_id": "endpoint_0039",
+  "method": "POST",
+  "scheme": "http",
+  "host": "lab-otc.example.invalid",
+  "path": "/api/v1/legacy/object/import",
+  "path_examples": [
+    "/api/v1/legacy/object/import"
+  ],
+  "traffic_count": 1,
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:b1978d4c70408ec726000fca87fa0a6706d90636a595ac96629d4f502d61fb33",
+      "name": "X-Lab-Case",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "OTC-BENCH-037"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0037"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:325a4518316ca55950febfdb31b1b3aab7df498296df6d6eb41b59133553b52e",
+      "name": "data.name",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "LAB"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0037"
+      ]
+    },
+    {
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:05c86b37c838821213bbb26f635731d5879c91a024c3d32b2037751047ea0d26",
+      "name": "data.version",
+      "location": "json",
+      "type": "integer",
+      "values": [
+        "1"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0037"
+      ]
+    },
+    {
+      "parameter_id": "param_0004",
+      "parameter_identity": "sha256:2cbb17a5e1e389ef05492e8c46ce2ad0543fe817c1f54964e5c24f48b34a735b",
+      "name": "objectType",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "Widget"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0037"
+      ]
+    }
+  ],
+  "inventory_id": "sha256:671de4578dd0b9705f784ddbd4002ba3381be8f611fb779c5370a6264e00ce31",
+  "request_examples": [
+    {
+      "traffic_id": "traffic_0037",
+      "principal_ref": null,
+      "method": "POST",
+      "url": "http://lab-otc.example.invalid/api/v1/legacy/object/import",
+      "content_type": "application/json",
+      "query": null,
+      "body_excerpt": "\n{\"objectType\":\"Widget\",\"data\":{\"name\":\"LAB\",\"version\":1}}",
+      "body_sha256": "48261a62ecd673cff23f1f6c8458b300503b9ff37575a92674757162503fc637"
+    }
+  ],
+  "response_examples": [
+    {
+      "traffic_id": "traffic_0037",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "body_excerpt": "\n{\"fixture\": \"mock\", \"case\": \"OTC-CAND-037\", \"result\": \"synthetic\"}",
+      "body_sha256": "d06d922ee9d0222b3ae02377e6319109bcf5b62d3e82aec11bd6359744054a2d"
+    }
+  ],
+  "auth_contexts": [
+    {
+      "principal_ref": null,
+      "credential_ref": null,
+      "auth_types": [],
+      "traffic_count": 1
+    }
+  ],
+  "business_context": {
+    "description": null,
+    "evidence": [
+      "parameter 'data.name' (json) suggests search / filter"
+    ]
+  },
+  "limitations": []
+}

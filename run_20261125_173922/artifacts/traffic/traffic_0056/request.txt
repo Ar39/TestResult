@@ -1,0 +1,10 @@
+POST /api/v1/archive/extract HTTP/1.1
+Host: lab-otc.example.invalid
+User-Agent: OTC-Benchmark/2.0
+Accept: application/json
+X-Lab-Case: OTC-BENCH-056
+Content-Type: application/json
+Content-Length: 55
+
+
+{"archiveName":"lab.zip","destination":"exports/demo"}

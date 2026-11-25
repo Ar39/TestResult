@@ -1,0 +1,66 @@
+{
+  "traffic_id": "traffic_0001",
+  "source": "burp_xml",
+  "request": {
+    "method": "GET",
+    "scheme": "http",
+    "host": "devnull.example.invalid",
+    "port": 80,
+    "path": "/a1",
+    "raw_target": "/a1",
+    "query": {},
+    "headers": [
+      {
+        "name": "Host",
+        "value": "devnull.example.invalid"
+      }
+    ],
+    "cookies": {},
+    "content_type": null,
+    "body": null
+  },
+  "response": {
+    "available": true,
+    "status": 200,
+    "reason": "OK",
+    "headers": [],
+    "content_type": null,
+    "body": {
+      "raw": "AA",
+      "content_type": null,
+      "charset": null,
+      "binary": false,
+      "size_bytes": 2,
+      "truncated": false,
+      "form": null,
+      "json_value": null,
+      "xml_paths": null,
+      "parse_warnings": []
+    }
+  },
+  "auth_context": {
+    "authenticated": false,
+    "principal_ref": null,
+    "credential_ref": null,
+    "auth_types": []
+  },
+  "artifacts": [
+    {
+      "artifact_id": "artifact_0001",
+      "type": "http_request",
+      "path": "traffic/traffic_0001/request.txt",
+      "sha256": "604ee529cd82880023624f9926741846a2a208f9f254071acdd27e0ab60d515e",
+      "size_bytes": 51,
+      "created_at": "2026-11-25T17:37:49+08:00"
+    },
+    {
+      "artifact_id": "artifact_0002",
+      "type": "http_response",
+      "path": "traffic/traffic_0001/response.txt",
+      "sha256": "01a4cf0367db62907decaee0170f16538954bb4977bfa70912183588e5b42827",
+      "size_bytes": 21,
+      "created_at": "2026-11-25T17:37:49+08:00"
+    }
+  ],
+  "parse_warnings": []
+}

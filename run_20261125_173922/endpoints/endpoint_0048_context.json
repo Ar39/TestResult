@@ -1,0 +1,128 @@
+{
+  "endpoint_id": "endpoint_0048",
+  "method": "POST",
+  "scheme": "http",
+  "host": "lab-otc.example.invalid",
+  "path": "/api/v1/profile/update",
+  "path_examples": [
+    "/api/v1/profile/update"
+  ],
+  "traffic_count": 1,
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:db6f3e1846e8fe960c45aa12b51190d04fbf141235d660752be24509c76a6444",
+      "name": "X-Lab-Case",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "OTC-BENCH-041"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0041"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:a8725d0f6425f1ea61464d2455846a3908f33a9c2eced4adb2fda4f3627d6ce9",
+      "name": "displayName",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "LabUser"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0041"
+      ]
+    },
+    {
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:ae370ae3231820a24d0a9b6c271de3744e8d35c0c8a34c98b7f3029335b7c8fb",
+      "name": "timezone",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "UTC"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0041"
+      ]
+    },
+    {
+      "parameter_id": "param_0004",
+      "parameter_identity": "sha256:a928403b6767d35443e298e88a5fd1af85c1134cff192fca357e021465cd7209",
+      "name": "displayName",
+      "location": "query",
+      "type": "string",
+      "values": [
+        "LabUser"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0041"
+      ]
+    },
+    {
+      "parameter_id": "param_0005",
+      "parameter_identity": "sha256:520bf68f62c00a075ac3828ee0755f3281bcab91efafd574a5da18b05812448c",
+      "name": "timezone",
+      "location": "query",
+      "type": "string",
+      "values": [
+        "UTC"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0041"
+      ]
+    }
+  ],
+  "inventory_id": "sha256:365c28a64a32eb43dd4f1ad8fef5651984b9d0c325d7310645f0e1870e4fbf4e",
+  "request_examples": [
+    {
+      "traffic_id": "traffic_0041",
+      "principal_ref": null,
+      "method": "POST",
+      "url": "http://lab-otc.example.invalid/api/v1/profile/update?displayName=LabUser&timezone=UTC",
+      "content_type": "application/json",
+      "query": {
+        "displayName": [
+          "LabUser"
+        ],
+        "timezone": [
+          "UTC"
+        ]
+      },
+      "body_excerpt": "\n{\"displayName\":\"LabUser\",\"timezone\":\"UTC\"}",
+      "body_sha256": "426559a9778f441fc6c459f2a7de485ec3f620d0721d069a195b49ff1bd5c0bb"
+    }
+  ],
+  "response_examples": [
+    {
+      "traffic_id": "traffic_0041",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "body_excerpt": "\n{\"fixture\": \"mock\", \"case\": \"OTC-CAND-041\", \"result\": \"synthetic\"}",
+      "body_sha256": "ebc7c1889917f16baabff8e4e16a9c6948e78998e089db5bfca05cc7507b07a4"
+    }
+  ],
+  "auth_contexts": [
+    {
+      "principal_ref": null,
+      "credential_ref": null,
+      "auth_types": [],
+      "traffic_count": 1
+    }
+  ],
+  "business_context": {
+    "description": null,
+    "evidence": [
+      "parameter 'displayName' (json) suggests search / filter",
+      "parameter 'displayName' (query) suggests search / filter"
+    ]
+  },
+  "limitations": []
+}

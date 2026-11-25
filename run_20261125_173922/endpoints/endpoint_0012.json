@@ -1,0 +1,40 @@
+{
+  "endpoint_id": "endpoint_0012",
+  "method": "GET",
+  "scheme": "http",
+  "host": "lab-otc.example.invalid",
+  "path": "/api/v1/import/url",
+  "traffic_ids": [
+    "traffic_0021"
+  ],
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:ea44bab13d547d256298fceb0052d6831182331d22ad63b4b6b7a1348c814d04",
+      "name": "X-Lab-Case",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "OTC-BENCH-021"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0021"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:9eb670f05c5f91f2b2ea17d70d5e984b9d6065d1f5d034da561e67d188d67de5",
+      "name": "sourceUrl",
+      "location": "query",
+      "type": "url",
+      "values": [
+        "https://data.example.invalid/sample.csv"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0021"
+      ]
+    }
+  ]
+}

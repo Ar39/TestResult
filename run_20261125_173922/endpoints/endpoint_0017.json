@@ -1,0 +1,68 @@
+{
+  "endpoint_id": "endpoint_0017",
+  "method": "GET",
+  "scheme": "http",
+  "host": "lab-otc.example.invalid",
+  "path": "/api/v1/products/search",
+  "traffic_ids": [
+    "traffic_0007"
+  ],
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:b93f34f9d5618fb9ba478b46bcf8bd7e7fd947b7b079037f0152ae77a045c338",
+      "name": "X-Lab-Case",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "OTC-BENCH-007"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0007"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:9725497f0656a88cbee7b4e0fac722624aedb7dbd97887f4fb5633aac1d8b1b7",
+      "name": "direction",
+      "location": "query",
+      "type": "string",
+      "values": [
+        "asc"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0007"
+      ]
+    },
+    {
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:24ad01706fcd08724e8723748bb4da64755e5a6363cecfc14c12bcf13664d8b3",
+      "name": "q",
+      "location": "query",
+      "type": "string",
+      "values": [
+        "lamp"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0007"
+      ]
+    },
+    {
+      "parameter_id": "param_0004",
+      "parameter_identity": "sha256:dcb8763ee334382e7e30ef03a98b5cf77c641c505683854aaaae81399e30f15c",
+      "name": "sort",
+      "location": "query",
+      "type": "string",
+      "values": [
+        "name"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0007"
+      ]
+    }
+  ]
+}

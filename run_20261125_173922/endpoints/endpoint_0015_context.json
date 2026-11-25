@@ -1,0 +1,78 @@
+{
+  "endpoint_id": "endpoint_0015",
+  "method": "GET",
+  "scheme": "http",
+  "host": "lab-otc.example.invalid",
+  "path": "/api/v1/orders/{orderId}",
+  "path_examples": [
+    "/api/v1/orders/{orderId}"
+  ],
+  "traffic_count": 1,
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:d06b60149b2146957f80d5ca0472051adc6f185e1b8186ad7aaa24b707aeb043",
+      "name": "X-Lab-Case",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "OTC-BENCH-002"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0002"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:0ebd1d72d81a8ba717d5ea6e666c83af8fba76c74c577062f845d67f4fa20055",
+      "name": "X-Lab-Identity",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "user-lab-a"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0002"
+      ]
+    }
+  ],
+  "inventory_id": "sha256:8af768dfd2444f50dc8572e2b183741f4858a6cd62b4b790cc48a9fd6a6d6398",
+  "request_examples": [
+    {
+      "traffic_id": "traffic_0002",
+      "principal_ref": "principal_247726d1ef48",
+      "method": "GET",
+      "url": "http://lab-otc.example.invalid/api/v1/orders/{orderId}",
+      "content_type": null,
+      "query": null,
+      "body_excerpt": null,
+      "body_sha256": null
+    }
+  ],
+  "response_examples": [
+    {
+      "traffic_id": "traffic_0002",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "body_excerpt": "\n{\"fixture\": \"mock\", \"owner\": \"user-lab-b\", \"objectId\": \"ORD-10021\", \"case\": \"OTC-CAND-002\"}",
+      "body_sha256": "480db0e9f7ea70fa54c9f0e71042f87f4ccfd06d4e275eff7e59daea7ce0d3f3"
+    }
+  ],
+  "auth_contexts": [
+    {
+      "principal_ref": "principal_247726d1ef48",
+      "credential_ref": "cred_247726d1ef48",
+      "auth_types": [
+        "cookie"
+      ],
+      "traffic_count": 1
+    }
+  ],
+  "business_context": {
+    "description": null,
+    "evidence": []
+  },
+  "limitations": []
+}

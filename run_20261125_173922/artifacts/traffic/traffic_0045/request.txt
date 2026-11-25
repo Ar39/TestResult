@@ -1,0 +1,12 @@
+POST /api/v1/transfer/submit HTTP/1.1
+Host: lab-otc.example.invalid
+User-Agent: OTC-Benchmark/2.0
+Accept: application/json
+X-Lab-Case: OTC-BENCH-045
+Content-Type: application/json
+Cookie: LAB_SESSION=synthetic-session-045
+X-Lab-Identity: user-lab-a
+Content-Length: 68
+
+
+{"sourceAccount":"A-7","destinationAccount":"A-8","amount":"10.00"}

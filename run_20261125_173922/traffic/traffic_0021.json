@@ -1,0 +1,99 @@
+{
+  "traffic_id": "traffic_0021",
+  "source": "burp_xml",
+  "request": {
+    "method": "GET",
+    "scheme": "http",
+    "host": "lab-otc.example.invalid",
+    "port": 80,
+    "path": "/api/v1/import/url",
+    "raw_target": "/api/v1/import/url?sourceUrl=https%3A%2F%2Fdata.example.invalid%2Fsample.csv",
+    "query": {
+      "sourceUrl": [
+        "https://data.example.invalid/sample.csv"
+      ]
+    },
+    "headers": [
+      {
+        "name": "Host",
+        "value": "lab-otc.example.invalid"
+      },
+      {
+        "name": "User-Agent",
+        "value": "OTC-Benchmark/2.0"
+      },
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "X-Lab-Case",
+        "value": "OTC-BENCH-021"
+      }
+    ],
+    "cookies": {},
+    "content_type": null,
+    "body": null
+  },
+  "response": {
+    "available": true,
+    "status": 200,
+    "reason": "OK",
+    "headers": [
+      {
+        "name": "Content-Type",
+        "value": "application/json; charset=utf-8"
+      },
+      {
+        "name": "X-Lab-Fixture",
+        "value": "mock-only"
+      },
+      {
+        "name": "Content-Length",
+        "value": "67"
+      }
+    ],
+    "content_type": "application/json; charset=utf-8",
+    "body": {
+      "raw": "\n{\"fixture\": \"mock\", \"case\": \"OTC-CAND-021\", \"result\": \"synthetic\"}",
+      "content_type": "application/json; charset=utf-8",
+      "charset": "utf-8",
+      "binary": false,
+      "size_bytes": 67,
+      "truncated": false,
+      "form": null,
+      "json_value": {
+        "fixture": "mock",
+        "case": "OTC-CAND-021",
+        "result": "synthetic"
+      },
+      "xml_paths": null,
+      "parse_warnings": []
+    }
+  },
+  "auth_context": {
+    "authenticated": false,
+    "principal_ref": null,
+    "credential_ref": null,
+    "auth_types": []
+  },
+  "artifacts": [
+    {
+      "artifact_id": "artifact_0041",
+      "type": "http_request",
+      "path": "traffic/traffic_0021/request.txt",
+      "sha256": "9cc6f2f261a5786de9c99d6980e3ceff78307945e8e406a33adc9c9e43e4d5ef",
+      "size_bytes": 208,
+      "created_at": "2026-11-25T17:39:22+08:00"
+    },
+    {
+      "artifact_id": "artifact_0042",
+      "type": "http_response",
+      "path": "traffic/traffic_0021/response.txt",
+      "sha256": "d90ad079921425412b5a9747a28a8af0963a663e4bd8c5ae67ac1aee2688292d",
+      "size_bytes": 179,
+      "created_at": "2026-11-25T17:39:22+08:00"
+    }
+  ],
+  "parse_warnings": []
+}

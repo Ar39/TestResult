@@ -1,0 +1,62 @@
+{
+  "endpoint_id": "endpoint_0021",
+  "method": "GET",
+  "scheme": "http",
+  "host": "lab-otc.example.invalid",
+  "path": "/api/v1/public/health",
+  "path_examples": [
+    "/api/v1/public/health"
+  ],
+  "traffic_count": 1,
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:a8984f86a515a5d0bb5290d0fc7578bcb7ab05932f9b0a26da39c60a99a06124",
+      "name": "X-Lab-Case",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "OTC-BENCH-054"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0054"
+      ]
+    }
+  ],
+  "inventory_id": "sha256:c200f215445aca5f6748ffceedfd59648446f67f942a05d499c59ac4425e64d4",
+  "request_examples": [
+    {
+      "traffic_id": "traffic_0054",
+      "principal_ref": null,
+      "method": "GET",
+      "url": "http://lab-otc.example.invalid/api/v1/public/health",
+      "content_type": null,
+      "query": null,
+      "body_excerpt": null,
+      "body_sha256": null
+    }
+  ],
+  "response_examples": [
+    {
+      "traffic_id": "traffic_0054",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "body_excerpt": "\n{\"fixture\": \"mock\", \"case\": \"OTC-CAND-054\", \"result\": \"synthetic\"}",
+      "body_sha256": "727835fcced409249c973c0d9c41b6b8d0987cb58be4d5f6c9f78b2b32e5275e"
+    }
+  ],
+  "auth_contexts": [
+    {
+      "principal_ref": null,
+      "credential_ref": null,
+      "auth_types": [],
+      "traffic_count": 1
+    }
+  ],
+  "business_context": {
+    "description": null,
+    "evidence": []
+  },
+  "limitations": []
+}

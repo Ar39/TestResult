@@ -1,0 +1,26 @@
+{
+  "endpoint_id": "endpoint_0023",
+  "method": "GET",
+  "scheme": "http",
+  "host": "lab-otc.example.invalid",
+  "path": "/api/v1/status",
+  "traffic_ids": [
+    "traffic_0006"
+  ],
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:c1fe6cb06b90accc32dbd4f1f9421951f09d10ca367d5a624339a3c2f446960b",
+      "name": "X-Lab-Case",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "OTC-BENCH-006"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0006"
+      ]
+    }
+  ]
+}

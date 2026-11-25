@@ -1,0 +1,6 @@
+GET /api/v1/import/url?sourceUrl=https%3A%2F%2Fdata.example.invalid%2Fsample.csv HTTP/1.1
+Host: lab-otc.example.invalid
+User-Agent: OTC-Benchmark/2.0
+Accept: application/json
+X-Lab-Case: OTC-BENCH-021
+

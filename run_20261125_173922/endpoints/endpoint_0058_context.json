@@ -1,0 +1,93 @@
+{
+  "endpoint_id": "endpoint_0058",
+  "method": "POST",
+  "scheme": "http",
+  "host": "lab-otc.example.invalid",
+  "path": "/api/v1/webhook/test",
+  "path_examples": [
+    "/api/v1/webhook/test"
+  ],
+  "traffic_count": 1,
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:a7c0cdbf8be6eb671548493050258600ebb914af2f6bb075a95177f408dfc006",
+      "name": "X-Lab-Case",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "OTC-BENCH-020"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0020"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:8a06f8d67e1fc7983f740faa7cb7f0b937ed3e1dc9857cf5452b0d6fd0385ee3",
+      "name": "event",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "ping"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0020"
+      ]
+    },
+    {
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:b4afa406ae736e5cd6f4cee5b08397de78fe3053a979180953c7bd982a47a37f",
+      "name": "targetUrl",
+      "location": "json",
+      "type": "url",
+      "values": [
+        "https://hooks.example.invalid/demo"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0020"
+      ]
+    }
+  ],
+  "inventory_id": "sha256:fcdf995a47bb5934d62a6d9d4029e0c0434ccfc8f8e921991596ae9a4b08a071",
+  "request_examples": [
+    {
+      "traffic_id": "traffic_0020",
+      "principal_ref": null,
+      "method": "POST",
+      "url": "http://lab-otc.example.invalid/api/v1/webhook/test",
+      "content_type": "application/json",
+      "query": null,
+      "body_excerpt": "\n{\"targetUrl\":\"https://hooks.example.invalid/demo\",\"event\":\"ping\"}",
+      "body_sha256": "39f4cd853dbf54706a6e88d82da2713e9abb72f6b56264ea4b2749e2298fc165"
+    }
+  ],
+  "response_examples": [
+    {
+      "traffic_id": "traffic_0020",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "body_excerpt": "\n{\"fixture\": \"mock\", \"case\": \"OTC-CAND-020\", \"result\": \"synthetic\"}",
+      "body_sha256": "58917b199710f6afa1e939a0cb487962c62c6ef8f603518fdf3ebdb0b07a3625"
+    }
+  ],
+  "auth_contexts": [
+    {
+      "principal_ref": null,
+      "credential_ref": null,
+      "auth_types": [],
+      "traffic_count": 1
+    }
+  ],
+  "business_context": {
+    "description": null,
+    "evidence": [
+      "parameter 'targetUrl' (json) is a URL value",
+      "path segment 'webhook' suggests URL handling"
+    ]
+  },
+  "limitations": []
+}

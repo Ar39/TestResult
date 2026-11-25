@@ -1,0 +1,54 @@
+{
+  "endpoint_id": "endpoint_0044",
+  "method": "POST",
+  "scheme": "http",
+  "host": "lab-otc.example.invalid",
+  "path": "/api/v1/plugin/config",
+  "traffic_ids": [
+    "traffic_0040"
+  ],
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:ba98f88f78e28addcd7355740971475241b39e2ba9672874d5fe6a0e1d9c9cf7",
+      "name": "X-Lab-Case",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "OTC-BENCH-040"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0040"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:9d9c529614c2c53981b7c50fa8c5782f873c40f76c99ed55708a8b00b0499ae3",
+      "name": "config.enabled",
+      "location": "json",
+      "type": "boolean",
+      "values": [
+        "True"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0040"
+      ]
+    },
+    {
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:89bdca4cdd003f0d247398b5c23a939127b15a5d0bad25e3f1f4d8fc0e85576c",
+      "name": "plugin",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "demo"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0040"
+      ]
+    }
+  ]
+}

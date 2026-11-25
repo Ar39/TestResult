@@ -1,0 +1,40 @@
+{
+  "endpoint_id": "endpoint_0035",
+  "method": "POST",
+  "scheme": "http",
+  "host": "lab-otc.example.invalid",
+  "path": "/api/v1/files/read",
+  "traffic_ids": [
+    "traffic_0055"
+  ],
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:84835e11de4daba7c3e4702a7b49f9920d6cb55c00771bb66160a0a59ee81d95",
+      "name": "X-Lab-Case",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "OTC-BENCH-055"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0055"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:4f534e8191349a4b9eba1c20de1a1bf2460a552226db1b8f4e1a121b9722f013",
+      "name": "path",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "reports/quarterly.txt"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0055"
+      ]
+    }
+  ]
+}

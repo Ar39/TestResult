@@ -1,0 +1,108 @@
+{
+  "traffic_id": "traffic_0002",
+  "source": "burp_xml",
+  "request": {
+    "method": "GET",
+    "scheme": "http",
+    "host": "lab-otc.example.invalid",
+    "port": 80,
+    "path": "/api/v1/orders/{orderId}",
+    "raw_target": "/api/v1/orders/{orderId}",
+    "query": {},
+    "headers": [
+      {
+        "name": "Host",
+        "value": "lab-otc.example.invalid"
+      },
+      {
+        "name": "User-Agent",
+        "value": "OTC-Benchmark/2.0"
+      },
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "X-Lab-Case",
+        "value": "OTC-BENCH-002"
+      },
+      {
+        "name": "Cookie",
+        "value": "<credential:cred_247726d1ef48>"
+      },
+      {
+        "name": "X-Lab-Identity",
+        "value": "user-lab-a"
+      }
+    ],
+    "cookies": {
+      "LAB_SESSION": "<credential:cred_247726d1ef48>"
+    },
+    "content_type": null,
+    "body": null
+  },
+  "response": {
+    "available": true,
+    "status": 200,
+    "reason": "OK",
+    "headers": [
+      {
+        "name": "Content-Type",
+        "value": "application/json; charset=utf-8"
+      },
+      {
+        "name": "X-Lab-Fixture",
+        "value": "mock-only"
+      },
+      {
+        "name": "Content-Length",
+        "value": "92"
+      }
+    ],
+    "content_type": "application/json; charset=utf-8",
+    "body": {
+      "raw": "\n{\"fixture\": \"mock\", \"owner\": \"user-lab-b\", \"objectId\": \"ORD-10021\", \"case\": \"OTC-CAND-002\"}",
+      "content_type": "application/json; charset=utf-8",
+      "charset": "utf-8",
+      "binary": false,
+      "size_bytes": 92,
+      "truncated": false,
+      "form": null,
+      "json_value": {
+        "fixture": "mock",
+        "owner": "user-lab-b",
+        "objectId": "ORD-10021",
+        "case": "OTC-CAND-002"
+      },
+      "xml_paths": null,
+      "parse_warnings": []
+    }
+  },
+  "auth_context": {
+    "authenticated": true,
+    "principal_ref": "principal_247726d1ef48",
+    "credential_ref": "cred_247726d1ef48",
+    "auth_types": [
+      "cookie"
+    ]
+  },
+  "artifacts": [
+    {
+      "artifact_id": "artifact_0003",
+      "type": "http_request",
+      "path": "traffic/traffic_0002/request.txt",
+      "sha256": "d5e5af7acfd30080503321f2b172e0a0c56fe1e88d02679ad537fec06cc13f15",
+      "size_bytes": 227,
+      "created_at": "2026-11-25T17:39:22+08:00"
+    },
+    {
+      "artifact_id": "artifact_0004",
+      "type": "http_response",
+      "path": "traffic/traffic_0002/response.txt",
+      "sha256": "dc02f8e6bffef8d21d1ea30706c13eb99010b0bfb56159fb3fb0f4ce0b32118e",
+      "size_bytes": 204,
+      "created_at": "2026-11-25T17:39:22+08:00"
+    }
+  ],
+  "parse_warnings": []
+}

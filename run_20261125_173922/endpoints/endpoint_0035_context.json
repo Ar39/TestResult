@@ -1,0 +1,76 @@
+{
+  "endpoint_id": "endpoint_0035",
+  "method": "POST",
+  "scheme": "http",
+  "host": "lab-otc.example.invalid",
+  "path": "/api/v1/files/read",
+  "path_examples": [
+    "/api/v1/files/read"
+  ],
+  "traffic_count": 1,
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:84835e11de4daba7c3e4702a7b49f9920d6cb55c00771bb66160a0a59ee81d95",
+      "name": "X-Lab-Case",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "OTC-BENCH-055"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0055"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:4f534e8191349a4b9eba1c20de1a1bf2460a552226db1b8f4e1a121b9722f013",
+      "name": "path",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "reports/quarterly.txt"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0055"
+      ]
+    }
+  ],
+  "inventory_id": "sha256:aa0245c753e9835243d70aba1af7e1b3379c4c5c0b02acd257b3b7f5776ef789",
+  "request_examples": [
+    {
+      "traffic_id": "traffic_0055",
+      "principal_ref": null,
+      "method": "POST",
+      "url": "http://lab-otc.example.invalid/api/v1/files/read",
+      "content_type": "application/json",
+      "query": null,
+      "body_excerpt": "\n{\"path\":\"reports/quarterly.txt\"}",
+      "body_sha256": "2101f0c106133d5115d9823cd0cf7260c2e952c541be4e31d64b4a542d12673b"
+    }
+  ],
+  "response_examples": [
+    {
+      "traffic_id": "traffic_0055",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "body_excerpt": "\n{\"fixture\": \"mock\", \"case\": \"OTC-CAND-055\", \"result\": \"synthetic\"}",
+      "body_sha256": "ddb4f066463422834436bcca84b44688098859f822ecc3728a26a696a40993b4"
+    }
+  ],
+  "auth_contexts": [
+    {
+      "principal_ref": null,
+      "credential_ref": null,
+      "auth_types": [],
+      "traffic_count": 1
+    }
+  ],
+  "business_context": {
+    "description": null,
+    "evidence": []
+  },
+  "limitations": []
+}

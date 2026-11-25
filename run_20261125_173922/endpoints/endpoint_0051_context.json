@@ -1,0 +1,93 @@
+{
+  "endpoint_id": "endpoint_0051",
+  "method": "POST",
+  "scheme": "http",
+  "host": "lab-otc.example.invalid",
+  "path": "/api/v1/state/restore",
+  "path_examples": [
+    "/api/v1/state/restore"
+  ],
+  "traffic_count": 1,
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:d09bbfa9384338e0f17a3b05f368f1df4d229fcd9db9af76cf4e13db1f884147",
+      "name": "X-Lab-Case",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "OTC-BENCH-039"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0039"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:aae1eb80816bf3014bcdb85b0dfe465259e3b6e85b5378b1e045365fbe836b59",
+      "name": "format",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "snapshot-v1"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0039"
+      ]
+    },
+    {
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:d077e2b962161309e46cadd50f2a0c0da19dc85f57f2456647e5fe0509a57a10",
+      "name": "snapshot.state",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "LAB"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0039"
+      ]
+    }
+  ],
+  "inventory_id": "sha256:0b9993a59c1c9e8c0a3dab2655e7053a0c82617c3bcb537b68392bd03719f3ca",
+  "request_examples": [
+    {
+      "traffic_id": "traffic_0039",
+      "principal_ref": null,
+      "method": "POST",
+      "url": "http://lab-otc.example.invalid/api/v1/state/restore",
+      "content_type": "application/json",
+      "query": null,
+      "body_excerpt": "\n{\"format\":\"snapshot-v1\",\"snapshot\":{\"state\":\"LAB\"}}",
+      "body_sha256": "3404d4afe94190a2b741624bf640ba5ac14d41635d26c3f081a54c46b92f76e8"
+    }
+  ],
+  "response_examples": [
+    {
+      "traffic_id": "traffic_0039",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "body_excerpt": "\n{\"fixture\": \"mock\", \"case\": \"OTC-CAND-039\", \"result\": \"synthetic\"}",
+      "body_sha256": "6f7aa41168c9f633bb5f37de0543238175c6c55e17c368752d7065b53d76796f"
+    }
+  ],
+  "auth_contexts": [
+    {
+      "principal_ref": null,
+      "credential_ref": null,
+      "auth_types": [],
+      "traffic_count": 1
+    }
+  ],
+  "business_context": {
+    "description": null,
+    "evidence": [
+      "parameter 'snapshot.state' (json) suggests business state",
+      "path segment 'state' suggests business state"
+    ]
+  },
+  "limitations": []
+}

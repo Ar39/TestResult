@@ -1,0 +1,64 @@
+{
+  "endpoint_id": "endpoint_0023",
+  "method": "GET",
+  "scheme": "http",
+  "host": "lab-otc.example.invalid",
+  "path": "/api/v1/status",
+  "path_examples": [
+    "/api/v1/status"
+  ],
+  "traffic_count": 1,
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:c1fe6cb06b90accc32dbd4f1f9421951f09d10ca367d5a624339a3c2f446960b",
+      "name": "X-Lab-Case",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "OTC-BENCH-006"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0006"
+      ]
+    }
+  ],
+  "inventory_id": "sha256:7d2fe93dc6b8ac28092dbed98a16972b76720a6b8c27c47c2b3ef2f783fdfbe2",
+  "request_examples": [
+    {
+      "traffic_id": "traffic_0006",
+      "principal_ref": null,
+      "method": "GET",
+      "url": "http://lab-otc.example.invalid/api/v1/status",
+      "content_type": null,
+      "query": null,
+      "body_excerpt": null,
+      "body_sha256": null
+    }
+  ],
+  "response_examples": [
+    {
+      "traffic_id": "traffic_0006",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "body_excerpt": "\n{\"fixture\": \"mock\", \"case\": \"OTC-CAND-006\", \"result\": \"synthetic\"}",
+      "body_sha256": "41b6e2be296e4dc14ecfcbd6b978e9fd536b381d92c76eb3e9a0e7ef96b24f4c"
+    }
+  ],
+  "auth_contexts": [
+    {
+      "principal_ref": null,
+      "credential_ref": null,
+      "auth_types": [],
+      "traffic_count": 1
+    }
+  ],
+  "business_context": {
+    "description": null,
+    "evidence": [
+      "path segment 'status' suggests business state"
+    ]
+  },
+  "limitations": []
+}

@@ -1,0 +1,68 @@
+{
+  "endpoint_id": "endpoint_0050",
+  "method": "POST",
+  "scheme": "http",
+  "host": "lab-otc.example.invalid",
+  "path": "/api/v1/reports/query",
+  "traffic_ids": [
+    "traffic_0008"
+  ],
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:1cd48bcd4f0d41cc0aa2b1ca46be1ecedd5c911d1e4b618780fc02a903c1a07a",
+      "name": "X-Lab-Case",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "OTC-BENCH-008"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0008"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:ea532267aa3c220e34d7364ae63743e66a75a26baeb5bc61bb96ce940bc7320b",
+      "name": "from",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "2026-01-01"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0008"
+      ]
+    },
+    {
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:624eb554e7a0c31f72467b0cb29749febf3b03ac754e4c134f88be376c436ee0",
+      "name": "reportType",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "sales"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0008"
+      ]
+    },
+    {
+      "parameter_id": "param_0004",
+      "parameter_identity": "sha256:4d1c7e7620663eaaf9718e82b8b094b887d771608d3eca4e972491e5f5705cdb",
+      "name": "to",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "2026-01-31"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0008"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+POST /api/v1/profile/display-name HTTP/1.1
+Host: lab-otc.example.invalid
+User-Agent: OTC-Benchmark/2.0
+Accept: application/json
+X-Lab-Case: OTC-BENCH-015
+Content-Type: application/json
+Content-Length: 65
+
+
+{"displayName":"LAB_MARKER <svg/onload=alert(1)>","locale":"en"}

@@ -1,0 +1,54 @@
+{
+  "endpoint_id": "endpoint_0051",
+  "method": "POST",
+  "scheme": "http",
+  "host": "lab-otc.example.invalid",
+  "path": "/api/v1/state/restore",
+  "traffic_ids": [
+    "traffic_0039"
+  ],
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:d09bbfa9384338e0f17a3b05f368f1df4d229fcd9db9af76cf4e13db1f884147",
+      "name": "X-Lab-Case",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "OTC-BENCH-039"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0039"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:aae1eb80816bf3014bcdb85b0dfe465259e3b6e85b5378b1e045365fbe836b59",
+      "name": "format",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "snapshot-v1"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0039"
+      ]
+    },
+    {
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:d077e2b962161309e46cadd50f2a0c0da19dc85f57f2456647e5fe0509a57a10",
+      "name": "snapshot.state",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "LAB"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0039"
+      ]
+    }
+  ]
+}

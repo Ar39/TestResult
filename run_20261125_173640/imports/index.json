@@ -1,0 +1,26 @@
+[
+  {
+    "import_id": "import_4a5bdd92",
+    "run_id": "run_20261125_173640",
+    "total": 1,
+    "success": 1,
+    "failed": 0,
+    "traffic_ids": [
+      "traffic_0001"
+    ],
+    "errors": []
+  },
+  {
+    "import_id": "import_d7872ba9",
+    "run_id": "run_20261125_173640",
+    "total": 3,
+    "success": 3,
+    "failed": 0,
+    "traffic_ids": [
+      "traffic_0002",
+      "traffic_0002",
+      "traffic_0003"
+    ],
+    "errors": []
+  }
+]

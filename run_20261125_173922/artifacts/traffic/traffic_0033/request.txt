@@ -1,0 +1,10 @@
+POST /api/v1/invoice/preview HTTP/1.1
+Host: lab-otc.example.invalid
+User-Agent: OTC-Benchmark/2.0
+Accept: application/json
+X-Lab-Case: OTC-BENCH-033
+Content-Type: application/json
+Content-Length: 62
+
+
+{"layout":"Invoice {{ invoice.number }}","invoiceId":"INV-7"}

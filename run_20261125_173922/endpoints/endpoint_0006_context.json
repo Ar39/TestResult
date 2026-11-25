@@ -1,0 +1,80 @@
+{
+  "endpoint_id": "endpoint_0006",
+  "method": "GET",
+  "scheme": "http",
+  "host": "lab-otc.example.invalid",
+  "path": "/api/v1/debug/trace",
+  "path_examples": [
+    "/api/v1/debug/trace"
+  ],
+  "traffic_count": 1,
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:3b84729a0ae37e79a6670914d26512b8052a11f14412f4e534cdedd79f93a65f",
+      "name": "X-Lab-Case",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "OTC-BENCH-052"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0052"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:b07b031c217afe80b8c5f989177698524b8820cb54563b64b913e204608658c2",
+      "name": "traceId",
+      "location": "query",
+      "type": "string",
+      "values": [
+        "TRACE-LAB-7"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0052"
+      ]
+    }
+  ],
+  "inventory_id": "sha256:ea180762eb02dc6c2212e7c047eff0315bf9cfbc20d2cb58bb8804209d639d5b",
+  "request_examples": [
+    {
+      "traffic_id": "traffic_0052",
+      "principal_ref": null,
+      "method": "GET",
+      "url": "http://lab-otc.example.invalid/api/v1/debug/trace?traceId=TRACE-LAB-7",
+      "content_type": null,
+      "query": {
+        "traceId": [
+          "TRACE-LAB-7"
+        ]
+      },
+      "body_excerpt": null,
+      "body_sha256": null
+    }
+  ],
+  "response_examples": [
+    {
+      "traffic_id": "traffic_0052",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "body_excerpt": "\n{\"fixture\": \"mock\", \"case\": \"OTC-CAND-052\", \"result\": \"synthetic\"}",
+      "body_sha256": "584883e690a0b25b928b328d4d080d669d4538fdf257a5f83bda37ebf3dad113"
+    }
+  ],
+  "auth_contexts": [
+    {
+      "principal_ref": null,
+      "credential_ref": null,
+      "auth_types": [],
+      "traffic_count": 1
+    }
+  ],
+  "business_context": {
+    "description": null,
+    "evidence": []
+  },
+  "limitations": []
+}

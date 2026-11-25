@@ -1,0 +1,93 @@
+{
+  "endpoint_id": "endpoint_0047",
+  "method": "POST",
+  "scheme": "http",
+  "host": "lab-otc.example.invalid",
+  "path": "/api/v1/profile/display-name",
+  "path_examples": [
+    "/api/v1/profile/display-name"
+  ],
+  "traffic_count": 1,
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:982294eb74aa50372c056eeb17fc03524a8b4858dedb34ee703dbb92799c8b72",
+      "name": "X-Lab-Case",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "OTC-BENCH-015"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0015"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:24457b264afd636ff65dc016ae0230aa8e695f7aba6f0e8cda34697e14e18f97",
+      "name": "displayName",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "LAB_MARKER <svg/onload=alert(1)>"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0015"
+      ]
+    },
+    {
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:f81b6c60381eadd5d8c9d82853f3db9753244e08979b61e8dd7cd8f62def8411",
+      "name": "locale",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "en"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0015"
+      ]
+    }
+  ],
+  "inventory_id": "sha256:7bb4711104b1496b9f20a76503d785968575175aee5344a8216b29ec408d63d7",
+  "request_examples": [
+    {
+      "traffic_id": "traffic_0015",
+      "principal_ref": null,
+      "method": "POST",
+      "url": "http://lab-otc.example.invalid/api/v1/profile/display-name",
+      "content_type": "application/json",
+      "query": null,
+      "body_excerpt": "\n{\"displayName\":\"LAB_MARKER <svg/onload=alert(1)>\",\"locale\":\"en\"}",
+      "body_sha256": "c1cf8860d467c1369639fa2570731c976e64cd7cec8239dfa21449bf99056506"
+    }
+  ],
+  "response_examples": [
+    {
+      "traffic_id": "traffic_0015",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "body_excerpt": "\n{\"fixture\": \"mock\", \"echo\": \"LAB_MARKER <svg/onload=alert(1)>\", \"case\": \"OTC-CAND-015\"}",
+      "body_sha256": "f8458f4ee02ba753829fb37ea4504c9c934828691a052a9d7ed704dfb1d0efa3"
+    }
+  ],
+  "auth_contexts": [
+    {
+      "principal_ref": null,
+      "credential_ref": null,
+      "auth_types": [],
+      "traffic_count": 1
+    }
+  ],
+  "business_context": {
+    "description": null,
+    "evidence": [
+      "parameter 'displayName' (json) suggests search / filter",
+      "path segment 'display-name' suggests search / filter"
+    ]
+  },
+  "limitations": []
+}

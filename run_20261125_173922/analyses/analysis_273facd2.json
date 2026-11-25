@@ -1,0 +1,3497 @@
+{
+  "analysis_id": "analysis_273facd2",
+  "run_id": "run_20261125_173922",
+  "endpoint_id": "endpoint_0027",
+  "parameter_id": null,
+  "profile": "dynamic_v1",
+  "model": "g-jev-1.13",
+  "status": "complete",
+  "questions": {
+    "ep_role": {
+      "type": "choice",
+      "question": "What is the primary business function of this HTTP endpoint? Consider the method, path, parameters and captured responses.",
+      "criteria": {
+        "read_data": "Reads or queries business data",
+        "create_data": "Creates new business data",
+        "update_data": "Modifies existing business data",
+        "delete_data": "Deletes business data",
+        "authentication": "Login, token issuing or session handling",
+        "file_upload": "Uploads or processes files",
+        "url_fetch": "Fetches, imports or calls external URLs server-side",
+        "xml_processing": "Parses or transforms XML payloads",
+        "search_or_filter": "Searches or filters datasets",
+        "public_static": "Public, static or health-check content",
+        "other": "None of the above",
+        "unknown": "Cannot be determined"
+      }
+    },
+    "ep_auth_required": {
+      "type": "choice",
+      "question": "Does this endpoint appear to require an authenticated identity? Judge from authorization headers, cookies and response behaviour.",
+      "criteria": {
+        "yes": "Authentication evidence present (auth headers/cookies, 401/403 responses)",
+        "no": "Accessed without any credentials",
+        "unknown": "Cannot be determined"
+      }
+    },
+    "ep_context_confidence": {
+      "type": "noul",
+      "question": "How completely does the captured traffic context represent this endpoint's security-relevant behaviour (parameters, authentication and data flows all visible)?",
+      "instructions": "Numeric estimate between 0 and 1: 0 = context is insufficient or misleading (too little traffic, masked values, opaque responses); 0.5 = partial context (some parameters or behaviours unclear); 1 = context fully represents the endpoint's inputs, authentication and data handling."
+    },
+    "ep_generic_risk": {
+      "type": "score",
+      "question": "How security-test-worthy is this endpoint overall, considering its parameters, data sensitivity and captured behaviour?",
+      "criteria": [
+        "No test relevance: public/static content, no meaningful inputs",
+        "Low relevance: inputs exist but no sensitive data or state control",
+        "Moderate relevance: business data involved, worth selective testing",
+        "High relevance: sensitive data, identity or state control present",
+        "Very high relevance: multiple sensitive dimensions or risky behaviour observed"
+      ]
+    },
+    "ep_idor_risk": {
+      "type": "score",
+      "question": "How relevant is IDOR/BOLA testing for this endpoint? Judge from object identifiers in path/query/body, ownership fields in responses, and whether different identities observed different data.",
+      "criteria": [
+        "No relevance: no object identifiers and no per-user data",
+        "Low relevance: identifiers present but resources appear public or shared",
+        "Moderate relevance: per-user object access, but no ownership evidence in context",
+        "High relevance: per-user or per-tenant objects with ownership signals in responses",
+        "Very high relevance: differing responses across identities for the same object already observed"
+      ]
+    },
+    "ep_ownership_model": {
+      "type": "choice",
+      "question": "Which object-ownership model does this endpoint most likely implement, based on the captured traffic?",
+      "criteria": {
+        "global_public": "Objects are public to all users",
+        "user_scoped": "Objects belong to individual users",
+        "tenant_scoped": "Objects belong to tenants/organizations",
+        "mixed": "Some objects are shared, some are private",
+        "unknown": "Cannot be determined from the context"
+      }
+    },
+    "ep_sqli_risk": {
+      "type": "score",
+      "question": "How relevant is SQL injection testing for this endpoint? Judge from search/filter/sort parameters and any database error evidence in responses.",
+      "criteria": [
+        "No relevance: no inputs that could reach a query",
+        "Low relevance: only fixed-enum inputs unlikely to reach SQL text",
+        "Moderate relevance: filter or search inputs that may build query conditions",
+        "High relevance: sort/order inputs or search terms likely concatenated into SQL",
+        "Very high relevance: database errors or SQL-shaped behaviour already observed in responses"
+      ]
+    },
+    "ep_sqli_reachability": {
+      "type": "choice",
+      "question": "Do the captured responses show evidence that request input reaches a database query (errors, echoes, timing hints, SQL fragments)?",
+      "criteria": {
+        "errors_observed": "Database error messages observed in responses",
+        "behavioural_evidence": "Input-dependent response changes suggest query construction",
+        "no_evidence": "No evidence either way",
+        "unknown": "Cannot be determined"
+      }
+    },
+    "ep_ssrf_risk": {
+      "type": "score",
+      "question": "How relevant is SSRF testing for this endpoint? Only score high when the context suggests the server actively fetches or calls URLs (webhooks, import/fetch features, callbacks). Merely storing a URL is weak evidence.",
+      "criteria": [
+        "No relevance: no URL handling at all",
+        "Low relevance: URL values stored or echoed but no server-side fetch evidence",
+        "Moderate relevance: URL stored and later used in unclear ways",
+        "High relevance: endpoint semantics suggest server-side URL fetching (import/callback)",
+        "Very high relevance: server-side fetch behaviour directly observed or strongly implied"
+      ]
+    },
+    "ep_url_handling": {
+      "type": "choice",
+      "question": "How does this endpoint most likely handle URL-valued input, based on the captured traffic? This distinguishes stored URLs from server-side fetches.",
+      "criteria": {
+        "server_fetch_confirmed": "Evidence the server actively requests the URL",
+        "server_fetch_likely": "Endpoint semantics (import/callback/webhook) imply server fetch",
+        "stored_only": "URL is persisted for later use, no fetch evidence",
+        "client_side_use": "URL is returned to and used by the client only",
+        "no_url_handling": "No URL-valued input",
+        "unknown": "Cannot be determined"
+      }
+    },
+    "ep_xxe_risk": {
+      "type": "score",
+      "question": "How relevant is XXE testing for this endpoint? Judge from XML content types, XML request bodies, XML parse errors and DTD/external-reference hints.",
+      "criteria": [
+        "No relevance: no XML processing",
+        "Low relevance: XML accepted but no parser evidence",
+        "Moderate relevance: XML bodies parsed server-side with unknown parser config",
+        "High relevance: XML parsing with observable error/echo behaviour",
+        "Very high relevance: external entity or DTD behaviour already observed"
+      ]
+    },
+    "ep_xml_parser_exposure": {
+      "type": "choice",
+      "question": "What XML parsing exposure does this endpoint show in the captured traffic?",
+      "criteria": {
+        "xml_body_parsed": "XML request body appears to be parsed by the server",
+        "xml_errors_observed": "XML parse errors observed in responses",
+        "xml_accepted_unparsed": "XML accepted but treated as opaque data",
+        "no_xml": "No XML involved",
+        "unknown": "Cannot be determined"
+      }
+    },
+    "ep_business_logic_risk": {
+      "type": "score",
+      "question": "How relevant is business-logic abuse testing for this endpoint? Judge from state transitions, monetary values, workflow ordering and trust boundaries.",
+      "criteria": [
+        "No relevance: no state, money or workflow control",
+        "Low relevance: minor state inputs with unclear impact",
+        "Moderate relevance: status or workflow fields that clients can influence",
+        "High relevance: monetary amounts, quantities or state transitions client-controlled",
+        "Very high relevance: critical business rules enforced only client-side"
+      ]
+    },
+    "ep_money_flow": {
+      "type": "choice",
+      "question": "Does this endpoint participate in a monetary flow (amounts, prices, discounts, balances, refunds)?",
+      "criteria": {
+        "yes_client_controlled": "Monetary values are client-supplied inputs",
+        "yes_server_controlled": "Monetary values computed server-side",
+        "no": "No monetary involvement",
+        "unknown": "Cannot be determined"
+      }
+    },
+    "ep_state_control": {
+      "type": "choice",
+      "question": "Can request parameters influence business state transitions (order status, approval, activation)?",
+      "criteria": {
+        "yes": "State fields are accepted from the client",
+        "no": "State changes are server-decided",
+        "unknown": "Cannot be determined"
+      }
+    },
+    "p_x_lab_case_role": {
+      "type": "choice",
+      "question": "What is the semantic role of the parameter 'X-Lab-Case' in this request? Use all available evidence together: name, observed values and type, transport location, nested JSON path, HTTP method and endpoint path, relationship to objects in captured responses, authenticated principal, and business context. A name is only one clue, never sufficient by itself.",
+      "criteria": {
+        "object_id": "Identifies a business object being accessed",
+        "user_id": "Identifies a user or account",
+        "tenant_id": "Identifies a tenant, organization or company boundary",
+        "resource_id": "Identifies a specific resource independently of its name",
+        "parent_reference": "References another object in a hierarchy",
+        "business_state": "Selects or changes a business state rather than identifying an object",
+        "control_flag": "Controls application behaviour or a processing branch",
+        "configuration": "Supplies a configuration or presentation setting",
+        "non_identifier": "Does not identify an object, user, tenant or resource",
+        "query_value": "A value used as an operand in a query or lookup",
+        "search_expression": "An expression evaluated by search or query processing",
+        "filter_field": "Chooses the field on which a result filter operates",
+        "sort_field": "Chooses the field results are ordered by",
+        "sort_direction": "Chooses ordering direction (asc/desc)",
+        "pagination": "Page number, offset or limit",
+        "filter": "Compatibility alias for query_value or filter_field; explain which applies",
+        "search_term": "Compatibility alias for query_value or search_expression",
+        "url": "A URL value the application may store, forward or fetch",
+        "xml_content": "XML content that the server parses",
+        "file_reference": "A file path, name or upload reference",
+        "auth_credential": "Authentication or authorization credential material",
+        "free_text": "General free-form text",
+        "other": "None of the above",
+        "unknown": "Cannot be determined from the context"
+      }
+    },
+    "p_x_lab_case_idor_risk": {
+      "type": "score",
+      "question": "How relevant is IDOR testing for the parameter 'X-Lab-Case'? Independently consider its semantic role, object ownership, authorization boundary and observable object-access behaviour. An identifier alone does not establish IDOR relevance; business state and configuration are not automatically high risk. Cross-identity differences count only when actually observed.",
+      "criteria": [
+        "No relevance: demonstrated non-object input with no object-access behaviour",
+        "Low relevance: object reference is public/shared or lacks a meaningful access boundary",
+        "Moderate relevance: object access is plausible but ownership or boundary remains uncertain",
+        "High relevance: concrete object role with user/tenant/resource ownership and an isolation boundary",
+        "Very high relevance: sensitive scoped object with observed cross-identity access differences"
+      ]
+    },
+    "p_x_lab_case_object_ownership": {
+      "type": "choice",
+      "question": "What ownership scope is supported by evidence for the object referenced by parameter 'X-Lab-Case'? Judge the referenced object, not its spelling.",
+      "criteria": {
+        "user_scoped": "The referenced object belongs to an individual user",
+        "tenant_scoped": "The referenced object belongs to a tenant or organization",
+        "resource_scoped": "Access is scoped to a particular resource or resource collection",
+        "shared_or_public": "The object is deliberately shared or public",
+        "mixed": "Observed objects have different ownership scopes",
+        "none": "The parameter does not reference an ownable object",
+        "unknown": "Ownership cannot be established from the context"
+      }
+    },
+    "p_x_lab_case_authorization_boundary": {
+      "type": "choice",
+      "question": "Which authorization boundary applies when parameter 'X-Lab-Case' is used to access an object? Use explicit response, principal and business evidence.",
+      "criteria": {
+        "user_isolation": "Access should be isolated between individual users",
+        "tenant_isolation": "Access should be isolated between tenants",
+        "resource_access_boundary": "Access is controlled at a resource-specific boundary",
+        "identity_comparison": "The referenced identity is compared with the authenticated principal",
+        "no_boundary": "Evidence shows deliberately unbounded public/shared access",
+        "unknown": "The authorization boundary cannot be established"
+      }
+    },
+    "p_x_lab_case_sqli_risk": {
+      "type": "score",
+      "question": "How relevant is SQL injection testing for the parameter 'X-Lab-Case'? Judge attacker control, database reachability, value binding, structural influence and dynamic query construction separately. Database reachability alone is not sufficient; safe parameterization remains low relevance even on a database-backed endpoint. Sort fields, directions, filters and search expressions need structure or dynamic-construction evidence, not a high score merely because of their names. No SQL evidence or UNKNOWN does not prove SQL injection is impossible.",
+      "criteria": [
+        "No relevance: demonstrated non-database input with no query influence",
+        "Low relevance: safely parameterized ordinary value, business ID or configuration input",
+        "Moderate relevance: attacker-controlled input with uncertain binding or query influence",
+        "High relevance: unsafe value binding with database behaviour, or dynamic structural query influence",
+        "Very high relevance: attacker-controlled SQL structure or value with observed database errors/behaviour"
+      ]
+    },
+    "p_x_lab_case_attacker_control": {
+      "type": "choice",
+      "question": "How much can an attacker control the value of parameter 'X-Lab-Case'?",
+      "criteria": {
+        "full": "Arbitrary client-supplied values are accepted",
+        "constrained": "Client controls a constrained or enumerated value space",
+        "server_controlled": "The server, not the client, determines the value",
+        "none": "No attacker-controlled path is supported by the context",
+        "unknown": "Attacker control cannot be established"
+      }
+    },
+    "p_x_lab_case_database_reachability": {
+      "type": "choice",
+      "question": "What evidence shows whether parameter 'X-Lab-Case' reaches database query processing? Do not infer confirmation from the endpoint being database-backed.",
+      "criteria": {
+        "confirmed": "Parameter-specific database errors, SQL fragments or equivalent evidence observed",
+        "behavioural": "Input-dependent behaviour suggests, but does not confirm, database processing",
+        "no_evidence": "No parameter-specific database evidence is available",
+        "unknown": "Reachability cannot be assessed from the context"
+      }
+    },
+    "p_x_lab_case_sql_value_binding": {
+      "type": "choice",
+      "question": "How is the value of parameter 'X-Lab-Case' bound when used in a database query?",
+      "criteria": {
+        "parameterized": "Evidence supports a safely bound query value",
+        "concatenated": "Evidence supports direct concatenation into SQL text",
+        "unsafe_binding": "Evidence supports unsafe interpolation or equivalent non-parameterized binding",
+        "not_used_as_value": "The input influences structure rather than a bound value",
+        "unknown": "Value binding cannot be established"
+      }
+    },
+    "p_x_lab_case_sql_structure_influence": {
+      "type": "choice",
+      "question": "What SQL structure can parameter 'X-Lab-Case' influence?",
+      "criteria": {
+        "value_only": "Only a query operand, not SQL syntax or identifiers",
+        "filter_condition": "A filter field, operator or condition",
+        "sort_or_syntax": "A sort field/direction or other SQL syntax",
+        "search_expression": "A dynamically evaluated search expression",
+        "none": "No SQL structure influence is supported by evidence",
+        "unknown": "Structural influence cannot be established"
+      }
+    },
+    "p_x_lab_case_dynamic_query_construction": {
+      "type": "choice",
+      "question": "How is the database query using parameter 'X-Lab-Case' constructed?",
+      "criteria": {
+        "static": "Query text and structure are fixed",
+        "conditional": "Query fragments are selected dynamically from controlled alternatives",
+        "dynamic": "Query text, identifiers or expressions are constructed dynamically",
+        "unknown": "Query construction cannot be established"
+      }
+    },
+    "p_x_lab_case_ssrf_risk": {
+      "type": "score",
+      "question": "How relevant is SSRF testing for the parameter 'X-Lab-Case'? Judge from the parameter name (callback/webhook/fetch/import/image URL), its URL-typed values and whether the endpoint plausibly fetches it server-side.",
+      "criteria": [
+        "No relevance: not a URL-valued parameter",
+        "Low relevance: URL stored but no server-side fetch evidence",
+        "Moderate relevance: URL stored and later consumed in unclear ways",
+        "High relevance: parameter name and endpoint semantics imply server-side fetch",
+        "Very high relevance: server-side fetch of this URL already observed or strongly implied"
+      ]
+    },
+    "p_imageurl_role": {
+      "type": "choice",
+      "question": "What is the semantic role of the parameter 'imageUrl' in this request? Use all available evidence together: name, observed values and type, transport location, nested JSON path, HTTP method and endpoint path, relationship to objects in captured responses, authenticated principal, and business context. A name is only one clue, never sufficient by itself.",
+      "criteria": {
+        "object_id": "Identifies a business object being accessed",
+        "user_id": "Identifies a user or account",
+        "tenant_id": "Identifies a tenant, organization or company boundary",
+        "resource_id": "Identifies a specific resource independently of its name",
+        "parent_reference": "References another object in a hierarchy",
+        "business_state": "Selects or changes a business state rather than identifying an object",
+        "control_flag": "Controls application behaviour or a processing branch",
+        "configuration": "Supplies a configuration or presentation setting",
+        "non_identifier": "Does not identify an object, user, tenant or resource",
+        "query_value": "A value used as an operand in a query or lookup",
+        "search_expression": "An expression evaluated by search or query processing",
+        "filter_field": "Chooses the field on which a result filter operates",
+        "sort_field": "Chooses the field results are ordered by",
+        "sort_direction": "Chooses ordering direction (asc/desc)",
+        "pagination": "Page number, offset or limit",
+        "filter": "Compatibility alias for query_value or filter_field; explain which applies",
+        "search_term": "Compatibility alias for query_value or search_expression",
+        "url": "A URL value the application may store, forward or fetch",
+        "xml_content": "XML content that the server parses",
+        "file_reference": "A file path, name or upload reference",
+        "auth_credential": "Authentication or authorization credential material",
+        "free_text": "General free-form text",
+        "other": "None of the above",
+        "unknown": "Cannot be determined from the context"
+      }
+    },
+    "p_imageurl_idor_risk": {
+      "type": "score",
+      "question": "How relevant is IDOR testing for the parameter 'imageUrl'? Independently consider its semantic role, object ownership, authorization boundary and observable object-access behaviour. An identifier alone does not establish IDOR relevance; business state and configuration are not automatically high risk. Cross-identity differences count only when actually observed.",
+      "criteria": [
+        "No relevance: demonstrated non-object input with no object-access behaviour",
+        "Low relevance: object reference is public/shared or lacks a meaningful access boundary",
+        "Moderate relevance: object access is plausible but ownership or boundary remains uncertain",
+        "High relevance: concrete object role with user/tenant/resource ownership and an isolation boundary",
+        "Very high relevance: sensitive scoped object with observed cross-identity access differences"
+      ]
+    },
+    "p_imageurl_object_ownership": {
+      "type": "choice",
+      "question": "What ownership scope is supported by evidence for the object referenced by parameter 'imageUrl'? Judge the referenced object, not its spelling.",
+      "criteria": {
+        "user_scoped": "The referenced object belongs to an individual user",
+        "tenant_scoped": "The referenced object belongs to a tenant or organization",
+        "resource_scoped": "Access is scoped to a particular resource or resource collection",
+        "shared_or_public": "The object is deliberately shared or public",
+        "mixed": "Observed objects have different ownership scopes",
+        "none": "The parameter does not reference an ownable object",
+        "unknown": "Ownership cannot be established from the context"
+      }
+    },
+    "p_imageurl_authorization_boundary": {
+      "type": "choice",
+      "question": "Which authorization boundary applies when parameter 'imageUrl' is used to access an object? Use explicit response, principal and business evidence.",
+      "criteria": {
+        "user_isolation": "Access should be isolated between individual users",
+        "tenant_isolation": "Access should be isolated between tenants",
+        "resource_access_boundary": "Access is controlled at a resource-specific boundary",
+        "identity_comparison": "The referenced identity is compared with the authenticated principal",
+        "no_boundary": "Evidence shows deliberately unbounded public/shared access",
+        "unknown": "The authorization boundary cannot be established"
+      }
+    },
+    "p_imageurl_sqli_risk": {
+      "type": "score",
+      "question": "How relevant is SQL injection testing for the parameter 'imageUrl'? Judge attacker control, database reachability, value binding, structural influence and dynamic query construction separately. Database reachability alone is not sufficient; safe parameterization remains low relevance even on a database-backed endpoint. Sort fields, directions, filters and search expressions need structure or dynamic-construction evidence, not a high score merely because of their names. No SQL evidence or UNKNOWN does not prove SQL injection is impossible.",
+      "criteria": [
+        "No relevance: demonstrated non-database input with no query influence",
+        "Low relevance: safely parameterized ordinary value, business ID or configuration input",
+        "Moderate relevance: attacker-controlled input with uncertain binding or query influence",
+        "High relevance: unsafe value binding with database behaviour, or dynamic structural query influence",
+        "Very high relevance: attacker-controlled SQL structure or value with observed database errors/behaviour"
+      ]
+    },
+    "p_imageurl_attacker_control": {
+      "type": "choice",
+      "question": "How much can an attacker control the value of parameter 'imageUrl'?",
+      "criteria": {
+        "full": "Arbitrary client-supplied values are accepted",
+        "constrained": "Client controls a constrained or enumerated value space",
+        "server_controlled": "The server, not the client, determines the value",
+        "none": "No attacker-controlled path is supported by the context",
+        "unknown": "Attacker control cannot be established"
+      }
+    },
+    "p_imageurl_database_reachability": {
+      "type": "choice",
+      "question": "What evidence shows whether parameter 'imageUrl' reaches database query processing? Do not infer confirmation from the endpoint being database-backed.",
+      "criteria": {
+        "confirmed": "Parameter-specific database errors, SQL fragments or equivalent evidence observed",
+        "behavioural": "Input-dependent behaviour suggests, but does not confirm, database processing",
+        "no_evidence": "No parameter-specific database evidence is available",
+        "unknown": "Reachability cannot be assessed from the context"
+      }
+    },
+    "p_imageurl_sql_value_binding": {
+      "type": "choice",
+      "question": "How is the value of parameter 'imageUrl' bound when used in a database query?",
+      "criteria": {
+        "parameterized": "Evidence supports a safely bound query value",
+        "concatenated": "Evidence supports direct concatenation into SQL text",
+        "unsafe_binding": "Evidence supports unsafe interpolation or equivalent non-parameterized binding",
+        "not_used_as_value": "The input influences structure rather than a bound value",
+        "unknown": "Value binding cannot be established"
+      }
+    },
+    "p_imageurl_sql_structure_influence": {
+      "type": "choice",
+      "question": "What SQL structure can parameter 'imageUrl' influence?",
+      "criteria": {
+        "value_only": "Only a query operand, not SQL syntax or identifiers",
+        "filter_condition": "A filter field, operator or condition",
+        "sort_or_syntax": "A sort field/direction or other SQL syntax",
+        "search_expression": "A dynamically evaluated search expression",
+        "none": "No SQL structure influence is supported by evidence",
+        "unknown": "Structural influence cannot be established"
+      }
+    },
+    "p_imageurl_dynamic_query_construction": {
+      "type": "choice",
+      "question": "How is the database query using parameter 'imageUrl' constructed?",
+      "criteria": {
+        "static": "Query text and structure are fixed",
+        "conditional": "Query fragments are selected dynamically from controlled alternatives",
+        "dynamic": "Query text, identifiers or expressions are constructed dynamically",
+        "unknown": "Query construction cannot be established"
+      }
+    },
+    "p_imageurl_ssrf_risk": {
+      "type": "score",
+      "question": "How relevant is SSRF testing for the parameter 'imageUrl'? Judge from the parameter name (callback/webhook/fetch/import/image URL), its URL-typed values and whether the endpoint plausibly fetches it server-side.",
+      "criteria": [
+        "No relevance: not a URL-valued parameter",
+        "Low relevance: URL stored but no server-side fetch evidence",
+        "Moderate relevance: URL stored and later consumed in unclear ways",
+        "High relevance: parameter name and endpoint semantics imply server-side fetch",
+        "Very high relevance: server-side fetch of this URL already observed or strongly implied"
+      ]
+    },
+    "p_userid_role": {
+      "type": "choice",
+      "question": "What is the semantic role of the parameter 'userId' in this request? Use all available evidence together: name, observed values and type, transport location, nested JSON path, HTTP method and endpoint path, relationship to objects in captured responses, authenticated principal, and business context. A name is only one clue, never sufficient by itself.",
+      "criteria": {
+        "object_id": "Identifies a business object being accessed",
+        "user_id": "Identifies a user or account",
+        "tenant_id": "Identifies a tenant, organization or company boundary",
+        "resource_id": "Identifies a specific resource independently of its name",
+        "parent_reference": "References another object in a hierarchy",
+        "business_state": "Selects or changes a business state rather than identifying an object",
+        "control_flag": "Controls application behaviour or a processing branch",
+        "configuration": "Supplies a configuration or presentation setting",
+        "non_identifier": "Does not identify an object, user, tenant or resource",
+        "query_value": "A value used as an operand in a query or lookup",
+        "search_expression": "An expression evaluated by search or query processing",
+        "filter_field": "Chooses the field on which a result filter operates",
+        "sort_field": "Chooses the field results are ordered by",
+        "sort_direction": "Chooses ordering direction (asc/desc)",
+        "pagination": "Page number, offset or limit",
+        "filter": "Compatibility alias for query_value or filter_field; explain which applies",
+        "search_term": "Compatibility alias for query_value or search_expression",
+        "url": "A URL value the application may store, forward or fetch",
+        "xml_content": "XML content that the server parses",
+        "file_reference": "A file path, name or upload reference",
+        "auth_credential": "Authentication or authorization credential material",
+        "free_text": "General free-form text",
+        "other": "None of the above",
+        "unknown": "Cannot be determined from the context"
+      }
+    },
+    "p_userid_idor_risk": {
+      "type": "score",
+      "question": "How relevant is IDOR testing for the parameter 'userId'? Independently consider its semantic role, object ownership, authorization boundary and observable object-access behaviour. An identifier alone does not establish IDOR relevance; business state and configuration are not automatically high risk. Cross-identity differences count only when actually observed.",
+      "criteria": [
+        "No relevance: demonstrated non-object input with no object-access behaviour",
+        "Low relevance: object reference is public/shared or lacks a meaningful access boundary",
+        "Moderate relevance: object access is plausible but ownership or boundary remains uncertain",
+        "High relevance: concrete object role with user/tenant/resource ownership and an isolation boundary",
+        "Very high relevance: sensitive scoped object with observed cross-identity access differences"
+      ]
+    },
+    "p_userid_object_ownership": {
+      "type": "choice",
+      "question": "What ownership scope is supported by evidence for the object referenced by parameter 'userId'? Judge the referenced object, not its spelling.",
+      "criteria": {
+        "user_scoped": "The referenced object belongs to an individual user",
+        "tenant_scoped": "The referenced object belongs to a tenant or organization",
+        "resource_scoped": "Access is scoped to a particular resource or resource collection",
+        "shared_or_public": "The object is deliberately shared or public",
+        "mixed": "Observed objects have different ownership scopes",
+        "none": "The parameter does not reference an ownable object",
+        "unknown": "Ownership cannot be established from the context"
+      }
+    },
+    "p_userid_authorization_boundary": {
+      "type": "choice",
+      "question": "Which authorization boundary applies when parameter 'userId' is used to access an object? Use explicit response, principal and business evidence.",
+      "criteria": {
+        "user_isolation": "Access should be isolated between individual users",
+        "tenant_isolation": "Access should be isolated between tenants",
+        "resource_access_boundary": "Access is controlled at a resource-specific boundary",
+        "identity_comparison": "The referenced identity is compared with the authenticated principal",
+        "no_boundary": "Evidence shows deliberately unbounded public/shared access",
+        "unknown": "The authorization boundary cannot be established"
+      }
+    },
+    "p_userid_sqli_risk": {
+      "type": "score",
+      "question": "How relevant is SQL injection testing for the parameter 'userId'? Judge attacker control, database reachability, value binding, structural influence and dynamic query construction separately. Database reachability alone is not sufficient; safe parameterization remains low relevance even on a database-backed endpoint. Sort fields, directions, filters and search expressions need structure or dynamic-construction evidence, not a high score merely because of their names. No SQL evidence or UNKNOWN does not prove SQL injection is impossible.",
+      "criteria": [
+        "No relevance: demonstrated non-database input with no query influence",
+        "Low relevance: safely parameterized ordinary value, business ID or configuration input",
+        "Moderate relevance: attacker-controlled input with uncertain binding or query influence",
+        "High relevance: unsafe value binding with database behaviour, or dynamic structural query influence",
+        "Very high relevance: attacker-controlled SQL structure or value with observed database errors/behaviour"
+      ]
+    },
+    "p_userid_attacker_control": {
+      "type": "choice",
+      "question": "How much can an attacker control the value of parameter 'userId'?",
+      "criteria": {
+        "full": "Arbitrary client-supplied values are accepted",
+        "constrained": "Client controls a constrained or enumerated value space",
+        "server_controlled": "The server, not the client, determines the value",
+        "none": "No attacker-controlled path is supported by the context",
+        "unknown": "Attacker control cannot be established"
+      }
+    },
+    "p_userid_database_reachability": {
+      "type": "choice",
+      "question": "What evidence shows whether parameter 'userId' reaches database query processing? Do not infer confirmation from the endpoint being database-backed.",
+      "criteria": {
+        "confirmed": "Parameter-specific database errors, SQL fragments or equivalent evidence observed",
+        "behavioural": "Input-dependent behaviour suggests, but does not confirm, database processing",
+        "no_evidence": "No parameter-specific database evidence is available",
+        "unknown": "Reachability cannot be assessed from the context"
+      }
+    },
+    "p_userid_sql_value_binding": {
+      "type": "choice",
+      "question": "How is the value of parameter 'userId' bound when used in a database query?",
+      "criteria": {
+        "parameterized": "Evidence supports a safely bound query value",
+        "concatenated": "Evidence supports direct concatenation into SQL text",
+        "unsafe_binding": "Evidence supports unsafe interpolation or equivalent non-parameterized binding",
+        "not_used_as_value": "The input influences structure rather than a bound value",
+        "unknown": "Value binding cannot be established"
+      }
+    },
+    "p_userid_sql_structure_influence": {
+      "type": "choice",
+      "question": "What SQL structure can parameter 'userId' influence?",
+      "criteria": {
+        "value_only": "Only a query operand, not SQL syntax or identifiers",
+        "filter_condition": "A filter field, operator or condition",
+        "sort_or_syntax": "A sort field/direction or other SQL syntax",
+        "search_expression": "A dynamically evaluated search expression",
+        "none": "No SQL structure influence is supported by evidence",
+        "unknown": "Structural influence cannot be established"
+      }
+    },
+    "p_userid_dynamic_query_construction": {
+      "type": "choice",
+      "question": "How is the database query using parameter 'userId' constructed?",
+      "criteria": {
+        "static": "Query text and structure are fixed",
+        "conditional": "Query fragments are selected dynamically from controlled alternatives",
+        "dynamic": "Query text, identifiers or expressions are constructed dynamically",
+        "unknown": "Query construction cannot be established"
+      }
+    },
+    "p_userid_ssrf_risk": {
+      "type": "score",
+      "question": "How relevant is SSRF testing for the parameter 'userId'? Judge from the parameter name (callback/webhook/fetch/import/image URL), its URL-typed values and whether the endpoint plausibly fetches it server-side.",
+      "criteria": [
+        "No relevance: not a URL-valued parameter",
+        "Low relevance: URL stored but no server-side fetch evidence",
+        "Moderate relevance: URL stored and later consumed in unclear ways",
+        "High relevance: parameter name and endpoint semantics imply server-side fetch",
+        "Very high relevance: server-side fetch of this URL already observed or strongly implied"
+      ]
+    }
+  },
+  "question_ownership": [
+    {
+      "question_id": "ep_role",
+      "endpoint_id": "endpoint_0027",
+      "parameter_id": null,
+      "parameter_identity": null,
+      "scope": "endpoint",
+      "question_type": "choice",
+      "question_kind": "role",
+      "profile": "dynamic_v1"
+    },
+    {
+      "question_id": "ep_auth_required",
+      "endpoint_id": "endpoint_0027",
+      "parameter_id": null,
+      "parameter_identity": null,
+      "scope": "endpoint",
+      "question_type": "choice",
+      "question_kind": "auth_required",
+      "profile": "dynamic_v1"
+    },
+    {
+      "question_id": "ep_context_confidence",
+      "endpoint_id": "endpoint_0027",
+      "parameter_id": null,
+      "parameter_identity": null,
+      "scope": "endpoint",
+      "question_type": "noul",
+      "question_kind": "context_confidence",
+      "profile": "dynamic_v1"
+    },
+    {
+      "question_id": "ep_generic_risk",
+      "endpoint_id": "endpoint_0027",
+      "parameter_id": null,
+      "parameter_identity": null,
+      "scope": "endpoint",
+      "question_type": "score",
+      "question_kind": "generic_risk",
+      "profile": "dynamic_v1"
+    },
+    {
+      "question_id": "ep_idor_risk",
+      "endpoint_id": "endpoint_0027",
+      "parameter_id": null,
+      "parameter_identity": null,
+      "scope": "endpoint",
+      "question_type": "score",
+      "question_kind": "idor_risk",
+      "profile": "dynamic_v1"
+    },
+    {
+      "question_id": "ep_ownership_model",
+      "endpoint_id": "endpoint_0027",
+      "parameter_id": null,
+      "parameter_identity": null,
+      "scope": "endpoint",
+      "question_type": "choice",
+      "question_kind": "ownership_model",
+      "profile": "dynamic_v1"
+    },
+    {
+      "question_id": "ep_sqli_risk",
+      "endpoint_id": "endpoint_0027",
+      "parameter_id": null,
+      "parameter_identity": null,
+      "scope": "endpoint",
+      "question_type": "score",
+      "question_kind": "sqli_risk",
+      "profile": "dynamic_v1"
+    },
+    {
+      "question_id": "ep_sqli_reachability",
+      "endpoint_id": "endpoint_0027",
+      "parameter_id": null,
+      "parameter_identity": null,
+      "scope": "endpoint",
+      "question_type": "choice",
+      "question_kind": "sqli_reachability",
+      "profile": "dynamic_v1"
+    },
+    {
+      "question_id": "ep_ssrf_risk",
+      "endpoint_id": "endpoint_0027",
+      "parameter_id": null,
+      "parameter_identity": null,
+      "scope": "endpoint",
+      "question_type": "score",
+      "question_kind": "ssrf_risk",
+      "profile": "dynamic_v1"
+    },
+    {
+      "question_id": "ep_url_handling",
+      "endpoint_id": "endpoint_0027",
+      "parameter_id": null,
+      "parameter_identity": null,
+      "scope": "endpoint",
+      "question_type": "choice",
+      "question_kind": "url_handling",
+      "profile": "dynamic_v1"
+    },
+    {
+      "question_id": "ep_xxe_risk",
+      "endpoint_id": "endpoint_0027",
+      "parameter_id": null,
+      "parameter_identity": null,
+      "scope": "endpoint",
+      "question_type": "score",
+      "question_kind": "xxe_risk",
+      "profile": "dynamic_v1"
+    },
+    {
+      "question_id": "ep_xml_parser_exposure",
+      "endpoint_id": "endpoint_0027",
+      "parameter_id": null,
+      "parameter_identity": null,
+      "scope": "endpoint",
+      "question_type": "choice",
+      "question_kind": "xml_parser_exposure",
+      "profile": "dynamic_v1"
+    },
+    {
+      "question_id": "ep_business_logic_risk",
+      "endpoint_id": "endpoint_0027",
+      "parameter_id": null,
+      "parameter_identity": null,
+      "scope": "endpoint",
+      "question_type": "score",
+      "question_kind": "business_logic_risk",
+      "profile": "dynamic_v1"
+    },
+    {
+      "question_id": "ep_money_flow",
+      "endpoint_id": "endpoint_0027",
+      "parameter_id": null,
+      "parameter_identity": null,
+      "scope": "endpoint",
+      "question_type": "choice",
+      "question_kind": "money_flow",
+      "profile": "dynamic_v1"
+    },
+    {
+      "question_id": "ep_state_control",
+      "endpoint_id": "endpoint_0027",
+      "parameter_id": null,
+      "parameter_identity": null,
+      "scope": "endpoint",
+      "question_type": "choice",
+      "question_kind": "state_control",
+      "profile": "dynamic_v1"
+    },
+    {
+      "question_id": "p_x_lab_case_role",
+      "endpoint_id": "endpoint_0027",
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:8cf4b69c58b64dbd9f087afe21f90b6f39b28e0e23025d053ec1092b6149366b",
+      "scope": "parameter",
+      "question_type": "choice",
+      "question_kind": "role",
+      "profile": "dynamic_v1"
+    },
+    {
+      "question_id": "p_x_lab_case_idor_risk",
+      "endpoint_id": "endpoint_0027",
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:8cf4b69c58b64dbd9f087afe21f90b6f39b28e0e23025d053ec1092b6149366b",
+      "scope": "parameter",
+      "question_type": "score",
+      "question_kind": "idor_risk",
+      "profile": "dynamic_v1"
+    },
+    {
+      "question_id": "p_x_lab_case_object_ownership",
+      "endpoint_id": "endpoint_0027",
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:8cf4b69c58b64dbd9f087afe21f90b6f39b28e0e23025d053ec1092b6149366b",
+      "scope": "parameter",
+      "question_type": "choice",
+      "question_kind": "object_ownership",
+      "profile": "dynamic_v1"
+    },
+    {
+      "question_id": "p_x_lab_case_authorization_boundary",
+      "endpoint_id": "endpoint_0027",
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:8cf4b69c58b64dbd9f087afe21f90b6f39b28e0e23025d053ec1092b6149366b",
+      "scope": "parameter",
+      "question_type": "choice",
+      "question_kind": "authorization_boundary",
+      "profile": "dynamic_v1"
+    },
+    {
+      "question_id": "p_x_lab_case_sqli_risk",
+      "endpoint_id": "endpoint_0027",
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:8cf4b69c58b64dbd9f087afe21f90b6f39b28e0e23025d053ec1092b6149366b",
+      "scope": "parameter",
+      "question_type": "score",
+      "question_kind": "sqli_risk",
+      "profile": "dynamic_v1"
+    },
+    {
+      "question_id": "p_x_lab_case_attacker_control",
+      "endpoint_id": "endpoint_0027",
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:8cf4b69c58b64dbd9f087afe21f90b6f39b28e0e23025d053ec1092b6149366b",
+      "scope": "parameter",
+      "question_type": "choice",
+      "question_kind": "attacker_control",
+      "profile": "dynamic_v1"
+    },
+    {
+      "question_id": "p_x_lab_case_database_reachability",
+      "endpoint_id": "endpoint_0027",
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:8cf4b69c58b64dbd9f087afe21f90b6f39b28e0e23025d053ec1092b6149366b",
+      "scope": "parameter",
+      "question_type": "choice",
+      "question_kind": "database_reachability",
+      "profile": "dynamic_v1"
+    },
+    {
+      "question_id": "p_x_lab_case_sql_value_binding",
+      "endpoint_id": "endpoint_0027",
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:8cf4b69c58b64dbd9f087afe21f90b6f39b28e0e23025d053ec1092b6149366b",
+      "scope": "parameter",
+      "question_type": "choice",
+      "question_kind": "sql_value_binding",
+      "profile": "dynamic_v1"
+    },
+    {
+      "question_id": "p_x_lab_case_sql_structure_influence",
+      "endpoint_id": "endpoint_0027",
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:8cf4b69c58b64dbd9f087afe21f90b6f39b28e0e23025d053ec1092b6149366b",
+      "scope": "parameter",
+      "question_type": "choice",
+      "question_kind": "sql_structure_influence",
+      "profile": "dynamic_v1"
+    },
+    {
+      "question_id": "p_x_lab_case_dynamic_query_construction",
+      "endpoint_id": "endpoint_0027",
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:8cf4b69c58b64dbd9f087afe21f90b6f39b28e0e23025d053ec1092b6149366b",
+      "scope": "parameter",
+      "question_type": "choice",
+      "question_kind": "dynamic_query_construction",
+      "profile": "dynamic_v1"
+    },
+    {
+      "question_id": "p_x_lab_case_ssrf_risk",
+      "endpoint_id": "endpoint_0027",
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:8cf4b69c58b64dbd9f087afe21f90b6f39b28e0e23025d053ec1092b6149366b",
+      "scope": "parameter",
+      "question_type": "score",
+      "question_kind": "ssrf_risk",
+      "profile": "dynamic_v1"
+    },
+    {
+      "question_id": "p_imageurl_role",
+      "endpoint_id": "endpoint_0027",
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:ebd2babaa0a2b435da0c480def1f03d5380caef4ddd54533c35dc7e055646bd1",
+      "scope": "parameter",
+      "question_type": "choice",
+      "question_kind": "role",
+      "profile": "dynamic_v1"
+    },
+    {
+      "question_id": "p_imageurl_idor_risk",
+      "endpoint_id": "endpoint_0027",
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:ebd2babaa0a2b435da0c480def1f03d5380caef4ddd54533c35dc7e055646bd1",
+      "scope": "parameter",
+      "question_type": "score",
+      "question_kind": "idor_risk",
+      "profile": "dynamic_v1"
+    },
+    {
+      "question_id": "p_imageurl_object_ownership",
+      "endpoint_id": "endpoint_0027",
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:ebd2babaa0a2b435da0c480def1f03d5380caef4ddd54533c35dc7e055646bd1",
+      "scope": "parameter",
+      "question_type": "choice",
+      "question_kind": "object_ownership",
+      "profile": "dynamic_v1"
+    },
+    {
+      "question_id": "p_imageurl_authorization_boundary",
+      "endpoint_id": "endpoint_0027",
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:ebd2babaa0a2b435da0c480def1f03d5380caef4ddd54533c35dc7e055646bd1",
+      "scope": "parameter",
+      "question_type": "choice",
+      "question_kind": "authorization_boundary",
+      "profile": "dynamic_v1"
+    },
+    {
+      "question_id": "p_imageurl_sqli_risk",
+      "endpoint_id": "endpoint_0027",
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:ebd2babaa0a2b435da0c480def1f03d5380caef4ddd54533c35dc7e055646bd1",
+      "scope": "parameter",
+      "question_type": "score",
+      "question_kind": "sqli_risk",
+      "profile": "dynamic_v1"
+    },
+    {
+      "question_id": "p_imageurl_attacker_control",
+      "endpoint_id": "endpoint_0027",
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:ebd2babaa0a2b435da0c480def1f03d5380caef4ddd54533c35dc7e055646bd1",
+      "scope": "parameter",
+      "question_type": "choice",
+      "question_kind": "attacker_control",
+      "profile": "dynamic_v1"
+    },
+    {
+      "question_id": "p_imageurl_database_reachability",
+      "endpoint_id": "endpoint_0027",
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:ebd2babaa0a2b435da0c480def1f03d5380caef4ddd54533c35dc7e055646bd1",
+      "scope": "parameter",
+      "question_type": "choice",
+      "question_kind": "database_reachability",
+      "profile": "dynamic_v1"
+    },
+    {
+      "question_id": "p_imageurl_sql_value_binding",
+      "endpoint_id": "endpoint_0027",
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:ebd2babaa0a2b435da0c480def1f03d5380caef4ddd54533c35dc7e055646bd1",
+      "scope": "parameter",
+      "question_type": "choice",
+      "question_kind": "sql_value_binding",
+      "profile": "dynamic_v1"
+    },
+    {
+      "question_id": "p_imageurl_sql_structure_influence",
+      "endpoint_id": "endpoint_0027",
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:ebd2babaa0a2b435da0c480def1f03d5380caef4ddd54533c35dc7e055646bd1",
+      "scope": "parameter",
+      "question_type": "choice",
+      "question_kind": "sql_structure_influence",
+      "profile": "dynamic_v1"
+    },
+    {
+      "question_id": "p_imageurl_dynamic_query_construction",
+      "endpoint_id": "endpoint_0027",
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:ebd2babaa0a2b435da0c480def1f03d5380caef4ddd54533c35dc7e055646bd1",
+      "scope": "parameter",
+      "question_type": "choice",
+      "question_kind": "dynamic_query_construction",
+      "profile": "dynamic_v1"
+    },
+    {
+      "question_id": "p_imageurl_ssrf_risk",
+      "endpoint_id": "endpoint_0027",
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:ebd2babaa0a2b435da0c480def1f03d5380caef4ddd54533c35dc7e055646bd1",
+      "scope": "parameter",
+      "question_type": "score",
+      "question_kind": "ssrf_risk",
+      "profile": "dynamic_v1"
+    },
+    {
+      "question_id": "p_userid_role",
+      "endpoint_id": "endpoint_0027",
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:d0ead737a5210775bc4fa261fd2f6a96cf57506b0e059f600dba29ee22c0b384",
+      "scope": "parameter",
+      "question_type": "choice",
+      "question_kind": "role",
+      "profile": "dynamic_v1"
+    },
+    {
+      "question_id": "p_userid_idor_risk",
+      "endpoint_id": "endpoint_0027",
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:d0ead737a5210775bc4fa261fd2f6a96cf57506b0e059f600dba29ee22c0b384",
+      "scope": "parameter",
+      "question_type": "score",
+      "question_kind": "idor_risk",
+      "profile": "dynamic_v1"
+    },
+    {
+      "question_id": "p_userid_object_ownership",
+      "endpoint_id": "endpoint_0027",
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:d0ead737a5210775bc4fa261fd2f6a96cf57506b0e059f600dba29ee22c0b384",
+      "scope": "parameter",
+      "question_type": "choice",
+      "question_kind": "object_ownership",
+      "profile": "dynamic_v1"
+    },
+    {
+      "question_id": "p_userid_authorization_boundary",
+      "endpoint_id": "endpoint_0027",
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:d0ead737a5210775bc4fa261fd2f6a96cf57506b0e059f600dba29ee22c0b384",
+      "scope": "parameter",
+      "question_type": "choice",
+      "question_kind": "authorization_boundary",
+      "profile": "dynamic_v1"
+    },
+    {
+      "question_id": "p_userid_sqli_risk",
+      "endpoint_id": "endpoint_0027",
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:d0ead737a5210775bc4fa261fd2f6a96cf57506b0e059f600dba29ee22c0b384",
+      "scope": "parameter",
+      "question_type": "score",
+      "question_kind": "sqli_risk",
+      "profile": "dynamic_v1"
+    },
+    {
+      "question_id": "p_userid_attacker_control",
+      "endpoint_id": "endpoint_0027",
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:d0ead737a5210775bc4fa261fd2f6a96cf57506b0e059f600dba29ee22c0b384",
+      "scope": "parameter",
+      "question_type": "choice",
+      "question_kind": "attacker_control",
+      "profile": "dynamic_v1"
+    },
+    {
+      "question_id": "p_userid_database_reachability",
+      "endpoint_id": "endpoint_0027",
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:d0ead737a5210775bc4fa261fd2f6a96cf57506b0e059f600dba29ee22c0b384",
+      "scope": "parameter",
+      "question_type": "choice",
+      "question_kind": "database_reachability",
+      "profile": "dynamic_v1"
+    },
+    {
+      "question_id": "p_userid_sql_value_binding",
+      "endpoint_id": "endpoint_0027",
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:d0ead737a5210775bc4fa261fd2f6a96cf57506b0e059f600dba29ee22c0b384",
+      "scope": "parameter",
+      "question_type": "choice",
+      "question_kind": "sql_value_binding",
+      "profile": "dynamic_v1"
+    },
+    {
+      "question_id": "p_userid_sql_structure_influence",
+      "endpoint_id": "endpoint_0027",
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:d0ead737a5210775bc4fa261fd2f6a96cf57506b0e059f600dba29ee22c0b384",
+      "scope": "parameter",
+      "question_type": "choice",
+      "question_kind": "sql_structure_influence",
+      "profile": "dynamic_v1"
+    },
+    {
+      "question_id": "p_userid_dynamic_query_construction",
+      "endpoint_id": "endpoint_0027",
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:d0ead737a5210775bc4fa261fd2f6a96cf57506b0e059f600dba29ee22c0b384",
+      "scope": "parameter",
+      "question_type": "choice",
+      "question_kind": "dynamic_query_construction",
+      "profile": "dynamic_v1"
+    },
+    {
+      "question_id": "p_userid_ssrf_risk",
+      "endpoint_id": "endpoint_0027",
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:d0ead737a5210775bc4fa261fd2f6a96cf57506b0e059f600dba29ee22c0b384",
+      "scope": "parameter",
+      "question_type": "score",
+      "question_kind": "ssrf_risk",
+      "profile": "dynamic_v1"
+    }
+  ],
+  "answers": {
+    "ep_role": {
+      "question_id": "ep_role",
+      "type": "choice",
+      "value": "url_fetch",
+      "confidence": 0.89,
+      "probabilities": {
+        "read_data": 0.0,
+        "create_data": 0.01,
+        "update_data": 0.09,
+        "delete_data": 0.0,
+        "authentication": 0.0,
+        "file_upload": 0.0,
+        "url_fetch": 0.9,
+        "xml_processing": 0.0,
+        "search_or_filter": 0.0,
+        "public_static": 0.0,
+        "other": 0.0,
+        "unknown": 0.0
+      },
+      "legend": null,
+      "raw": {
+        "type": "choice",
+        "choice": "url_fetch",
+        "confidence": 0.89,
+        "probabilities": {
+          "read_data": 0.0,
+          "create_data": 0.01,
+          "update_data": 0.09,
+          "delete_data": 0.0,
+          "authentication": 0.0,
+          "file_upload": 0.0,
+          "url_fetch": 0.9,
+          "xml_processing": 0.0,
+          "search_or_filter": 0.0,
+          "public_static": 0.0,
+          "other": 0.0,
+          "unknown": 0.0
+        }
+      }
+    },
+    "ep_auth_required": {
+      "question_id": "ep_auth_required",
+      "type": "choice",
+      "value": "no",
+      "confidence": 0.98,
+      "probabilities": {
+        "yes": 0.0,
+        "no": 0.99,
+        "unknown": 0.01
+      },
+      "legend": null,
+      "raw": {
+        "type": "choice",
+        "choice": "no",
+        "confidence": 0.98,
+        "probabilities": {
+          "yes": 0.0,
+          "no": 0.99,
+          "unknown": 0.01
+        }
+      }
+    },
+    "ep_context_confidence": {
+      "question_id": "ep_context_confidence",
+      "type": "noul",
+      "value": 0.36,
+      "confidence": null,
+      "probabilities": null,
+      "legend": null,
+      "raw": {
+        "type": "noul",
+        "noul": 0.36
+      }
+    },
+    "ep_generic_risk": {
+      "question_id": "ep_generic_risk",
+      "type": "score",
+      "value": 2.65,
+      "confidence": 0.68,
+      "probabilities": {
+        "0": 0.0,
+        "1": 0.05,
+        "2": 0.26,
+        "3": 0.67,
+        "4": 0.02
+      },
+      "legend": {
+        "0": "No test relevance: public/static content, no meaningful inputs",
+        "1": "Low relevance: inputs exist but no sensitive data or state control",
+        "2": "Moderate relevance: business data involved, worth selective testing",
+        "3": "High relevance: sensitive data, identity or state control present",
+        "4": "Very high relevance: multiple sensitive dimensions or risky behaviour observed"
+      },
+      "raw": {
+        "type": "score",
+        "score": 2.65,
+        "confidence": 0.68,
+        "legend": {
+          "0": "No test relevance: public/static content, no meaningful inputs",
+          "1": "Low relevance: inputs exist but no sensitive data or state control",
+          "2": "Moderate relevance: business data involved, worth selective testing",
+          "3": "High relevance: sensitive data, identity or state control present",
+          "4": "Very high relevance: multiple sensitive dimensions or risky behaviour observed"
+        },
+        "probabilities": {
+          "0": 0.0,
+          "1": 0.05,
+          "2": 0.26,
+          "3": 0.67,
+          "4": 0.02
+        }
+      }
+    },
+    "ep_idor_risk": {
+      "question_id": "ep_idor_risk",
+      "type": "score",
+      "value": 2.04,
+      "confidence": 0.78,
+      "probabilities": {
+        "0": 0.03,
+        "1": 0.05,
+        "2": 0.77,
+        "3": 0.15,
+        "4": 0.0
+      },
+      "legend": {
+        "0": "No relevance: no object identifiers and no per-user data",
+        "1": "Low relevance: identifiers present but resources appear public or shared",
+        "2": "Moderate relevance: per-user object access, but no ownership evidence in context",
+        "3": "High relevance: per-user or per-tenant objects with ownership signals in responses",
+        "4": "Very high relevance: differing responses across identities for the same object already observed"
+      },
+      "raw": {
+        "type": "score",
+        "score": 2.04,
+        "confidence": 0.78,
+        "legend": {
+          "0": "No relevance: no object identifiers and no per-user data",
+          "1": "Low relevance: identifiers present but resources appear public or shared",
+          "2": "Moderate relevance: per-user object access, but no ownership evidence in context",
+          "3": "High relevance: per-user or per-tenant objects with ownership signals in responses",
+          "4": "Very high relevance: differing responses across identities for the same object already observed"
+        },
+        "probabilities": {
+          "0": 0.03,
+          "1": 0.05,
+          "2": 0.77,
+          "3": 0.15,
+          "4": 0.0
+        }
+      }
+    },
+    "ep_ownership_model": {
+      "question_id": "ep_ownership_model",
+      "type": "choice",
+      "value": "user_scoped",
+      "confidence": 0.92,
+      "probabilities": {
+        "global_public": 0.0,
+        "user_scoped": 0.94,
+        "tenant_scoped": 0.0,
+        "mixed": 0.0,
+        "unknown": 0.06
+      },
+      "legend": null,
+      "raw": {
+        "type": "choice",
+        "choice": "user_scoped",
+        "confidence": 0.92,
+        "probabilities": {
+          "global_public": 0.0,
+          "user_scoped": 0.94,
+          "tenant_scoped": 0.0,
+          "mixed": 0.0,
+          "unknown": 0.06
+        }
+      }
+    },
+    "ep_sqli_risk": {
+      "question_id": "ep_sqli_risk",
+      "type": "score",
+      "value": 0.87,
+      "confidence": 0.28,
+      "probabilities": {
+        "0": 0.46,
+        "1": 0.24,
+        "2": 0.27,
+        "3": 0.03,
+        "4": 0.0
+      },
+      "legend": {
+        "0": "No relevance: no inputs that could reach a query",
+        "1": "Low relevance: only fixed-enum inputs unlikely to reach SQL text",
+        "2": "Moderate relevance: filter or search inputs that may build query conditions",
+        "3": "High relevance: sort/order inputs or search terms likely concatenated into SQL",
+        "4": "Very high relevance: database errors or SQL-shaped behaviour already observed in responses"
+      },
+      "raw": {
+        "type": "score",
+        "score": 0.87,
+        "confidence": 0.28,
+        "legend": {
+          "0": "No relevance: no inputs that could reach a query",
+          "1": "Low relevance: only fixed-enum inputs unlikely to reach SQL text",
+          "2": "Moderate relevance: filter or search inputs that may build query conditions",
+          "3": "High relevance: sort/order inputs or search terms likely concatenated into SQL",
+          "4": "Very high relevance: database errors or SQL-shaped behaviour already observed in responses"
+        },
+        "probabilities": {
+          "0": 0.46,
+          "1": 0.24,
+          "2": 0.27,
+          "3": 0.03,
+          "4": 0.0
+        }
+      }
+    },
+    "ep_sqli_reachability": {
+      "question_id": "ep_sqli_reachability",
+      "type": "choice",
+      "value": "no_evidence",
+      "confidence": 0.75,
+      "probabilities": {
+        "errors_observed": 0.0,
+        "behavioural_evidence": 0.06,
+        "no_evidence": 0.81,
+        "unknown": 0.13
+      },
+      "legend": null,
+      "raw": {
+        "type": "choice",
+        "choice": "no_evidence",
+        "confidence": 0.75,
+        "probabilities": {
+          "errors_observed": 0.0,
+          "behavioural_evidence": 0.06,
+          "no_evidence": 0.81,
+          "unknown": 0.13
+        }
+      }
+    },
+    "ep_ssrf_risk": {
+      "question_id": "ep_ssrf_risk",
+      "type": "score",
+      "value": 3.08,
+      "confidence": 0.87,
+      "probabilities": {
+        "0": 0.0,
+        "1": 0.02,
+        "2": 0.0,
+        "3": 0.86,
+        "4": 0.12
+      },
+      "legend": {
+        "0": "No relevance: no URL handling at all",
+        "1": "Low relevance: URL values stored or echoed but no server-side fetch evidence",
+        "2": "Moderate relevance: URL stored and later used in unclear ways",
+        "3": "High relevance: endpoint semantics suggest server-side URL fetching (import/callback)",
+        "4": "Very high relevance: server-side fetch behaviour directly observed or strongly implied"
+      },
+      "raw": {
+        "type": "score",
+        "score": 3.08,
+        "confidence": 0.87,
+        "legend": {
+          "0": "No relevance: no URL handling at all",
+          "1": "Low relevance: URL values stored or echoed but no server-side fetch evidence",
+          "2": "Moderate relevance: URL stored and later used in unclear ways",
+          "3": "High relevance: endpoint semantics suggest server-side URL fetching (import/callback)",
+          "4": "Very high relevance: server-side fetch behaviour directly observed or strongly implied"
+        },
+        "probabilities": {
+          "0": 0.0,
+          "1": 0.02,
+          "2": 0.0,
+          "3": 0.86,
+          "4": 0.12
+        }
+      }
+    },
+    "ep_url_handling": {
+      "question_id": "ep_url_handling",
+      "type": "choice",
+      "value": "server_fetch_likely",
+      "confidence": 0.87,
+      "probabilities": {
+        "server_fetch_confirmed": 0.06,
+        "server_fetch_likely": 0.89,
+        "stored_only": 0.02,
+        "client_side_use": 0.0,
+        "no_url_handling": 0.0,
+        "unknown": 0.03
+      },
+      "legend": null,
+      "raw": {
+        "type": "choice",
+        "choice": "server_fetch_likely",
+        "confidence": 0.87,
+        "probabilities": {
+          "server_fetch_confirmed": 0.06,
+          "server_fetch_likely": 0.89,
+          "stored_only": 0.02,
+          "client_side_use": 0.0,
+          "no_url_handling": 0.0,
+          "unknown": 0.03
+        }
+      }
+    },
+    "ep_xxe_risk": {
+      "question_id": "ep_xxe_risk",
+      "type": "score",
+      "value": 0.0,
+      "confidence": 1.0,
+      "probabilities": {
+        "0": 1.0,
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.0,
+        "4": 0.0
+      },
+      "legend": {
+        "0": "No relevance: no XML processing",
+        "1": "Low relevance: XML accepted but no parser evidence",
+        "2": "Moderate relevance: XML bodies parsed server-side with unknown parser config",
+        "3": "High relevance: XML parsing with observable error/echo behaviour",
+        "4": "Very high relevance: external entity or DTD behaviour already observed"
+      },
+      "raw": {
+        "type": "score",
+        "score": 0.0,
+        "confidence": 1.0,
+        "legend": {
+          "0": "No relevance: no XML processing",
+          "1": "Low relevance: XML accepted but no parser evidence",
+          "2": "Moderate relevance: XML bodies parsed server-side with unknown parser config",
+          "3": "High relevance: XML parsing with observable error/echo behaviour",
+          "4": "Very high relevance: external entity or DTD behaviour already observed"
+        },
+        "probabilities": {
+          "0": 1.0,
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.0,
+          "4": 0.0
+        }
+      }
+    },
+    "ep_xml_parser_exposure": {
+      "question_id": "ep_xml_parser_exposure",
+      "type": "choice",
+      "value": "no_xml",
+      "confidence": 1.0,
+      "probabilities": {
+        "xml_body_parsed": 0.0,
+        "xml_errors_observed": 0.0,
+        "xml_accepted_unparsed": 0.0,
+        "no_xml": 1.0,
+        "unknown": 0.0
+      },
+      "legend": null,
+      "raw": {
+        "type": "choice",
+        "choice": "no_xml",
+        "confidence": 1.0,
+        "probabilities": {
+          "xml_body_parsed": 0.0,
+          "xml_errors_observed": 0.0,
+          "xml_accepted_unparsed": 0.0,
+          "no_xml": 1.0,
+          "unknown": 0.0
+        }
+      }
+    },
+    "ep_business_logic_risk": {
+      "question_id": "ep_business_logic_risk",
+      "type": "score",
+      "value": 1.46,
+      "confidence": 0.43,
+      "probabilities": {
+        "0": 0.11,
+        "1": 0.47,
+        "2": 0.27,
+        "3": 0.15,
+        "4": 0.0
+      },
+      "legend": {
+        "0": "No relevance: no state, money or workflow control",
+        "1": "Low relevance: minor state inputs with unclear impact",
+        "2": "Moderate relevance: status or workflow fields that clients can influence",
+        "3": "High relevance: monetary amounts, quantities or state transitions client-controlled",
+        "4": "Very high relevance: critical business rules enforced only client-side"
+      },
+      "raw": {
+        "type": "score",
+        "score": 1.46,
+        "confidence": 0.43,
+        "legend": {
+          "0": "No relevance: no state, money or workflow control",
+          "1": "Low relevance: minor state inputs with unclear impact",
+          "2": "Moderate relevance: status or workflow fields that clients can influence",
+          "3": "High relevance: monetary amounts, quantities or state transitions client-controlled",
+          "4": "Very high relevance: critical business rules enforced only client-side"
+        },
+        "probabilities": {
+          "0": 0.11,
+          "1": 0.47,
+          "2": 0.27,
+          "3": 0.15,
+          "4": 0.0
+        }
+      }
+    },
+    "ep_money_flow": {
+      "question_id": "ep_money_flow",
+      "type": "choice",
+      "value": "no",
+      "confidence": 1.0,
+      "probabilities": {
+        "yes_client_controlled": 0.0,
+        "yes_server_controlled": 0.0,
+        "no": 1.0,
+        "unknown": 0.0
+      },
+      "legend": null,
+      "raw": {
+        "type": "choice",
+        "choice": "no",
+        "confidence": 1.0,
+        "probabilities": {
+          "yes_client_controlled": 0.0,
+          "yes_server_controlled": 0.0,
+          "no": 1.0,
+          "unknown": 0.0
+        }
+      }
+    },
+    "ep_state_control": {
+      "question_id": "ep_state_control",
+      "type": "choice",
+      "value": "yes",
+      "confidence": 0.13,
+      "probabilities": {
+        "yes": 0.42,
+        "no": 0.21,
+        "unknown": 0.37
+      },
+      "legend": null,
+      "raw": {
+        "type": "choice",
+        "choice": "yes",
+        "confidence": 0.13,
+        "probabilities": {
+          "yes": 0.42,
+          "no": 0.21,
+          "unknown": 0.37
+        }
+      }
+    },
+    "p_x_lab_case_role": {
+      "question_id": "p_x_lab_case_role",
+      "type": "choice",
+      "value": "url",
+      "confidence": 0.7,
+      "probabilities": {
+        "object_id": 0.0,
+        "user_id": 0.1,
+        "tenant_id": 0.0,
+        "resource_id": 0.0,
+        "parent_reference": 0.0,
+        "business_state": 0.0,
+        "control_flag": 0.0,
+        "configuration": 0.0,
+        "non_identifier": 0.01,
+        "query_value": 0.0,
+        "search_expression": 0.0,
+        "filter_field": 0.0,
+        "sort_field": 0.0,
+        "sort_direction": 0.0,
+        "pagination": 0.0,
+        "filter": 0.0,
+        "search_term": 0.0,
+        "url": 0.71,
+        "xml_content": 0.0,
+        "file_reference": 0.0,
+        "auth_credential": 0.0,
+        "free_text": 0.0,
+        "other": 0.06,
+        "unknown": 0.12
+      },
+      "legend": null,
+      "raw": {
+        "type": "choice",
+        "choice": "url",
+        "confidence": 0.7,
+        "probabilities": {
+          "object_id": 0.0,
+          "user_id": 0.1,
+          "tenant_id": 0.0,
+          "resource_id": 0.0,
+          "parent_reference": 0.0,
+          "business_state": 0.0,
+          "control_flag": 0.0,
+          "configuration": 0.0,
+          "non_identifier": 0.01,
+          "query_value": 0.0,
+          "search_expression": 0.0,
+          "filter_field": 0.0,
+          "sort_field": 0.0,
+          "sort_direction": 0.0,
+          "pagination": 0.0,
+          "filter": 0.0,
+          "search_term": 0.0,
+          "url": 0.71,
+          "xml_content": 0.0,
+          "file_reference": 0.0,
+          "auth_credential": 0.0,
+          "free_text": 0.0,
+          "other": 0.06,
+          "unknown": 0.12
+        }
+      }
+    },
+    "p_x_lab_case_idor_risk": {
+      "question_id": "p_x_lab_case_idor_risk",
+      "type": "score",
+      "value": 2.18,
+      "confidence": 0.57,
+      "probabilities": {
+        "0": 0.06,
+        "1": 0.05,
+        "2": 0.54,
+        "3": 0.35,
+        "4": 0.0
+      },
+      "legend": {
+        "0": "No relevance: demonstrated non-object input with no object-access behaviour",
+        "1": "Low relevance: object reference is public/shared or lacks a meaningful access boundary",
+        "2": "Moderate relevance: object access is plausible but ownership or boundary remains uncertain",
+        "3": "High relevance: concrete object role with user/tenant/resource ownership and an isolation boundary",
+        "4": "Very high relevance: sensitive scoped object with observed cross-identity access differences"
+      },
+      "raw": {
+        "type": "score",
+        "score": 2.18,
+        "confidence": 0.57,
+        "legend": {
+          "0": "No relevance: demonstrated non-object input with no object-access behaviour",
+          "1": "Low relevance: object reference is public/shared or lacks a meaningful access boundary",
+          "2": "Moderate relevance: object access is plausible but ownership or boundary remains uncertain",
+          "3": "High relevance: concrete object role with user/tenant/resource ownership and an isolation boundary",
+          "4": "Very high relevance: sensitive scoped object with observed cross-identity access differences"
+        },
+        "probabilities": {
+          "0": 0.06,
+          "1": 0.05,
+          "2": 0.54,
+          "3": 0.35,
+          "4": 0.0
+        }
+      }
+    },
+    "p_x_lab_case_object_ownership": {
+      "question_id": "p_x_lab_case_object_ownership",
+      "type": "choice",
+      "value": "user_scoped",
+      "confidence": 0.94,
+      "probabilities": {
+        "user_scoped": 0.95,
+        "tenant_scoped": 0.0,
+        "resource_scoped": 0.0,
+        "shared_or_public": 0.0,
+        "mixed": 0.0,
+        "none": 0.01,
+        "unknown": 0.04
+      },
+      "legend": null,
+      "raw": {
+        "type": "choice",
+        "choice": "user_scoped",
+        "confidence": 0.94,
+        "probabilities": {
+          "user_scoped": 0.95,
+          "tenant_scoped": 0.0,
+          "resource_scoped": 0.0,
+          "shared_or_public": 0.0,
+          "mixed": 0.0,
+          "none": 0.01,
+          "unknown": 0.04
+        }
+      }
+    },
+    "p_x_lab_case_authorization_boundary": {
+      "question_id": "p_x_lab_case_authorization_boundary",
+      "type": "choice",
+      "value": "unknown",
+      "confidence": 0.5,
+      "probabilities": {
+        "user_isolation": 0.08,
+        "tenant_isolation": 0.01,
+        "resource_access_boundary": 0.01,
+        "identity_comparison": 0.26,
+        "no_boundary": 0.06,
+        "unknown": 0.58
+      },
+      "legend": null,
+      "raw": {
+        "type": "choice",
+        "choice": "unknown",
+        "confidence": 0.5,
+        "probabilities": {
+          "user_isolation": 0.08,
+          "tenant_isolation": 0.01,
+          "resource_access_boundary": 0.01,
+          "identity_comparison": 0.26,
+          "no_boundary": 0.06,
+          "unknown": 0.58
+        }
+      }
+    },
+    "p_x_lab_case_sqli_risk": {
+      "question_id": "p_x_lab_case_sqli_risk",
+      "type": "score",
+      "value": 0.63,
+      "confidence": 0.47,
+      "probabilities": {
+        "0": 0.58,
+        "1": 0.21,
+        "2": 0.2,
+        "3": 0.01,
+        "4": 0.0
+      },
+      "legend": {
+        "0": "No relevance: demonstrated non-database input with no query influence",
+        "1": "Low relevance: safely parameterized ordinary value, business ID or configuration input",
+        "2": "Moderate relevance: attacker-controlled input with uncertain binding or query influence",
+        "3": "High relevance: unsafe value binding with database behaviour, or dynamic structural query influence",
+        "4": "Very high relevance: attacker-controlled SQL structure or value with observed database errors/behaviour"
+      },
+      "raw": {
+        "type": "score",
+        "score": 0.63,
+        "confidence": 0.47,
+        "legend": {
+          "0": "No relevance: demonstrated non-database input with no query influence",
+          "1": "Low relevance: safely parameterized ordinary value, business ID or configuration input",
+          "2": "Moderate relevance: attacker-controlled input with uncertain binding or query influence",
+          "3": "High relevance: unsafe value binding with database behaviour, or dynamic structural query influence",
+          "4": "Very high relevance: attacker-controlled SQL structure or value with observed database errors/behaviour"
+        },
+        "probabilities": {
+          "0": 0.58,
+          "1": 0.21,
+          "2": 0.2,
+          "3": 0.01,
+          "4": 0.0
+        }
+      }
+    },
+    "p_x_lab_case_attacker_control": {
+      "question_id": "p_x_lab_case_attacker_control",
+      "type": "choice",
+      "value": "full",
+      "confidence": 0.65,
+      "probabilities": {
+        "full": 0.72,
+        "constrained": 0.09,
+        "server_controlled": 0.02,
+        "none": 0.14,
+        "unknown": 0.03
+      },
+      "legend": null,
+      "raw": {
+        "type": "choice",
+        "choice": "full",
+        "confidence": 0.65,
+        "probabilities": {
+          "full": 0.72,
+          "constrained": 0.09,
+          "server_controlled": 0.02,
+          "none": 0.14,
+          "unknown": 0.03
+        }
+      }
+    },
+    "p_x_lab_case_database_reachability": {
+      "question_id": "p_x_lab_case_database_reachability",
+      "type": "choice",
+      "value": "no_evidence",
+      "confidence": 0.93,
+      "probabilities": {
+        "confirmed": 0.0,
+        "behavioural": 0.04,
+        "no_evidence": 0.95,
+        "unknown": 0.01
+      },
+      "legend": null,
+      "raw": {
+        "type": "choice",
+        "choice": "no_evidence",
+        "confidence": 0.93,
+        "probabilities": {
+          "confirmed": 0.0,
+          "behavioural": 0.04,
+          "no_evidence": 0.95,
+          "unknown": 0.01
+        }
+      }
+    },
+    "p_x_lab_case_sql_value_binding": {
+      "question_id": "p_x_lab_case_sql_value_binding",
+      "type": "choice",
+      "value": "unknown",
+      "confidence": 0.85,
+      "probabilities": {
+        "parameterized": 0.11,
+        "concatenated": 0.0,
+        "unsafe_binding": 0.01,
+        "not_used_as_value": 0.0,
+        "unknown": 0.88
+      },
+      "legend": null,
+      "raw": {
+        "type": "choice",
+        "choice": "unknown",
+        "confidence": 0.85,
+        "probabilities": {
+          "parameterized": 0.11,
+          "concatenated": 0.0,
+          "unsafe_binding": 0.01,
+          "not_used_as_value": 0.0,
+          "unknown": 0.88
+        }
+      }
+    },
+    "p_x_lab_case_sql_structure_influence": {
+      "question_id": "p_x_lab_case_sql_structure_influence",
+      "type": "choice",
+      "value": "none",
+      "confidence": 0.98,
+      "probabilities": {
+        "value_only": 0.0,
+        "filter_condition": 0.0,
+        "sort_or_syntax": 0.0,
+        "search_expression": 0.0,
+        "none": 0.98,
+        "unknown": 0.02
+      },
+      "legend": null,
+      "raw": {
+        "type": "choice",
+        "choice": "none",
+        "confidence": 0.98,
+        "probabilities": {
+          "value_only": 0.0,
+          "filter_condition": 0.0,
+          "sort_or_syntax": 0.0,
+          "search_expression": 0.0,
+          "none": 0.98,
+          "unknown": 0.02
+        }
+      }
+    },
+    "p_x_lab_case_dynamic_query_construction": {
+      "question_id": "p_x_lab_case_dynamic_query_construction",
+      "type": "choice",
+      "value": "static",
+      "confidence": 0.63,
+      "probabilities": {
+        "static": 0.72,
+        "conditional": 0.0,
+        "dynamic": 0.05,
+        "unknown": 0.23
+      },
+      "legend": null,
+      "raw": {
+        "type": "choice",
+        "choice": "static",
+        "confidence": 0.63,
+        "probabilities": {
+          "static": 0.72,
+          "conditional": 0.0,
+          "dynamic": 0.05,
+          "unknown": 0.23
+        }
+      }
+    },
+    "p_x_lab_case_ssrf_risk": {
+      "question_id": "p_x_lab_case_ssrf_risk",
+      "type": "score",
+      "value": 3.18,
+      "confidence": 0.83,
+      "probabilities": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.8,
+        "4": 0.2
+      },
+      "legend": {
+        "0": "No relevance: not a URL-valued parameter",
+        "1": "Low relevance: URL stored but no server-side fetch evidence",
+        "2": "Moderate relevance: URL stored and later consumed in unclear ways",
+        "3": "High relevance: parameter name and endpoint semantics imply server-side fetch",
+        "4": "Very high relevance: server-side fetch of this URL already observed or strongly implied"
+      },
+      "raw": {
+        "type": "score",
+        "score": 3.18,
+        "confidence": 0.83,
+        "legend": {
+          "0": "No relevance: not a URL-valued parameter",
+          "1": "Low relevance: URL stored but no server-side fetch evidence",
+          "2": "Moderate relevance: URL stored and later consumed in unclear ways",
+          "3": "High relevance: parameter name and endpoint semantics imply server-side fetch",
+          "4": "Very high relevance: server-side fetch of this URL already observed or strongly implied"
+        },
+        "probabilities": {
+          "0": 0.0,
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.8,
+          "4": 0.2
+        }
+      }
+    },
+    "p_imageurl_role": {
+      "question_id": "p_imageurl_role",
+      "type": "choice",
+      "value": "url",
+      "confidence": 0.69,
+      "probabilities": {
+        "object_id": 0.0,
+        "user_id": 0.11,
+        "tenant_id": 0.0,
+        "resource_id": 0.0,
+        "parent_reference": 0.0,
+        "business_state": 0.0,
+        "control_flag": 0.0,
+        "configuration": 0.0,
+        "non_identifier": 0.01,
+        "query_value": 0.0,
+        "search_expression": 0.0,
+        "filter_field": 0.0,
+        "sort_field": 0.0,
+        "sort_direction": 0.0,
+        "pagination": 0.0,
+        "filter": 0.0,
+        "search_term": 0.0,
+        "url": 0.7,
+        "xml_content": 0.0,
+        "file_reference": 0.0,
+        "auth_credential": 0.0,
+        "free_text": 0.0,
+        "other": 0.06,
+        "unknown": 0.12
+      },
+      "legend": null,
+      "raw": {
+        "type": "choice",
+        "choice": "url",
+        "confidence": 0.69,
+        "probabilities": {
+          "object_id": 0.0,
+          "user_id": 0.11,
+          "tenant_id": 0.0,
+          "resource_id": 0.0,
+          "parent_reference": 0.0,
+          "business_state": 0.0,
+          "control_flag": 0.0,
+          "configuration": 0.0,
+          "non_identifier": 0.01,
+          "query_value": 0.0,
+          "search_expression": 0.0,
+          "filter_field": 0.0,
+          "sort_field": 0.0,
+          "sort_direction": 0.0,
+          "pagination": 0.0,
+          "filter": 0.0,
+          "search_term": 0.0,
+          "url": 0.7,
+          "xml_content": 0.0,
+          "file_reference": 0.0,
+          "auth_credential": 0.0,
+          "free_text": 0.0,
+          "other": 0.06,
+          "unknown": 0.12
+        }
+      }
+    },
+    "p_imageurl_idor_risk": {
+      "question_id": "p_imageurl_idor_risk",
+      "type": "score",
+      "value": 2.21,
+      "confidence": 0.56,
+      "probabilities": {
+        "0": 0.06,
+        "1": 0.04,
+        "2": 0.53,
+        "3": 0.37,
+        "4": 0.0
+      },
+      "legend": {
+        "0": "No relevance: demonstrated non-object input with no object-access behaviour",
+        "1": "Low relevance: object reference is public/shared or lacks a meaningful access boundary",
+        "2": "Moderate relevance: object access is plausible but ownership or boundary remains uncertain",
+        "3": "High relevance: concrete object role with user/tenant/resource ownership and an isolation boundary",
+        "4": "Very high relevance: sensitive scoped object with observed cross-identity access differences"
+      },
+      "raw": {
+        "type": "score",
+        "score": 2.21,
+        "confidence": 0.56,
+        "legend": {
+          "0": "No relevance: demonstrated non-object input with no object-access behaviour",
+          "1": "Low relevance: object reference is public/shared or lacks a meaningful access boundary",
+          "2": "Moderate relevance: object access is plausible but ownership or boundary remains uncertain",
+          "3": "High relevance: concrete object role with user/tenant/resource ownership and an isolation boundary",
+          "4": "Very high relevance: sensitive scoped object with observed cross-identity access differences"
+        },
+        "probabilities": {
+          "0": 0.06,
+          "1": 0.04,
+          "2": 0.53,
+          "3": 0.37,
+          "4": 0.0
+        }
+      }
+    },
+    "p_imageurl_object_ownership": {
+      "question_id": "p_imageurl_object_ownership",
+      "type": "choice",
+      "value": "user_scoped",
+      "confidence": 0.95,
+      "probabilities": {
+        "user_scoped": 0.96,
+        "tenant_scoped": 0.0,
+        "resource_scoped": 0.0,
+        "shared_or_public": 0.0,
+        "mixed": 0.0,
+        "none": 0.01,
+        "unknown": 0.03
+      },
+      "legend": null,
+      "raw": {
+        "type": "choice",
+        "choice": "user_scoped",
+        "confidence": 0.95,
+        "probabilities": {
+          "user_scoped": 0.96,
+          "tenant_scoped": 0.0,
+          "resource_scoped": 0.0,
+          "shared_or_public": 0.0,
+          "mixed": 0.0,
+          "none": 0.01,
+          "unknown": 0.03
+        }
+      }
+    },
+    "p_imageurl_authorization_boundary": {
+      "question_id": "p_imageurl_authorization_boundary",
+      "type": "choice",
+      "value": "unknown",
+      "confidence": 0.42,
+      "probabilities": {
+        "user_isolation": 0.1,
+        "tenant_isolation": 0.01,
+        "resource_access_boundary": 0.01,
+        "identity_comparison": 0.3,
+        "no_boundary": 0.06,
+        "unknown": 0.52
+      },
+      "legend": null,
+      "raw": {
+        "type": "choice",
+        "choice": "unknown",
+        "confidence": 0.42,
+        "probabilities": {
+          "user_isolation": 0.1,
+          "tenant_isolation": 0.01,
+          "resource_access_boundary": 0.01,
+          "identity_comparison": 0.3,
+          "no_boundary": 0.06,
+          "unknown": 0.52
+        }
+      }
+    },
+    "p_imageurl_sqli_risk": {
+      "question_id": "p_imageurl_sqli_risk",
+      "type": "score",
+      "value": 0.67,
+      "confidence": 0.43,
+      "probabilities": {
+        "0": 0.56,
+        "1": 0.21,
+        "2": 0.22,
+        "3": 0.01,
+        "4": 0.0
+      },
+      "legend": {
+        "0": "No relevance: demonstrated non-database input with no query influence",
+        "1": "Low relevance: safely parameterized ordinary value, business ID or configuration input",
+        "2": "Moderate relevance: attacker-controlled input with uncertain binding or query influence",
+        "3": "High relevance: unsafe value binding with database behaviour, or dynamic structural query influence",
+        "4": "Very high relevance: attacker-controlled SQL structure or value with observed database errors/behaviour"
+      },
+      "raw": {
+        "type": "score",
+        "score": 0.67,
+        "confidence": 0.43,
+        "legend": {
+          "0": "No relevance: demonstrated non-database input with no query influence",
+          "1": "Low relevance: safely parameterized ordinary value, business ID or configuration input",
+          "2": "Moderate relevance: attacker-controlled input with uncertain binding or query influence",
+          "3": "High relevance: unsafe value binding with database behaviour, or dynamic structural query influence",
+          "4": "Very high relevance: attacker-controlled SQL structure or value with observed database errors/behaviour"
+        },
+        "probabilities": {
+          "0": 0.56,
+          "1": 0.21,
+          "2": 0.22,
+          "3": 0.01,
+          "4": 0.0
+        }
+      }
+    },
+    "p_imageurl_attacker_control": {
+      "question_id": "p_imageurl_attacker_control",
+      "type": "choice",
+      "value": "full",
+      "confidence": 0.68,
+      "probabilities": {
+        "full": 0.74,
+        "constrained": 0.08,
+        "server_controlled": 0.02,
+        "none": 0.13,
+        "unknown": 0.03
+      },
+      "legend": null,
+      "raw": {
+        "type": "choice",
+        "choice": "full",
+        "confidence": 0.68,
+        "probabilities": {
+          "full": 0.74,
+          "constrained": 0.08,
+          "server_controlled": 0.02,
+          "none": 0.13,
+          "unknown": 0.03
+        }
+      }
+    },
+    "p_imageurl_database_reachability": {
+      "question_id": "p_imageurl_database_reachability",
+      "type": "choice",
+      "value": "no_evidence",
+      "confidence": 0.95,
+      "probabilities": {
+        "confirmed": 0.0,
+        "behavioural": 0.03,
+        "no_evidence": 0.96,
+        "unknown": 0.01
+      },
+      "legend": null,
+      "raw": {
+        "type": "choice",
+        "choice": "no_evidence",
+        "confidence": 0.95,
+        "probabilities": {
+          "confirmed": 0.0,
+          "behavioural": 0.03,
+          "no_evidence": 0.96,
+          "unknown": 0.01
+        }
+      }
+    },
+    "p_imageurl_sql_value_binding": {
+      "question_id": "p_imageurl_sql_value_binding",
+      "type": "choice",
+      "value": "unknown",
+      "confidence": 0.89,
+      "probabilities": {
+        "parameterized": 0.08,
+        "concatenated": 0.0,
+        "unsafe_binding": 0.01,
+        "not_used_as_value": 0.0,
+        "unknown": 0.91
+      },
+      "legend": null,
+      "raw": {
+        "type": "choice",
+        "choice": "unknown",
+        "confidence": 0.89,
+        "probabilities": {
+          "parameterized": 0.08,
+          "concatenated": 0.0,
+          "unsafe_binding": 0.01,
+          "not_used_as_value": 0.0,
+          "unknown": 0.91
+        }
+      }
+    },
+    "p_imageurl_sql_structure_influence": {
+      "question_id": "p_imageurl_sql_structure_influence",
+      "type": "choice",
+      "value": "none",
+      "confidence": 0.98,
+      "probabilities": {
+        "value_only": 0.0,
+        "filter_condition": 0.0,
+        "sort_or_syntax": 0.0,
+        "search_expression": 0.0,
+        "none": 0.98,
+        "unknown": 0.02
+      },
+      "legend": null,
+      "raw": {
+        "type": "choice",
+        "choice": "none",
+        "confidence": 0.98,
+        "probabilities": {
+          "value_only": 0.0,
+          "filter_condition": 0.0,
+          "sort_or_syntax": 0.0,
+          "search_expression": 0.0,
+          "none": 0.98,
+          "unknown": 0.02
+        }
+      }
+    },
+    "p_imageurl_dynamic_query_construction": {
+      "question_id": "p_imageurl_dynamic_query_construction",
+      "type": "choice",
+      "value": "static",
+      "confidence": 0.65,
+      "probabilities": {
+        "static": 0.74,
+        "conditional": 0.0,
+        "dynamic": 0.07,
+        "unknown": 0.19
+      },
+      "legend": null,
+      "raw": {
+        "type": "choice",
+        "choice": "static",
+        "confidence": 0.65,
+        "probabilities": {
+          "static": 0.74,
+          "conditional": 0.0,
+          "dynamic": 0.07,
+          "unknown": 0.19
+        }
+      }
+    },
+    "p_imageurl_ssrf_risk": {
+      "question_id": "p_imageurl_ssrf_risk",
+      "type": "score",
+      "value": 3.16,
+      "confidence": 0.86,
+      "probabilities": {
+        "0": 0.0,
+        "1": 0.0,
+        "2": 0.0,
+        "3": 0.83,
+        "4": 0.17
+      },
+      "legend": {
+        "0": "No relevance: not a URL-valued parameter",
+        "1": "Low relevance: URL stored but no server-side fetch evidence",
+        "2": "Moderate relevance: URL stored and later consumed in unclear ways",
+        "3": "High relevance: parameter name and endpoint semantics imply server-side fetch",
+        "4": "Very high relevance: server-side fetch of this URL already observed or strongly implied"
+      },
+      "raw": {
+        "type": "score",
+        "score": 3.16,
+        "confidence": 0.86,
+        "legend": {
+          "0": "No relevance: not a URL-valued parameter",
+          "1": "Low relevance: URL stored but no server-side fetch evidence",
+          "2": "Moderate relevance: URL stored and later consumed in unclear ways",
+          "3": "High relevance: parameter name and endpoint semantics imply server-side fetch",
+          "4": "Very high relevance: server-side fetch of this URL already observed or strongly implied"
+        },
+        "probabilities": {
+          "0": 0.0,
+          "1": 0.0,
+          "2": 0.0,
+          "3": 0.83,
+          "4": 0.17
+        }
+      }
+    },
+    "p_userid_role": {
+      "question_id": "p_userid_role",
+      "type": "choice",
+      "value": "url",
+      "confidence": 0.63,
+      "probabilities": {
+        "object_id": 0.0,
+        "user_id": 0.12,
+        "tenant_id": 0.0,
+        "resource_id": 0.0,
+        "parent_reference": 0.0,
+        "business_state": 0.0,
+        "control_flag": 0.0,
+        "configuration": 0.0,
+        "non_identifier": 0.01,
+        "query_value": 0.0,
+        "search_expression": 0.0,
+        "filter_field": 0.0,
+        "sort_field": 0.0,
+        "sort_direction": 0.0,
+        "pagination": 0.0,
+        "filter": 0.0,
+        "search_term": 0.0,
+        "url": 0.65,
+        "xml_content": 0.0,
+        "file_reference": 0.0,
+        "auth_credential": 0.0,
+        "free_text": 0.0,
+        "other": 0.07,
+        "unknown": 0.15
+      },
+      "legend": null,
+      "raw": {
+        "type": "choice",
+        "choice": "url",
+        "confidence": 0.63,
+        "probabilities": {
+          "object_id": 0.0,
+          "user_id": 0.12,
+          "tenant_id": 0.0,
+          "resource_id": 0.0,
+          "parent_reference": 0.0,
+          "business_state": 0.0,
+          "control_flag": 0.0,
+          "configuration": 0.0,
+          "non_identifier": 0.01,
+          "query_value": 0.0,
+          "search_expression": 0.0,
+          "filter_field": 0.0,
+          "sort_field": 0.0,
+          "sort_direction": 0.0,
+          "pagination": 0.0,
+          "filter": 0.0,
+          "search_term": 0.0,
+          "url": 0.65,
+          "xml_content": 0.0,
+          "file_reference": 0.0,
+          "auth_credential": 0.0,
+          "free_text": 0.0,
+          "other": 0.07,
+          "unknown": 0.15
+        }
+      }
+    },
+    "p_userid_idor_risk": {
+      "question_id": "p_userid_idor_risk",
+      "type": "score",
+      "value": 2.21,
+      "confidence": 0.56,
+      "probabilities": {
+        "0": 0.06,
+        "1": 0.05,
+        "2": 0.53,
+        "3": 0.36,
+        "4": 0.0
+      },
+      "legend": {
+        "0": "No relevance: demonstrated non-object input with no object-access behaviour",
+        "1": "Low relevance: object reference is public/shared or lacks a meaningful access boundary",
+        "2": "Moderate relevance: object access is plausible but ownership or boundary remains uncertain",
+        "3": "High relevance: concrete object role with user/tenant/resource ownership and an isolation boundary",
+        "4": "Very high relevance: sensitive scoped object with observed cross-identity access differences"
+      },
+      "raw": {
+        "type": "score",
+        "score": 2.21,
+        "confidence": 0.56,
+        "legend": {
+          "0": "No relevance: demonstrated non-object input with no object-access behaviour",
+          "1": "Low relevance: object reference is public/shared or lacks a meaningful access boundary",
+          "2": "Moderate relevance: object access is plausible but ownership or boundary remains uncertain",
+          "3": "High relevance: concrete object role with user/tenant/resource ownership and an isolation boundary",
+          "4": "Very high relevance: sensitive scoped object with observed cross-identity access differences"
+        },
+        "probabilities": {
+          "0": 0.06,
+          "1": 0.05,
+          "2": 0.53,
+          "3": 0.36,
+          "4": 0.0
+        }
+      }
+    },
+    "p_userid_object_ownership": {
+      "question_id": "p_userid_object_ownership",
+      "type": "choice",
+      "value": "user_scoped",
+      "confidence": 0.95,
+      "probabilities": {
+        "user_scoped": 0.96,
+        "tenant_scoped": 0.0,
+        "resource_scoped": 0.0,
+        "shared_or_public": 0.0,
+        "mixed": 0.0,
+        "none": 0.01,
+        "unknown": 0.03
+      },
+      "legend": null,
+      "raw": {
+        "type": "choice",
+        "choice": "user_scoped",
+        "confidence": 0.95,
+        "probabilities": {
+          "user_scoped": 0.96,
+          "tenant_scoped": 0.0,
+          "resource_scoped": 0.0,
+          "shared_or_public": 0.0,
+          "mixed": 0.0,
+          "none": 0.01,
+          "unknown": 0.03
+        }
+      }
+    },
+    "p_userid_authorization_boundary": {
+      "question_id": "p_userid_authorization_boundary",
+      "type": "choice",
+      "value": "unknown",
+      "confidence": 0.53,
+      "probabilities": {
+        "user_isolation": 0.08,
+        "tenant_isolation": 0.01,
+        "resource_access_boundary": 0.01,
+        "identity_comparison": 0.2,
+        "no_boundary": 0.09,
+        "unknown": 0.61
+      },
+      "legend": null,
+      "raw": {
+        "type": "choice",
+        "choice": "unknown",
+        "confidence": 0.53,
+        "probabilities": {
+          "user_isolation": 0.08,
+          "tenant_isolation": 0.01,
+          "resource_access_boundary": 0.01,
+          "identity_comparison": 0.2,
+          "no_boundary": 0.09,
+          "unknown": 0.61
+        }
+      }
+    },
+    "p_userid_sqli_risk": {
+      "question_id": "p_userid_sqli_risk",
+      "type": "score",
+      "value": 0.65,
+      "confidence": 0.45,
+      "probabilities": {
+        "0": 0.56,
+        "1": 0.23,
+        "2": 0.2,
+        "3": 0.01,
+        "4": 0.0
+      },
+      "legend": {
+        "0": "No relevance: demonstrated non-database input with no query influence",
+        "1": "Low relevance: safely parameterized ordinary value, business ID or configuration input",
+        "2": "Moderate relevance: attacker-controlled input with uncertain binding or query influence",
+        "3": "High relevance: unsafe value binding with database behaviour, or dynamic structural query influence",
+        "4": "Very high relevance: attacker-controlled SQL structure or value with observed database errors/behaviour"
+      },
+      "raw": {
+        "type": "score",
+        "score": 0.65,
+        "confidence": 0.45,
+        "legend": {
+          "0": "No relevance: demonstrated non-database input with no query influence",
+          "1": "Low relevance: safely parameterized ordinary value, business ID or configuration input",
+          "2": "Moderate relevance: attacker-controlled input with uncertain binding or query influence",
+          "3": "High relevance: unsafe value binding with database behaviour, or dynamic structural query influence",
+          "4": "Very high relevance: attacker-controlled SQL structure or value with observed database errors/behaviour"
+        },
+        "probabilities": {
+          "0": 0.56,
+          "1": 0.23,
+          "2": 0.2,
+          "3": 0.01,
+          "4": 0.0
+        }
+      }
+    },
+    "p_userid_attacker_control": {
+      "question_id": "p_userid_attacker_control",
+      "type": "choice",
+      "value": "full",
+      "confidence": 0.64,
+      "probabilities": {
+        "full": 0.71,
+        "constrained": 0.09,
+        "server_controlled": 0.02,
+        "none": 0.14,
+        "unknown": 0.04
+      },
+      "legend": null,
+      "raw": {
+        "type": "choice",
+        "choice": "full",
+        "confidence": 0.64,
+        "probabilities": {
+          "full": 0.71,
+          "constrained": 0.09,
+          "server_controlled": 0.02,
+          "none": 0.14,
+          "unknown": 0.04
+        }
+      }
+    },
+    "p_userid_database_reachability": {
+      "question_id": "p_userid_database_reachability",
+      "type": "choice",
+      "value": "no_evidence",
+      "confidence": 0.95,
+      "probabilities": {
+        "confirmed": 0.0,
+        "behavioural": 0.03,
+        "no_evidence": 0.96,
+        "unknown": 0.01
+      },
+      "legend": null,
+      "raw": {
+        "type": "choice",
+        "choice": "no_evidence",
+        "confidence": 0.95,
+        "probabilities": {
+          "confirmed": 0.0,
+          "behavioural": 0.03,
+          "no_evidence": 0.96,
+          "unknown": 0.01
+        }
+      }
+    },
+    "p_userid_sql_value_binding": {
+      "question_id": "p_userid_sql_value_binding",
+      "type": "choice",
+      "value": "unknown",
+      "confidence": 0.84,
+      "probabilities": {
+        "parameterized": 0.12,
+        "concatenated": 0.0,
+        "unsafe_binding": 0.01,
+        "not_used_as_value": 0.0,
+        "unknown": 0.87
+      },
+      "legend": null,
+      "raw": {
+        "type": "choice",
+        "choice": "unknown",
+        "confidence": 0.84,
+        "probabilities": {
+          "parameterized": 0.12,
+          "concatenated": 0.0,
+          "unsafe_binding": 0.01,
+          "not_used_as_value": 0.0,
+          "unknown": 0.87
+        }
+      }
+    },
+    "p_userid_sql_structure_influence": {
+      "question_id": "p_userid_sql_structure_influence",
+      "type": "choice",
+      "value": "none",
+      "confidence": 0.98,
+      "probabilities": {
+        "value_only": 0.0,
+        "filter_condition": 0.0,
+        "sort_or_syntax": 0.0,
+        "search_expression": 0.0,
+        "none": 0.98,
+        "unknown": 0.02
+      },
+      "legend": null,
+      "raw": {
+        "type": "choice",
+        "choice": "none",
+        "confidence": 0.98,
+        "probabilities": {
+          "value_only": 0.0,
+          "filter_condition": 0.0,
+          "sort_or_syntax": 0.0,
+          "search_expression": 0.0,
+          "none": 0.98,
+          "unknown": 0.02
+        }
+      }
+    },
+    "p_userid_dynamic_query_construction": {
+      "question_id": "p_userid_dynamic_query_construction",
+      "type": "choice",
+      "value": "static",
+      "confidence": 0.68,
+      "probabilities": {
+        "static": 0.76,
+        "conditional": 0.0,
+        "dynamic": 0.04,
+        "unknown": 0.2
+      },
+      "legend": null,
+      "raw": {
+        "type": "choice",
+        "choice": "static",
+        "confidence": 0.68,
+        "probabilities": {
+          "static": 0.76,
+          "conditional": 0.0,
+          "dynamic": 0.04,
+          "unknown": 0.2
+        }
+      }
+    },
+    "p_userid_ssrf_risk": {
+      "question_id": "p_userid_ssrf_risk",
+      "type": "score",
+      "value": 3.17,
+      "confidence": 0.82,
+      "probabilities": {
+        "0": 0.0,
+        "1": 0.01,
+        "2": 0.0,
+        "3": 0.8,
+        "4": 0.19
+      },
+      "legend": {
+        "0": "No relevance: not a URL-valued parameter",
+        "1": "Low relevance: URL stored but no server-side fetch evidence",
+        "2": "Moderate relevance: URL stored and later consumed in unclear ways",
+        "3": "High relevance: parameter name and endpoint semantics imply server-side fetch",
+        "4": "Very high relevance: server-side fetch of this URL already observed or strongly implied"
+      },
+      "raw": {
+        "type": "score",
+        "score": 3.17,
+        "confidence": 0.82,
+        "legend": {
+          "0": "No relevance: not a URL-valued parameter",
+          "1": "Low relevance: URL stored but no server-side fetch evidence",
+          "2": "Moderate relevance: URL stored and later consumed in unclear ways",
+          "3": "High relevance: parameter name and endpoint semantics imply server-side fetch",
+          "4": "Very high relevance: server-side fetch of this URL already observed or strongly implied"
+        },
+        "probabilities": {
+          "0": 0.0,
+          "1": 0.01,
+          "2": 0.0,
+          "3": 0.8,
+          "4": 0.19
+        }
+      }
+    }
+  },
+  "coverage": {
+    "questions_total": 48,
+    "questions_answered": 48,
+    "complete": true
+  },
+  "diagnostics": [],
+  "error_type": null,
+  "created_at": "2026-11-25T17:45:45+08:00",
+  "selection_decisions": [
+    {
+      "template_id": "ep_role",
+      "scope": "endpoint",
+      "parameter_id": null,
+      "decision": "SELECTED",
+      "reason": "endpoint business function is judged by JEV from method, path, parameters and captured responses. unconditional question — always applicable",
+      "feature_references": []
+    },
+    {
+      "template_id": "ep_auth_required",
+      "scope": "endpoint",
+      "parameter_id": null,
+      "decision": "SELECTED",
+      "reason": "authentication requirement is JEV's judgment. unconditional question — always applicable. no authenticated principal observed in captured traffic — not evidence of missing authentication",
+      "feature_references": [
+        "auth.auth_observed"
+      ]
+    },
+    {
+      "template_id": "ep_context_confidence",
+      "scope": "endpoint",
+      "parameter_id": null,
+      "decision": "SELECTED",
+      "reason": "context completeness is JEV's judgment over the availability markers. unconditional question — always applicable",
+      "feature_references": []
+    },
+    {
+      "template_id": "ep_generic_risk",
+      "scope": "endpoint",
+      "parameter_id": null,
+      "decision": "SELECTED",
+      "reason": "overall test-worthiness is JEV's judgment across parameters, data sensitivity and captured behaviour. unconditional question — always applicable",
+      "feature_references": []
+    },
+    {
+      "template_id": "ep_idor_risk",
+      "scope": "endpoint",
+      "parameter_id": null,
+      "decision": "SELECTED",
+      "reason": "3 request parameter(s) observed",
+      "feature_references": [
+        "parameters"
+      ]
+    },
+    {
+      "template_id": "ep_ownership_model",
+      "scope": "endpoint",
+      "parameter_id": null,
+      "decision": "SELECTED",
+      "reason": "captured responses available. response top-level JSON structure: object",
+      "feature_references": [
+        "response.available",
+        "response.json_top_level_types"
+      ]
+    },
+    {
+      "template_id": "ep_sqli_risk",
+      "scope": "endpoint",
+      "parameter_id": null,
+      "decision": "SELECTED",
+      "reason": "3 request parameter(s) observed. captured responses available as reachability evidence",
+      "feature_references": [
+        "parameters",
+        "response.available"
+      ]
+    },
+    {
+      "template_id": "ep_sqli_reachability",
+      "scope": "endpoint",
+      "parameter_id": null,
+      "decision": "SELECTED",
+      "reason": "captured responses available. captured responses available as reachability evidence",
+      "feature_references": [
+        "response.available"
+      ]
+    },
+    {
+      "template_id": "ep_ssrf_risk",
+      "scope": "endpoint",
+      "parameter_id": null,
+      "decision": "SELECTED",
+      "reason": "URL-valued parameter(s) observed",
+      "feature_references": [
+        "parameters"
+      ]
+    },
+    {
+      "template_id": "ep_url_handling",
+      "scope": "endpoint",
+      "parameter_id": null,
+      "decision": "SELECTED",
+      "reason": "URL-valued parameter(s) observed",
+      "feature_references": [
+        "parameters"
+      ]
+    },
+    {
+      "template_id": "ep_xxe_risk",
+      "scope": "endpoint",
+      "parameter_id": null,
+      "decision": "UNKNOWN",
+      "reason": "request bodies analyzed: no XML observed in the captured samples — absence in captured traffic does not prove the endpoint rejects or never processes XML (no protocol constraint is recorded); retained as unknown",
+      "feature_references": [
+        "request.body.kinds",
+        "availability.request_structure_analyzed"
+      ]
+    },
+    {
+      "template_id": "ep_xml_parser_exposure",
+      "scope": "endpoint",
+      "parameter_id": null,
+      "decision": "UNKNOWN",
+      "reason": "request bodies analyzed: no XML observed in the captured samples — absence in captured traffic does not prove the endpoint rejects or never processes XML (no protocol constraint is recorded); retained as unknown",
+      "feature_references": [
+        "request.body.kinds",
+        "availability.request_structure_analyzed"
+      ]
+    },
+    {
+      "template_id": "ep_business_logic_risk",
+      "scope": "endpoint",
+      "parameter_id": null,
+      "decision": "SELECTED",
+      "reason": "3 request parameter(s) observed",
+      "feature_references": [
+        "parameters"
+      ]
+    },
+    {
+      "template_id": "ep_money_flow",
+      "scope": "endpoint",
+      "parameter_id": null,
+      "decision": "UNKNOWN",
+      "reason": "integer-valued parameters and/or JSON responses observed — monetary involvement undetermined from values alone",
+      "feature_references": [
+        "parameters",
+        "response.json_top_level_types"
+      ]
+    },
+    {
+      "template_id": "ep_state_control",
+      "scope": "endpoint",
+      "parameter_id": null,
+      "decision": "SELECTED",
+      "reason": "mutating method POST observed with 3 client-supplied parameter(s)",
+      "feature_references": [
+        "request.method",
+        "parameters"
+      ]
+    },
+    {
+      "template_id": "p_role",
+      "scope": "parameter",
+      "parameter_id": "param_0001",
+      "decision": "SELECTED",
+      "reason": "every parameter gets a role question — fallback guarantee, no input is silently declared safe. unconditional question — always applicable. 1 observed value(s) available as evidence. parameter value not echoed in the searched responses",
+      "feature_references": [
+        "parameters[param_0001].location",
+        "parameters[param_0001].value_type",
+        "parameters[param_0001].values",
+        "parameter_links[param_0001].value_echoed_in_response"
+      ]
+    },
+    {
+      "template_id": "p_idor_risk",
+      "scope": "parameter",
+      "parameter_id": "param_0001",
+      "decision": "SELECTED",
+      "reason": "any parameter can identify an object, user or tenant — identifier role is JEV's judgment. unconditional question — always applicable. 1 observed value(s) available as evidence. parameter value not echoed in the searched responses",
+      "feature_references": [
+        "parameters[param_0001].location",
+        "parameters[param_0001].value_type",
+        "parameters[param_0001].values",
+        "parameter_links[param_0001].value_echoed_in_response"
+      ]
+    },
+    {
+      "template_id": "p_object_ownership",
+      "scope": "parameter",
+      "parameter_id": "param_0001",
+      "decision": "SELECTED",
+      "reason": "unconditional question — always applicable. 1 observed value(s) available as evidence. parameter value not echoed in the searched responses",
+      "feature_references": [
+        "parameters[param_0001].location",
+        "parameters[param_0001].value_type",
+        "parameters[param_0001].values",
+        "parameter_links[param_0001].value_echoed_in_response"
+      ]
+    },
+    {
+      "template_id": "p_authorization_boundary",
+      "scope": "parameter",
+      "parameter_id": "param_0001",
+      "decision": "SELECTED",
+      "reason": "unconditional question — always applicable. 1 observed value(s) available as evidence. parameter value not echoed in the searched responses",
+      "feature_references": [
+        "parameters[param_0001].location",
+        "parameters[param_0001].value_type",
+        "parameters[param_0001].values",
+        "parameter_links[param_0001].value_echoed_in_response"
+      ]
+    },
+    {
+      "template_id": "p_sqli_risk",
+      "scope": "parameter",
+      "parameter_id": "param_0001",
+      "decision": "SELECTED",
+      "reason": "free-form or structured input may reach a database query — reachability is JEV's judgment. unconditional question — always applicable. 1 observed value(s) available as evidence. parameter value not echoed in the searched responses. captured responses available as reachability evidence",
+      "feature_references": [
+        "parameters[param_0001].location",
+        "parameters[param_0001].value_type",
+        "parameters[param_0001].values",
+        "parameter_links[param_0001].value_echoed_in_response",
+        "response.available"
+      ]
+    },
+    {
+      "template_id": "p_attacker_control",
+      "scope": "parameter",
+      "parameter_id": "param_0001",
+      "decision": "SELECTED",
+      "reason": "unconditional question — always applicable. 1 observed value(s) available as evidence. parameter value not echoed in the searched responses",
+      "feature_references": [
+        "parameters[param_0001].location",
+        "parameters[param_0001].value_type",
+        "parameters[param_0001].values",
+        "parameter_links[param_0001].value_echoed_in_response"
+      ]
+    },
+    {
+      "template_id": "p_database_reachability",
+      "scope": "parameter",
+      "parameter_id": "param_0001",
+      "decision": "SELECTED",
+      "reason": "unconditional question — always applicable. 1 observed value(s) available as evidence. parameter value not echoed in the searched responses",
+      "feature_references": [
+        "parameters[param_0001].location",
+        "parameters[param_0001].value_type",
+        "parameters[param_0001].values",
+        "parameter_links[param_0001].value_echoed_in_response"
+      ]
+    },
+    {
+      "template_id": "p_sql_value_binding",
+      "scope": "parameter",
+      "parameter_id": "param_0001",
+      "decision": "SELECTED",
+      "reason": "unconditional question — always applicable. 1 observed value(s) available as evidence. parameter value not echoed in the searched responses",
+      "feature_references": [
+        "parameters[param_0001].location",
+        "parameters[param_0001].value_type",
+        "parameters[param_0001].values",
+        "parameter_links[param_0001].value_echoed_in_response"
+      ]
+    },
+    {
+      "template_id": "p_sql_structure_influence",
+      "scope": "parameter",
+      "parameter_id": "param_0001",
+      "decision": "SELECTED",
+      "reason": "unconditional question — always applicable. 1 observed value(s) available as evidence. parameter value not echoed in the searched responses",
+      "feature_references": [
+        "parameters[param_0001].location",
+        "parameters[param_0001].value_type",
+        "parameters[param_0001].values",
+        "parameter_links[param_0001].value_echoed_in_response"
+      ]
+    },
+    {
+      "template_id": "p_dynamic_query_construction",
+      "scope": "parameter",
+      "parameter_id": "param_0001",
+      "decision": "SELECTED",
+      "reason": "unconditional question — always applicable. 1 observed value(s) available as evidence. parameter value not echoed in the searched responses",
+      "feature_references": [
+        "parameters[param_0001].location",
+        "parameters[param_0001].value_type",
+        "parameters[param_0001].values",
+        "parameter_links[param_0001].value_echoed_in_response"
+      ]
+    },
+    {
+      "template_id": "p_ssrf_risk",
+      "scope": "parameter",
+      "parameter_id": "param_0001",
+      "decision": "UNKNOWN",
+      "reason": "free-form string values observed — URL-shaped values not observed but not excluded. 1 observed value(s) available as evidence. parameter value not echoed in the searched responses",
+      "feature_references": [
+        "parameters[param_0001].location",
+        "parameters[param_0001].value_type",
+        "parameters[param_0001].values",
+        "parameter_links[param_0001].value_echoed_in_response"
+      ]
+    },
+    {
+      "template_id": "p_xxe_risk",
+      "scope": "parameter",
+      "parameter_id": "param_0001",
+      "decision": "NOT_APPLICABLE",
+      "reason": "parameter binding is header-transported, not XML — its values never enter an XML parser; an XML body binding would be inventoried as a separate parameter (location is an explicit structural fact of the binding, not captured-sample absence)",
+      "feature_references": [
+        "parameters[param_0001].location",
+        "parameters[param_0001].value_type",
+        "parameters[param_0001].values",
+        "parameter_links[param_0001].value_echoed_in_response"
+      ]
+    },
+    {
+      "template_id": "p_role",
+      "scope": "parameter",
+      "parameter_id": "param_0002",
+      "decision": "SELECTED",
+      "reason": "every parameter gets a role question — fallback guarantee, no input is silently declared safe. unconditional question — always applicable. 1 observed value(s) available as evidence. parameter value not echoed in the searched responses",
+      "feature_references": [
+        "parameters[param_0002].location",
+        "parameters[param_0002].value_type",
+        "parameters[param_0002].values",
+        "parameter_links[param_0002].value_echoed_in_response",
+        "parameters[param_0002].json_path"
+      ]
+    },
+    {
+      "template_id": "p_idor_risk",
+      "scope": "parameter",
+      "parameter_id": "param_0002",
+      "decision": "SELECTED",
+      "reason": "any parameter can identify an object, user or tenant — identifier role is JEV's judgment. unconditional question — always applicable. 1 observed value(s) available as evidence. parameter value not echoed in the searched responses",
+      "feature_references": [
+        "parameters[param_0002].location",
+        "parameters[param_0002].value_type",
+        "parameters[param_0002].values",
+        "parameter_links[param_0002].value_echoed_in_response",
+        "parameters[param_0002].json_path"
+      ]
+    },
+    {
+      "template_id": "p_object_ownership",
+      "scope": "parameter",
+      "parameter_id": "param_0002",
+      "decision": "SELECTED",
+      "reason": "unconditional question — always applicable. 1 observed value(s) available as evidence. parameter value not echoed in the searched responses",
+      "feature_references": [
+        "parameters[param_0002].location",
+        "parameters[param_0002].value_type",
+        "parameters[param_0002].values",
+        "parameter_links[param_0002].value_echoed_in_response",
+        "parameters[param_0002].json_path"
+      ]
+    },
+    {
+      "template_id": "p_authorization_boundary",
+      "scope": "parameter",
+      "parameter_id": "param_0002",
+      "decision": "SELECTED",
+      "reason": "unconditional question — always applicable. 1 observed value(s) available as evidence. parameter value not echoed in the searched responses",
+      "feature_references": [
+        "parameters[param_0002].location",
+        "parameters[param_0002].value_type",
+        "parameters[param_0002].values",
+        "parameter_links[param_0002].value_echoed_in_response",
+        "parameters[param_0002].json_path"
+      ]
+    },
+    {
+      "template_id": "p_sqli_risk",
+      "scope": "parameter",
+      "parameter_id": "param_0002",
+      "decision": "SELECTED",
+      "reason": "free-form or structured input may reach a database query — reachability is JEV's judgment. unconditional question — always applicable. 1 observed value(s) available as evidence. parameter value not echoed in the searched responses. captured responses available as reachability evidence",
+      "feature_references": [
+        "parameters[param_0002].location",
+        "parameters[param_0002].value_type",
+        "parameters[param_0002].values",
+        "parameter_links[param_0002].value_echoed_in_response",
+        "parameters[param_0002].json_path",
+        "response.available"
+      ]
+    },
+    {
+      "template_id": "p_attacker_control",
+      "scope": "parameter",
+      "parameter_id": "param_0002",
+      "decision": "SELECTED",
+      "reason": "unconditional question — always applicable. 1 observed value(s) available as evidence. parameter value not echoed in the searched responses",
+      "feature_references": [
+        "parameters[param_0002].location",
+        "parameters[param_0002].value_type",
+        "parameters[param_0002].values",
+        "parameter_links[param_0002].value_echoed_in_response",
+        "parameters[param_0002].json_path"
+      ]
+    },
+    {
+      "template_id": "p_database_reachability",
+      "scope": "parameter",
+      "parameter_id": "param_0002",
+      "decision": "SELECTED",
+      "reason": "unconditional question — always applicable. 1 observed value(s) available as evidence. parameter value not echoed in the searched responses",
+      "feature_references": [
+        "parameters[param_0002].location",
+        "parameters[param_0002].value_type",
+        "parameters[param_0002].values",
+        "parameter_links[param_0002].value_echoed_in_response",
+        "parameters[param_0002].json_path"
+      ]
+    },
+    {
+      "template_id": "p_sql_value_binding",
+      "scope": "parameter",
+      "parameter_id": "param_0002",
+      "decision": "SELECTED",
+      "reason": "unconditional question — always applicable. 1 observed value(s) available as evidence. parameter value not echoed in the searched responses",
+      "feature_references": [
+        "parameters[param_0002].location",
+        "parameters[param_0002].value_type",
+        "parameters[param_0002].values",
+        "parameter_links[param_0002].value_echoed_in_response",
+        "parameters[param_0002].json_path"
+      ]
+    },
+    {
+      "template_id": "p_sql_structure_influence",
+      "scope": "parameter",
+      "parameter_id": "param_0002",
+      "decision": "SELECTED",
+      "reason": "unconditional question — always applicable. 1 observed value(s) available as evidence. parameter value not echoed in the searched responses",
+      "feature_references": [
+        "parameters[param_0002].location",
+        "parameters[param_0002].value_type",
+        "parameters[param_0002].values",
+        "parameter_links[param_0002].value_echoed_in_response",
+        "parameters[param_0002].json_path"
+      ]
+    },
+    {
+      "template_id": "p_dynamic_query_construction",
+      "scope": "parameter",
+      "parameter_id": "param_0002",
+      "decision": "SELECTED",
+      "reason": "unconditional question — always applicable. 1 observed value(s) available as evidence. parameter value not echoed in the searched responses",
+      "feature_references": [
+        "parameters[param_0002].location",
+        "parameters[param_0002].value_type",
+        "parameters[param_0002].values",
+        "parameter_links[param_0002].value_echoed_in_response",
+        "parameters[param_0002].json_path"
+      ]
+    },
+    {
+      "template_id": "p_ssrf_risk",
+      "scope": "parameter",
+      "parameter_id": "param_0002",
+      "decision": "SELECTED",
+      "reason": "URL-shaped values observed (value_type=url). 1 observed value(s) available as evidence. parameter value not echoed in the searched responses",
+      "feature_references": [
+        "parameters[param_0002].location",
+        "parameters[param_0002].value_type",
+        "parameters[param_0002].values",
+        "parameter_links[param_0002].value_echoed_in_response",
+        "parameters[param_0002].json_path"
+      ]
+    },
+    {
+      "template_id": "p_xxe_risk",
+      "scope": "parameter",
+      "parameter_id": "param_0002",
+      "decision": "NOT_APPLICABLE",
+      "reason": "parameter binding is json-transported, not XML — its values never enter an XML parser; an XML body binding would be inventoried as a separate parameter (location is an explicit structural fact of the binding, not captured-sample absence)",
+      "feature_references": [
+        "parameters[param_0002].location",
+        "parameters[param_0002].value_type",
+        "parameters[param_0002].values",
+        "parameter_links[param_0002].value_echoed_in_response",
+        "parameters[param_0002].json_path"
+      ]
+    },
+    {
+      "template_id": "p_role",
+      "scope": "parameter",
+      "parameter_id": "param_0003",
+      "decision": "SELECTED",
+      "reason": "every parameter gets a role question — fallback guarantee, no input is silently declared safe. unconditional question — always applicable. 1 observed value(s) available as evidence. parameter value not echoed in the searched responses",
+      "feature_references": [
+        "parameters[param_0003].location",
+        "parameters[param_0003].value_type",
+        "parameters[param_0003].values",
+        "parameter_links[param_0003].value_echoed_in_response",
+        "parameters[param_0003].json_path"
+      ]
+    },
+    {
+      "template_id": "p_idor_risk",
+      "scope": "parameter",
+      "parameter_id": "param_0003",
+      "decision": "SELECTED",
+      "reason": "any parameter can identify an object, user or tenant — identifier role is JEV's judgment. unconditional question — always applicable. 1 observed value(s) available as evidence. parameter value not echoed in the searched responses",
+      "feature_references": [
+        "parameters[param_0003].location",
+        "parameters[param_0003].value_type",
+        "parameters[param_0003].values",
+        "parameter_links[param_0003].value_echoed_in_response",
+        "parameters[param_0003].json_path"
+      ]
+    },
+    {
+      "template_id": "p_object_ownership",
+      "scope": "parameter",
+      "parameter_id": "param_0003",
+      "decision": "SELECTED",
+      "reason": "unconditional question — always applicable. 1 observed value(s) available as evidence. parameter value not echoed in the searched responses",
+      "feature_references": [
+        "parameters[param_0003].location",
+        "parameters[param_0003].value_type",
+        "parameters[param_0003].values",
+        "parameter_links[param_0003].value_echoed_in_response",
+        "parameters[param_0003].json_path"
+      ]
+    },
+    {
+      "template_id": "p_authorization_boundary",
+      "scope": "parameter",
+      "parameter_id": "param_0003",
+      "decision": "SELECTED",
+      "reason": "unconditional question — always applicable. 1 observed value(s) available as evidence. parameter value not echoed in the searched responses",
+      "feature_references": [
+        "parameters[param_0003].location",
+        "parameters[param_0003].value_type",
+        "parameters[param_0003].values",
+        "parameter_links[param_0003].value_echoed_in_response",
+        "parameters[param_0003].json_path"
+      ]
+    },
+    {
+      "template_id": "p_sqli_risk",
+      "scope": "parameter",
+      "parameter_id": "param_0003",
+      "decision": "SELECTED",
+      "reason": "free-form or structured input may reach a database query — reachability is JEV's judgment. unconditional question — always applicable. 1 observed value(s) available as evidence. parameter value not echoed in the searched responses. captured responses available as reachability evidence",
+      "feature_references": [
+        "parameters[param_0003].location",
+        "parameters[param_0003].value_type",
+        "parameters[param_0003].values",
+        "parameter_links[param_0003].value_echoed_in_response",
+        "parameters[param_0003].json_path",
+        "response.available"
+      ]
+    },
+    {
+      "template_id": "p_attacker_control",
+      "scope": "parameter",
+      "parameter_id": "param_0003",
+      "decision": "SELECTED",
+      "reason": "unconditional question — always applicable. 1 observed value(s) available as evidence. parameter value not echoed in the searched responses",
+      "feature_references": [
+        "parameters[param_0003].location",
+        "parameters[param_0003].value_type",
+        "parameters[param_0003].values",
+        "parameter_links[param_0003].value_echoed_in_response",
+        "parameters[param_0003].json_path"
+      ]
+    },
+    {
+      "template_id": "p_database_reachability",
+      "scope": "parameter",
+      "parameter_id": "param_0003",
+      "decision": "SELECTED",
+      "reason": "unconditional question — always applicable. 1 observed value(s) available as evidence. parameter value not echoed in the searched responses",
+      "feature_references": [
+        "parameters[param_0003].location",
+        "parameters[param_0003].value_type",
+        "parameters[param_0003].values",
+        "parameter_links[param_0003].value_echoed_in_response",
+        "parameters[param_0003].json_path"
+      ]
+    },
+    {
+      "template_id": "p_sql_value_binding",
+      "scope": "parameter",
+      "parameter_id": "param_0003",
+      "decision": "SELECTED",
+      "reason": "unconditional question — always applicable. 1 observed value(s) available as evidence. parameter value not echoed in the searched responses",
+      "feature_references": [
+        "parameters[param_0003].location",
+        "parameters[param_0003].value_type",
+        "parameters[param_0003].values",
+        "parameter_links[param_0003].value_echoed_in_response",
+        "parameters[param_0003].json_path"
+      ]
+    },
+    {
+      "template_id": "p_sql_structure_influence",
+      "scope": "parameter",
+      "parameter_id": "param_0003",
+      "decision": "SELECTED",
+      "reason": "unconditional question — always applicable. 1 observed value(s) available as evidence. parameter value not echoed in the searched responses",
+      "feature_references": [
+        "parameters[param_0003].location",
+        "parameters[param_0003].value_type",
+        "parameters[param_0003].values",
+        "parameter_links[param_0003].value_echoed_in_response",
+        "parameters[param_0003].json_path"
+      ]
+    },
+    {
+      "template_id": "p_dynamic_query_construction",
+      "scope": "parameter",
+      "parameter_id": "param_0003",
+      "decision": "SELECTED",
+      "reason": "unconditional question — always applicable. 1 observed value(s) available as evidence. parameter value not echoed in the searched responses",
+      "feature_references": [
+        "parameters[param_0003].location",
+        "parameters[param_0003].value_type",
+        "parameters[param_0003].values",
+        "parameter_links[param_0003].value_echoed_in_response",
+        "parameters[param_0003].json_path"
+      ]
+    },
+    {
+      "template_id": "p_ssrf_risk",
+      "scope": "parameter",
+      "parameter_id": "param_0003",
+      "decision": "UNKNOWN",
+      "reason": "free-form string values observed — URL-shaped values not observed but not excluded. 1 observed value(s) available as evidence. parameter value not echoed in the searched responses",
+      "feature_references": [
+        "parameters[param_0003].location",
+        "parameters[param_0003].value_type",
+        "parameters[param_0003].values",
+        "parameter_links[param_0003].value_echoed_in_response",
+        "parameters[param_0003].json_path"
+      ]
+    },
+    {
+      "template_id": "p_xxe_risk",
+      "scope": "parameter",
+      "parameter_id": "param_0003",
+      "decision": "NOT_APPLICABLE",
+      "reason": "parameter binding is json-transported, not XML — its values never enter an XML parser; an XML body binding would be inventoried as a separate parameter (location is an explicit structural fact of the binding, not captured-sample absence)",
+      "feature_references": [
+        "parameters[param_0003].location",
+        "parameters[param_0003].value_type",
+        "parameters[param_0003].values",
+        "parameter_links[param_0003].value_echoed_in_response",
+        "parameters[param_0003].json_path"
+      ]
+    }
+  ],
+  "selection_summary": {
+    "endpoint_question_count": 15,
+    "parameter_question_counts": {
+      "param_0001": 11,
+      "param_0002": 11,
+      "param_0003": 11
+    },
+    "total_questions": 48,
+    "decisions_by_type": {
+      "SELECTED": 43,
+      "UNKNOWN": 5,
+      "NOT_APPLICABLE": 3
+    },
+    "template_versions": {
+      "ep_role": "v1",
+      "ep_auth_required": "v1",
+      "ep_context_confidence": "v1",
+      "ep_generic_risk": "v1",
+      "ep_idor_risk": "v1",
+      "ep_ownership_model": "v1",
+      "ep_sqli_risk": "v1",
+      "ep_sqli_reachability": "v1",
+      "ep_ssrf_risk": "v1",
+      "ep_url_handling": "v1",
+      "ep_xxe_risk": "v1",
+      "ep_xml_parser_exposure": "v1",
+      "ep_business_logic_risk": "v1",
+      "ep_money_flow": "v1",
+      "ep_state_control": "v1",
+      "p_role": "v2",
+      "p_idor_risk": "v2",
+      "p_object_ownership": "v1",
+      "p_authorization_boundary": "v1",
+      "p_sqli_risk": "v2",
+      "p_attacker_control": "v1",
+      "p_database_reachability": "v1",
+      "p_sql_value_binding": "v1",
+      "p_sql_structure_influence": "v1",
+      "p_dynamic_query_construction": "v1",
+      "p_ssrf_risk": "v1",
+      "p_xxe_risk": "v1"
+    },
+    "caps": [],
+    "evaluated_candidates": 51,
+    "selected": 43,
+    "unknown": 5,
+    "insufficient_context": 0,
+    "not_applicable": 3,
+    "cap_dropped": 0,
+    "retained_questions": 48,
+    "questions_sent_to_jev": 48,
+    "answers_received": 48,
+    "answers_validated": 48,
+    "jev_request_batches": 6
+  },
+  "selection_version": "jev-2.6.0+jev-registry-v2",
+  "request_batches": [
+    {
+      "batch_index": 0,
+      "question_ids": [
+        "ep_role",
+        "ep_auth_required",
+        "ep_context_confidence",
+        "ep_generic_risk",
+        "ep_idor_risk",
+        "ep_ownership_model",
+        "ep_sqli_risk",
+        "ep_sqli_reachability"
+      ],
+      "answer_ids": [
+        "ep_role",
+        "ep_auth_required",
+        "ep_context_confidence",
+        "ep_generic_risk",
+        "ep_idor_risk",
+        "ep_ownership_model",
+        "ep_sqli_risk",
+        "ep_sqli_reachability"
+      ]
+    },
+    {
+      "batch_index": 1,
+      "question_ids": [
+        "ep_ssrf_risk",
+        "ep_url_handling",
+        "ep_xxe_risk",
+        "ep_xml_parser_exposure",
+        "ep_business_logic_risk",
+        "ep_money_flow",
+        "ep_state_control",
+        "p_x_lab_case_role"
+      ],
+      "answer_ids": [
+        "ep_ssrf_risk",
+        "ep_url_handling",
+        "ep_xxe_risk",
+        "ep_xml_parser_exposure",
+        "ep_business_logic_risk",
+        "ep_money_flow",
+        "ep_state_control",
+        "p_x_lab_case_role"
+      ]
+    },
+    {
+      "batch_index": 2,
+      "question_ids": [
+        "p_x_lab_case_idor_risk",
+        "p_x_lab_case_object_ownership",
+        "p_x_lab_case_authorization_boundary",
+        "p_x_lab_case_sqli_risk",
+        "p_x_lab_case_attacker_control",
+        "p_x_lab_case_database_reachability",
+        "p_x_lab_case_sql_value_binding",
+        "p_x_lab_case_sql_structure_influence"
+      ],
+      "answer_ids": [
+        "p_x_lab_case_idor_risk",
+        "p_x_lab_case_object_ownership",
+        "p_x_lab_case_authorization_boundary",
+        "p_x_lab_case_sqli_risk",
+        "p_x_lab_case_attacker_control",
+        "p_x_lab_case_database_reachability",
+        "p_x_lab_case_sql_value_binding",
+        "p_x_lab_case_sql_structure_influence"
+      ]
+    },
+    {
+      "batch_index": 3,
+      "question_ids": [
+        "p_x_lab_case_dynamic_query_construction",
+        "p_x_lab_case_ssrf_risk",
+        "p_imageurl_role",
+        "p_imageurl_idor_risk",
+        "p_imageurl_object_ownership",
+        "p_imageurl_authorization_boundary",
+        "p_imageurl_sqli_risk",
+        "p_imageurl_attacker_control"
+      ],
+      "answer_ids": [
+        "p_x_lab_case_dynamic_query_construction",
+        "p_x_lab_case_ssrf_risk",
+        "p_imageurl_role",
+        "p_imageurl_idor_risk",
+        "p_imageurl_object_ownership",
+        "p_imageurl_authorization_boundary",
+        "p_imageurl_sqli_risk",
+        "p_imageurl_attacker_control"
+      ]
+    },
+    {
+      "batch_index": 4,
+      "question_ids": [
+        "p_imageurl_database_reachability",
+        "p_imageurl_sql_value_binding",
+        "p_imageurl_sql_structure_influence",
+        "p_imageurl_dynamic_query_construction",
+        "p_imageurl_ssrf_risk",
+        "p_userid_role",
+        "p_userid_idor_risk",
+        "p_userid_object_ownership"
+      ],
+      "answer_ids": [
+        "p_imageurl_database_reachability",
+        "p_imageurl_sql_value_binding",
+        "p_imageurl_sql_structure_influence",
+        "p_imageurl_dynamic_query_construction",
+        "p_imageurl_ssrf_risk",
+        "p_userid_role",
+        "p_userid_idor_risk",
+        "p_userid_object_ownership"
+      ]
+    },
+    {
+      "batch_index": 5,
+      "question_ids": [
+        "p_userid_authorization_boundary",
+        "p_userid_sqli_risk",
+        "p_userid_attacker_control",
+        "p_userid_database_reachability",
+        "p_userid_sql_value_binding",
+        "p_userid_sql_structure_influence",
+        "p_userid_dynamic_query_construction",
+        "p_userid_ssrf_risk"
+      ],
+      "answer_ids": [
+        "p_userid_authorization_boundary",
+        "p_userid_sqli_risk",
+        "p_userid_attacker_control",
+        "p_userid_database_reachability",
+        "p_userid_sql_value_binding",
+        "p_userid_sql_structure_influence",
+        "p_userid_dynamic_query_construction",
+        "p_userid_ssrf_risk"
+      ]
+    }
+  ],
+  "endpoint_identity": "sha256:0c5c5c15ed277384e968cccf9b239ba6712f02bab47e20d775e40ea34603bf92",
+  "endpoint_context_fingerprint": "sha256:5e1a2c3605abde4c8a6a3c06136d2940b76da0898079b091f55e85ccab06584f",
+  "parameter_inventory_fingerprint": "sha256:3a31b690e9725382c32259b0cb3c57c413095eaa0f2546eebbce16e2dca9b705",
+  "context_schema_version": "jev-context-v1",
+  "inventory_id": "sha256:6af196267eca2a00bb3098b60b6b29e56b349bc38defcd9d3ffefa2a5e77f12a"
+}

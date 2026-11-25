@@ -1,0 +1,10 @@
+POST /api/v1/inventory/filter HTTP/1.1
+Host: lab-otc.example.invalid
+User-Agent: OTC-Benchmark/2.0
+Accept: application/json
+X-Lab-Case: OTC-BENCH-010
+Content-Type: application/json
+Content-Length: 47
+
+
+{"sku":"SKU-200","warehouse":"W-2","minQty":1}

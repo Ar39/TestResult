@@ -1,0 +1,10 @@
+POST /api/v1/profile/update?displayName=LabUser&timezone=UTC HTTP/1.1
+Host: lab-otc.example.invalid
+User-Agent: OTC-Benchmark/2.0
+Accept: application/json
+X-Lab-Case: OTC-BENCH-041
+Content-Type: application/json
+Content-Length: 43
+
+
+{"displayName":"LabUser","timezone":"UTC"}

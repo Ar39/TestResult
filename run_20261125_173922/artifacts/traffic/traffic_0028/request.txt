@@ -1,0 +1,10 @@
+POST /api/v1/feed/submit HTTP/1.1
+Host: lab-otc.example.invalid
+User-Agent: OTC-Benchmark/2.0
+Accept: application/json
+X-Lab-Case: OTC-BENCH-028
+Content-Type: application/xml
+Content-Length: 37
+
+
+<feed><title>LAB feed</title></feed>

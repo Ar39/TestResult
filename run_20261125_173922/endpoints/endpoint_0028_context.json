@@ -1,0 +1,106 @@
+{
+  "endpoint_id": "endpoint_0028",
+  "method": "POST",
+  "scheme": "http",
+  "host": "lab-otc.example.invalid",
+  "path": "/api/v1/cart/apply-coupon",
+  "path_examples": [
+    "/api/v1/cart/apply-coupon"
+  ],
+  "traffic_count": 1,
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:723caf235bf3253ba0c0fd1a552a262e600854ac4d4a2facde640883c0c181ce",
+      "name": "X-Lab-Case",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "OTC-BENCH-043"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0043"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:797bbb3609e028fd29426067d2169f0a9770b8f15a6745a716c715c151ce9a2b",
+      "name": "X-Lab-Identity",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "user-lab-a"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0043"
+      ]
+    },
+    {
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:3c1ed0cf51a6abb3a81d62d8212ca4019b7f3c440af6efc76294e56afb01ae52",
+      "name": "cartId",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "C-7"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0043"
+      ]
+    },
+    {
+      "parameter_id": "param_0004",
+      "parameter_identity": "sha256:98c2066d6122d19150b3f48e550f88eb6448ea5875af64ad42321be65d33586e",
+      "name": "coupon",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "LAB-10"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0043"
+      ]
+    }
+  ],
+  "inventory_id": "sha256:401c4e2d219c66a8a8dfadda63a0e823272b1aef7419a8a5c1b1fbba3a3fd996",
+  "request_examples": [
+    {
+      "traffic_id": "traffic_0043",
+      "principal_ref": "principal_8c69d4f4c4a1",
+      "method": "POST",
+      "url": "http://lab-otc.example.invalid/api/v1/cart/apply-coupon",
+      "content_type": "application/json",
+      "query": null,
+      "body_excerpt": "\n{\"cartId\":\"C-7\",\"coupon\":\"LAB-10\"}",
+      "body_sha256": "8d4ca8c745e09033846f8355703f218060e078966404ea8a64daa61a7fea0c5d"
+    }
+  ],
+  "response_examples": [
+    {
+      "traffic_id": "traffic_0043",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "body_excerpt": "\n{\"fixture\": \"mock\", \"case\": \"OTC-CAND-043\", \"result\": \"synthetic\"}",
+      "body_sha256": "12ca09f90698c858bd15b083c54cee03f597adac8cf090b24179c6969fae7d8e"
+    }
+  ],
+  "auth_contexts": [
+    {
+      "principal_ref": "principal_8c69d4f4c4a1",
+      "credential_ref": "cred_8c69d4f4c4a1",
+      "auth_types": [
+        "cookie"
+      ],
+      "traffic_count": 1
+    }
+  ],
+  "business_context": {
+    "description": null,
+    "evidence": []
+  },
+  "limitations": []
+}

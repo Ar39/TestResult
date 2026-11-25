@@ -1,0 +1,82 @@
+{
+  "endpoint_id": "endpoint_0056",
+  "method": "POST",
+  "scheme": "http",
+  "host": "lab-otc.example.invalid",
+  "path": "/api/v1/transfer/submit",
+  "traffic_ids": [
+    "traffic_0045"
+  ],
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:43f254d0bb255e03af4726c942391934e9cb82f237fd0a7d6ddf4dccc593ae67",
+      "name": "X-Lab-Case",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "OTC-BENCH-045"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0045"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:af36eee9878e1ee92c698934df44d9745369412c2dd8fb6700600fbb7059ddb0",
+      "name": "X-Lab-Identity",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "user-lab-a"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0045"
+      ]
+    },
+    {
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:afd8276c84c95d0efb5ea85e55af872eeaf5aa8e837aa7ccf7a967361e72dbbe",
+      "name": "amount",
+      "location": "json",
+      "type": "number",
+      "values": [
+        "10.00"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0045"
+      ]
+    },
+    {
+      "parameter_id": "param_0004",
+      "parameter_identity": "sha256:7dcf21f98aa9cd7814685afb9fcb49fb994f60e23a1c73620d801db5040b326f",
+      "name": "destinationAccount",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "A-8"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0045"
+      ]
+    },
+    {
+      "parameter_id": "param_0005",
+      "parameter_identity": "sha256:5f6d07fbd196f463091586eca1bf8b33842a54eb693f61c7a49231aafd128ffa",
+      "name": "sourceAccount",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "A-7"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0045"
+      ]
+    }
+  ]
+}

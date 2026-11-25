@@ -1,0 +1,116 @@
+{
+  "traffic_id": "traffic_0025",
+  "source": "burp_xml",
+  "request": {
+    "method": "POST",
+    "scheme": "http",
+    "host": "lab-otc.example.invalid",
+    "port": 80,
+    "path": "/api/v1/xml/import",
+    "raw_target": "/api/v1/xml/import",
+    "query": {},
+    "headers": [
+      {
+        "name": "Host",
+        "value": "lab-otc.example.invalid"
+      },
+      {
+        "name": "User-Agent",
+        "value": "OTC-Benchmark/2.0"
+      },
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "X-Lab-Case",
+        "value": "OTC-BENCH-025"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/xml"
+      },
+      {
+        "name": "Content-Length",
+        "value": "38"
+      }
+    ],
+    "cookies": {},
+    "content_type": "application/xml",
+    "body": {
+      "raw": "\n<catalog><item>LAB-1</item></catalog>",
+      "content_type": "application/xml",
+      "charset": null,
+      "binary": false,
+      "size_bytes": 38,
+      "truncated": false,
+      "form": null,
+      "json_value": null,
+      "xml_paths": {
+        "/catalog/item": "LAB-1"
+      },
+      "parse_warnings": []
+    }
+  },
+  "response": {
+    "available": true,
+    "status": 200,
+    "reason": "OK",
+    "headers": [
+      {
+        "name": "Content-Type",
+        "value": "application/json; charset=utf-8"
+      },
+      {
+        "name": "X-Lab-Fixture",
+        "value": "mock-only"
+      },
+      {
+        "name": "Content-Length",
+        "value": "67"
+      }
+    ],
+    "content_type": "application/json; charset=utf-8",
+    "body": {
+      "raw": "\n{\"fixture\": \"mock\", \"case\": \"OTC-CAND-025\", \"result\": \"synthetic\"}",
+      "content_type": "application/json; charset=utf-8",
+      "charset": "utf-8",
+      "binary": false,
+      "size_bytes": 67,
+      "truncated": false,
+      "form": null,
+      "json_value": {
+        "fixture": "mock",
+        "case": "OTC-CAND-025",
+        "result": "synthetic"
+      },
+      "xml_paths": null,
+      "parse_warnings": []
+    }
+  },
+  "auth_context": {
+    "authenticated": false,
+    "principal_ref": null,
+    "credential_ref": null,
+    "auth_types": []
+  },
+  "artifacts": [
+    {
+      "artifact_id": "artifact_0049",
+      "type": "http_request",
+      "path": "traffic/traffic_0025/request.txt",
+      "sha256": "80fed7925fb9a79a63d67226cbdbea9638661d2f94c407cf3cfe3bbeaf304c2b",
+      "size_bytes": 240,
+      "created_at": "2026-11-25T17:39:22+08:00"
+    },
+    {
+      "artifact_id": "artifact_0050",
+      "type": "http_response",
+      "path": "traffic/traffic_0025/response.txt",
+      "sha256": "58d5aa5cad68375d169fda92777f57f05c839fe6204ac137085a4c68b2a60e05",
+      "size_bytes": 179,
+      "created_at": "2026-11-25T17:39:22+08:00"
+    }
+  ],
+  "parse_warnings": []
+}

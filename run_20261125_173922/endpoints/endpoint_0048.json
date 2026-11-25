@@ -1,0 +1,82 @@
+{
+  "endpoint_id": "endpoint_0048",
+  "method": "POST",
+  "scheme": "http",
+  "host": "lab-otc.example.invalid",
+  "path": "/api/v1/profile/update",
+  "traffic_ids": [
+    "traffic_0041"
+  ],
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:db6f3e1846e8fe960c45aa12b51190d04fbf141235d660752be24509c76a6444",
+      "name": "X-Lab-Case",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "OTC-BENCH-041"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0041"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:a8725d0f6425f1ea61464d2455846a3908f33a9c2eced4adb2fda4f3627d6ce9",
+      "name": "displayName",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "LabUser"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0041"
+      ]
+    },
+    {
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:ae370ae3231820a24d0a9b6c271de3744e8d35c0c8a34c98b7f3029335b7c8fb",
+      "name": "timezone",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "UTC"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0041"
+      ]
+    },
+    {
+      "parameter_id": "param_0004",
+      "parameter_identity": "sha256:a928403b6767d35443e298e88a5fd1af85c1134cff192fca357e021465cd7209",
+      "name": "displayName",
+      "location": "query",
+      "type": "string",
+      "values": [
+        "LabUser"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0041"
+      ]
+    },
+    {
+      "parameter_id": "param_0005",
+      "parameter_identity": "sha256:520bf68f62c00a075ac3828ee0755f3281bcab91efafd574a5da18b05812448c",
+      "name": "timezone",
+      "location": "query",
+      "type": "string",
+      "values": [
+        "UTC"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0041"
+      ]
+    }
+  ]
+}

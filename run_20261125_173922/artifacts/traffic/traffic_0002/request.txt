@@ -1,0 +1,8 @@
+GET /api/v1/orders/{orderId} HTTP/1.1
+Host: lab-otc.example.invalid
+User-Agent: OTC-Benchmark/2.0
+Accept: application/json
+X-Lab-Case: OTC-BENCH-002
+Cookie: LAB_SESSION=synthetic-session-002
+X-Lab-Identity: user-lab-a
+

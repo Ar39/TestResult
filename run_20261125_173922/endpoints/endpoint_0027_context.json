@@ -1,0 +1,95 @@
+{
+  "endpoint_id": "endpoint_0027",
+  "method": "POST",
+  "scheme": "http",
+  "host": "lab-otc.example.invalid",
+  "path": "/api/v1/avatar/from-url",
+  "path_examples": [
+    "/api/v1/avatar/from-url"
+  ],
+  "traffic_count": 1,
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:8cf4b69c58b64dbd9f087afe21f90b6f39b28e0e23025d053ec1092b6149366b",
+      "name": "X-Lab-Case",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "OTC-BENCH-022"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0022"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:ebd2babaa0a2b435da0c480def1f03d5380caef4ddd54533c35dc7e055646bd1",
+      "name": "imageUrl",
+      "location": "json",
+      "type": "url",
+      "values": [
+        "https://images.example.invalid/avatar.png"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0022"
+      ]
+    },
+    {
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:d0ead737a5210775bc4fa261fd2f6a96cf57506b0e059f600dba29ee22c0b384",
+      "name": "userId",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "U-7"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0022"
+      ]
+    }
+  ],
+  "inventory_id": "sha256:6af196267eca2a00bb3098b60b6b29e56b349bc38defcd9d3ffefa2a5e77f12a",
+  "request_examples": [
+    {
+      "traffic_id": "traffic_0022",
+      "principal_ref": null,
+      "method": "POST",
+      "url": "http://lab-otc.example.invalid/api/v1/avatar/from-url",
+      "content_type": "application/json",
+      "query": null,
+      "body_excerpt": "\n{\"imageUrl\":\"https://images.example.invalid/avatar.png\",\"userId\":\"U-7\"}",
+      "body_sha256": "14ca806f6839d381e5f09b0031bdc651ed88ef1c5fc397b7da390d393b114a89"
+    }
+  ],
+  "response_examples": [
+    {
+      "traffic_id": "traffic_0022",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "body_excerpt": "\n{\"fixture\": \"mock\", \"case\": \"OTC-CAND-022\", \"result\": \"synthetic\"}",
+      "body_sha256": "5ed4dff64eb30583e45264dc9f4e452966ee10b6f528a934879893d388eefa68"
+    }
+  ],
+  "auth_contexts": [
+    {
+      "principal_ref": null,
+      "credential_ref": null,
+      "auth_types": [],
+      "traffic_count": 1
+    }
+  ],
+  "business_context": {
+    "description": null,
+    "evidence": [
+      "parameter 'imageUrl' (json) suggests URL handling",
+      "parameter 'imageUrl' (json) is a URL value",
+      "parameter 'userId' (json) suggests user identity",
+      "path segment 'avatar' suggests URL handling"
+    ]
+  },
+  "limitations": []
+}

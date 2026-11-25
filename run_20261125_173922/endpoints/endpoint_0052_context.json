@@ -1,0 +1,106 @@
+{
+  "endpoint_id": "endpoint_0052",
+  "method": "POST",
+  "scheme": "http",
+  "host": "lab-otc.example.invalid",
+  "path": "/api/v1/subscription/change",
+  "path_examples": [
+    "/api/v1/subscription/change"
+  ],
+  "traffic_count": 1,
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:4f37c017647c62a638e1fc7bb518e98ce5793582c9b9f2c8f0d4baf1cbe52ba6",
+      "name": "X-Lab-Case",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "OTC-BENCH-046"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0046"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:0cff2505a556976f1ef869a04d36980cd820d14247ad0cc2b9243494164660e7",
+      "name": "X-Lab-Identity",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "user-lab-a"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0046"
+      ]
+    },
+    {
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:5bab64f92898c3c78afa5f3fc5b4c9acf2dc700ceff163b6d8bd0c073ab7f964",
+      "name": "plan",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "basic"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0046"
+      ]
+    },
+    {
+      "parameter_id": "param_0004",
+      "parameter_identity": "sha256:ef913c25124ab5901b90308439e6a4a1aa0a9675a6845c025425548cac5e51e2",
+      "name": "subscriptionId",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "S-7"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0046"
+      ]
+    }
+  ],
+  "inventory_id": "sha256:ba47ef30aaf816eacdd90b6937998dc893262f6ee0f6b4f48745fb339765790f",
+  "request_examples": [
+    {
+      "traffic_id": "traffic_0046",
+      "principal_ref": "principal_52f62a65d536",
+      "method": "POST",
+      "url": "http://lab-otc.example.invalid/api/v1/subscription/change",
+      "content_type": "application/json",
+      "query": null,
+      "body_excerpt": "\n{\"subscriptionId\":\"S-7\",\"plan\":\"basic\"}",
+      "body_sha256": "bf4e638d81d8aacc8c18e498890dc4b5eef9e0bcbb6b00887b2a189442cdf061"
+    }
+  ],
+  "response_examples": [
+    {
+      "traffic_id": "traffic_0046",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "body_excerpt": "\n{\"fixture\": \"mock\", \"case\": \"OTC-CAND-046\", \"result\": \"synthetic\"}",
+      "body_sha256": "33345db0971e7acb9748a06826b5ba3ab239e8e4575558fea820c9d9418e4cfa"
+    }
+  ],
+  "auth_contexts": [
+    {
+      "principal_ref": "principal_52f62a65d536",
+      "credential_ref": "cred_52f62a65d536",
+      "auth_types": [
+        "cookie"
+      ],
+      "traffic_count": 1
+    }
+  ],
+  "business_context": {
+    "description": null,
+    "evidence": []
+  },
+  "limitations": []
+}

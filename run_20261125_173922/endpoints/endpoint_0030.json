@@ -1,0 +1,54 @@
+{
+  "endpoint_id": "endpoint_0030",
+  "method": "POST",
+  "scheme": "http",
+  "host": "lab-otc.example.invalid",
+  "path": "/api/v1/comments",
+  "traffic_ids": [
+    "traffic_0013"
+  ],
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:fd68ac93d255cd6013de783f3053fe0ec204924879b30c746fecf911c7e13f09",
+      "name": "X-Lab-Case",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "OTC-BENCH-013"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0013"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:446092fca020d629e17949e2f67534aec1acaa819694c4721a9985dce3f30de5",
+      "name": "comment",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "LAB_MARKER <script>alert(1)</script>"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0013"
+      ]
+    },
+    {
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:bb492bd871664415efb78343b587ff421ece96dd0b7a3c6fbcd8c1f5b000266b",
+      "name": "postId",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "P-10"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0013"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "endpoint_id": "endpoint_0012",
+  "method": "GET",
+  "scheme": "http",
+  "host": "lab-otc.example.invalid",
+  "path": "/api/v1/import/url",
+  "path_examples": [
+    "/api/v1/import/url"
+  ],
+  "traffic_count": 1,
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:ea44bab13d547d256298fceb0052d6831182331d22ad63b4b6b7a1348c814d04",
+      "name": "X-Lab-Case",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "OTC-BENCH-021"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0021"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:9eb670f05c5f91f2b2ea17d70d5e984b9d6065d1f5d034da561e67d188d67de5",
+      "name": "sourceUrl",
+      "location": "query",
+      "type": "url",
+      "values": [
+        "https://data.example.invalid/sample.csv"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0021"
+      ]
+    }
+  ],
+  "inventory_id": "sha256:c859d66564ea3ea8586b57a1089670e956bdf9b2db83be971824c9d190fec9d0",
+  "request_examples": [
+    {
+      "traffic_id": "traffic_0021",
+      "principal_ref": null,
+      "method": "GET",
+      "url": "http://lab-otc.example.invalid/api/v1/import/url?sourceUrl=https%3A%2F%2Fdata.example.invalid%2Fsample.csv",
+      "content_type": null,
+      "query": {
+        "sourceUrl": [
+          "https://data.example.invalid/sample.csv"
+        ]
+      },
+      "body_excerpt": null,
+      "body_sha256": null
+    }
+  ],
+  "response_examples": [
+    {
+      "traffic_id": "traffic_0021",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "body_excerpt": "\n{\"fixture\": \"mock\", \"case\": \"OTC-CAND-021\", \"result\": \"synthetic\"}",
+      "body_sha256": "9087d8872badddafefaac86f940929c91c62d949e9e638431330da647f9716af"
+    }
+  ],
+  "auth_contexts": [
+    {
+      "principal_ref": null,
+      "credential_ref": null,
+      "auth_types": [],
+      "traffic_count": 1
+    }
+  ],
+  "business_context": {
+    "description": null,
+    "evidence": [
+      "parameter 'sourceUrl' (query) is a URL value"
+    ]
+  },
+  "limitations": []
+}

@@ -1,0 +1,10 @@
+POST /api/v1/cms/preview HTTP/1.1
+Host: lab-otc.example.invalid
+User-Agent: OTC-Benchmark/2.0
+Accept: application/json
+X-Lab-Case: OTC-BENCH-034
+Content-Type: application/json
+Content-Length: 44
+
+
+{"content":"LAB {{ 7*7 }}","format":"text"}

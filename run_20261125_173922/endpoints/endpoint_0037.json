@@ -1,0 +1,54 @@
+{
+  "endpoint_id": "endpoint_0037",
+  "method": "POST",
+  "scheme": "http",
+  "host": "lab-otc.example.invalid",
+  "path": "/api/v1/invoice/preview",
+  "traffic_ids": [
+    "traffic_0033"
+  ],
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:40d5bda039e92912d3cfdf1d4d8cc383fd2744e2bb6e91a119685cef11dd0689",
+      "name": "X-Lab-Case",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "OTC-BENCH-033"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0033"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:14b4aafe1e861b184ccb8fb1ac303cdac078fa96bc29f1678fdeda8be7fa7a08",
+      "name": "invoiceId",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "INV-7"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0033"
+      ]
+    },
+    {
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:5f35a208062b11fba134bedda860ddecc4ac67092c2cf2b1c0d884d04ff9d966",
+      "name": "layout",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "Invoice {{ invoice.number }}"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0033"
+      ]
+    }
+  ]
+}

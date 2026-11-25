@@ -1,0 +1,10 @@
+POST /api/v1/avatar/from-url HTTP/1.1
+Host: lab-otc.example.invalid
+User-Agent: OTC-Benchmark/2.0
+Accept: application/json
+X-Lab-Case: OTC-BENCH-022
+Content-Type: application/json
+Content-Length: 72
+
+
+{"imageUrl":"https://images.example.invalid/avatar.png","userId":"U-7"}

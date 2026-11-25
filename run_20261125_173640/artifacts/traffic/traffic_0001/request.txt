@@ -1,0 +1,8 @@
+GET /api/v1/profile?userId=10021 HTTP/1.1
+Host: lab-otc.example.invalid
+User-Agent: OTC-Benchmark/2.0
+Accept: application/json
+X-Lab-Case: OTC-BENCH-001
+Cookie: LAB_SESSION=synthetic-session-001
+X-Lab-Identity: user-lab-a
+

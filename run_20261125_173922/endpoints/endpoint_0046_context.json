@@ -1,0 +1,92 @@
+{
+  "endpoint_id": "endpoint_0046",
+  "method": "POST",
+  "scheme": "http",
+  "host": "lab-otc.example.invalid",
+  "path": "/api/v1/preview",
+  "path_examples": [
+    "/api/v1/preview"
+  ],
+  "traffic_count": 1,
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:4531a07d9039d85e86b07994289d13a84d80e947b73369169f9c0452b8d5f9eb",
+      "name": "X-Lab-Case",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "OTC-BENCH-019"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0019"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:c97fcc9a9f5b2c822663df4e176b3147c14d7d8a0b1175acf0eeaa28eed86e2d",
+      "name": "mode",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "text"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0019"
+      ]
+    },
+    {
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:b9853df3fac875321b6246d2e36e436d24c6d6ecef8fab49e72d6c4b679bb2e7",
+      "name": "url",
+      "location": "json",
+      "type": "url",
+      "values": [
+        "https://preview.example.invalid/page"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0019"
+      ]
+    }
+  ],
+  "inventory_id": "sha256:d16f36efd9e21d513f4fdfc3b11481da9bd4ee26dfe90d1817d10be283519838",
+  "request_examples": [
+    {
+      "traffic_id": "traffic_0019",
+      "principal_ref": null,
+      "method": "POST",
+      "url": "http://lab-otc.example.invalid/api/v1/preview",
+      "content_type": "application/json",
+      "query": null,
+      "body_excerpt": "\n{\"url\":\"https://preview.example.invalid/page\",\"mode\":\"text\"}",
+      "body_sha256": "197e03006f4aa3277a44d6e977c7ca83e6d586516960f51f70309ca764360f65"
+    }
+  ],
+  "response_examples": [
+    {
+      "traffic_id": "traffic_0019",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "body_excerpt": "\n{\"fixture\": \"mock\", \"case\": \"OTC-CAND-019\", \"result\": \"synthetic\"}",
+      "body_sha256": "e1962dcb12c53149cd4c2f02e864c5468834ccaab02172a1bb4455660e4526c7"
+    }
+  ],
+  "auth_contexts": [
+    {
+      "principal_ref": null,
+      "credential_ref": null,
+      "auth_types": [],
+      "traffic_count": 1
+    }
+  ],
+  "business_context": {
+    "description": null,
+    "evidence": [
+      "parameter 'url' (json) is a URL value"
+    ]
+  },
+  "limitations": []
+}

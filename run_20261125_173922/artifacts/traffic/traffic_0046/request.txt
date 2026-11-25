@@ -1,0 +1,12 @@
+POST /api/v1/subscription/change HTTP/1.1
+Host: lab-otc.example.invalid
+User-Agent: OTC-Benchmark/2.0
+Accept: application/json
+X-Lab-Case: OTC-BENCH-046
+Content-Type: application/json
+Cookie: LAB_SESSION=synthetic-session-046
+X-Lab-Identity: user-lab-a
+Content-Length: 40
+
+
+{"subscriptionId":"S-7","plan":"basic"}

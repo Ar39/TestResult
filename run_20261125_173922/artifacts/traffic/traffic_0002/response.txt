@@ -1,0 +1,7 @@
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+X-Lab-Fixture: mock-only
+Content-Length: 92
+
+
+{"fixture": "mock", "owner": "user-lab-b", "objectId": "ORD-10021", "case": "OTC-CAND-002"}

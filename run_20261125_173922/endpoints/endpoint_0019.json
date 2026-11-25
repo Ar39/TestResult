@@ -1,0 +1,54 @@
+{
+  "endpoint_id": "endpoint_0019",
+  "method": "GET",
+  "scheme": "http",
+  "host": "lab-otc.example.invalid",
+  "path": "/api/v1/public/catalog",
+  "traffic_ids": [
+    "traffic_0005"
+  ],
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:9c49d34e720f3abc93b761068614676c41e7d988a5c955915df7db7d113b07fb",
+      "name": "X-Lab-Case",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "OTC-BENCH-005"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0005"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:92915716315358586aa0014a6d45aa16982fbd4ae5322c5065fe267ae600fead",
+      "name": "category",
+      "location": "query",
+      "type": "string",
+      "values": [
+        "books"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0005"
+      ]
+    },
+    {
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:5f1fb3648297ade07cd5efa31746b0320e3db9abcd6f40fb179e34a70efc33f0",
+      "name": "page",
+      "location": "query",
+      "type": "integer",
+      "values": [
+        "1"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0005"
+      ]
+    }
+  ]
+}

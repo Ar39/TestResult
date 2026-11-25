@@ -1,0 +1,54 @@
+{
+  "endpoint_id": "endpoint_0055",
+  "method": "POST",
+  "scheme": "http",
+  "host": "lab-otc.example.invalid",
+  "path": "/api/v1/template/assets",
+  "traffic_ids": [
+    "traffic_0058"
+  ],
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:d50f7cf4faab4f63bf4a325ab1c019851fac5cda9f647769694bb0d939504766",
+      "name": "X-Lab-Case",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "OTC-BENCH-058"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0058"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:bcb702effe1d27ccab519ff7052c6747f53be3c0929c3ad6fcb50461b651230c",
+      "name": "filename",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "theme.css"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0058"
+      ]
+    },
+    {
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:fef1638e0983d7af736eb02780d3307c24682c7eee82006d00bc649f0eb26b91",
+      "name": "folder",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "themes/default"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0058"
+      ]
+    }
+  ]
+}

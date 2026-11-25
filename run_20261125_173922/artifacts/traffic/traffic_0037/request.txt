@@ -1,0 +1,10 @@
+POST /api/v1/legacy/object/import HTTP/1.1
+Host: lab-otc.example.invalid
+User-Agent: OTC-Benchmark/2.0
+Accept: application/json
+X-Lab-Case: OTC-BENCH-037
+Content-Type: application/json
+Content-Length: 58
+
+
+{"objectType":"Widget","data":{"name":"LAB","version":1}}

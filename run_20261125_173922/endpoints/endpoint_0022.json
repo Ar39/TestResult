@@ -1,0 +1,54 @@
+{
+  "endpoint_id": "endpoint_0022",
+  "method": "GET",
+  "scheme": "http",
+  "host": "lab-otc.example.invalid",
+  "path": "/api/v1/search",
+  "traffic_ids": [
+    "traffic_0014"
+  ],
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:f210b873fa9680f50571bf3e7b43824c41c32ac2fb3ddfdb9aec553f896ac77e",
+      "name": "X-Lab-Case",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "OTC-BENCH-014"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0014"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:dbba0d0fe89d9f97b7538a7a2cdf036fd6d1996eff220a56ad113db5448d2a1c",
+      "name": "page",
+      "location": "query",
+      "type": "integer",
+      "values": [
+        "1"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0014"
+      ]
+    },
+    {
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:e9a0e78960166edcb94176fd37a0bfb0f72e239120beb57ff99c6347ab804f43",
+      "name": "term",
+      "location": "query",
+      "type": "string",
+      "values": [
+        "LAB_MARKER <img src=x onerror=alert(1)>"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0014"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+POST /api/v1/email/send HTTP/1.1
+Host: lab-otc.example.invalid
+User-Agent: OTC-Benchmark/2.0
+Accept: application/json
+X-Lab-Case: OTC-BENCH-035
+Content-Type: application/json
+Content-Length: 60
+
+
+{"recipient":"demo@example.invalid","subject":"Lab notice"}

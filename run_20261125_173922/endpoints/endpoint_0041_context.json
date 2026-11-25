@@ -1,0 +1,125 @@
+{
+  "endpoint_id": "endpoint_0041",
+  "method": "POST",
+  "scheme": "http",
+  "host": "lab-otc.example.invalid",
+  "path": "/api/v1/metrics/ingest",
+  "path_examples": [
+    "/api/v1/metrics/ingest"
+  ],
+  "traffic_count": 1,
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:45f61d5f50d8e55b9a4b5cfdb9261027c7865b32c94bd6537aeefef8f59ef7e0",
+      "name": "X-Lab-Case",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "OTC-BENCH-024"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0024"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:72d7ee7e2e9cfb65550e9c2a8839d1e98adc678e88447097c2dabdb184299f62",
+      "name": "count",
+      "location": "json",
+      "type": "integer",
+      "values": [
+        "5"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0024"
+      ]
+    },
+    {
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:6f3e82915b69e102d5a3da1dee6882bf9b68d8a8439ea06f3aeb8ffe6d9a9b51",
+      "name": "source",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "agent"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0024"
+      ]
+    },
+    {
+      "parameter_id": "param_0004",
+      "parameter_identity": "sha256:b57eca213ed9b0772cac88ddd4e78929ff8e84e07aaa6bd914f0606737bc2489",
+      "name": "count",
+      "location": "query",
+      "type": "integer",
+      "values": [
+        "5"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0024"
+      ]
+    },
+    {
+      "parameter_id": "param_0005",
+      "parameter_identity": "sha256:e53b28c18dd6678df290fdec4e661a5fec190599507649997a7e0c290005c129",
+      "name": "source",
+      "location": "query",
+      "type": "string",
+      "values": [
+        "agent"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0024"
+      ]
+    }
+  ],
+  "inventory_id": "sha256:681d5e63bfec51f64ce689db5272b3f3dbf4f67ef6ecad1972bce8c60bec9835",
+  "request_examples": [
+    {
+      "traffic_id": "traffic_0024",
+      "principal_ref": null,
+      "method": "POST",
+      "url": "http://lab-otc.example.invalid/api/v1/metrics/ingest?source=agent&count=5",
+      "content_type": "application/json",
+      "query": {
+        "source": [
+          "agent"
+        ],
+        "count": [
+          "5"
+        ]
+      },
+      "body_excerpt": "\n{\"source\":\"agent\",\"count\":5}",
+      "body_sha256": "a4d866cc387b847ea4801bb8506985ef83170ee86c7ea80536a4f7fd0db3394a"
+    }
+  ],
+  "response_examples": [
+    {
+      "traffic_id": "traffic_0024",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "body_excerpt": "\n{\"fixture\": \"mock\", \"case\": \"OTC-CAND-024\", \"result\": \"synthetic\"}",
+      "body_sha256": "51a49e6a7a03993ebeb32332d66c5b4a8b4efcb0e35d5540a98bf73720487489"
+    }
+  ],
+  "auth_contexts": [
+    {
+      "principal_ref": null,
+      "credential_ref": null,
+      "auth_types": [],
+      "traffic_count": 1
+    }
+  ],
+  "business_context": {
+    "description": null,
+    "evidence": []
+  },
+  "limitations": []
+}

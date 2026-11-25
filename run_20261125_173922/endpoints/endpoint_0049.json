@@ -1,0 +1,54 @@
+{
+  "endpoint_id": "endpoint_0049",
+  "method": "POST",
+  "scheme": "http",
+  "host": "lab-otc.example.invalid",
+  "path": "/api/v1/queue/message",
+  "traffic_ids": [
+    "traffic_0038"
+  ],
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:cbc8eff23f003356fdd595679de4c91d417d25b8d0de542a62293502b175a0c7",
+      "name": "X-Lab-Case",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "OTC-BENCH-038"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0038"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:391a7f89ed4f2fe79a483764cd03493a8a4424546e5f5c50de44cbebd5ed322c",
+      "name": "payload.text",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "LAB message"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0038"
+      ]
+    },
+    {
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:5e0c1e6d616dac331f84649a17c70f9a88f6f19aef0c9ca88340b3c998b5f7af",
+      "name": "type",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "Notification"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0038"
+      ]
+    }
+  ]
+}

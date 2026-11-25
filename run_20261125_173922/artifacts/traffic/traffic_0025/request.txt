@@ -1,0 +1,10 @@
+POST /api/v1/xml/import HTTP/1.1
+Host: lab-otc.example.invalid
+User-Agent: OTC-Benchmark/2.0
+Accept: application/json
+X-Lab-Case: OTC-BENCH-025
+Content-Type: application/xml
+Content-Length: 38
+
+
+<catalog><item>LAB-1</item></catalog>

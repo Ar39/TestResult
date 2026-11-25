@@ -1,0 +1,54 @@
+{
+  "endpoint_id": "endpoint_0029",
+  "method": "POST",
+  "scheme": "http",
+  "host": "lab-otc.example.invalid",
+  "path": "/api/v1/cms/preview",
+  "traffic_ids": [
+    "traffic_0034"
+  ],
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:73e4d21bc0f78fa12e2791d99e099ab1591d1e1d2b43d92060dfd2664658afcc",
+      "name": "X-Lab-Case",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "OTC-BENCH-034"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0034"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:79044543035e159bb941010785ecaae74355ee4e80c0d74b4126e0e3e73c89d4",
+      "name": "content",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "LAB {{ 7*7 }}"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0034"
+      ]
+    },
+    {
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:30c02b7a1f63595254c6e9d55be29b00e8652868bee529a81393ec6a6db86dbb",
+      "name": "format",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "text"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0034"
+      ]
+    }
+  ]
+}

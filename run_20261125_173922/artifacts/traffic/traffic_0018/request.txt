@@ -1,0 +1,10 @@
+POST /api/v1/preferences/theme?theme=dark HTTP/1.1
+Host: lab-otc.example.invalid
+User-Agent: OTC-Benchmark/2.0
+Accept: application/json
+X-Lab-Case: OTC-BENCH-018
+Content-Type: application/json
+Content-Length: 17
+
+
+{"theme":"dark"}

@@ -1,0 +1,129 @@
+{
+  "traffic_id": "traffic_0046",
+  "source": "burp_xml",
+  "request": {
+    "method": "POST",
+    "scheme": "http",
+    "host": "lab-otc.example.invalid",
+    "port": 80,
+    "path": "/api/v1/subscription/change",
+    "raw_target": "/api/v1/subscription/change",
+    "query": {},
+    "headers": [
+      {
+        "name": "Host",
+        "value": "lab-otc.example.invalid"
+      },
+      {
+        "name": "User-Agent",
+        "value": "OTC-Benchmark/2.0"
+      },
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "X-Lab-Case",
+        "value": "OTC-BENCH-046"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      },
+      {
+        "name": "Cookie",
+        "value": "<credential:cred_52f62a65d536>"
+      },
+      {
+        "name": "X-Lab-Identity",
+        "value": "user-lab-a"
+      },
+      {
+        "name": "Content-Length",
+        "value": "40"
+      }
+    ],
+    "cookies": {
+      "LAB_SESSION": "<credential:cred_52f62a65d536>"
+    },
+    "content_type": "application/json",
+    "body": {
+      "raw": "\n{\"subscriptionId\":\"S-7\",\"plan\":\"basic\"}",
+      "content_type": "application/json",
+      "charset": null,
+      "binary": false,
+      "size_bytes": 40,
+      "truncated": false,
+      "form": null,
+      "json_value": {
+        "subscriptionId": "S-7",
+        "plan": "basic"
+      },
+      "xml_paths": null,
+      "parse_warnings": []
+    }
+  },
+  "response": {
+    "available": true,
+    "status": 200,
+    "reason": "OK",
+    "headers": [
+      {
+        "name": "Content-Type",
+        "value": "application/json; charset=utf-8"
+      },
+      {
+        "name": "X-Lab-Fixture",
+        "value": "mock-only"
+      },
+      {
+        "name": "Content-Length",
+        "value": "67"
+      }
+    ],
+    "content_type": "application/json; charset=utf-8",
+    "body": {
+      "raw": "\n{\"fixture\": \"mock\", \"case\": \"OTC-CAND-046\", \"result\": \"synthetic\"}",
+      "content_type": "application/json; charset=utf-8",
+      "charset": "utf-8",
+      "binary": false,
+      "size_bytes": 67,
+      "truncated": false,
+      "form": null,
+      "json_value": {
+        "fixture": "mock",
+        "case": "OTC-CAND-046",
+        "result": "synthetic"
+      },
+      "xml_paths": null,
+      "parse_warnings": []
+    }
+  },
+  "auth_context": {
+    "authenticated": true,
+    "principal_ref": "principal_52f62a65d536",
+    "credential_ref": "cred_52f62a65d536",
+    "auth_types": [
+      "cookie"
+    ]
+  },
+  "artifacts": [
+    {
+      "artifact_id": "artifact_0091",
+      "type": "http_request",
+      "path": "traffic/traffic_0046/request.txt",
+      "sha256": "59dbc017ba75b977e4edd2f5057ead2f50a494c585c01518a281053818afe4af",
+      "size_bytes": 323,
+      "created_at": "2026-11-25T17:39:22+08:00"
+    },
+    {
+      "artifact_id": "artifact_0092",
+      "type": "http_response",
+      "path": "traffic/traffic_0046/response.txt",
+      "sha256": "6546d5c3d4d8fd1c316e98ee00d8917e17fdd248ed2198e4eb36a79fb565e4ce",
+      "size_bytes": 179,
+      "created_at": "2026-11-25T17:39:22+08:00"
+    }
+  ],
+  "parse_warnings": []
+}

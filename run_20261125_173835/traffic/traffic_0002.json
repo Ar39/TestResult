@@ -1,0 +1,112 @@
+{
+  "traffic_id": "traffic_0002",
+  "source": "burp_xml",
+  "request": {
+    "method": "GET",
+    "scheme": "http",
+    "host": "lab-otc.example.invalid",
+    "port": 80,
+    "path": "/api/v1/profile",
+    "raw_target": "/api/v1/profile?userId=10021",
+    "query": {
+      "userId": [
+        "10021"
+      ]
+    },
+    "headers": [
+      {
+        "name": "Host",
+        "value": "lab-otc.example.invalid"
+      },
+      {
+        "name": "User-Agent",
+        "value": "OTC-Benchmark/2.0"
+      },
+      {
+        "name": "Accept",
+        "value": "application/json"
+      },
+      {
+        "name": "X-Lab-Case",
+        "value": "OTC-BENCH-001"
+      },
+      {
+        "name": "Cookie",
+        "value": "<credential:cred_e102f6241c9c>"
+      },
+      {
+        "name": "X-Lab-Identity",
+        "value": "user-lab-a"
+      }
+    ],
+    "cookies": {
+      "LAB_SESSION": "<credential:cred_e102f6241c9c>"
+    },
+    "content_type": null,
+    "body": null
+  },
+  "response": {
+    "available": true,
+    "status": 200,
+    "reason": "OK",
+    "headers": [
+      {
+        "name": "Content-Type",
+        "value": "application/json; charset=utf-8"
+      },
+      {
+        "name": "X-Lab-Fixture",
+        "value": "mock-only"
+      },
+      {
+        "name": "Content-Length",
+        "value": "88"
+      }
+    ],
+    "content_type": "application/json; charset=utf-8",
+    "body": {
+      "raw": "\n{\"fixture\": \"mock\", \"owner\": \"user-lab-b\", \"objectId\": \"10021\", \"case\": \"OTC-CAND-001\"}",
+      "content_type": "application/json; charset=utf-8",
+      "charset": "utf-8",
+      "binary": false,
+      "size_bytes": 88,
+      "truncated": false,
+      "form": null,
+      "json_value": {
+        "fixture": "mock",
+        "owner": "user-lab-b",
+        "objectId": "10021",
+        "case": "OTC-CAND-001"
+      },
+      "xml_paths": null,
+      "parse_warnings": []
+    }
+  },
+  "auth_context": {
+    "authenticated": true,
+    "principal_ref": "principal_e102f6241c9c",
+    "credential_ref": "cred_e102f6241c9c",
+    "auth_types": [
+      "cookie"
+    ]
+  },
+  "artifacts": [
+    {
+      "artifact_id": "artifact_0003",
+      "type": "http_request",
+      "path": "traffic/traffic_0002/request.txt",
+      "sha256": "015a3f6703910b1810613f95a5fdc6a4f8bdc460a69687fe8c8ba173e39324bd",
+      "size_bytes": 231,
+      "created_at": "2026-11-25T17:38:47+08:00"
+    },
+    {
+      "artifact_id": "artifact_0004",
+      "type": "http_response",
+      "path": "traffic/traffic_0002/response.txt",
+      "sha256": "a685ee6e4915eb7d65ad37a9f336a685400a6d22361344a96260b771171e232e",
+      "size_bytes": 200,
+      "created_at": "2026-11-25T17:38:47+08:00"
+    }
+  ],
+  "parse_warnings": []
+}

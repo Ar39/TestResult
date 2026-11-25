@@ -1,0 +1,10 @@
+POST /api/v1/xml/validate HTTP/1.1
+Host: lab-otc.example.invalid
+User-Agent: OTC-Benchmark/2.0
+Accept: application/json
+X-Lab-Case: OTC-BENCH-026
+Content-Type: application/xml
+Content-Length: 30
+
+
+<root><name>LAB</name></root>

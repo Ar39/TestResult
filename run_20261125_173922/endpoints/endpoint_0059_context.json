@@ -1,0 +1,76 @@
+{
+  "endpoint_id": "endpoint_0059",
+  "method": "POST",
+  "scheme": "http",
+  "host": "lab-otc.example.invalid",
+  "path": "/api/v1/xml/import",
+  "path_examples": [
+    "/api/v1/xml/import"
+  ],
+  "traffic_count": 1,
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:8480a91c4dd558e7d0e4b8047b93a6965b157d23b320cd1c43f5468cdb2cc52c",
+      "name": "X-Lab-Case",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "OTC-BENCH-025"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0025"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:9368c8561e6e8e771d4a6d69427ba5e6defdd730ac51759a64b3ed85df115aee",
+      "name": "catalog/item",
+      "location": "xml",
+      "type": "string",
+      "values": [
+        "LAB-1"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0025"
+      ]
+    }
+  ],
+  "inventory_id": "sha256:d40fb2dfd7a41bd4ec45b878a5d35ea688c468aef4d27c06be80b77e82ffb547",
+  "request_examples": [
+    {
+      "traffic_id": "traffic_0025",
+      "principal_ref": null,
+      "method": "POST",
+      "url": "http://lab-otc.example.invalid/api/v1/xml/import",
+      "content_type": "application/xml",
+      "query": null,
+      "body_excerpt": "\n<catalog><item>LAB-1</item></catalog>",
+      "body_sha256": "01c6d7622db248015aea009bb5b00bfaed41a56f5cfe04c17b71b20a1f7b4771"
+    }
+  ],
+  "response_examples": [
+    {
+      "traffic_id": "traffic_0025",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "body_excerpt": "\n{\"fixture\": \"mock\", \"case\": \"OTC-CAND-025\", \"result\": \"synthetic\"}",
+      "body_sha256": "ac43870d46880839baf1b6328d754b84e21000d68fbc9c3d7938a3a3e0d406af"
+    }
+  ],
+  "auth_contexts": [
+    {
+      "principal_ref": null,
+      "credential_ref": null,
+      "auth_types": [],
+      "traffic_count": 1
+    }
+  ],
+  "business_context": {
+    "description": null,
+    "evidence": []
+  },
+  "limitations": []
+}

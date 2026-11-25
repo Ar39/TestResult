@@ -1,0 +1,7 @@
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+X-Lab-Fixture: mock-only
+Content-Length: 95
+
+
+{"fixture": "mock", "echo": "LAB_MARKER <img src=x onerror=alert(1)>", "case": "OTC-CAND-014"}

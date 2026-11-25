@@ -1,0 +1,68 @@
+{
+  "endpoint_id": "endpoint_0043",
+  "method": "POST",
+  "scheme": "http",
+  "host": "lab-otc.example.invalid",
+  "path": "/api/v1/order/checkout",
+  "traffic_ids": [
+    "traffic_0044"
+  ],
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:9e86f75cc30088130780ac966a13090c102236e77cd39296848901e5bb19e531",
+      "name": "X-Lab-Case",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "OTC-BENCH-044"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0044"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:c662d48d8c6b53b5d72767a3c27be3b8683eca8a3be908d94ee20efebe2458cd",
+      "name": "X-Lab-Identity",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "user-lab-a"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0044"
+      ]
+    },
+    {
+      "parameter_id": "param_0003",
+      "parameter_identity": "sha256:53e5017e8d6c1908cb7a33ee064e9f5be7f89bcc064bef14e1a1c5ce3a81848e",
+      "name": "orderId",
+      "location": "json",
+      "type": "string",
+      "values": [
+        "O-7"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0044"
+      ]
+    },
+    {
+      "parameter_id": "param_0004",
+      "parameter_identity": "sha256:5bdfd83b278760bda34ee147f70b0f731341f659346bab8c5170b6a4704ef870",
+      "name": "quantity",
+      "location": "json",
+      "type": "integer",
+      "values": [
+        "1"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0044"
+      ]
+    }
+  ]
+}

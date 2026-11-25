@@ -1,0 +1,79 @@
+{
+  "endpoint_id": "endpoint_0033",
+  "method": "POST",
+  "scheme": "http",
+  "host": "lab-otc.example.invalid",
+  "path": "/api/v1/feed/submit",
+  "path_examples": [
+    "/api/v1/feed/submit"
+  ],
+  "traffic_count": 1,
+  "parameters": [
+    {
+      "parameter_id": "param_0001",
+      "parameter_identity": "sha256:d9fdce8b64e5053eb4559dd69f81c386581dca3392872fd9473cebf0b170d43e",
+      "name": "X-Lab-Case",
+      "location": "header",
+      "type": "string",
+      "values": [
+        "OTC-BENCH-028"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0028"
+      ]
+    },
+    {
+      "parameter_id": "param_0002",
+      "parameter_identity": "sha256:f35feac7dc1b7c850108401dbd6ef2369ecc8a0ed73d707de8a1d99de71c01f2",
+      "name": "feed/title",
+      "location": "xml",
+      "type": "string",
+      "values": [
+        "LAB feed"
+      ],
+      "occurrence_count": 1,
+      "traffic_ids": [
+        "traffic_0028"
+      ]
+    }
+  ],
+  "inventory_id": "sha256:1e3a593c7147e42d86555f45ac06d2b1299beddc7bef2cdea491b3618549acbb",
+  "request_examples": [
+    {
+      "traffic_id": "traffic_0028",
+      "principal_ref": null,
+      "method": "POST",
+      "url": "http://lab-otc.example.invalid/api/v1/feed/submit",
+      "content_type": "application/xml",
+      "query": null,
+      "body_excerpt": "\n<feed><title>LAB feed</title></feed>",
+      "body_sha256": "03b0998a66a506f37ecb4ae26916fa1df7ee871d0b315b5998c8301f27f4573f"
+    }
+  ],
+  "response_examples": [
+    {
+      "traffic_id": "traffic_0028",
+      "status": 200,
+      "content_type": "application/json; charset=utf-8",
+      "body_excerpt": "\n{\"fixture\": \"mock\", \"case\": \"OTC-CAND-028\", \"result\": \"synthetic\"}",
+      "body_sha256": "ef5f7000fc86341047ea598470fd9ca0e29c22e005674abb88e22a9e65cfc04f"
+    }
+  ],
+  "auth_contexts": [
+    {
+      "principal_ref": null,
+      "credential_ref": null,
+      "auth_types": [],
+      "traffic_count": 1
+    }
+  ],
+  "business_context": {
+    "description": null,
+    "evidence": [
+      "parameter 'feed/title' (xml) suggests monetary value",
+      "path segment 'feed' suggests monetary value"
+    ]
+  },
+  "limitations": []
+}

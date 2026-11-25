@@ -1,0 +1,9 @@
+{
+  "run_id": "run_20261125_173922",
+  "source_name": "otc-60-direct",
+  "created_at": "2026-11-25T17:39:22+08:00",
+  "status": "analyzed",
+  "traffic_count": 60,
+  "last_import_id": "import_bd9bd459",
+  "endpoint_count": 60
+}

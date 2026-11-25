@@ -1,0 +1,10 @@
+POST /api/v1/legacy/soap HTTP/1.1
+Host: lab-otc.example.invalid
+User-Agent: OTC-Benchmark/2.0
+Accept: application/json
+X-Lab-Case: OTC-BENCH-027
+Content-Type: text/xml
+Content-Length: 62
+
+
+<Envelope><Body><Lookup><id>7</id></Lookup></Body></Envelope>
